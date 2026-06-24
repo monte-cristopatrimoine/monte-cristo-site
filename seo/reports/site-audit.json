@@ -1,0 +1,474 @@
+{
+  "generated_at": "24/06/2026 à 15:51",
+  "site": "https://monte-cristo.net",
+  "total_pages": 12,
+  "pages": [
+    {
+      "file": "404.html",
+      "category": "technique",
+      "url": "https://monte-cristo.net/404",
+      "title": "Page introuvable — Monte-Cristo Patrimoine",
+      "title_length": 42,
+      "description": "",
+      "description_length": 0,
+      "canonical": "",
+      "og_title": "",
+      "og_description": "",
+      "og_image": "",
+      "h1_count": 1,
+      "h1_texts": [
+        "Cette page est introuvable."
+      ],
+      "h2_count": 0,
+      "h2_texts": [],
+      "imgs_without_alt": 0,
+      "internal_links": 13,
+      "external_links": 0,
+      "has_schema": false,
+      "in_sitemap": false,
+      "issues": []
+    },
+    {
+      "file": "article-cgp-independant.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/article-cgp-independant",
+      "title": "Qu'est-ce qu'un CGP indépendant ? — Monte-Cristo Patrimoine",
+      "title_length": 59,
+      "description": "Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ? Définition, rémunération, périmètre. Moins de 5 % des CGP adoptent un modèle basé sur les honoraires.",
+      "description_length": 167,
+      "canonical": "https://monte-cristo.net/article-cgp-independant",
+      "og_title": "Qu",
+      "og_description": "Définition, rémunération, périmètre d",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ?"
+      ],
+      "h2_count": 5,
+      "h2_texts": [
+        "Conseiller en gestion de patrimoine indépendant : définition et rôle",
+        "Comment se rémunère un CGP indépendant ?",
+        "Que fait concrètement un CGP indépendant ?",
+        "Pourquoi choisir un CGP indépendant plutôt qu'un conseiller bancaire ?",
+        "Comment choisir son CGP indépendant ?"
+      ],
+      "imgs_without_alt": 1,
+      "internal_links": 16,
+      "external_links": 2,
+      "has_schema": true,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "DESC_TOO_LONG",
+          "message": "Description trop longue (167 car.) — sera tronquée dans Google (max 160)"
+        },
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "IMGS_NO_ALT",
+          "message": "1 image(s) sans attribut alt — accessibilité et SEO images"
+        }
+      ]
+    },
+    {
+      "file": "article-frais-bancaires.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/article-frais-bancaires",
+      "title": "Frais cachés en gestion de patrimoine — Monte-Cristo Patrimoine",
+      "title_length": 63,
+      "description": "187 000 € de manque à gagner en 15 ans. Frais cachés, rétrocessions, droits d'entrée : ce que votre banque vous coûte vraiment — simulateur de frais inclus.",
+      "description_length": 156,
+      "canonical": "https://monte-cristo.net/article-frais-bancaires",
+      "og_title": "Ce que votre banque ne vous dira jamais — Monte-Cristo Patrimoine",
+      "og_description": "Frais de gestion, rétrocessions, droits d",
+      "og_image": "https://monte-cristo.net/assets/og-frais-bancaires.jpg",
+      "h1_count": 1,
+      "h1_texts": [
+        "Honoraires, commissions, frais de gestion : ce que votre structure patrimoniale vous coûte vraiment"
+      ],
+      "h2_count": 5,
+      "h2_texts": [
+        "Trois mécanismes de frais cachés que peu de clients connaissent réellement",
+        "Ce que ça coûte, en chiffres réels",
+        "Comment notre modèle fonctionne",
+        "La comparaison honnête",
+        "Trois questions à poser à votre conseiller dès aujourd'hui"
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 19,
+      "external_links": 1,
+      "has_schema": true,
+      "in_sitemap": true,
+      "issues": []
+    },
+    {
+      "file": "blog.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/blog",
+      "title": "Blog — Monte-Cristo Patrimoine",
+      "title_length": 30,
+      "description": "Articles d'analyse sur la gestion de patrimoine, la fiscalité et l'investissement. Par les conseillers de Monte-Cristo Patrimoine.",
+      "description_length": 130,
+      "canonical": "https://monte-cristo.net/blog",
+      "og_title": "Blog — Monte-Cristo Patrimoine",
+      "og_description": "Articles d",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Comprendre, décider, agir."
+      ],
+      "h2_count": 1,
+      "h2_texts": [
+        "Articles"
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 16,
+      "external_links": 2,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    },
+    {
+      "file": "entreprises.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/entreprises",
+      "title": "Services aux entreprises — Monte-Cristo Patrimoine",
+      "title_length": 50,
+      "description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale, trésorerie. Cabinet CGP indépendant à Gap.",
+      "description_length": 137,
+      "canonical": "https://monte-cristo.net/entreprises",
+      "og_title": "Services aux entreprises — Monte-Cristo Patrimoine",
+      "og_description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale. Cabinet indépendant.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Valorisez votre patrimoine professionnel."
+      ],
+      "h2_count": 3,
+      "h2_texts": [
+        "Quatre domaines, une approche intégrée.",
+        "Un accompagnement adapté à chaque statut.",
+        "Échangeons sur votre société."
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 16,
+      "external_links": 2,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    },
+    {
+      "file": "index.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/",
+      "title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
+      "title_length": 51,
+      "description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission. Stratégie patrimoniale, fiscalité, investissements.",
+      "description_length": 156,
+      "canonical": "https://monte-cristo.net",
+      "og_title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
+      "og_description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Le conseil comme héritage. L'indépendance comme signature."
+      ],
+      "h2_count": 5,
+      "h2_texts": [
+        "Optimisez votre patrimoine",
+        "des CGP en France adoptent un modèle essentiellement basé sur les honoraires.\n          Nous en faisons partie.",
+        "Comprendre, décider, agir.",
+        "Valorisez votre patrimoine professionnel",
+        "Prenez rendez-vous en quelques clics."
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 14,
+      "external_links": 2,
+      "has_schema": true,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        }
+      ]
+    },
+    {
+      "file": "le-cabinet.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/le-cabinet",
+      "title": "Le cabinet — Monte-Cristo Patrimoine",
+      "title_length": 36,
+      "description": "Découvrez Monte-Cristo Patrimoine, cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Notre modèle : l'honoraire, pas la commission.",
+      "description_length": 147,
+      "canonical": "https://monte-cristo.net/le-cabinet",
+      "og_title": "Le cabinet — Monte-Cristo Patrimoine",
+      "og_description": "Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Transparence, indépendance, honoraires.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Le patrimoine se conseille. Il ne se vend pas."
+      ],
+      "h2_count": 6,
+      "h2_texts": [
+        "La rencontre entre les attentes des investisseurs et la vision des fondateurs.",
+        "Deux experts unis par la stratégie, le conseil… et la volonté d'agir autrement.",
+        "Un modèle unique basé sur l'honoraire de conseil.",
+        "Des maisons sélectionnées pour leur exigence.",
+        "Nos partenaires sélectionnés avec rigueur, en trois étapes."
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 20,
+      "external_links": 2,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    },
+    {
+      "file": "mentions-legales.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/mentions-legales",
+      "title": "Mentions légales — Monte-Cristo Patrimoine",
+      "title_length": 42,
+      "description": "Mentions légales de Monte-Cristo Patrimoine — SAS au capital de 1 000 €, RCS Gap, CIF ORIAS n° 25006472.",
+      "description_length": 104,
+      "canonical": "https://monte-cristo.net/mentions-legales",
+      "og_title": "Mentions légales — Monte-Cristo Patrimoine",
+      "og_description": "Mentions légales de Monte-Cristo Patrimoine — SAS au capital de 1 000 €, RCS Gap, CIF ORIAS n° 25006472.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Mentions légales"
+      ],
+      "h2_count": 10,
+      "h2_texts": [
+        "Coordonnées de l'éditeur",
+        "Directeur de publication",
+        "Hébergement",
+        "Accessibilité",
+        "Statuts réglementés"
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 15,
+      "external_links": 7,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    },
+    {
+      "file": "mockup-contenu.html",
+      "category": "travail",
+      "url": "https://monte-cristo.net/mockup-contenu",
+      "title": "Mockup contenu — Monte-Cristo Patrimoine",
+      "title_length": 40,
+      "description": "",
+      "description_length": 0,
+      "canonical": "",
+      "og_title": "",
+      "og_description": "",
+      "og_image": "",
+      "h1_count": 1,
+      "h1_texts": [
+        "🎨 Mockup contenu — Monte-Cristo Patrimoine"
+      ],
+      "h2_count": 5,
+      "h2_texts": [
+        "Tout ce que vous voulez savoir avant de nous appeler.",
+        "La confiance se construit dans la durée.",
+        "Conseil en commission vs conseil honoraires.",
+        "Gap, visioconférence, ou déplacement.",
+        "Des situations comme la vôtre."
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 0,
+      "external_links": 0,
+      "has_schema": false,
+      "in_sitemap": false,
+      "issues": []
+    },
+    {
+      "file": "particuliers.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/particuliers",
+      "title": "Services aux particuliers — Monte-Cristo Patrimoine",
+      "title_length": 51,
+      "description": "Conseil patrimonial sur-mesure pour les particuliers : diagnostic, optimisation fiscale, investissements, retraite, immobilier. Cabinet indépendant à Gap.",
+      "description_length": 154,
+      "canonical": "https://monte-cristo.net/particuliers",
+      "og_title": "Services aux particuliers — Monte-Cristo Patrimoine",
+      "og_description": "Conseil patrimonial sur-mesure : diagnostic, fiscalité, investissements, retraite, immobilier. Cabinet CGP indépendant.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Optimisez, structurez et transmettez votre patrimoine."
+      ],
+      "h2_count": 4,
+      "h2_texts": [
+        "Six expertises, un seul interlocuteur.",
+        "Quatre étapes, un accompagnement dans la durée.",
+        "Un conseil aligné avec vos intérêts.",
+        "Échangeons sur votre situation."
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 16,
+      "external_links": 2,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    },
+    {
+      "file": "politique-confidentialite.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/politique-confidentialite",
+      "title": "Politique de confidentialité — Monte-Cristo Patrimoine",
+      "title_length": 54,
+      "description": "Politique de confidentialité de Monte-Cristo Patrimoine — traitement des données personnelles, cookies, droits des utilisateurs.",
+      "description_length": 128,
+      "canonical": "https://monte-cristo.net/politique-confidentialite",
+      "og_title": "Politique de confidentialité — Monte-Cristo Patrimoine",
+      "og_description": "Politique de confidentialité de Monte-Cristo Patrimoine — traitement des données personnelles, cookies, droits des utilisateurs.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Politique de confidentialité"
+      ],
+      "h2_count": 8,
+      "h2_texts": [
+        "Responsable du traitement",
+        "Données collectées",
+        "Finalités et bases légales",
+        "Durée de conservation",
+        "Sous-traitants et transferts"
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 14,
+      "external_links": 6,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    },
+    {
+      "file": "simulateur-frais.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/simulateur-frais",
+      "title": "Simulateur de frais — Monte-Cristo Patrimoine",
+      "title_length": 45,
+      "description": "Sélectionnez vos produits, ajustez le capital et le rendement : voyez en temps réel l'écart entre les frais d'une structure bancaire et le plafond contractuel Monte-Cristo Patrimoine.",
+      "description_length": 183,
+      "canonical": "https://monte-cristo.net/simulateur-frais",
+      "og_title": "Simulateur de frais — Monte-Cristo Patrimoine",
+      "og_description": "Calculez en temps réel l",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Ce que vos frais vous coûtent vraiment"
+      ],
+      "h2_count": 3,
+      "h2_texts": [
+        "Vos paramètres",
+        "Quels produits détenez-vous ?",
+        "L'écart, en chiffres"
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 17,
+      "external_links": 1,
+      "has_schema": false,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "DESC_TOO_LONG",
+          "message": "Description trop longue (183 car.) — sera tronquée dans Google (max 160)"
+        },
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        },
+        {
+          "level": "amelioration",
+          "code": "SCHEMA_MISSING",
+          "message": "Aucune donnée structurée JSON-LD / Schema.org"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "critique": 0,
+    "important": 0,
+    "amelioration": 19,
+    "mineur": 0
+  }
+}

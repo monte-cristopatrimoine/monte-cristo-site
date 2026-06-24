@@ -1,0 +1,406 @@
+{
+  "generated_at": "24/06/2026 à 15:55",
+  "pages": [
+    {
+      "file": "article-cgp-independant.html",
+      "url": "https://monte-cristo.net/article-cgp-independant",
+      "meta": {
+        "title": "Qu'est-ce qu'un CGP indépendant ? — Monte-Cristo Patrimoine",
+        "description": "Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ? Définition, rémunération, périmètre. Moins de 5 % des CGP adoptent un modèle à honoraires.",
+        "canonical": "https://monte-cristo.net/article-cgp-independant",
+        "og_title": "Qu'est-ce qu'un CGP indépendant ? — Monte-Cristo Patrimoine",
+        "og_description": "Définition, rémunération, périmètre d'intervention. Pourquoi moins de 5 % des CGP adoptent un modèle basé sur les honoraires.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/article-cgp-independant",
+        "twitter_title": "Qu'est-ce qu'un CGP indépendant ? — Monte-Cristo Patrimoine",
+        "twitter_description": "Définition, rémunération, périmètre d'intervention. Pourquoi moins de 5 % des CGP adoptent un modèle basé sur les honoraires.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (59 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (156 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (59 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (125 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "article-frais-bancaires.html",
+      "url": "https://monte-cristo.net/article-frais-bancaires",
+      "meta": {
+        "title": "Frais cachés en gestion de patrimoine — Monte-Cristo Patrimoine",
+        "description": "187 000 € de manque à gagner en 15 ans. Frais cachés, rétrocessions, droits d'entrée : ce que votre banque vous coûte vraiment — simulateur de frais inclus.",
+        "canonical": "https://monte-cristo.net/article-frais-bancaires",
+        "og_title": "Ce que votre banque ne vous dira jamais — Monte-Cristo Patrimoine",
+        "og_description": "Frais de gestion, rétrocessions, droits d'entrée : ce que votre structure patrimoniale vous coûte vraiment sur 15 ans.",
+        "og_image": "https://monte-cristo.net/assets/og-frais-bancaires.jpg",
+        "og_url": "https://monte-cristo.net/article-frais-bancaires",
+        "twitter_title": "Ce que votre banque ne vous dira jamais — Monte-Cristo Patrimoine",
+        "twitter_description": "Frais de gestion, rétrocessions, droits d'entrée. Simulateur interactif inclus.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (63 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (156 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (65 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (118 car.)"
+        }
+      ]
+    },
+    {
+      "file": "blog.html",
+      "url": "https://monte-cristo.net/blog",
+      "meta": {
+        "title": "Blog — Monte-Cristo Patrimoine",
+        "description": "Articles d'analyse sur la gestion de patrimoine, la fiscalité et l'investissement. Par les conseillers de Monte-Cristo Patrimoine.",
+        "canonical": "https://monte-cristo.net/blog",
+        "og_title": "Blog — Monte-Cristo Patrimoine",
+        "og_description": "Articles d'analyse sur la gestion de patrimoine, la fiscalité et l'investissement.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/blog",
+        "twitter_title": "Blog — Monte-Cristo Patrimoine",
+        "twitter_description": "Articles d'analyse sur la gestion de patrimoine, la fiscalité et l'investissement.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (30 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (130 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (30 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (82 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "entreprises.html",
+      "url": "https://monte-cristo.net/entreprises",
+      "meta": {
+        "title": "Services aux entreprises — Monte-Cristo Patrimoine",
+        "description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale, trésorerie. Cabinet CGP indépendant à Gap.",
+        "canonical": "https://monte-cristo.net/entreprises",
+        "og_title": "Services aux entreprises — Monte-Cristo Patrimoine",
+        "og_description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale. Cabinet indépendant.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/entreprises",
+        "twitter_title": "Services aux entreprises — Monte-Cristo Patrimoine",
+        "twitter_description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale. Cabinet indépendant.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (50 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (137 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (50 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (115 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "index.html",
+      "url": "https://monte-cristo.net/",
+      "meta": {
+        "title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
+        "description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission. Stratégie patrimoniale, fiscalité, investissements.",
+        "canonical": "https://monte-cristo.net",
+        "og_title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
+        "og_description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net",
+        "twitter_title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
+        "twitter_description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (51 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (156 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (51 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (104 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "le-cabinet.html",
+      "url": "https://monte-cristo.net/le-cabinet",
+      "meta": {
+        "title": "Le cabinet — Monte-Cristo Patrimoine",
+        "description": "Découvrez Monte-Cristo Patrimoine, cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Notre modèle : l'honoraire, pas la commission.",
+        "canonical": "https://monte-cristo.net/le-cabinet",
+        "og_title": "Le cabinet — Monte-Cristo Patrimoine",
+        "og_description": "Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Transparence, indépendance, honoraires.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/le-cabinet",
+        "twitter_title": "Le cabinet — Monte-Cristo Patrimoine",
+        "twitter_description": "Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Transparence, indépendance, honoraires.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (36 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (147 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (36 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (105 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "mentions-legales.html",
+      "url": "https://monte-cristo.net/mentions-legales",
+      "meta": {
+        "title": "Mentions légales — Monte-Cristo Patrimoine",
+        "description": "Mentions légales de Monte-Cristo Patrimoine — SAS au capital de 1 000 €, RCS Gap, CIF ORIAS n° 25006472.",
+        "canonical": "https://monte-cristo.net/mentions-legales",
+        "og_title": "Mentions légales — Monte-Cristo Patrimoine",
+        "og_description": "Mentions légales de Monte-Cristo Patrimoine — SAS au capital de 1 000 €, RCS Gap, CIF ORIAS n° 25006472.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/mentions-legales",
+        "twitter_title": "Mentions légales — Monte-Cristo Patrimoine",
+        "twitter_description": "Mentions légales de Monte-Cristo Patrimoine — SAS au capital de 1 000 €, RCS Gap, CIF ORIAS n° 25006472.",
+        "twitter_card": "summary_large_image",
+        "robots": "noindex"
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (42 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (104 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (42 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (104 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "particuliers.html",
+      "url": "https://monte-cristo.net/particuliers",
+      "meta": {
+        "title": "Services aux particuliers — Monte-Cristo Patrimoine",
+        "description": "Conseil patrimonial sur-mesure pour les particuliers : diagnostic, optimisation fiscale, investissements, retraite, immobilier. Cabinet indépendant à Gap.",
+        "canonical": "https://monte-cristo.net/particuliers",
+        "og_title": "Services aux particuliers — Monte-Cristo Patrimoine",
+        "og_description": "Conseil patrimonial sur-mesure : diagnostic, fiscalité, investissements, retraite, immobilier. Cabinet CGP indépendant.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/particuliers",
+        "twitter_title": "Services aux particuliers — Monte-Cristo Patrimoine",
+        "twitter_description": "Conseil patrimonial sur-mesure : diagnostic, fiscalité, investissements, retraite, immobilier. Cabinet CGP indépendant.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (51 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (154 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (51 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (119 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "politique-confidentialite.html",
+      "url": "https://monte-cristo.net/politique-confidentialite",
+      "meta": {
+        "title": "Politique de confidentialité — Monte-Cristo Patrimoine",
+        "description": "Politique de confidentialité de Monte-Cristo Patrimoine — traitement des données personnelles, cookies, droits des utilisateurs.",
+        "canonical": "https://monte-cristo.net/politique-confidentialite",
+        "og_title": "Politique de confidentialité — Monte-Cristo Patrimoine",
+        "og_description": "Politique de confidentialité de Monte-Cristo Patrimoine — traitement des données personnelles, cookies, droits des utilisateurs.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/politique-confidentialite",
+        "twitter_title": "Politique de confidentialité — Monte-Cristo Patrimoine",
+        "twitter_description": "Politique de confidentialité de Monte-Cristo Patrimoine — traitement des données personnelles, cookies, droits des utilisateurs.",
+        "twitter_card": "summary_large_image",
+        "robots": "noindex"
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (54 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (128 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (54 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (128 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "simulateur-frais.html",
+      "url": "https://monte-cristo.net/simulateur-frais",
+      "meta": {
+        "title": "Simulateur de frais — Monte-Cristo Patrimoine",
+        "description": "Voyez en temps réel l'écart entre les frais bancaires et le plafond contractuel Monte-Cristo Patrimoine. Sélectionnez produits, capital et rendement.",
+        "canonical": "https://monte-cristo.net/simulateur-frais",
+        "og_title": "Simulateur de frais — Monte-Cristo Patrimoine",
+        "og_description": "Calculez en temps réel l'impact de vos frais de gestion sur votre capital à 15 ans. Outil interactif, données France Assureurs 2026.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/simulateur-frais",
+        "twitter_title": "",
+        "twitter_description": "",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (45 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (149 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (45 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (132 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        },
+        {
+          "level": "amelioration",
+          "message": "twitter:title absent (og:title présent)"
+        },
+        {
+          "level": "amelioration",
+          "message": "twitter:description absent (og:description présent)"
+        }
+      ]
+    }
+  ],
+  "duplicates": [],
+  "summary": {
+    "critique": 0,
+    "important": 0,
+    "amelioration": 11,
+    "duplicates": 0
+  }
+}
