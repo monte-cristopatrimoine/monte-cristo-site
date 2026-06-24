@@ -1,5 +1,5 @@
 # Rapport pré-publication — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 16:09*
+*Généré le 24/06/2026 à 16:13*
 
 ## ⚠️ PUBLIABLE — corrections mineures recommandées
 
