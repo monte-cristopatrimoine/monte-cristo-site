@@ -1,0 +1,25 @@
+name: Déploiement OVH
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Déploiement FTP vers OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: www/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/seo/**
+            README.md
+            mockup-contenu.html
