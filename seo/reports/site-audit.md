@@ -1,5 +1,5 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 18:59*
+*Généré le 24/06/2026 à 19:22*
 
 ## Résumé global
 
@@ -61,7 +61,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 1
-- **Liens** : 19 internes, 2 externes
+- **Liens** : 20 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 1 image(s) sans attribut alt — accessibilité et SEO images
@@ -76,7 +76,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 19 internes, 1 externes
+- **Liens** : 20 internes, 2 externes
 - ✅ Aucun problème détecté
 
 ### `blog.html`
@@ -89,7 +89,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 16 internes, 2 externes
+- **Liens** : 19 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -104,7 +104,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 19 internes, 2 externes
+- **Liens** : 20 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -118,7 +118,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 16 internes, 2 externes
+- **Liens** : 19 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -134,7 +134,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 16 internes, 2 externes
+- **Liens** : 18 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -163,7 +163,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
-- **Liens** : 15 internes, 7 externes
+- **Liens** : 18 internes, 7 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -178,7 +178,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 16 internes, 2 externes
+- **Liens** : 19 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -193,7 +193,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
-- **Liens** : 14 internes, 6 externes
+- **Liens** : 17 internes, 6 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -208,7 +208,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 17 internes, 1 externes
+- **Liens** : 18 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org

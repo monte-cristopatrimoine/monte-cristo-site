@@ -1,5 +1,5 @@
 {
-  "generated_at": "24/06/2026 à 18:59",
+  "generated_at": "24/06/2026 à 19:22",
   "site": "https://monte-cristo.net",
   "total_pages": 13,
   "pages": [
@@ -53,7 +53,7 @@
         "Comment choisir son CGP indépendant ?"
       ],
       "imgs_without_alt": 1,
-      "internal_links": 19,
+      "internal_links": 20,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -95,8 +95,8 @@
         "Trois questions à poser à votre conseiller dès aujourd'hui"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 19,
-      "external_links": 1,
+      "internal_links": 20,
+      "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
       "issues": []
@@ -122,7 +122,7 @@
         "Articles"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 16,
+      "internal_links": 19,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -164,7 +164,7 @@
         "Échangeons sur votre situation."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 19,
+      "internal_links": 20,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -199,7 +199,7 @@
         "Échangeons sur votre société."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 16,
+      "internal_links": 19,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -241,7 +241,7 @@
         "Prenez rendez-vous en quelques clics."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 16,
+      "internal_links": 18,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -320,7 +320,7 @@
         "Statuts réglementés"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 15,
+      "internal_links": 18,
       "external_links": 7,
       "has_schema": false,
       "in_sitemap": false,
@@ -392,7 +392,7 @@
         "Échangeons sur votre situation."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 16,
+      "internal_links": 19,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -434,7 +434,7 @@
         "Sous-traitants et transferts"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 14,
+      "internal_links": 17,
       "external_links": 6,
       "has_schema": false,
       "in_sitemap": false,
@@ -474,8 +474,8 @@
         "L'écart, en chiffres"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 17,
-      "external_links": 1,
+      "internal_links": 18,
+      "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
       "issues": [
