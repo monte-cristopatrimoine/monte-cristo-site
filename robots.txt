@@ -1,9 +1,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /wp-content/
-Disallow: /wp-includes/
-
 Sitemap: https://monte-cristo.net/sitemap.xml
