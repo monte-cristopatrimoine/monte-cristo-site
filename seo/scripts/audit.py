@@ -129,9 +129,15 @@ def audit_page(filepath, sitemap_urls):
     jsonld_blocks = extract_all(r'<script\s[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html)
     has_schema    = len(jsonld_blocks) > 0
 
+    # ── noindex
+    has_noindex = bool(re.search(
+        r'<meta\s[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex',
+        html, re.IGNORECASE
+    ))
+
     # ── Présence dans le sitemap
-    url_clean        = url.rstrip("/")
-    in_sitemap       = url_clean in sitemap_urls
+    url_clean  = url.rstrip("/")
+    in_sitemap = url_clean in sitemap_urls
 
     # ── Longueurs
     title_len = len(title)
@@ -168,8 +174,10 @@ def audit_page(filepath, sitemap_urls):
         elif h1_count > 1:
             add("important", "H1_MULTIPLE", f"{h1_count} balises H1 trouvées — une seule recommandée")
 
-        if not in_sitemap:
+        if not in_sitemap and not has_noindex:
             add("important", "NOT_IN_SITEMAP", "Page absente du sitemap.xml")
+        if in_sitemap and has_noindex:
+            add("important", "NOINDEX_IN_SITEMAP", "Page avec noindex présente dans le sitemap — incohérence")
 
         # Importants
         if not og_title:

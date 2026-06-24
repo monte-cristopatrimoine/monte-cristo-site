@@ -1,5 +1,5 @@
 {
-  "generated_at": "24/06/2026 à 15:51",
+  "generated_at": "24/06/2026 à 16:02",
   "site": "https://monte-cristo.net",
   "total_pages": 12,
   "pages": [
@@ -34,8 +34,8 @@
       "url": "https://monte-cristo.net/article-cgp-independant",
       "title": "Qu'est-ce qu'un CGP indépendant ? — Monte-Cristo Patrimoine",
       "title_length": 59,
-      "description": "Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ? Définition, rémunération, périmètre. Moins de 5 % des CGP adoptent un modèle basé sur les honoraires.",
-      "description_length": 167,
+      "description": "Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ? Définition, rémunération, périmètre. Moins de 5 % des CGP adoptent un modèle à honoraires.",
+      "description_length": 156,
       "canonical": "https://monte-cristo.net/article-cgp-independant",
       "og_title": "Qu",
       "og_description": "Définition, rémunération, périmètre d",
@@ -58,11 +58,6 @@
       "has_schema": true,
       "in_sitemap": true,
       "issues": [
-        {
-          "level": "amelioration",
-          "code": "DESC_TOO_LONG",
-          "message": "Description trop longue (167 car.) — sera tronquée dans Google (max 160)"
-        },
         {
           "level": "amelioration",
           "code": "OG_IMAGE_GENERIC",
@@ -291,7 +286,7 @@
       "internal_links": 15,
       "external_links": 7,
       "has_schema": false,
-      "in_sitemap": true,
+      "in_sitemap": false,
       "issues": [
         {
           "level": "amelioration",
@@ -405,7 +400,7 @@
       "internal_links": 14,
       "external_links": 6,
       "has_schema": false,
-      "in_sitemap": true,
+      "in_sitemap": false,
       "issues": [
         {
           "level": "amelioration",
@@ -425,8 +420,8 @@
       "url": "https://monte-cristo.net/simulateur-frais",
       "title": "Simulateur de frais — Monte-Cristo Patrimoine",
       "title_length": 45,
-      "description": "Sélectionnez vos produits, ajustez le capital et le rendement : voyez en temps réel l'écart entre les frais d'une structure bancaire et le plafond contractuel Monte-Cristo Patrimoine.",
-      "description_length": 183,
+      "description": "Voyez en temps réel l'écart entre les frais bancaires et le plafond contractuel Monte-Cristo Patrimoine. Sélectionnez produits, capital et rendement.",
+      "description_length": 149,
       "canonical": "https://monte-cristo.net/simulateur-frais",
       "og_title": "Simulateur de frais — Monte-Cristo Patrimoine",
       "og_description": "Calculez en temps réel l",
@@ -449,11 +444,6 @@
       "issues": [
         {
           "level": "amelioration",
-          "code": "DESC_TOO_LONG",
-          "message": "Description trop longue (183 car.) — sera tronquée dans Google (max 160)"
-        },
-        {
-          "level": "amelioration",
           "code": "OG_IMAGE_GENERIC",
           "message": "og:image générique (même image sur toutes les pages)"
         },
@@ -468,7 +458,7 @@
   "summary": {
     "critique": 0,
     "important": 0,
-    "amelioration": 19,
+    "amelioration": 17,
     "mineur": 0
   }
 }

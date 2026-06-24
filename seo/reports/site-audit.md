@@ -1,5 +1,5 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 15:51*
+*Généré le 24/06/2026 à 16:02*
 
 ## Résumé global
 
@@ -10,7 +10,7 @@
 | Pages de travail | **1** |
 | Problèmes critiques 🔴 | **0** |
 | Problèmes importants 🟠 | **0** |
-| Améliorations utiles 🟡 | **19** |
+| Améliorations utiles 🟡 | **17** |
 | Mineurs ⚪ | **0** |
 | Pages sans problème | **1** |
 
@@ -29,7 +29,6 @@ Aucun problème important.
 ---
 ## 🟡 Améliorations utiles
 
-- **article-cgp-independant.html** — Description trop longue (167 car.) — sera tronquée dans Google (max 160)
 - **article-cgp-independant.html** — og:image générique (même image sur toutes les pages)
 - **article-cgp-independant.html** — 1 image(s) sans attribut alt — accessibilité et SEO images
 - **blog.html** — og:image générique (même image sur toutes les pages)
@@ -45,7 +44,6 @@ Aucun problème important.
 - **particuliers.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **politique-confidentialite.html** — og:image générique (même image sur toutes les pages)
 - **politique-confidentialite.html** — Aucune donnée structurée JSON-LD / Schema.org
-- **simulateur-frais.html** — Description trop longue (183 car.) — sera tronquée dans Google (max 160)
 - **simulateur-frais.html** — og:image générique (même image sur toutes les pages)
 - **simulateur-frais.html** — Aucune donnée structurée JSON-LD / Schema.org
 
@@ -55,7 +53,7 @@ Aucun problème important.
 ### `article-cgp-independant.html`
 - **URL** : https://monte-cristo.net/article-cgp-independant
 - **Title** : Qu'est-ce qu'un CGP indépendant ? — Monte-Cristo Patrimoine *(longueur : 59)*
-- **Description** : Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ? Définition, ré… *(longueur : 167)*
+- **Description** : Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ? Définition, ré… *(longueur : 156)*
 - **Canonical** : https://monte-cristo.net/article-cgp-independant
 - **H1** (1) : Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant ?
 - **H2** (5) : Conseiller en gestion de patrimoine indépendant : définition et rôle, Comment se rémunère un CGP indépendant ?, Que fait concrètement un CGP indépendant ?
@@ -64,7 +62,6 @@ Aucun problème important.
 - **Images sans alt** : 1
 - **Liens** : 16 internes, 2 externes
 - **Problèmes :**
-  - 🟡 Description trop longue (167 car.) — sera tronquée dans Google (max 160)
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 1 image(s) sans attribut alt — accessibilité et SEO images
 
@@ -149,7 +146,7 @@ Aucun problème important.
 - **H1** (1) : Mentions légales
 - **H2** (10) : Coordonnées de l'éditeur, Directeur de publication, Hébergement
 - **Schema.org** : Non
-- **Dans sitemap** : ✅ Oui
+- **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
 - **Liens** : 15 internes, 7 externes
 - **Problèmes :**
@@ -179,7 +176,7 @@ Aucun problème important.
 - **H1** (1) : Politique de confidentialité
 - **H2** (8) : Responsable du traitement, Données collectées, Finalités et bases légales
 - **Schema.org** : Non
-- **Dans sitemap** : ✅ Oui
+- **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
 - **Liens** : 14 internes, 6 externes
 - **Problèmes :**
@@ -189,7 +186,7 @@ Aucun problème important.
 ### `simulateur-frais.html`
 - **URL** : https://monte-cristo.net/simulateur-frais
 - **Title** : Simulateur de frais — Monte-Cristo Patrimoine *(longueur : 45)*
-- **Description** : Sélectionnez vos produits, ajustez le capital et le rendement : voyez en temps r… *(longueur : 183)*
+- **Description** : Voyez en temps réel l'écart entre les frais bancaires et le plafond contractuel … *(longueur : 149)*
 - **Canonical** : https://monte-cristo.net/simulateur-frais
 - **H1** (1) : Ce que vos frais vous coûtent vraiment
 - **H2** (3) : Vos paramètres, Quels produits détenez-vous ?, L'écart, en chiffres
@@ -198,7 +195,6 @@ Aucun problème important.
 - **Images sans alt** : 0
 - **Liens** : 17 internes, 1 externes
 - **Problèmes :**
-  - 🟡 Description trop longue (183 car.) — sera tronquée dans Google (max 160)
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
@@ -231,10 +227,14 @@ Aucun problème important.
 ---
 ## Recommandations — ordre d'exécution
 
-**1. Ajouter `<meta name='robots' content='noindex'>` sur les pages de travail** 🟠
+**1. Ajouter les pages manquantes au sitemap.xml** 🟠
+   - `mentions-legales.html`
+   - `politique-confidentialite.html`
+
+**2. Ajouter `<meta name='robots' content='noindex'>` sur les pages de travail** 🟠
    - `mockup-contenu.html`
 
-**2. Ajouter des données structurées JSON-LD** 🟡
+**3. Ajouter des données structurées JSON-LD** 🟡
    - `blog.html`
    - `entreprises.html`
    - `le-cabinet.html`
@@ -243,7 +243,7 @@ Aucun problème important.
    - `politique-confidentialite.html`
    - `simulateur-frais.html`
 
-**3. Ajouter des attributs `alt` aux images** 🟡
+**4. Ajouter des attributs `alt` aux images** 🟡
    - `article-cgp-independant.html`
 
 ---
