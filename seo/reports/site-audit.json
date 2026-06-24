@@ -1,7 +1,7 @@
 {
-  "generated_at": "24/06/2026 à 16:13",
+  "generated_at": "24/06/2026 à 18:59",
   "site": "https://monte-cristo.net",
-  "total_pages": 12,
+  "total_pages": 13,
   "pages": [
     {
       "file": "404.html",
@@ -53,7 +53,7 @@
         "Comment choisir son CGP indépendant ?"
       ],
       "imgs_without_alt": 1,
-      "internal_links": 16,
+      "internal_links": 19,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -140,6 +140,43 @@
       ]
     },
     {
+      "file": "conseiller-gestion-patrimoine-independant.html",
+      "category": "production",
+      "url": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant",
+      "title": "Conseiller en gestion de patrimoine indépendant | Monte-Cristo",
+      "title_length": 62,
+      "description": "Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.",
+      "description_length": 131,
+      "canonical": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant",
+      "og_title": "Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine",
+      "og_description": "Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.",
+      "og_image": "https://monte-cristo.net/assets/og-image.png",
+      "h1_count": 1,
+      "h1_texts": [
+        "Conseiller en gestion de patrimoine indépendant."
+      ],
+      "h2_count": 6,
+      "h2_texts": [
+        "Les trois caractéristiques d'un conseil indépendant",
+        "Ce que ça change concrètement",
+        "Monte-Cristo Patrimoine",
+        "7 questions à poser à votre futur conseiller",
+        "Échangeons sur votre situation."
+      ],
+      "imgs_without_alt": 0,
+      "internal_links": 19,
+      "external_links": 2,
+      "has_schema": true,
+      "in_sitemap": true,
+      "issues": [
+        {
+          "level": "amelioration",
+          "code": "OG_IMAGE_GENERIC",
+          "message": "og:image générique (même image sur toutes les pages)"
+        }
+      ]
+    },
+    {
       "file": "entreprises.html",
       "category": "production",
       "url": "https://monte-cristo.net/entreprises",
@@ -204,7 +241,7 @@
         "Prenez rendez-vous en quelques clics."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 14,
+      "internal_links": 16,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -241,7 +278,7 @@
         "Nos partenaires sélectionnés avec rigueur, en trois étapes."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 20,
+      "internal_links": 22,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -458,7 +495,7 @@
   "summary": {
     "critique": 0,
     "important": 0,
-    "amelioration": 17,
+    "amelioration": 18,
     "mineur": 0
   }
 }

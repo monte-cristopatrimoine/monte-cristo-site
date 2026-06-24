@@ -1,14 +1,14 @@
 # Contrôle des métadonnées — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 16:13*
+*Généré le 24/06/2026 à 18:59*
 
 ## Résumé
 
 | | |
 |---|---|
-| Pages analysées | **10** |
+| Pages analysées | **11** |
 | Problèmes critiques 🔴 | **0** |
 | Problèmes importants 🟠 | **0** |
-| Améliorations 🟡 | **11** |
+| Améliorations 🟡 | **12** |
 | Doublons détectés | **0** |
 
 ---
@@ -31,6 +31,7 @@
 
 - **article-cgp-independant.html** — title identique à og:title — différencier pour enrichir le partage social
 - **blog.html** — title identique à og:title — différencier pour enrichir le partage social
+- **conseiller-gestion-patrimoine-independant.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **entreprises.html** — title identique à og:title — différencier pour enrichir le partage social
 - **index.html** — title identique à og:title — différencier pour enrichir le partage social
 - **le-cabinet.html** — title identique à og:title — différencier pour enrichir le partage social
@@ -93,6 +94,23 @@
 
 **Problèmes :**
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
+
+### `conseiller-gestion-patrimoine-independant.html`
+| Champ | Valeur | Long. |
+|-------|--------|-------|
+| `title` | Conseiller en gestion de patrimoine indépendant | Monte-Cris… | 62 |
+| `description` | Cabinet CGP indépendant basé à Gap, accessible partout en Fr… | 131 |
+| `canonical` | https://monte-cristo.net/conseiller-gestion-patrimoine-indep… | 66 |
+| `og:title` | Conseiller en gestion de patrimoine indépendant | Monte-Cris… | 73 |
+| `og:description` | Cabinet CGP indépendant basé à Gap, accessible partout en Fr… | 131 |
+| `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
+| `twitter:title` | Conseiller en gestion de patrimoine indépendant | Monte-Cris… | 73 |
+| `twitter:description` | Cabinet CGP indépendant basé à Gap, accessible partout en Fr… | 131 |
+| `twitter:card` | summary_large_image | 19 |
+| `robots` | *(absent)* | — |
+
+**Problèmes :**
+- 🟡 title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 
 ### `entreprises.html`
 | Champ | Valeur | Long. |

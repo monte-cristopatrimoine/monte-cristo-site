@@ -1,5 +1,5 @@
 {
-  "generated_at": "24/06/2026 à 16:13",
+  "generated_at": "24/06/2026 à 18:59",
   "pages": [
     {
       "file": "article-cgp-independant.html",
@@ -111,6 +111,45 @@
         {
           "level": "amelioration",
           "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "conseiller-gestion-patrimoine-independant.html",
+      "url": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant",
+      "meta": {
+        "title": "Conseiller en gestion de patrimoine indépendant | Monte-Cristo",
+        "description": "Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.",
+        "canonical": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant",
+        "og_title": "Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine",
+        "og_description": "Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant",
+        "twitter_title": "Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine",
+        "twitter_description": "Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (62 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title ne contient pas le nom de marque « Monte-Cristo Patrimoine »"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (131 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (73 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (131 car.)"
         }
       ]
     },
@@ -400,7 +439,7 @@
   "summary": {
     "critique": 0,
     "important": 0,
-    "amelioration": 11,
+    "amelioration": 12,
     "duplicates": 0
   }
 }

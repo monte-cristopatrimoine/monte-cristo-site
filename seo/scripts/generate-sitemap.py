@@ -35,6 +35,7 @@ PRIORITIES = {
     "particuliers.html":           ("0.9", "monthly"),
     "entreprises.html":            ("0.9", "monthly"),
     "blog.html":                   ("0.8", "weekly"),
+    "conseiller-gestion-patrimoine-independant.html": ("0.8", "monthly"),
     "article-cgp-independant.html":("0.7", "monthly"),
     "article-frais-bancaires.html":("0.7", "monthly"),
     "simulateur-frais.html":       ("0.6", "monthly"),

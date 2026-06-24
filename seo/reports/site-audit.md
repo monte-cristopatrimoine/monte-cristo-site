@@ -1,16 +1,16 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 16:13*
+*Généré le 24/06/2026 à 18:59*
 
 ## Résumé global
 
 | | |
 |---|---|
-| Pages de production analysées | **10** |
+| Pages de production analysées | **11** |
 | Pages techniques | **1** |
 | Pages de travail | **1** |
 | Problèmes critiques 🔴 | **0** |
 | Problèmes importants 🟠 | **0** |
-| Améliorations utiles 🟡 | **17** |
+| Améliorations utiles 🟡 | **18** |
 | Mineurs ⚪ | **0** |
 | Pages sans problème | **1** |
 
@@ -33,6 +33,7 @@ Aucun problème important.
 - **article-cgp-independant.html** — 1 image(s) sans attribut alt — accessibilité et SEO images
 - **blog.html** — og:image générique (même image sur toutes les pages)
 - **blog.html** — Aucune donnée structurée JSON-LD / Schema.org
+- **conseiller-gestion-patrimoine-independant.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **index.html** — og:image générique (même image sur toutes les pages)
@@ -60,7 +61,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 1
-- **Liens** : 16 internes, 2 externes
+- **Liens** : 19 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 1 image(s) sans attribut alt — accessibilité et SEO images
@@ -93,6 +94,20 @@ Aucun problème important.
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
+### `conseiller-gestion-patrimoine-independant.html`
+- **URL** : https://monte-cristo.net/conseiller-gestion-patrimoine-independant
+- **Title** : Conseiller en gestion de patrimoine indépendant | Monte-Cristo *(longueur : 62)*
+- **Description** : Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires tra… *(longueur : 131)*
+- **Canonical** : https://monte-cristo.net/conseiller-gestion-patrimoine-independant
+- **H1** (1) : Conseiller en gestion de patrimoine indépendant.
+- **H2** (6) : Les trois caractéristiques d'un conseil indépendant, Ce que ça change concrètement, Monte-Cristo Patrimoine
+- **Schema.org** : Oui
+- **Dans sitemap** : ✅ Oui
+- **Images sans alt** : 0
+- **Liens** : 19 internes, 2 externes
+- **Problèmes :**
+  - 🟡 og:image générique (même image sur toutes les pages)
+
 ### `entreprises.html`
 - **URL** : https://monte-cristo.net/entreprises
 - **Title** : Services aux entreprises — Monte-Cristo Patrimoine *(longueur : 50)*
@@ -119,7 +134,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 14 internes, 2 externes
+- **Liens** : 16 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -133,7 +148,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 20 internes, 2 externes
+- **Liens** : 22 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
