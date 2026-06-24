@@ -111,7 +111,7 @@
       "cluster": "frais",
       "has_footer": true,
       "in_main_nav": false,
-      "in_footer_nav": false,
+      "in_footer_nav": true,
       "status": "active"
     },
     {
