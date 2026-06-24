@@ -101,6 +101,20 @@
       "status": "active"
     },
     {
+      "file": "honoraires-frais-caches.html",
+      "url": "/honoraires-frais-caches",
+      "type": "pilier",
+      "indexable": true,
+      "sitemap": true,
+      "priority": 0.9,
+      "changefreq": "monthly",
+      "cluster": "frais",
+      "has_footer": true,
+      "in_main_nav": false,
+      "in_footer_nav": false,
+      "status": "active"
+    },
+    {
       "file": "article-frais-bancaires.html",
       "url": "/article-frais-bancaires",
       "type": "article",
