@@ -1,0 +1,116 @@
+/* Creato Display — Monte-Cristo Patrimoine corporate font.
+   14 files: Thin (100), Light (300), Regular (400), Medium (500),
+   Bold (700), ExtraBold (800), Black (900), each with matching italic. */
+
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-Thin.woff2") format("woff2"),
+       url("./CreatoDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-ThinItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-Light.woff2") format("woff2"),
+       url("./CreatoDisplay-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-LightItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-Regular.woff2") format("woff2"),
+       url("./CreatoDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-RegularItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-Medium.woff2") format("woff2"),
+       url("./CreatoDisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-MediumItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-Bold.woff2") format("woff2"),
+       url("./CreatoDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-BoldItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-ExtraBold.woff2") format("woff2"),
+       url("./CreatoDisplay-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-ExtraBoldItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-Black.woff2") format("woff2"),
+       url("./CreatoDisplay-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("./CreatoDisplay-BlackItalic.woff2") format("woff2"),
+       url("./CreatoDisplay-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}

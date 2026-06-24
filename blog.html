@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Blog — Monte-Cristo Patrimoine</title>
+  <link rel="preload" as="script" href="/analytics.js">
+<link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <!-- SEO -->
+  <meta name="description" content="Articles d&#39;analyse sur la gestion de patrimoine, la fiscalité et l&#39;investissement. Par les conseillers de Monte-Cristo Patrimoine.">
+  <link rel="canonical" href="https://monte-cristo.net/blog"/>
+  <meta property="og:title" content="Blog — Monte-Cristo Patrimoine"/>
+  <meta property="og:description" content="Articles d'analyse sur la gestion de patrimoine, la fiscalité et l'investissement."/>
+  <meta property="og:url" content="https://monte-cristo.net/blog"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Monte-Cristo Patrimoine">
+  <meta name="twitter:description" content="Articles d&#39;analyse sur la gestion de patrimoine, la fiscalité et l&#39;investissement.">
+  <meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
+<style>
+/* Creato Display — Monte-Cristo Patrimoine corporate font.
+   14 files: Thin (100), Light (300), Regular (400), Medium (500),
+   Bold (700), ExtraBold (800), Black (900), each with matching italic. */
+
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Thin.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-ThinItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Light.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-LightItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Regular.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-RegularItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-RegularItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Medium.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-MediumItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Bold.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-BoldItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-ExtraBold.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-ExtraBoldItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-Black.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Creato Display";
+  src: url("/fonts/CreatoDisplay-BlackItalic.woff2") format("woff2"),
+       url("/fonts/CreatoDisplay-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+:root{--mcp-green:#346848;--mcp-green-700:#244F36;--mcp-green-deep:#1B6A45;--mcp-green-300:#97B5A0;--mcp-green-100:#DDE7DF;--mcp-orange:#E67E22;--mcp-orange-700:#B66518;--mcp-orange-100:#F8DCC0;--mcp-beige:#FDFAF3;--mcp-beige-200:#F4EFE0;--mcp-beige-300:#E8E1CC;--mcp-ink:#16110A;--mcp-ink-700:#3A322A;--mcp-ink-500:#6B6359;--mcp-ink-300:#B7AE9D;--mcp-white:#FFFFFF;--mcp-black:#000000;--bg:var(--mcp-beige);--bg-elevated:var(--mcp-beige-200);--bg-inverse:var(--mcp-green);--bg-accent:var(--mcp-orange);--fg:var(--mcp-ink);--fg-muted:var(--mcp-ink-500);--fg-subtle:var(--mcp-ink-300);--fg-inverse:var(--mcp-beige);--fg-brand:var(--mcp-green);--fg-accent:var(--mcp-orange);--border:var(--mcp-beige-300);--border-strong:var(--mcp-green);--link:var(--mcp-green);--link-hover:var(--mcp-green-deep);--font-sans:"Creato Display","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--font-display:"Creato Display","Inter",system-ui,sans-serif;--fs-12:0.75rem;--fs-14:0.875rem;--fs-16:1rem;--fs-18:1.125rem;--fs-20:1.25rem;--fs-24:1.5rem;--fs-30:1.875rem;--fs-36:2.25rem;--fs-48:3rem;--fs-64:4rem;--fs-80:5rem;--fw-light:300;--fw-regular:400;--fw-medium:500;--fw-bold:700;--fw-extra:800;--lh-tight:1.05;--lh-snug:1.15;--lh-normal:1.35;--lh-relaxed:1.55;--tracking-tight:-0.02em;--tracking-snug:-0.005em;--tracking-normal:0em;--tracking-wide:0.04em;--tracking-eyebrow:0.14em;--sp-1:0.25rem;--sp-2:0.5rem;--sp-3:0.75rem;--sp-4:1rem;--sp-5:1.25rem;--sp-6:1.5rem;--sp-8:2rem;--sp-10:2.5rem;--sp-12:3rem;--sp-16:4rem;--sp-20:5rem;--sp-24:6rem;--sp-32:8rem;--radius-xs:2px;--radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-xl:20px;--radius-pill:999px;--shadow-sm:0 1px 2px rgba(22,17,10,0.06);--shadow-md:0 4px 14px rgba(22,17,10,0.08);--shadow-lg:0 18px 40px -12px rgba(22,17,10,0.18);--shadow-inset-line:inset 0 -1px 0 var(--border);--ease-out:cubic-bezier(0.22,1,0.36,1);--ease-in-out:cubic-bezier(0.65,0,0.35,1);--dur-fast:120ms;--dur-base:220ms;--dur-slow:420ms}html{color-scheme:light}body{background:var(--bg);color:var(--fg);font-family:var(--font-sans);font-size:var(--fs-16);font-weight:var(--fw-regular);line-height:var(--lh-relaxed);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}h1,.h1{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(2.25rem,4.5vw,var(--fs-64));line-height:var(--lh-tight);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-6);text-wrap:balance}h2,.h2{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.75rem,3vw,var(--fs-48));line-height:var(--lh-snug);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-5);text-wrap:balance}h3,.h3{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-30);line-height:var(--lh-snug);color:var(--fg-brand);margin:0 0 var(--sp-4)}h4,.h4{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-20);line-height:var(--lh-normal);color:var(--fg);margin:0 0 var(--sp-3)}.eyebrow{font-size:var(--fs-12);font-weight:var(--fw-medium);letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--fg-brand)}.lead{font-size:var(--fs-20);font-weight:var(--fw-light);line-height:var(--lh-relaxed);color:var(--fg-muted)}p{margin:0 0 var(--sp-4);text-wrap:pretty}small,.small{font-size:var(--fs-14);color:var(--fg-muted)}.legal{font-size:var(--fs-12);line-height:var(--lh-normal);color:var(--fg-muted);font-style:italic}a{color:var(--link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease-out)}a:hover{color:var(--link-hover)}.tagline{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.5rem,2.4vw,var(--fs-36));line-height:1.2;letter-spacing:var(--tracking-tight);color:var(--fg-brand)}.tagline em{font-style:italic;font-weight:var(--fw-regular)}
+  /* ── Skip link accessibilité ── */
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+  .skip-link:focus { position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto;
+    background: var(--mcp-green); color: #FDFAF3; padding: 10px 22px; border-radius: 6px;
+    font-weight: 600; font-size: 15px; text-decoration: none; outline: 3px solid var(--mcp-orange); }
+  body { margin: 0; }
+  .page { min-height: 100vh; }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 96px; }
+
+  /* ============ HEADER ============ */
+  .header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(254, 250, 242, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--mcp-beige-300);
+  }
+  .header-inner {
+    max-width: 1240px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 4px 40px;
+  }
+  .logo { display: flex; align-items: center; height: 72px; overflow: hidden; }
+  .logo img { height: 128px; display: block; }
+  .nav { display: flex; gap: 36px; }
+  .nav a {
+    text-decoration: none; color: var(--mcp-ink); font-size: 15px;
+    font-weight: 400; transition: color var(--dur-fast) var(--ease-out);
+  }
+  .nav a:hover { color: var(--mcp-green); }
+  .nav a.active { color: var(--mcp-green); font-weight: 500; }
+
+  /* ============ BUTTON ============ */
+  .btn {
+    font-family: var(--font-sans);
+    font-weight: 500; font-size: 15px;
+    border-radius: var(--radius-pill);
+    padding: 12px 26px;
+    border: 1px solid transparent;
+    cursor: pointer; display: inline-flex; align-items: center; gap: 10px;
+    transition: all var(--dur-base) var(--ease-out);
+    text-decoration: none;
+  }
+  .btn-accent { background: var(--mcp-orange); color: #fff; }
+  .btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all 0.2s; }
+  .nav-rdv { display: none; }
+
+  /* ============ HERO ============ */
+  .blog-hero {
+    background: var(--mcp-beige);
+    padding: 64px 40px 56px;
+    border-bottom: 1px solid var(--mcp-beige-300);
+  }
+  .blog-hero-inner { max-width: 1080px; margin: 0 auto; }
+  .breadcrumb {
+    font-size: 13px; color: var(--mcp-ink-500);
+    display: flex; gap: 10px; align-items: center;
+    margin-bottom: 28px;
+  }
+  .breadcrumb a { color: var(--mcp-green); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { opacity: 0.4; }
+  .eyebrow {
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--mcp-green);
+  }
+  .blog-hero h1 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 64px; line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--mcp-green);
+    margin: 14px 0 16px;
+    text-wrap: balance;
+  }
+  .blog-hero h1 em { font-style: italic; font-weight: 400; }
+  .blog-hero p {
+    font-size: 18px; line-height: 1.55;
+    color: var(--mcp-ink-500);
+    margin: 0; max-width: 640px;
+  }
+
+  /* ============ FILTERS ============ */
+  .filters-bar {
+    background: var(--mcp-beige);
+    padding: 32px 40px;
+    border-bottom: 1px solid var(--mcp-beige-300);
+    position: sticky; top: 79px; z-index: 40;
+    background: rgba(254, 250, 242, 0.92);
+    backdrop-filter: blur(12px);
+  }
+  .filters-inner {
+    max-width: 1080px; margin: 0 auto;
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  }
+  .filter-label {
+    font-size: 11px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--mcp-ink-500);
+    margin-right: 8px;
+  }
+  .filter-chip {
+    font-family: var(--font-sans);
+    font-size: 13px; font-weight: 500;
+    color: var(--mcp-ink-500);
+    background: transparent;
+    border: 1px solid var(--mcp-beige-300);
+    border-radius: var(--radius-pill);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all var(--dur-fast) var(--ease-out);
+  }
+  .filter-chip:hover {
+    border-color: var(--mcp-green);
+    color: var(--mcp-green);
+  }
+  .filter-chip.active {
+    background: var(--mcp-green);
+    color: var(--mcp-beige);
+    border-color: var(--mcp-green);
+  }
+
+  /* ============ ARTICLES GRID ============ */
+  .articles {
+    background: var(--mcp-beige);
+    padding: 64px 40px 96px;
+  }
+  .articles-inner {
+    max-width: 1080px; margin: 0 auto;
+  }
+  .articles-count {
+    font-size: 14px;
+    color: var(--mcp-ink-500);
+    margin-bottom: 28px;
+  }
+  .articles-count strong { color: var(--mcp-ink); font-weight: 500; }
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .article-card {
+    background: var(--mcp-beige-200);
+    border: 1px solid var(--mcp-beige-300);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    text-decoration: none; color: inherit;
+    transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+  }
+  .article-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px -14px rgba(22,17,10,0.12);
+  }
+
+  .article-card .cover {
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, #97B5A0 0%, #346848 60%, #1B6A45 100%);
+    position: relative; display: flex; align-items: flex-end;
+    padding: 20px;
+    color: var(--mcp-beige);
+  }
+  /* Topic-tinted variants — different gradients to differentiate at a glance */
+  .article-card[data-topic="investissement"] .cover {
+    background: linear-gradient(135deg, #97B5A0 0%, #346848 60%, #1B6A45 100%);
+  }
+  .article-card[data-topic="fiscalite"] .cover {
+    background: linear-gradient(135deg, #F0C088 0%, #D88945 60%, #B16323 100%);
+  }
+  .article-card[data-topic="retraite"] .cover {
+    background: linear-gradient(135deg, #9CB7A8 0%, #4A7E6A 60%, #2A5E4E 100%);
+  }
+  .article-card[data-topic="transmission"] .cover {
+    background: linear-gradient(135deg, #B5A89C 0%, #7E6A55 60%, #5E4E3F 100%);
+  }
+  .article-card[data-topic="conseil"] .cover {
+    background: linear-gradient(135deg, #1a1814 0%, #244F36 55%, #346848 100%);
+  }
+  .article-card[data-topic="conseil"] .badge { color: var(--mcp-ink-500); }
+  .article-card[data-topic="immobilier"] .cover {
+    background: linear-gradient(135deg, #C2A88A 0%, #8B6F4F 60%, #6B5238 100%);
+  }
+  .article-card .cover::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(circle at 70% 100%, rgba(0,0,0,0.18), transparent 60%);
+  }
+  .article-card .badge {
+    position: absolute; top: 16px; left: 16px;
+    background: rgba(254,250,242,0.95);
+    color: var(--mcp-green);
+    font-size: 10px; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 12px; border-radius: var(--radius-pill);
+    z-index: 1;
+  }
+  .article-card[data-topic="fiscalite"] .badge { color: #B16323; }
+  .article-card[data-topic="retraite"] .badge { color: #2A5E4E; }
+  .article-card[data-topic="transmission"] .badge { color: #5E4E3F; }
+  .article-card[data-topic="immobilier"] .badge { color: #6B5238; }
+  .article-card .cover .meta {
+    position: relative; z-index: 1;
+    font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    opacity: 0.92;
+  }
+  .article-card.soon .cover { filter: grayscale(0.4); opacity: 0.85; }
+  .article-card.soon .cover .meta::before { content: "À paraître · "; opacity: 0.85; }
+
+  .article-card .body { padding: 24px 24px 26px; flex: 1; display: flex; flex-direction: column; }
+  .article-card h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 22px; line-height: 1.22;
+    letter-spacing: -0.015em;
+    color: var(--mcp-green);
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .article-card p {
+    font-size: 14px; line-height: 1.55;
+    color: var(--mcp-ink-500);
+    margin: 0 0 18px;
+    flex: 1;
+  }
+  .article-card .read-more {
+    font-size: 13px; font-weight: 500;
+    color: var(--mcp-green);
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: auto;
+  }
+  .article-card .read-more::after {
+    content: "→"; transition: transform var(--dur-base) var(--ease-out);
+  }
+  .article-card:hover .read-more::after { transform: translateX(4px); }
+  .article-card.soon .read-more { color: var(--mcp-ink-500); font-style: italic; }
+  .article-card.soon .read-more::after { content: ""; }
+  .article-card.soon { pointer-events: none; cursor: default; }
+
+  /* Hidden state for filters */
+  .article-card.hidden { display: none; }
+
+  .empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--mcp-ink-500);
+    font-size: 16px;
+    border: 1px dashed var(--mcp-beige-300);
+    border-radius: 16px;
+    display: none;
+  }
+  .empty-state.show { display: block; }
+
+  /* ============ NEWSLETTER FOOTER STRIPE ============ */
+  .newsletter {
+    background: var(--mcp-green); color: var(--mcp-beige);
+    padding: 80px 40px;
+  }
+  .newsletter-inner {
+    max-width: 760px; margin: 0 auto;
+    text-align: center;
+  }
+  .newsletter h2 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 44px; line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--mcp-beige);
+    margin: 14px 0 14px;
+    text-wrap: balance;
+  }
+  .newsletter h2 em { font-style: italic; font-weight: 400; }
+  .newsletter p {
+    font-size: 17px; line-height: 1.55;
+    opacity: 0.85;
+    margin: 0 0 32px;
+    max-width: 520px;
+    margin-left: auto; margin-right: auto;
+  }
+  .newsletter form {
+    display: flex; gap: 8px;
+    max-width: 480px; margin: 0 auto;
+  }
+  .newsletter input {
+    flex: 1; min-width: 0;
+    background: rgba(254,250,242,0.12);
+    color: var(--mcp-beige);
+    border: 1px solid rgba(254,250,242,0.32);
+    padding: 13px 18px; border-radius: var(--radius-pill);
+    font-family: var(--font-sans); font-size: 15px;
+    outline: none;
+  }
+  .newsletter input::placeholder { color: rgba(254,250,242,0.5); }
+  .newsletter input:focus { border-color: var(--mcp-beige); background: rgba(254,250,242,0.18); }
+  .newsletter button {
+    background: var(--mcp-beige); color: var(--mcp-green);
+    border: 0; border-radius: var(--radius-pill);
+    padding: 13px 24px; font-size: 15px; font-weight: 500;
+    font-family: var(--font-sans); cursor: pointer;
+    transition: background var(--dur-base) var(--ease-out);
+  }
+  .newsletter button:hover { background: #fff; }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--mcp-green); color: var(--mcp-beige);
+    padding: 80px 40px 36px;
+    border-top: 1px solid rgba(254,250,242,0.18);
+  }
+  .footer-inner { max-width: 1240px; margin: 0 auto; }
+  .footer-top {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(254,250,242,0.18);
+    align-items: start;
+  }
+  .footer-top img { height: 128px; margin-bottom: 22px; display: block; }
+  .footer-top h4 {
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    margin: 0 0 18px; opacity: 0.85;
+  }
+  .footer-top ul { list-style: none; padding: 0; margin: 0; }
+  .footer-top li { margin-bottom: 10px; font-size: 14px; opacity: 0.85; }
+  .footer-top a { color: var(--mcp-beige); text-decoration: none; }
+  .footer-top a:hover { opacity: 1; text-decoration: underline; }
+  .footer-bottom {
+    margin-top: 32px;
+    display: flex; justify-content: space-between; gap: 32px;
+    font-size: 11px; line-height: 1.7; opacity: 0.7; font-style: italic;
+  }
+  .footer-bottom .mentions { max-width: 820px; }
+  .orias-badge {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 4px 10px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: var(--mcp-beige);
+    border: 1px solid rgba(240,230,210,0.45);
+    border-radius: 3px;
+    text-decoration: none;
+    opacity: 0.9;
+  }
+  .orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1100px) {
+    .header-inner { padding: 4px 24px; }
+    .nav { gap: 22px; }
+    .nav a { font-size: 14px; }
+    .logo { height: 60px; }
+    .logo img { height: 110px; }
+    .blog-hero { padding: 48px 24px 48px; }
+    .blog-hero h1 { font-size: 48px; }
+    .filters-bar { padding: 24px; }
+    .articles { padding: 48px 24px 80px; }
+    .articles-grid { grid-template-columns: repeat(2, 1fr); }
+    .newsletter { padding: 64px 24px; }
+    .newsletter h2 { font-size: 34px; }
+  }
+  @media (max-width: 760px) {
+    .header-inner { padding: 4px 20px; gap: 12px; }
+    .nav { display: none; }
+    .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
+    .header { position: relative; }
+    .hamburger { display: flex; }
+    .header-inner .btn { display: none; }
+    .nav-rdv { display: inline-flex !important; }
+    .logo { height: 52px; }
+    .logo img { height: 92px; }
+    .blog-hero { padding: 32px 20px 40px; }
+    .blog-hero h1 { font-size: 32px; }
+    .blog-hero p { font-size: 16px; }
+    .filters-bar { padding: 18px 20px; top: 67px; }
+    .filter-chip { padding: 7px 12px; font-size: 12px; }
+    .articles { padding: 40px 20px 64px; }
+    .articles-grid { grid-template-columns: 1fr; }
+    .newsletter { padding: 48px 20px; }
+    .newsletter h2 { font-size: 28px; }
+    .newsletter form { flex-direction: column; }
+    .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; }
+    .footer-bottom { flex-direction: column; gap: 16px; }
+    footer { padding: 56px 24px 32px; }
+  }
+</style>
+  <!-- Performance : preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <!-- Google Analytics + Consent Mode -->
+  <script src="/analytics.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="page">
+
+  <!-- ====== HEADER ====== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Accueil — Monte-Cristo Patrimoine"><img src="/assets/logo-vert.webp" alt="Monte-Cristo Patrimoine"/></a>
+      <nav class="nav">
+        <a href="/le-cabinet">Le cabinet</a>
+        <a href="/particuliers">Particuliers</a>
+        <a href="/entreprises">Entreprises</a>
+        <a href="/blog" class="active">Blog</a>
+        <a href="/#contact" class="btn btn-accent nav-rdv">Prendre rendez-vous</a>
+      </nav>
+      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <main>
+  <!-- ====== HERO ====== -->
+  <section class="blog-hero" id="main">
+    <div class="blog-hero-inner">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="sep">/</span>
+        <span>Blog</span>
+      </div>
+      <div class="eyebrow">Journal du cabinet</div>
+      <h1>Comprendre, <em>décider, agir.</em></h1>
+      <p>Articles d'analyse, décryptages fiscaux et réflexions de fond sur la gestion de patrimoine indépendante. Une lecture par mois, sans actualité chaude ni jargon inutile.</p>
+    </div>
+  </section>
+
+  <!-- ====== FILTERS ====== -->
+  <div class="filters-bar">
+    <div class="filters-inner">
+      <span class="filter-label">Thématiques</span>
+      <button class="filter-chip active" data-filter="all">Tout voir</button>
+      <button class="filter-chip" data-filter="investissement">Investissement</button>
+      <button class="filter-chip" data-filter="fiscalite">Optimisation fiscale</button>
+      <button class="filter-chip" data-filter="retraite">Retraite &amp; prévoyance</button>
+      <button class="filter-chip" data-filter="transmission">Transmission</button>
+      <button class="filter-chip" data-filter="immobilier">Immobilier</button>
+      <button class="filter-chip" data-filter="conseil">Conseil patrimonial</button>
+    </div>
+  </div>
+
+  <!-- ====== ARTICLES GRID ====== -->
+  <section class="articles">
+    <h2 class="sr-only">Articles</h2>
+    <div class="articles-inner">
+      <div class="articles-count">
+        <strong id="visible-count">6</strong> article(s) <span id="filter-active"></span>
+      </div>
+      <div class="articles-grid" id="grid">
+
+        <!-- ====== Articles publiés ====== -->
+        <a class="article-card" href="/article-frais-bancaires" data-topic="conseil">
+          <div class="cover">
+            <span class="badge">Conseil patrimonial</span>
+            <span class="meta">28 mai 2026</span>
+          </div>
+          <div class="body">
+            <h3>Ce que votre banque ne vous dira jamais sur vos frais</h3>
+            <p>Frais de gestion, rétrocessions, droits d'entrée : ce que votre structure patrimoniale vous coûte vraiment — avec un simulateur interactif pour calculer votre propre situation.</p>
+            <span class="read-more">Lire l'article</span>
+          </div>
+        </a>
+
+        <a class="article-card" href="/article-cgp-independant" data-topic="investissement">
+          <div class="cover">
+            <span class="badge">Investissement</span>
+            <span class="meta">04 avril 2026</span>
+          </div>
+          <div class="body">
+            <h3>Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant&nbsp;?</h3>
+            <p>Définition, mode de rémunération, périmètre d'intervention. Pourquoi moins de 5&nbsp;% des CGP en France adoptent un modèle exclusivement basé sur les honoraires.</p>
+            <span class="read-more">Lire l'article</span>
+          </div>
+        </a>
+
+        <!-- ====== Articles à paraître ====== -->
+        <div class="article-card soon" data-topic="fiscalite">
+          <div class="cover">
+            <span class="badge">Optimisation fiscale</span>
+            <span class="meta">Mai 2026</span>
+          </div>
+          <div class="body">
+            <h3>IFI 2026&nbsp;: les leviers d'optimisation avant la déclaration</h3>
+            <p>Démembrement, donation temporaire, dette déductible, charges récurrentes. Passer en revue les arbitrages possibles avant la date butoir.</p>
+            <span class="read-more">À paraître</span>
+          </div>
+        </div>
+
+        <div class="article-card soon" data-topic="retraite">
+          <div class="cover">
+            <span class="badge">Retraite</span>
+            <span class="meta">Juin 2026</span>
+          </div>
+          <div class="body">
+            <h3>PER, Madelin, Art.&nbsp;83&nbsp;: quel dispositif pour quel profil&nbsp;?</h3>
+            <p>Comparatif fiscal, conditions de sortie, transférabilité. Une lecture longue durée pour bien choisir son enveloppe de retraite supplémentaire.</p>
+            <span class="read-more">À paraître</span>
+          </div>
+        </div>
+
+        <div class="article-card soon" data-topic="transmission">
+          <div class="cover">
+            <span class="badge">Transmission</span>
+            <span class="meta">Juillet 2026</span>
+          </div>
+          <div class="body">
+            <h3>Anticiper sa transmission sans se déshabiller de son vivant</h3>
+            <p>Donation, démembrement, assurance-vie, pacte Dutreil. Organiser sa succession sans perdre le contrôle ni les revenus de son patrimoine.</p>
+            <span class="read-more">À paraître</span>
+          </div>
+        </div>
+
+        <div class="article-card soon" data-topic="immobilier">
+          <div class="cover">
+            <span class="badge">Immobilier</span>
+            <span class="meta">Septembre 2026</span>
+          </div>
+          <div class="body">
+            <h3>LMNP, déficit foncier, SCI&nbsp;: choisir sa structure d'investissement</h3>
+            <p>Fiscalité, gestion, transmission. Les trois enveloppes d'investissement immobilier les plus utilisées et leurs cas d'usage.</p>
+            <span class="read-more">À paraître</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="empty-state" id="empty">
+        Aucun article publié dans cette thématique pour le moment. <br/>Revenez bientôt&nbsp;!
+      </div>
+    </div>
+  </section>
+  </main>
+
+
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="/assets/logo-beige.webp" alt="Monte-Cristo Patrimoine"/>
+          <p style="font-size:14px;line-height:1.6;opacity:0.85;margin:0;max-width:280px;">
+            Cabinet de conseil en gestion de patrimoine indépendant. Basé à Gap, au service de clients dans toute la France.
+          </p>
+          <a href="https://www.orias.fr/search?number=25006472" target="_blank" rel="noopener" class="orias-badge">ORIAS n°&nbsp;25006472</a>
+        </div>
+        <div>
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="/le-cabinet">Notre approche</a></li>
+            <li><a href="le-cabinet.html#modele">Notre modèle d'honoraires</a></li>
+            <li><a href="le-cabinet.html#partenaires">Partenaires</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/particuliers">Particuliers</a></li>
+            <li><a href="/entreprises">Entreprises</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>21D route de la Descente</li>
+            <li>05000 Gap</li>
+            <li><a href="tel:+33629865266">+33&nbsp;6&nbsp;29&nbsp;86&nbsp;52&nbsp;66</a></li>
+            <li><a href="mailto:kevin@monte-cristo.net">kevin@monte-cristo.net</a></li>
+            <li><a href="https://www.linkedin.com/company/108398030/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li style="margin-top:14px;"><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="mentions">
+          MONTE-CRISTO PATRIMOINE, SAS au capital social de 1 000 €, immatriculée au RCS de Gap, N° 989 044 813, dont le siège social est situé 21 route de la Descente, 05000 Gap. CIF et courtier d'assurance enregistré au Registre unique des intermédiaires en assurance, banque et finance sous le numéro 25006472 (www.orias.fr) en qualité d'adhérent de la CNCGP, association agréée par l'Autorité des marchés financiers.
+        </div>
+        <div style="flex-shrink:0;">© 2026</div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/cookies.js"></script>
+<script src="/site.js" defer></script>
+</body>
+</html>

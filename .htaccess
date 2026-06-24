@@ -1,0 +1,167 @@
+# ============================================================
+# Monte-Cristo Patrimoine — .htaccess
+# Redirections 301 depuis les anciennes URLs WordPress
+# vers le nouveau site statique.
+# À placer à la racine du serveur (dossier www/ ou public_html/)
+# ============================================================
+
+AddType application/javascript .js
+AddType text/css .css
+AddType font/otf .otf
+AddType font/woff2 .woff2
+AddType image/x-icon .ico
+
+Options -MultiViews
+
+RewriteEngine On
+
+# --- 0. Redirections de base ------------------------------------------------
+# /index → / (évite que les anciennes balises index.html génèrent /index dans l'URL)
+RewriteRule ^index$ / [R=301,L]
+
+# Suppression du slash final sauf racine (ex: /mentions-legales/ → /mentions-legales)
+RewriteCond %{REQUEST_URI} !^/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# --- 1. URLs propres : /le-cabinet → /le-cabinet.html -----------------------
+# Permet d'accéder aux pages sans l'extension .html
+# (et de masquer .html dans la barre d'adresse)
+
+# Si l'URL demandée existe en .html, on la sert sans changer l'adresse
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Si quelqu'un tape /le-cabinet.html, on le redirige vers /le-cabinet (URL propre)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+
+# --- 2. Redirections 301 depuis les anciennes URLs WordPress ----------------
+# Important : ces redirections préservent le SEO et les backlinks.
+
+# Pages principales
+Redirect 301 /about                                        /le-cabinet
+Redirect 301 /services                                     /particuliers
+Redirect 301 /contact                                      /#contact
+
+# Blog
+Redirect 301 /quest-ce-quun-conseiller-en-gestion-de-patrimoine-independant  /article-cgp-independant
+
+# Pages services individuelles → page Particuliers
+# (le site consolidé n'a plus de pages services dédiées,
+# tout est regroupé sur particuliers.html)
+Redirect 301 /diagnostic-patrimonial                       /particuliers
+Redirect 301 /strategie-patrimoniale                       /particuliers
+Redirect 301 /optimisation-fiscale                         /particuliers
+Redirect 301 /conseil-en-investissements                   /particuliers
+Redirect 301 /retraite-et-prevoyance                       /particuliers
+Redirect 301 /immobilier                                   /particuliers
+Redirect 301 /conseil-juridique-et-civil                   /particuliers
+Redirect 301 /ingenierie-successorale                      /particuliers
+
+
+# --- 3. WordPress résiduel : pages admin et feeds ---------------------------
+# Bloque les accès à des URLs WordPress qui n'existent plus
+# (et évite que les bots tentent de s'y connecter pendant des années)
+
+RewriteRule ^wp-admin/?         /  [R=301,L]
+RewriteRule ^wp-login\.php      /  [R=301,L]
+# Exception : images des signatures email
+RewriteRule ^wp-content/uploads/2025/08/Capture-decran-2025-08-27-a-11\.58\.09\.png$ - [L]
+RewriteRule ^wp-content/uploads/2025/08/Prendre-rendez-vous\.png$ - [L]
+RewriteRule ^wp-content/.*      /  [R=301,L]
+RewriteRule ^wp-includes/.*     /  [R=301,L]
+RewriteRule ^feed/?$            /  [R=301,L]
+RewriteRule ^.*/feed/?$         /  [R=301,L]
+
+# Anciennes URLs WordPress avec ?p=... (permaliens par défaut)
+RewriteCond %{QUERY_STRING} ^p=([0-9]+)$
+RewriteRule ^$ / [R=301,L]
+RewriteCond %{QUERY_STRING} ^page_id=([0-9]+)$
+RewriteRule ^$ / [R=301,L]
+
+
+# --- 4. Forcer HTTPS --------------------------------------------------------
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+# --- 5. Forcer la version sans www (ou avec, au choix) ----------------------
+# Décommenter la version souhaitée :
+
+# Force SANS www (monte-cristo.net) — recommandé
+RewriteCond %{HTTP_HOST} ^www\.monte-cristo\.net$ [NC]
+RewriteRule ^(.*)$ https://monte-cristo.net/$1 [R=301,L]
+
+# OU force AVEC www (à décommenter à la place du bloc ci-dessus si préféré)
+# RewriteCond %{HTTP_HOST} ^monte-cristo\.net$ [NC]
+# RewriteRule ^(.*)$ https://www.monte-cristo.net/$1 [R=301,L]
+
+
+# --- 6. Page 404 personnalisée ---------------------------------------------
+ErrorDocument 404 /404.html
+
+
+# --- 7. Cache + compression : performance & SEO -----------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/x-javascript text/xml application/xml application/xml+rss text/plain image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html              "access plus 1 hour"
+  ExpiresByType text/css               "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png              "access plus 6 months"
+  ExpiresByType image/jpg              "access plus 6 months"
+  ExpiresByType image/jpeg             "access plus 6 months"
+  ExpiresByType image/webp             "access plus 6 months"
+  ExpiresByType image/svg+xml          "access plus 6 months"
+  ExpiresByType font/woff2             "access plus 1 year"
+  ExpiresByType font/otf               "access plus 1 year"
+  ExpiresByType font/otf               "access plus 1 year"
+  ExpiresByType application/font-sfnt  "access plus 1 year"
+  ExpiresByType application/x-font-opentype "access plus 1 year"
+</IfModule>
+
+
+# --- 8. Sécurité basique ----------------------------------------------------
+# Désactive le listing des dossiers
+Options -Indexes
+
+# Bloque l'accès aux fichiers sensibles
+<FilesMatch "^\.(htaccess|htpasswd|env|git)">
+  Require all denied
+</FilesMatch>
+
+
+# --- 9. En-têtes de sécurité HTTP -------------------------------------------
+<IfModule mod_headers.c>
+  # Empêche le clickjacking (intégration dans un iframe malveillant)
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Empêche le MIME-sniffing (exécution de fichiers avec un mauvais Content-Type)
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Contrôle ce qui est transmis aux sites tiers dans le Referer
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Désactive l'accès aux fonctionnalités sensibles du navigateur
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), display-capture=()"
+
+  # HSTS — OVH impose max-age=7776000 par défaut, on force la suppression puis le remplacement
+  Header always unset Strict-Transport-Security
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+  # Content Security Policy
+  # frame-src https: autorise tous les iframes HTTPS (dont Microsoft Booking MSAL)
+  # sans avoir à lister les ~10 domaines Microsoft impliqués dans le flux auth
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net; frame-src https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+
+  # Cache-Control pour les pages HTML (1 heure)
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+</IfModule>
