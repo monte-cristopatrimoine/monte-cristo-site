@@ -1,5 +1,5 @@
 # Rapport sitemap — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 19:22*
+*Généré le 24/06/2026 à 19:36 — source : `seo/config/pages.json`*
 
 ## URLs incluses (9)
 
@@ -19,10 +19,10 @@
 
 | Fichier | Raison |
 |---------|--------|
-| `politique-confidentialite.html` | Balise `noindex` détectée |
-| `mentions-legales.html` | Balise `noindex` détectée |
-| `404.html` | Page exclue (technique ou travail) |
-| `mockup-contenu.html` | Page exclue (technique ou travail) |
+| `mentions-legales.html` | Page légale (status: legal) |
+| `politique-confidentialite.html` | Page légale (status: legal) |
+| `404.html` | Page technique (status: technical) |
+| `mockup-contenu.html` | Page de travail (status: work) |
 
 ---
 *Rapport généré par `seo/scripts/generate-sitemap.py`*

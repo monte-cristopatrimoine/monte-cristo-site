@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 """
 Générateur de sitemap — Monte-Cristo Patrimoine
-Génère sitemap.xml à la racine du site à partir des fichiers HTML.
+Génère sitemap.xml à la racine du site depuis seo/config/pages.json.
 
-Règles d'inclusion :
-- Seuls les fichiers .html à la racine sont analysés
-- Exclut les pages avec <meta name="robots" content="noindex...">
-- Exclut 404.html (page d'erreur technique)
-- Exclut mockup-contenu.html (page de travail)
-- Inclut mentions-legales.html et politique-confidentialite.html
-- <lastmod> calculé depuis la date de modification du fichier
+Règles d'inclusion (depuis pages.json) :
+- indexable: true
+- sitemap: true
+- status: "active"
+
+Les priorités, changefreq et URLs sont lues depuis pages.json.
+Le <lastmod> est calculé depuis la date de modification réelle du fichier.
 
 Usage : python3 seo/scripts/generate-sitemap.py
         (depuis la racine du site)
 """
 
-import re
+import json
 import sys
 from pathlib import Path
 from datetime import datetime, timezone
@@ -23,41 +23,46 @@ from datetime import datetime, timezone
 SCRIPT_DIR  = Path(__file__).parent
 SITE_ROOT   = SCRIPT_DIR.parent.parent
 REPORTS_DIR = SCRIPT_DIR.parent / "reports"
+CONFIG_PATH = SCRIPT_DIR.parent / "config" / "pages.json"
 BASE_URL    = "https://monte-cristo.net"
 
-# Exclusions fixes — jamais dans le sitemap
-ALWAYS_EXCLUDE = {"404.html", "mockup-contenu.html"}
+# ── Lecture de la configuration ───────────────────────────────────────────────
 
-# Priorités par page (défaut 0.5 si non listé)
-PRIORITIES = {
-    "index.html":                  ("1.0", "monthly"),
-    "le-cabinet.html":             ("0.9", "monthly"),
-    "particuliers.html":           ("0.9", "monthly"),
-    "entreprises.html":            ("0.9", "monthly"),
-    "blog.html":                   ("0.8", "weekly"),
-    "conseiller-gestion-patrimoine-independant.html": ("0.8", "monthly"),
-    "article-cgp-independant.html":("0.7", "monthly"),
-    "article-frais-bancaires.html":("0.7", "monthly"),
-    "simulateur-frais.html":       ("0.6", "monthly"),
-    "politique-confidentialite.html": ("0.3", "yearly"),
-    "mentions-legales.html":       ("0.2", "yearly"),
-}
+def load_pages():
+    if not CONFIG_PATH.exists():
+        print(f"❌ Fichier de configuration introuvable : {CONFIG_PATH}")
+        print("   Lancez d'abord : python3 seo/scripts/bootstrap-pages.py")
+        sys.exit(1)
+    data = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    return data.get("pages", [])
 
-def has_noindex(html):
-    """Retourne True si la page contient une directive noindex."""
-    return bool(re.search(
-        r'<meta\s[^>]*name=["\']robots["\'][^>]*content=["\'][^"\']*noindex',
-        html, re.IGNORECASE
-    ))
+def should_include(page):
+    return (
+        page.get("indexable") is True
+        and page.get("sitemap") is True
+        and page.get("status") == "active"
+    )
 
-def file_to_url(filename):
-    name = filename.replace(".html", "")
-    return BASE_URL + "/" if name == "index" else f"{BASE_URL}/{name}"
+def exclude_reason(page):
+    if page.get("status") == "legal":
+        return f"Page légale (status: legal)"
+    if page.get("status") == "work":
+        return "Page de travail (status: work)"
+    if page.get("status") == "technical":
+        return "Page technique (status: technical)"
+    if not page.get("indexable"):
+        return "Non indexable (indexable: false)"
+    if not page.get("sitemap"):
+        return "Exclue du sitemap (sitemap: false)"
+    return "Exclue"
+
+# ── lastmod depuis le fichier ─────────────────────────────────────────────────
 
 def file_lastmod(filepath):
-    """Date de dernière modification du fichier au format W3C (YYYY-MM-DD)."""
     mtime = filepath.stat().st_mtime
     return datetime.fromtimestamp(mtime, tz=timezone.utc).strftime("%Y-%m-%d")
+
+# ── Génération du XML ─────────────────────────────────────────────────────────
 
 def build_sitemap_xml(entries):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
@@ -65,7 +70,7 @@ def build_sitemap_xml(entries):
     for e in entries:
         lines.append("")
         lines.append("  <url>")
-        lines.append(f"    <loc>{e['url']}</loc>")
+        lines.append(f"    <loc>{BASE_URL}{e['url']}</loc>")
         lines.append(f"    <lastmod>{e['lastmod']}</lastmod>")
         lines.append(f"    <changefreq>{e['changefreq']}</changefreq>")
         lines.append(f"    <priority>{e['priority']}</priority>")
@@ -74,16 +79,18 @@ def build_sitemap_xml(entries):
     lines.append("</urlset>")
     return "\n".join(lines)
 
+# ── Rapport Markdown ──────────────────────────────────────────────────────────
+
 def build_report(entries, excluded, generated_at):
     lines = []
     a = lines.append
-    a(f"# Rapport sitemap — Monte-Cristo Patrimoine")
-    a(f"*Généré le {generated_at}*\n")
+    a("# Rapport sitemap — Monte-Cristo Patrimoine")
+    a(f"*Généré le {generated_at} — source : `seo/config/pages.json`*\n")
     a(f"## URLs incluses ({len(entries)})\n")
     a("| URL | Priorité | Fréquence | Dernière modif. |")
     a("|-----|----------|-----------|-----------------|")
     for e in entries:
-        a(f"| {e['url']} | {e['priority']} | {e['changefreq']} | {e['lastmod']} |")
+        a(f"| {BASE_URL}{e['url']} | {e['priority']} | {e['changefreq']} | {e['lastmod']} |")
     a("")
     a(f"## Pages exclues ({len(excluded)})\n")
     if excluded:
@@ -98,51 +105,40 @@ def build_report(entries, excluded, generated_at):
     a("*Rapport généré par `seo/scripts/generate-sitemap.py`*")
     return "\n".join(lines)
 
+# ── Point d'entrée ────────────────────────────────────────────────────────────
+
 def main():
     print("🗺️  Générateur de sitemap — Monte-Cristo Patrimoine")
-    print(f"   Racine : {SITE_ROOT}\n")
+    print(f"   Configuration : {CONFIG_PATH}\n")
 
-    html_files = sorted(SITE_ROOT.glob("*.html"))
-    if not html_files:
-        print("❌ Aucun fichier .html trouvé.")
-        sys.exit(1)
+    pages = load_pages()
 
     entries  = []
     excluded = []
 
-    # Ordre d'apparition dans le sitemap : selon PRIORITIES, puis alphabétique
-    priority_order = list(PRIORITIES.keys())
+    for page in pages:
+        filename = page.get("file", "")
+        filepath = SITE_ROOT / filename
 
-    def sort_key(f):
-        try:
-            return priority_order.index(f.name)
-        except ValueError:
-            return len(priority_order)
+        if should_include(page):
+            if not filepath.exists():
+                print(f"   ⚠️  Fichier déclaré dans pages.json mais introuvable : {filename}")
+                excluded.append((filename, "Fichier HTML introuvable sur le disque"))
+                continue
 
-    for filepath in sorted(html_files, key=sort_key):
-        filename = filepath.name
+            entries.append({
+                "file":       filename,
+                "url":        page["url"],
+                "priority":   page["priority"],
+                "changefreq": page["changefreq"],
+                "lastmod":    file_lastmod(filepath),
+            })
+        else:
+            excluded.append((filename, exclude_reason(page)))
 
-        if filename in ALWAYS_EXCLUDE:
-            excluded.append((filename, "Page exclue (technique ou travail)"))
-            continue
-
-        html = filepath.read_text(encoding="utf-8", errors="replace")
-
-        if has_noindex(html):
-            excluded.append((filename, "Balise `noindex` détectée"))
-            continue
-
-        priority, changefreq = PRIORITIES.get(filename, ("0.5", "monthly"))
-        url     = file_to_url(filename)
-        lastmod = file_lastmod(filepath)
-
-        entries.append({
-            "file":       filename,
-            "url":        url,
-            "priority":   priority,
-            "changefreq": changefreq,
-            "lastmod":    lastmod,
-        })
+    if not entries:
+        print("❌ Aucune page à inclure dans le sitemap.")
+        sys.exit(1)
 
     # Écrire sitemap.xml
     sitemap_path = SITE_ROOT / "sitemap.xml"
@@ -156,18 +152,18 @@ def main():
     report_path.write_text(build_report(entries, excluded, generated_at), encoding="utf-8")
 
     # Affichage terminal
-    print(f"{'URL':<55} {'Priorité':>8}  Lastmod")
-    print("-" * 75)
+    print(f"{'URL':<60} {'Priorité':>8}  Lastmod")
+    print("-" * 80)
     for e in entries:
-        print(f"{e['url']:<55} {e['priority']:>8}  {e['lastmod']}")
+        print(f"{BASE_URL + e['url']:<60} {e['priority']:>8}  {e['lastmod']}")
 
     if excluded:
-        print(f"\nExclus :")
+        print(f"\nExclus ({len(excluded)}) :")
         for name, reason in excluded:
-            print(f"   ⛔ {name} — {reason}")
+            print(f"   ⛔ {name:<50} {reason}")
 
     print(f"\n✅ sitemap.xml généré : {len(entries)} URL(s)")
-    print(f"📄 Rapport : {report_path}")
+    print(f"📄 Rapport            : {report_path}")
 
 if __name__ == "__main__":
     main()
