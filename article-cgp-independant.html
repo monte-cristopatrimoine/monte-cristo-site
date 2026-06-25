@@ -263,29 +263,32 @@
   .article-byline .who strong { color: var(--mcp-ink); font-weight: 500; }
   .article-byline .who span { color: var(--mcp-ink-500); }
 
-  /* ============ ARTICLE COVER ============ */
-  .article-cover {
-    max-width: 1080px;
-    margin: -28px auto 0;
-    aspect-ratio: 16 / 7;
-    border-radius: 20px;
+  /* ============ ARTICLE RULE ============ */
+  .article-rule {
+    max-width: 720px;
+    margin: 36px auto 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .article-rule::before,
+  .article-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
     background: var(--mcp-green);
-    position: relative;
-    overflow: hidden;
-    display: flex; align-items: flex-end;
-    padding: 40px;
+    opacity: 0.25;
   }
-  .article-cover::before {
-    content: ''; position: absolute; inset: 0;
-    background: url('/assets/mark-vert.png') center / 38% no-repeat;
-    opacity: 0.09; pointer-events: none;
-  }
-  .article-cover .caption {
-    position: relative; z-index: 1;
-    color: var(--mcp-beige);
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 18px; letter-spacing: -0.01em;
-    opacity: 0.85;
+  .article-rule .caption {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--mcp-green);
+    opacity: 0.55;
+    white-space: nowrap;
   }
 
   /* ============ ARTICLE BODY ============ */
@@ -296,7 +299,6 @@
     font-size: 18px;
     line-height: 1.75;
     color: var(--mcp-ink);
-    counter-reset: h2-counter;
   }
   .article-body h2 {
     font-family: var(--font-display); font-weight: 400;
@@ -304,16 +306,6 @@
     color: var(--mcp-green);
     margin: 56px 0 20px;
     text-wrap: balance;
-    counter-increment: h2-counter;
-  }
-  .article-body h2::before {
-    content: counter(h2-counter, decimal-leading-zero);
-    display: block;
-    font-size: 12px; font-weight: 500;
-    letter-spacing: 0.14em;
-    color: var(--mcp-green-300);
-    margin-bottom: 10px;
-    font-style: normal;
   }
   .article-body h2:first-child { margin-top: 0; }
   .lettrine::first-letter {
@@ -504,7 +496,7 @@
     .logo { height: 60px; }
     .logo img { height: 110px; }
     .article-hero { padding: 56px 24px 48px; }
-    .article-cover { margin-left: 24px; margin-right: 24px; max-width: none; }
+    .article-rule { padding: 0 24px; }
   }
   @media (max-width: 760px) {
     .header-inner { padding: 4px 20px; gap: 12px; }
@@ -519,7 +511,7 @@
     .article-hero { padding: 40px 20px 36px; }
     .article-title { font-size: 28px; }
     .article-deck { font-size: 17px; }
-    .article-cover { margin: -20px 20px 0; aspect-ratio: 4/3; padding: 24px; }
+    .article-rule { padding: 0 20px; margin-top: 28px; }
     .article-body { padding: 48px 20px 64px; font-size: 16px; }
     .article-body h2 { font-size: 26px; }
     .pullquote { font-size: 19px; padding: 16px 0; }
@@ -595,8 +587,8 @@
     </div>
   </section>
 
-  <!-- ====== ARTICLE COVER ====== -->
-  <div class="article-cover">
+  <!-- ====== ARTICLE RULE ====== -->
+  <div class="article-rule">
     <div class="caption">Investissement · Indépendance · Honoraires</div>
   </div>
 
