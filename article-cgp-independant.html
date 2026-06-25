@@ -196,6 +196,8 @@
   }
   .btn-primary { background: var(--mcp-green); color: #FDFAF3 !important; text-decoration: none; }
   .btn-primary:hover { background: var(--mcp-green-700); color: #FDFAF3 !important; transform: translateY(-1px); }
+  .btn-accent { background: var(--mcp-orange); color: #FDFAF3 !important; text-decoration: none; }
+  .btn-accent:hover { background: var(--mcp-orange-700); color: #FDFAF3 !important; transform: translateY(-1px); }
   .btn-secondary { background: transparent; color: var(--mcp-green); border-color: var(--mcp-green); }
   .btn-secondary:hover { background: var(--mcp-green); color: var(--mcp-beige); }
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
@@ -267,39 +269,32 @@
     margin: -28px auto 0;
     aspect-ratio: 16 / 7;
     border-radius: 20px;
-    background:
-      linear-gradient(180deg, rgba(27,106,69,0) 50%, rgba(27,106,69,0.55) 100%),
-      linear-gradient(135deg, #97B5A0 0%, #346848 60%, #1B6A45 100%);
+    background: var(--mcp-green);
     position: relative;
     overflow: hidden;
     display: flex; align-items: flex-end;
     padding: 40px;
   }
-  .article-cover .cover-photo {
-    position: absolute; inset: 0;
-    width: 100%; height: 100%;
-    object-fit: cover; object-position: center 15%;
-  }
-  .article-cover .cover-overlay {
-    position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(27,106,69,0.08) 30%, rgba(27,106,69,0.62) 100%);
+  .article-cover::before {
+    content: ''; position: absolute; inset: 0;
+    background: url('/assets/mark-vert.png') center / 38% no-repeat;
+    opacity: 0.09; pointer-events: none;
   }
   .article-cover .caption {
     position: relative; z-index: 1;
     color: var(--mcp-beige);
     font-family: var(--font-display); font-weight: 300;
     font-size: 18px; letter-spacing: -0.01em;
-    opacity: 0.92;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.30);
+    opacity: 0.85;
   }
 
   /* ============ ARTICLE BODY ============ */
   .article-body {
     max-width: 720px;
     margin: 0 auto;
-    padding: 72px 40px 96px;
+    padding: 80px 40px 104px;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.75;
     color: var(--mcp-ink);
     counter-reset: h2-counter;
   }
@@ -324,14 +319,14 @@
   .lettrine::first-letter {
     float: left;
     font-family: var(--font-display);
-    font-size: 4.2em;
-    line-height: 0.80;
+    font-size: 3.4em;
+    line-height: 0.86;
     font-weight: 300;
     color: var(--mcp-green);
-    margin: 0.04em 0.12em 0 0;
+    margin: 0.06em 0.10em 0 0;
     padding: 0;
   }
-  .article-body p { margin: 0 0 22px; }
+  .article-body p { margin: 0 0 26px; }
   .article-body strong { font-weight: 500; color: var(--mcp-ink); }
   .article-body ul {
     list-style: none; padding: 0; margin: 0 0 28px;
@@ -528,7 +523,7 @@
     .article-body { padding: 48px 20px 64px; font-size: 16px; }
     .article-body h2 { font-size: 26px; }
     .pullquote { font-size: 19px; padding: 16px 0; }
-    .lettrine::first-letter { font-size: 3.4em; }
+    .lettrine::first-letter { float: none; font-size: inherit; line-height: inherit; color: inherit; margin: 0; }
     .article-end { flex-direction: column; align-items: flex-start; padding: 28px; }
     .article-end::after { display: none; }
     .pilier-link { flex-direction: column; align-items: flex-start; }
@@ -585,14 +580,13 @@
       <div class="article-meta">
         <span class="pill">Investissement</span>
         <span>04 avril 2026</span>
-        <span>6 min de lecture</span>
       </div>
       <h1 class="article-title">Qu'est-ce qu'un conseiller en gestion de patrimoine indépendant&nbsp;?</h1>
       <p class="article-deck">
         Définition, mode de rémunération, périmètre d'intervention. Pourquoi moins de 5&nbsp;% des CGP en France adoptent un modèle exclusivement basé sur les honoraires — et ce que cela change concrètement pour vous.
       </p>
       <div class="article-byline">
-        <div class="avatar"><img src="/assets/team/kevin-blache.webp" alt="Kévin Blache"/></div>
+        <div class="avatar"><img src="/assets/team/kevin-blache-avatar.webp" alt="Kévin Blache"/></div>
         <div class="who">
           <strong>Kévin Blache</strong><br/>
           <span>Président · Monte-Cristo Patrimoine</span>
@@ -603,8 +597,6 @@
 
   <!-- ====== ARTICLE COVER ====== -->
   <div class="article-cover">
-    <img class="cover-photo" src="/assets/articles/covers/article-cgp-independant.webp" alt="Demeure historique — Monte-Cristo Patrimoine" loading="lazy"/>
-    <div class="cover-overlay"></div>
     <div class="caption">Investissement · Indépendance · Honoraires</div>
   </div>
 
@@ -662,11 +654,16 @@
 
   </article>
 
-  <!-- ====== RELATED ====== -->
+  <!-- BEGIN GLOBAL ARTICLE RESOURCES -->
   <section class="related">
     <div class="related-inner">
-      <h4>À paraître prochainement</h4>
+      <h4>Nos ressources</h4>
       <div class="related-grid">
+        <a href="/article-frais-bancaires" class="related-card">
+          <div class="topic">Frais</div>
+          <h5>Frais bancaires et rétrocessions</h5>
+          <p>Simulateur interactif&nbsp;: mesurez l'impact réel des frais cachés sur votre épargne sur 20&nbsp;ans.</p>
+        </a>
         <div class="related-card soon">
           <div class="topic">Optimisation fiscale</div>
           <h5>IFI&nbsp;: les leviers pour 2026</h5>
@@ -677,14 +674,10 @@
           <h5>PER, Madelin, Art.&nbsp;83</h5>
           <p>Quel dispositif pour quel profil&nbsp;? Comparatif fiscal et lecture longue durée.</p>
         </div>
-        <div class="related-card soon">
-          <div class="topic">Transmission</div>
-          <h5>Anticiper sans déshabiliter</h5>
-          <p>Donation, démembrement, assurance-vie&nbsp;: organiser sa succession sans perdre le contrôle.</p>
-        </div>
       </div>
     </div>
   </section>
+  <!-- END GLOBAL ARTICLE RESOURCES -->
   </main>
 
 
