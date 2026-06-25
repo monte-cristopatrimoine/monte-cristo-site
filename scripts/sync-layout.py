@@ -49,6 +49,7 @@ ACTIVE_MAP = {
     "conseiller-gestion-patrimoine-independant.html": None,
     "honoraires-frais-caches.html":                 None,
     "simulateur-frais.html":                        None,
+    "simulateurs.html":                             None,
     "mentions-legales.html":                        None,
     "politique-confidentialite.html":               None,
 }

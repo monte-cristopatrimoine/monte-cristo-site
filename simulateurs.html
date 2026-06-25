@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Outils &amp; simulateurs patrimoniaux — Monte-Cristo Patrimoine</title>
+<link rel="preload" as="script" href="/analytics.js">
+<link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<!-- SEO -->
+<meta name="description" content="Simulateurs patrimoniaux Monte-Cristo Patrimoine : frais bancaires, PER, retraite, fiscalité, transmission. Objectivez vos décisions patrimoniales.">
+<link rel="canonical" href="https://monte-cristo.net/simulateurs"/>
+<meta property="og:title" content="Simulateurs patrimoniaux — frais, PER, retraite, fiscalité · Monte-Cristo Patrimoine"/>
+<meta property="og:description" content="Des simulateurs pour objectiver une décision patrimoniale, estimer un impact ou préparer un échange avec le cabinet."/>
+<meta property="og:url" content="https://monte-cristo.net/simulateurs"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Outils &amp; simulateurs patrimoniaux — Monte-Cristo Patrimoine">
+<meta name="twitter:description" content="Des simulateurs pour objectiver vos décisions patrimoniales.">
+<meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
+<link rel="stylesheet" href="/colors_and_type.css"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--mcp-beige); color: var(--mcp-ink); }
+  .page { min-height: 100vh; }
+  img { max-width: 100%; display: block; }
+
+  /* Skip link */
+  .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+  .skip-link:focus {
+    position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto;
+    background: var(--mcp-green); color: #FDFAF3; padding: 10px 22px; border-radius: 6px;
+    font-weight: 600; font-size: 15px; text-decoration: none; outline: 3px solid var(--mcp-orange);
+  }
+
+  /* ============ HEADER ============ */
+  .header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(254, 250, 242, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--mcp-beige-300);
+  }
+  .header-inner {
+    max-width: 1240px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 4px 40px; gap: 24px;
+  }
+  .logo { display: flex; align-items: center; height: 72px; overflow: hidden; }
+  .logo img { height: 128px; display: block; }
+  .nav { display: flex; align-items: center; gap: 36px; }
+  .nav a {
+    text-decoration: none; color: var(--mcp-ink); font-size: 15px;
+    font-weight: 400; transition: color var(--dur-fast) var(--ease-out);
+  }
+  .nav a:hover { color: var(--mcp-green); }
+  .nav a.active { color: var(--mcp-green); font-weight: 500; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all 0.2s; }
+  .nav-rdv { display: none; }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    font-family: var(--font-sans); font-weight: 500; font-size: 15px;
+    border-radius: var(--radius-pill); padding: 12px 26px;
+    border: 1px solid transparent; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 10px;
+    transition: all var(--dur-base) var(--ease-out); text-decoration: none;
+  }
+  .btn-primary { background: var(--mcp-green); color: #FDFAF3 !important; }
+  .btn-primary:hover { background: var(--mcp-green-700); transform: translateY(-1px); }
+  .btn-accent { background: var(--mcp-orange); color: #FDFAF3 !important; }
+  .btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); }
+
+  /* ============ PAGE HERO ============ */
+  .page-hero {
+    padding: 72px 40px 64px;
+    border-bottom: 1px solid var(--mcp-beige-300);
+  }
+  .page-hero-inner { max-width: 880px; margin: 0 auto; }
+  .breadcrumb {
+    font-size: 13px; color: var(--mcp-ink-500);
+    display: flex; gap: 10px; align-items: center; margin-bottom: 28px;
+  }
+  .breadcrumb a { color: var(--mcp-green); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { opacity: 0.4; }
+  .page-eyebrow {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--mcp-orange); margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .page-eyebrow::before { content: ""; width: 20px; height: 1px; background: var(--mcp-orange); }
+  .page-title {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: clamp(36px, 4.8vw, 64px); line-height: 1.04;
+    letter-spacing: -0.03em; color: var(--mcp-green);
+    margin: 0 0 28px; text-wrap: balance;
+  }
+  .page-deck {
+    font-size: 20px; line-height: 1.58;
+    color: var(--mcp-ink-500); margin: 0; max-width: 680px;
+    text-wrap: pretty;
+  }
+
+  /* ============ SECTION OUTILS ============ */
+  .outils {
+    max-width: 1080px; margin: 0 auto;
+    padding: 72px 40px 80px;
+  }
+  .outils-intro {
+    font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--mcp-ink-500); margin-bottom: 32px;
+  }
+
+  /* Card active — simulateur disponible */
+  .sim-card-active {
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 32px; align-items: center;
+    background: linear-gradient(160deg, #E8F0EA 0%, #DDE7DF 100%);
+    border: 1px solid var(--mcp-green-300);
+    border-radius: 20px; padding: 40px 44px;
+    text-decoration: none; color: inherit;
+    position: relative; overflow: hidden;
+    transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+    margin-bottom: 20px;
+  }
+  .sim-card-active:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 56px -16px rgba(22,17,10,0.14);
+  }
+  .sim-card-active::after {
+    content: ""; position: absolute; right: -80px; top: -100px;
+    width: 280px; height: 280px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle at 30% 30%, rgba(230,126,34,0.10), transparent 70%);
+  }
+  .sim-card-active .card-tag {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--mcp-orange); margin-bottom: 12px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .sim-card-active .card-tag::before { content: ""; width: 18px; height: 1px; background: var(--mcp-orange); }
+  .sim-card-active h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(22px, 2.4vw, 28px); line-height: 1.2;
+    letter-spacing: -0.015em; color: var(--mcp-green);
+    margin: 0 0 12px; text-wrap: balance;
+  }
+  .sim-card-active p {
+    font-size: 16px; line-height: 1.6; color: var(--mcp-ink-700);
+    margin: 0; max-width: 540px;
+  }
+  .sim-card-active .card-cta { flex-shrink: 0; white-space: nowrap; position: relative; z-index: 1; }
+
+  /* Grille cards à venir */
+  .sim-grid-coming {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-top: 4px;
+  }
+  .sim-card-coming {
+    background: var(--mcp-beige);
+    border: 1px solid var(--mcp-beige-300);
+    border-radius: 16px; padding: 28px 28px 26px;
+    opacity: 0.65;
+  }
+  .sim-card-coming .card-tag {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--mcp-ink-500); margin-bottom: 12px;
+  }
+  .sim-card-coming h3 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 18px; line-height: 1.3; letter-spacing: -0.01em;
+    color: var(--mcp-ink); margin: 0 0 10px; text-wrap: balance;
+  }
+  .sim-card-coming .coming-badge {
+    display: inline-block;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--mcp-ink-500);
+    border: 1px solid var(--mcp-beige-300);
+    border-radius: var(--radius-pill); padding: 4px 12px;
+    margin-top: 16px;
+  }
+
+  /* ============ CTA FINAL ============ */
+  .page-cta-wrap { padding: 0 40px 80px; }
+  .page-cta {
+    max-width: 880px; margin: 0 auto;
+    background: var(--mcp-green); color: var(--mcp-beige);
+    border-radius: 20px; padding: 48px 48px 44px;
+    position: relative; overflow: hidden;
+  }
+  .page-cta::after {
+    content: ""; position: absolute; right: -120px; bottom: -160px;
+    width: 360px; height: 360px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle at 30% 30%, rgba(230,126,34,0.28), transparent 70%);
+  }
+  .page-cta .eyebrow-cta { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; opacity: 0.7; margin-bottom: 14px; }
+  .page-cta h2 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: clamp(26px, 3vw, 34px); line-height: 1.18; letter-spacing: -0.02em;
+    color: var(--mcp-beige); margin: 0 0 16px; max-width: 600px; text-wrap: balance;
+  }
+  .page-cta p { font-size: 16px; line-height: 1.55; opacity: 0.88; margin: 0 0 28px; max-width: 540px; }
+  .page-cta .btn-accent { position: relative; z-index: 1; }
+
+  /* ============ FOOTER ============ */
+  footer { background: var(--mcp-green); color: var(--mcp-beige); padding: 80px 40px 36px; }
+  .footer-inner { max-width: 1240px; margin: 0 auto; }
+  .footer-top {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px;
+    padding-bottom: 56px; border-bottom: 1px solid rgba(254,250,242,0.18); align-items: start;
+  }
+  .footer-top img { height: 128px; margin-bottom: 22px; display: block; }
+  .footer-top h4 { font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 18px; opacity: 0.85; }
+  .footer-top ul { list-style: none; padding: 0; margin: 0; }
+  .footer-top li { margin-bottom: 10px; font-size: 14px; opacity: 0.85; }
+  .footer-top a { color: var(--mcp-beige); text-decoration: none; }
+  .footer-top a:hover { opacity: 1; text-decoration: underline; }
+  .footer-bottom { margin-top: 32px; display: flex; justify-content: space-between; gap: 32px; font-size: 11px; line-height: 1.7; opacity: 0.7; font-style: italic; }
+  .footer-bottom .mentions { max-width: 820px; }
+  .orias-badge { display: inline-block; margin-top: 16px; padding: 4px 10px; font-size: 12px; letter-spacing: 0.06em; color: var(--mcp-beige); border: 1px solid rgba(240,230,210,0.45); border-radius: 3px; text-decoration: none; opacity: 0.9; }
+  .orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1100px) {
+    .header-inner { padding: 4px 24px; }
+    .nav { gap: 22px; }
+    .nav a { font-size: 14px; }
+    .logo { height: 60px; }
+    .logo img { height: 110px; }
+    .page-hero { padding: 56px 24px 52px; }
+    .outils { padding: 56px 24px 64px; }
+    .sim-grid-coming { grid-template-columns: repeat(2, 1fr); }
+    .page-cta-wrap { padding: 0 24px 64px; }
+  }
+  @media (max-width: 760px) {
+    .header-inner { padding: 4px 20px; gap: 12px; }
+    .nav { display: none; }
+    .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--mcp-beige); padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
+    .header { position: relative; }
+    .hamburger { display: flex; }
+    .header-inner .btn { display: none; }
+    .nav-rdv { display: inline-flex !important; }
+    .logo { height: 52px; }
+    .logo img { height: 92px; }
+    .page-hero { padding: 40px 20px 40px; }
+    .page-deck { font-size: 17px; }
+    .outils { padding: 48px 20px 56px; }
+    .sim-card-active { grid-template-columns: 1fr; padding: 28px; gap: 20px; }
+    .sim-grid-coming { grid-template-columns: 1fr; }
+    .page-cta-wrap { padding: 0 20px 56px; }
+    .page-cta { padding: 32px 28px; border-radius: 16px; }
+    .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; }
+    .footer-bottom { flex-direction: column; gap: 16px; }
+    footer { padding: 56px 24px 32px; }
+  }
+</style>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script src="/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="page">
+
+  <!-- ====== HEADER ====== -->
+  <!-- BEGIN GLOBAL HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Accueil — Monte-Cristo Patrimoine"><img src="/assets/logo-vert.webp" alt="Monte-Cristo Patrimoine"/></a>
+      <nav class="nav">
+        <a href="/le-cabinet">Le cabinet</a>
+        <a href="/particuliers">Particuliers</a>
+        <a href="/entreprises">Entreprises</a>
+        <a href="/blog">Blog</a>
+        <a href="/#contact" class="btn btn-accent nav-rdv">Prendre rendez-vous</a>
+      </nav>
+      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+<!-- END GLOBAL HEADER -->
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="page-hero" id="main">
+      <div class="page-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span class="sep">/</span>
+          <span>Outils</span>
+        </div>
+        <div class="page-eyebrow">Outils patrimoniaux</div>
+        <h1 class="page-title">Simulateurs patrimoniaux</h1>
+        <p class="page-deck">Ces outils sont conçus pour objectiver une décision patrimoniale, estimer l'impact d'une structure de frais ou d'un arbitrage, et préparer un échange concret avec le cabinet. Chaque simulateur est une aide à la réflexion — pas un substitut au conseil.</p>
+      </div>
+    </section>
+
+    <!-- ====== OUTILS ====== -->
+    <section class="outils">
+
+      <div class="outils-intro">1 simulateur disponible · 5 en préparation</div>
+
+      <!-- Card active -->
+      <a class="sim-card-active" href="/simulateur-frais">
+        <div>
+          <div class="card-tag">Disponible</div>
+          <h2>Simulateur de frais bancaires</h2>
+          <p>Estimez l'impact des frais de gestion, droits d'entrée et rétrocessions sur votre capital à long terme. Capital, durée, taux de frais : l'écart en temps réel, à rendement brut identique.</p>
+        </div>
+        <span class="btn btn-primary card-cta">Lancer le simulateur →</span>
+      </a>
+
+      <!-- Grille cards à venir -->
+      <div class="sim-grid-coming">
+
+        <div class="sim-card-coming">
+          <div class="card-tag">Outils · Retraite</div>
+          <h3>Simulateur PER</h3>
+          <span class="coming-badge">À venir</span>
+        </div>
+
+        <div class="sim-card-coming">
+          <div class="card-tag">Outils · Retraite</div>
+          <h3>Simulateur retraite</h3>
+          <span class="coming-badge">À venir</span>
+        </div>
+
+        <div class="sim-card-coming">
+          <div class="card-tag">Outils · Fiscalité</div>
+          <h3>Simulateur fiscalité</h3>
+          <span class="coming-badge">À venir</span>
+        </div>
+
+        <div class="sim-card-coming">
+          <div class="card-tag">Outils · Transmission</div>
+          <h3>Simulateur transmission</h3>
+          <span class="coming-badge">À venir</span>
+        </div>
+
+        <div class="sim-card-coming">
+          <div class="card-tag">Outils · Investissement</div>
+          <h3>Simulateur allocation d'actifs</h3>
+          <span class="coming-badge">À venir</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== CTA FINAL ====== -->
+  <div class="page-cta-wrap">
+    <div class="page-cta">
+      <div class="eyebrow-cta">Conseil en gestion de patrimoine</div>
+      <h2>Besoin d'une analyse personnalisée&nbsp;?</h2>
+      <p>Un simulateur donne une estimation. Un échange avec le cabinet donne une réponse adaptée à votre situation, votre fiscalité et vos objectifs.</p>
+      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous →</a>
+    </div>
+  </div>
+
+  <!-- ====== FOOTER ====== -->
+  <!-- BEGIN GLOBAL FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="/assets/logo-beige.webp" alt="Monte-Cristo Patrimoine"/>
+          <p style="font-size:14px;line-height:1.6;opacity:0.85;margin:0;max-width:280px;">
+            Cabinet de conseil en gestion de patrimoine indépendant. Basé à Gap, au service de clients dans toute la France.
+          </p>
+          <a href="https://www.orias.fr/search?number=25006472" target="_blank" rel="noopener" class="orias-badge">ORIAS n°&nbsp;25006472</a>
+        </div>
+        <div>
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="/le-cabinet">Notre approche</a></li>
+            <li><a href="/conseiller-gestion-patrimoine-independant">Conseil indépendant</a></li>
+            <li><a href="/honoraires-frais-caches">Honoraires et frais</a></li>
+            <li><a href="/le-cabinet#modele">Notre modèle d'honoraires</a></li>
+            <li><a href="/le-cabinet#partenaires">Partenaires</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/simulateurs">Simulateurs patrimoniaux</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/particuliers">Particuliers</a></li>
+            <li><a href="/entreprises">Entreprises</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>21D route de la Descente</li>
+            <li>05000 Gap</li>
+            <li><a href="tel:+33629865266">+33&nbsp;6&nbsp;29&nbsp;86&nbsp;52&nbsp;66</a></li>
+            <li><a href="mailto:kevin@monte-cristo.net">kevin@monte-cristo.net</a></li>
+            <li><a href="https://www.linkedin.com/company/108398030/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li style="margin-top:14px;"><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="mentions">
+          MONTE-CRISTO PATRIMOINE, SAS au capital social de 1 000 €, immatriculée au RCS de Gap, N° 989 044 813, dont le siège social est situé 21 route de la Descente, 05000 Gap. CIF et courtier d'assurance enregistré au Registre unique des intermédiaires en assurance, banque et finance sous le numéro 25006472 (www.orias.fr) en qualité d'adhérent de la CNCGP, association agréée par l'Autorité des marchés financiers.
+        </div>
+        <div style="flex-shrink:0;">© 2026</div>
+      </div>
+    </div>
+  </footer>
+<!-- END GLOBAL FOOTER -->
+
+</div>
+<script src="/cookies.js"></script>
+<script src="/site.js" defer></script>
+</body>
+</html>

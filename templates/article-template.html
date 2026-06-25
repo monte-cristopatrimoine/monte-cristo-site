@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     TEMPLATE ARTICLE — Monte-Cristo Patrimoine
+     Fichier de référence · Ne pas publier · Ne pas indexer
+     Usage : copier ce fichier, renommer, remplacer les zones MODIFIER
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<!-- [MODIFIER] Titre de la page -->
+<title>Titre de l'article — Monte-Cristo Patrimoine</title>
+
+<!-- Noindex : fichier de référence uniquement -->
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+<!-- ── SEO ──────────────────────────────────────────────────────────── -->
+<!-- [MODIFIER] Description 150-160 car. -->
+<meta name="description" content="Description de l'article.">
+<!-- [MODIFIER] URL canonique sans .html -->
+<link rel="canonical" href="https://monte-cristo.net/article-slug"/>
+<meta property="og:title" content="Titre OG de l'article — Monte-Cristo Patrimoine"/>
+<meta property="og:description" content="Description OG."/>
+<meta property="og:url" content="https://monte-cristo.net/article-slug"/>
+<meta property="og:type" content="article"/>
+<!-- [MODIFIER] og:image — utiliser /assets/og-image.png par défaut ou image spécifique -->
+<meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Titre Twitter de l'article">
+<meta name="twitter:description" content="Description Twitter.">
+<meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
+
+<!-- ── JSON-LD Article ───────────────────────────────────────────────── -->
+<!-- [MODIFIER] headline, datePublished, url, image -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Titre long de l'article",
+  "datePublished": "2026-01-01",
+  "author": {"@type": "Person", "name": "Kévin Blache"},
+  "publisher": {"@type": "Organization", "name": "Monte-Cristo Patrimoine", "url": "https://monte-cristo.net"},
+  "image": "https://monte-cristo.net/assets/og-image.png",
+  "url": "https://monte-cristo.net/article-slug"
+}
+</script>
+
+<!-- ── Fonts + variables CSS globales ──────────────────────────────── -->
+<link rel="stylesheet" href="/colors_and_type.css"/>
+
+<style>
+  /* ── Reset minimal ── */
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--mcp-beige); color: var(--mcp-ink); }
+  .page { min-height: 100vh; }
+  img { max-width: 100%; display: block; }
+
+  /* ── Skip link accessibilité ── */
+  .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+  .skip-link:focus {
+    position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto;
+    background: var(--mcp-green); color: #FDFAF3; padding: 10px 22px; border-radius: 6px;
+    font-weight: 600; font-size: 15px; text-decoration: none; outline: 3px solid var(--mcp-orange);
+  }
+
+  /* ══════════════════════════════════════════════════════════════════
+     HEADER — commun à toutes les pages
+     Synchronisé via scripts/sync-layout.py (ne pas modifier ici)
+  ══════════════════════════════════════════════════════════════════ */
+  .header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(254, 250, 242, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--mcp-beige-300);
+  }
+  .header-inner {
+    max-width: 1240px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 4px 40px; gap: 24px;
+  }
+  .logo { display: flex; align-items: center; height: 72px; overflow: hidden; }
+  .logo img { height: 128px; display: block; }
+  .nav { display: flex; align-items: center; gap: 36px; }
+  .nav a {
+    text-decoration: none; color: var(--mcp-ink); font-size: 15px;
+    font-weight: 400; transition: color var(--dur-fast) var(--ease-out);
+  }
+  .nav a:hover { color: var(--mcp-green); }
+  .nav a.active { color: var(--mcp-green); font-weight: 500; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all 0.2s; }
+  .nav-rdv { display: none; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     BOUTONS — communs à toutes les pages
+  ══════════════════════════════════════════════════════════════════ */
+  .btn {
+    font-family: var(--font-sans); font-weight: 500; font-size: 15px;
+    border-radius: var(--radius-pill); padding: 12px 26px;
+    border: 1px solid transparent; cursor: pointer;
+    display: inline-flex; align-items: center; gap: 10px;
+    transition: all var(--dur-base) var(--ease-out); text-decoration: none;
+  }
+  .btn-primary { background: var(--mcp-green); color: #FDFAF3 !important; }
+  .btn-primary:hover { background: var(--mcp-green-700); transform: translateY(-1px); }
+  .btn-accent { background: var(--mcp-orange); color: #FDFAF3 !important; }
+  .btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); }
+  .btn-secondary { background: transparent; color: var(--mcp-green); border-color: var(--mcp-green); }
+  .btn-secondary:hover { background: var(--mcp-green); color: var(--mcp-beige); }
+
+  /* ══════════════════════════════════════════════════════════════════
+     ARTICLE HERO — [OBLIGATOIRE]
+     .article-hero-inner : max-width 880px
+     Variables : breadcrumb catégorie, pill label, date, H1, deck
+  ══════════════════════════════════════════════════════════════════ */
+  .article-hero {
+    background: var(--mcp-beige);
+    padding: 64px 40px 56px;
+    border-bottom: 1px solid var(--mcp-beige-300);
+  }
+  .article-hero-inner { max-width: 880px; margin: 0 auto; }
+
+  .breadcrumb {
+    font-size: 13px; color: var(--mcp-ink-500);
+    display: flex; gap: 10px; align-items: center; margin-bottom: 28px;
+  }
+  .breadcrumb a { color: var(--mcp-green); text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .breadcrumb .sep { opacity: 0.4; }
+
+  .article-meta {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 14px;
+    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mcp-ink-500); margin-bottom: 24px;
+  }
+  .article-meta .pill {
+    background: var(--mcp-green); color: var(--mcp-beige);
+    padding: 6px 14px; border-radius: var(--radius-pill); font-weight: 500;
+  }
+
+  .article-title {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: clamp(34px, 4.4vw, 60px); line-height: 1.06;
+    letter-spacing: -0.025em; color: var(--mcp-green);
+    margin: 0 0 24px; text-wrap: balance;
+  }
+  .article-deck {
+    font-size: 20px; line-height: 1.55;
+    color: var(--mcp-ink-500); margin: 0; max-width: 720px;
+    text-wrap: pretty;
+  }
+
+  /* ── Byline auteur ── */
+  .article-byline {
+    display: flex; align-items: center; gap: 14px;
+    margin-top: 36px; padding-top: 28px;
+    border-top: 1px solid var(--mcp-beige-300);
+  }
+  .article-byline .avatar { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; flex-shrink: 0; }
+  .article-byline .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .article-byline .who { font-size: 14px; line-height: 1.4; }
+  .article-byline .who strong { color: var(--mcp-ink); font-weight: 500; }
+  .article-byline .who span { color: var(--mcp-ink-500); }
+
+  /* ══════════════════════════════════════════════════════════════════
+     IMPACT CARD — [OPTIONNEL — VARIANTE A]
+     Chiffre sobre (%, ratio, proportion)
+     Exemple : "Moins de 5 %"
+     Positionné en chevauchement sous le hero (-28px)
+  ══════════════════════════════════════════════════════════════════ */
+  .impact-card { max-width: 1080px; margin: -28px auto 0; padding: 0 40px; }
+  .impact-card-inner {
+    background: var(--mcp-green); color: var(--mcp-beige);
+    border-radius: 20px; padding: 44px 48px 40px;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 48px; align-items: center; position: relative; overflow: hidden;
+  }
+  .impact-card-inner::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 60% 80% at 100% 50%, rgba(230,126,34,0.18), transparent 60%),
+      linear-gradient(135deg, rgba(151,181,160,0.10), transparent 60%);
+  }
+  .impact-card .ic-eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; opacity: 0.65; margin: 0 0 12px; position: relative; }
+  .impact-card .ic-figure { font-family: var(--font-display); font-weight: 200; font-size: clamp(52px, 7vw, 88px); line-height: 0.95; letter-spacing: -0.04em; color: var(--mcp-beige); position: relative; margin: 0; }
+  .impact-card .ic-caption { font-family: var(--font-display); font-weight: 300; font-size: 18px; line-height: 1.5; letter-spacing: -0.01em; opacity: 0.88; margin: 0; position: relative; text-wrap: balance; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     HERO NUMBER — [OPTIONNEL — VARIANTE B]
+     Chiffre fort en euros / montant / impact mesurable
+     Exemple : "187 000 €"
+     Positionné en chevauchement sous le hero (-32px)
+  ══════════════════════════════════════════════════════════════════ */
+  .hero-number { max-width: 1080px; margin: -32px auto 0; padding: 0 40px; }
+  .hero-number-inner {
+    background: var(--mcp-green); color: var(--mcp-beige);
+    border-radius: 20px; padding: 56px 56px 52px;
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 56px; align-items: center; position: relative; overflow: hidden;
+  }
+  .hero-number-inner::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 60% 80% at 100% 50%, rgba(230,126,34,0.18), transparent 60%),
+      linear-gradient(135deg, rgba(151,181,160,0.10), transparent 60%);
+  }
+  .hero-number .figure { font-family: var(--font-display); font-weight: 200; font-size: clamp(72px, 10vw, 132px); line-height: 0.95; letter-spacing: -0.04em; color: var(--mcp-beige); position: relative; margin: 0 0 12px; }
+  .hero-number .figure sup { font-size: 0.42em; font-weight: 300; letter-spacing: 0; vertical-align: 0.45em; opacity: 0.85; margin-left: 2px; }
+  .hero-number .figure-label { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.7; font-weight: 500; margin: 0 0 14px; position: relative; }
+  .hero-number .figure-caption { font-family: var(--font-display); font-weight: 300; font-size: 22px; line-height: 1.4; letter-spacing: -0.01em; margin: 0; opacity: 0.92; position: relative; text-wrap: balance; }
+  .hero-number .figure-caption em { font-style: italic; font-weight: 300; color: #F4D5B4; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     ARTICLE BODY — [OBLIGATOIRE]
+     max-width 760px, 18px/1.7
+     Choisir structure H2 : variante A (simples) ou B (numérotés)
+  ══════════════════════════════════════════════════════════════════ */
+  .article-body {
+    max-width: 760px; margin: 0 auto;
+    padding: 64px 40px 24px;
+    font-size: 18px; line-height: 1.75; color: var(--mcp-ink);
+  }
+  .article-body > p { margin: 0 0 26px; }
+  .article-body strong { font-weight: 500; color: var(--mcp-ink); }
+  .article-body em { font-style: italic; }
+  .article-body ul { list-style: none; padding: 0; margin: 0 0 28px; }
+  .article-body ul li { padding-left: 28px; position: relative; margin-bottom: 14px; }
+  .article-body ul li::before { content: ""; position: absolute; left: 0; top: 0.85em; width: 14px; height: 1px; background: var(--mcp-green); }
+  .article-body a { color: var(--mcp-green); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .article-body a:hover { color: var(--mcp-green-700); }
+
+  /* ── H2 Variante A : simples [OPTIONNEL A] ── */
+  .article-body h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: 32px; line-height: 1.18; letter-spacing: -0.015em;
+    color: var(--mcp-green); margin: 56px 0 20px; text-wrap: balance;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+
+  /* ── H2 Variante B : section-heading numérotés [OPTIONNEL B] ──
+     Usage : <div class="section-heading"><span class="num">1</span><h2>Titre</h2></div>
+  ── */
+  .section-heading { display: flex; align-items: baseline; gap: 18px; margin: 72px 0 24px; }
+  .section-heading:first-child { margin-top: 0; }
+  .section-heading .num {
+    font-family: var(--font-display); font-weight: 300; font-size: 22px;
+    color: var(--mcp-orange); letter-spacing: -0.01em; line-height: 1;
+    border: 1px solid var(--mcp-orange); border-radius: 50%;
+    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transform: translateY(2px);
+  }
+  .section-heading h2 {
+    font-family: var(--font-display); font-weight: 400;
+    font-size: clamp(26px, 3vw, 32px); line-height: 1.18; letter-spacing: -0.015em;
+    color: var(--mcp-green); margin: 0; text-wrap: balance;
+  }
+
+  /* ── Lettrine [OPTIONNEL] — ajouter class="lettrine" sur le 1er <p> ── */
+  .lettrine::first-letter {
+    float: left; font-family: var(--font-display); font-size: 3.4em;
+    line-height: 0.86; font-weight: 300; color: var(--mcp-green);
+    margin: 0.06em 0.10em 0 0;
+  }
+
+  /* ── Pullquote Variante A : centré [OPTIONNEL A] ── */
+  .pullquote {
+    padding: 28px 0; margin: 44px 0;
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 26px; line-height: 1.3; letter-spacing: -0.015em;
+    color: var(--mcp-green); font-style: italic; text-align: center;
+  }
+  /* ── Pullquote Variante B : liseré orange [OPTIONNEL B] ──
+     Remplacer le style ci-dessus par :
+     border-left: 3px solid var(--mcp-orange);
+     padding: 4px 0 4px 24px; margin: 36px 0;
+     text-align: left; font-size: 24px;
+  ── */
+
+  /* ── Callout [OPTIONNEL] ── */
+  .callout {
+    margin: 36px 0; background: var(--mcp-beige-200);
+    border-left: 3px solid var(--mcp-green);
+    border-radius: 0 12px 12px 0; padding: 24px 28px;
+  }
+  .callout p { margin: 0; font-size: 17px; line-height: 1.6; color: var(--mcp-ink); }
+  .callout p strong { color: var(--mcp-green); font-weight: 500; }
+
+  /* ── Cards pédagogiques [OPTIONNEL] ── */
+  .fee-cards { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 28px 0 32px; }
+  .fee-card { background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); border-radius: 14px; padding: 28px 32px; }
+  .fee-card .label { font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mcp-orange); display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .fee-card .label::before { content: ""; width: 18px; height: 1px; background: var(--mcp-orange); }
+  .fee-card h3 { font-family: var(--font-display); font-weight: 500; font-size: 20px; color: var(--mcp-green); margin: 0 0 10px; letter-spacing: -0.01em; }
+  .fee-card p { margin: 0; font-size: 16px; line-height: 1.6; color: var(--mcp-ink-700); }
+  .fee-card p + p { margin-top: 10px; }
+
+  /* ── Cards principes (3 colonnes) [OPTIONNEL] ── */
+  .principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0 32px; }
+  .principle { background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); border-radius: 12px; padding: 22px 22px 24px; }
+  .principle .pnum { font-family: var(--font-display); font-weight: 300; font-size: 13px; letter-spacing: 0.16em; color: var(--mcp-green); text-transform: uppercase; margin-bottom: 8px; }
+  .principle h4 { font-family: var(--font-display); font-weight: 500; font-size: 16px; color: var(--mcp-green); margin: 0 0 8px; letter-spacing: -0.005em; line-height: 1.3; }
+  .principle p { font-size: 14px; line-height: 1.55; color: var(--mcp-ink-700); margin: 0; }
+
+  /* ── Teaser simulateur [OPTIONNEL] ── */
+  .sim-teaser {
+    margin: 40px 0 8px;
+    background: linear-gradient(180deg, #E6EEE6 0%, #DDE7DF 100%);
+    border: 1px solid var(--mcp-green-300); border-radius: 16px; padding: 28px 32px;
+    display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center;
+    position: relative; overflow: hidden;
+    text-decoration: none; color: inherit;
+    transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+  }
+  .sim-teaser:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -16px rgba(22,17,10,0.14); }
+  .sim-teaser .teaser-eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500; color: var(--mcp-orange); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+  .sim-teaser .teaser-eyebrow::before { content: ""; width: 18px; height: 1px; background: var(--mcp-orange); }
+  .sim-teaser h3 { font-family: var(--font-display); font-weight: 400; font-size: 22px; line-height: 1.25; letter-spacing: -0.015em; color: var(--mcp-green); margin: 0 0 8px; text-wrap: balance; }
+  .sim-teaser p { margin: 0; font-size: 15px; color: var(--mcp-ink-700); line-height: 1.5; max-width: 460px; }
+  .sim-teaser .teaser-cta { flex-shrink: 0; white-space: nowrap; position: relative; z-index: 1; }
+
+  /* ── Pilier-link (lien vers page de référence) [OPTIONNEL] ── */
+  .pilier-link {
+    margin-top: 40px; border: 1px solid var(--mcp-green-300); border-radius: 12px;
+    padding: 24px 28px; background: var(--mcp-beige);
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  }
+  .pilier-link .pl-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mcp-green); margin-bottom: 6px; }
+  .pilier-link .pl-text { font-size: 15px; color: var(--mcp-ink-500); margin: 0; line-height: 1.5; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     CTA FINAL PREMIUM — [OBLIGATOIRE]
+     Fond vert, glow orange, h3 beige, btn-accent
+     Positionné à l'intérieur de .article-body, en dernier enfant
+  ══════════════════════════════════════════════════════════════════ */
+  .article-end {
+    margin: 64px auto 0; max-width: 880px;
+    background: var(--mcp-green); color: var(--mcp-beige);
+    border-radius: 20px; padding: 48px 48px 44px;
+    position: relative; overflow: hidden;
+  }
+  .article-end::after {
+    content: ""; position: absolute; right: -120px; bottom: -160px;
+    width: 360px; height: 360px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(circle at 30% 30%, rgba(230,126,34,0.28), transparent 70%);
+  }
+  .article-end .eyebrow-cta { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; opacity: 0.7; margin-bottom: 14px; }
+  .article-end h3 {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: clamp(26px, 3vw, 34px); line-height: 1.18; letter-spacing: -0.02em;
+    color: var(--mcp-beige); margin: 0 0 16px; max-width: 600px; text-wrap: balance;
+  }
+  .article-end p { font-size: 16px; line-height: 1.55; opacity: 0.88; margin: 0 0 28px; max-width: 540px; }
+  .article-end .btn-accent { position: relative; z-index: 1; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     NOTES LÉGALES — [OPTIONNEL]
+     Utiliser si l'article contient des simulations chiffrées
+  ══════════════════════════════════════════════════════════════════ */
+  .article-legal {
+    max-width: 760px; margin: 56px auto 0;
+    padding: 40px 40px 0; border-top: 1px solid var(--mcp-beige-300);
+  }
+  .article-legal p { font-size: 12.5px; line-height: 1.6; color: var(--mcp-ink-500); font-style: italic; margin: 0 0 12px; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     RELATED / RESSOURCES GLOBALES — [OBLIGATOIRE]
+     Synchronisé via marqueurs BEGIN/END GLOBAL ARTICLE RESOURCES
+     (futur script sync-resources.py)
+  ══════════════════════════════════════════════════════════════════ */
+  .related { background: var(--mcp-beige-200); padding: 72px 40px; margin-top: 80px; border-top: 1px solid var(--mcp-beige-300); }
+  .related-inner { max-width: 1080px; margin: 0 auto; }
+  .related h4 { font-family: var(--font-display); font-weight: 400; font-size: 28px; color: var(--mcp-green); margin: 0 0 32px; letter-spacing: -0.015em; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .related-card {
+    background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 12px; padding: 28px;
+    text-decoration: none; color: inherit;
+    transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+  }
+  .related-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -12px rgba(22,17,10,0.10); }
+  .related-card .topic { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mcp-green); }
+  .related-card h5 { font-family: var(--font-display); font-weight: 400; font-size: 19px; line-height: 1.3; color: var(--mcp-green); margin: 12px 0 10px; letter-spacing: -0.01em; text-wrap: balance; }
+  .related-card p { font-size: 14px; color: var(--mcp-ink-500); line-height: 1.55; margin: 0; }
+  .related-card.soon { opacity: 0.6; cursor: default; }
+  .related-card.soon h5::after { content: " · à paraître"; font-style: italic; opacity: 0.6; }
+
+  /* ══════════════════════════════════════════════════════════════════
+     FOOTER — commun à toutes les pages
+     Synchronisé via scripts/sync-layout.py (ne pas modifier ici)
+  ══════════════════════════════════════════════════════════════════ */
+  footer { background: var(--mcp-green); color: var(--mcp-beige); padding: 80px 40px 36px; }
+  .footer-inner { max-width: 1240px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(254,250,242,0.18); align-items: start; }
+  .footer-top img { height: 128px; margin-bottom: 22px; display: block; }
+  .footer-top h4 { font-size: 13px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 18px; opacity: 0.85; }
+  .footer-top ul { list-style: none; padding: 0; margin: 0; }
+  .footer-top li { margin-bottom: 10px; font-size: 14px; opacity: 0.85; }
+  .footer-top a { color: var(--mcp-beige); text-decoration: none; }
+  .footer-top a:hover { opacity: 1; text-decoration: underline; }
+  .footer-bottom { margin-top: 32px; display: flex; justify-content: space-between; gap: 32px; font-size: 11px; line-height: 1.7; opacity: 0.7; font-style: italic; }
+  .footer-bottom .mentions { max-width: 820px; }
+  .orias-badge { display: inline-block; margin-top: 16px; padding: 4px 10px; font-size: 12px; letter-spacing: 0.06em; color: var(--mcp-beige); border: 1px solid rgba(240,230,210,0.45); border-radius: 3px; text-decoration: none; opacity: 0.9; }
+  .orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
+
+  /* ══════════════════════════════════════════════════════════════════
+     RESPONSIVE
+  ══════════════════════════════════════════════════════════════════ */
+  @media (max-width: 1100px) {
+    .header-inner { padding: 4px 24px; }
+    .nav { gap: 22px; }
+    .nav a { font-size: 14px; }
+    .logo { height: 60px; }
+    .logo img { height: 110px; }
+    .article-hero { padding: 56px 24px 48px; }
+    .impact-card { padding: 0 24px; }
+    .impact-card-inner { padding: 36px 36px 32px; gap: 36px; }
+    .hero-number { padding: 0 24px; }
+    .hero-number-inner { padding: 44px 40px; gap: 36px; }
+    .principles { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .header-inner { padding: 4px 20px; gap: 12px; }
+    .nav { display: none; }
+    .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--mcp-beige); padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
+    .header { position: relative; }
+    .hamburger { display: flex; }
+    .header-inner .btn { display: none; }
+    .nav-rdv { display: inline-flex !important; }
+    .logo { height: 52px; }
+    .logo img { height: 92px; }
+    .article-hero { padding: 40px 20px 36px; }
+    .article-deck { font-size: 17px; }
+    .impact-card { padding: 0 20px; margin-top: -20px; }
+    .impact-card-inner { grid-template-columns: 1fr; padding: 28px; gap: 16px; }
+    .impact-card .ic-figure { font-size: 56px; }
+    .hero-number { padding: 0 20px; margin-top: -20px; }
+    .hero-number-inner { grid-template-columns: 1fr; padding: 32px 28px; gap: 20px; }
+    .hero-number .figure { font-size: 72px; }
+    .article-body { padding: 48px 20px 16px; font-size: 16px; }
+    .article-body h2 { font-size: 26px; }
+    .section-heading { gap: 12px; }
+    .pullquote { font-size: 19px; padding: 16px 0; }
+    .lettrine::first-letter { float: none; font-size: inherit; line-height: inherit; color: inherit; margin: 0; }
+    .sim-teaser { grid-template-columns: 1fr; padding: 22px; gap: 18px; }
+    .pilier-link { flex-direction: column; align-items: flex-start; }
+    .article-end { padding: 32px 28px; border-radius: 16px; }
+    .article-legal { padding: 32px 20px 0; }
+    .related { padding: 56px 20px; }
+    .related-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; }
+    .footer-bottom { flex-direction: column; gap: 16px; }
+    footer { padding: 56px 24px 32px; }
+  }
+</style>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <script src="/analytics.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="page">
+
+  <!-- ====== HEADER ====== -->
+  <!-- BEGIN GLOBAL HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Accueil — Monte-Cristo Patrimoine"><img src="/assets/logo-vert.webp" alt="Monte-Cristo Patrimoine"/></a>
+      <nav class="nav">
+        <a href="/le-cabinet">Le cabinet</a>
+        <a href="/particuliers">Particuliers</a>
+        <a href="/entreprises">Entreprises</a>
+        <a href="/blog" class="active">Blog</a>
+        <a href="/#contact" class="btn btn-accent nav-rdv">Prendre rendez-vous</a>
+      </nav>
+      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <!-- END GLOBAL HEADER -->
+
+  <main>
+
+    <!-- ====== ARTICLE HERO [OBLIGATOIRE] ====== -->
+    <!-- [MODIFIER] catégorie breadcrumb, pill, date, H1, deck -->
+    <section class="article-hero" id="main">
+      <div class="article-hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span class="sep">/</span>
+          <a href="/blog">Blog</a>
+          <span class="sep">/</span>
+          <!-- [MODIFIER] Catégorie -->
+          <span>Catégorie</span>
+        </div>
+        <div class="article-meta">
+          <!-- [MODIFIER] Label pill + date -->
+          <span class="pill">Catégorie</span>
+          <span>01 janvier 2026</span>
+        </div>
+        <!-- [MODIFIER] Titre H1 -->
+        <h1 class="article-title">Titre de l'article</h1>
+        <!-- [MODIFIER] Chapô deck -->
+        <p class="article-deck">Résumé de l'article en 1-2 phrases. Angle, promesse, ce que le lecteur va comprendre.</p>
+        <div class="article-byline">
+          <div class="avatar"><img src="/assets/team/kevin-blache-avatar.webp" alt="Kévin Blache"/></div>
+          <div class="who">
+            <strong>Kévin Blache</strong><br/>
+            <span>Président · Monte-Cristo Patrimoine</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== IMPACT CARD [OPTIONNEL — VARIANTE A] ======
+         Chiffre sobre : %, ratio, proportion.
+         Supprimer ce bloc si pas de chiffre clé.
+    -->
+    <div class="impact-card">
+      <div class="impact-card-inner">
+        <div>
+          <!-- [MODIFIER] eyebrow + figure -->
+          <p class="ic-eyebrow">Eyebrow</p>
+          <p class="ic-figure">Chiffre&nbsp;%</p>
+        </div>
+        <div>
+          <!-- [MODIFIER] Caption explicative -->
+          <p class="ic-caption">Explication du chiffre en 1-2 phrases. Contexte, portée, implication.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== HERO NUMBER [OPTIONNEL — VARIANTE B] ======
+         Chiffre fort en euros / montant mesurable.
+         Remplace VARIANTE A. Supprimer si non utilisé.
+    -->
+    <!--
+    <div class="hero-number">
+      <div class="hero-number-inner">
+        <div>
+          <p class="figure-label">Label · contexte</p>
+          <p class="figure">000&#8239;000&#8239;€</p>
+          <p class="figure-caption">Explication du chiffre. Ce qu'il représente concrètement.</p>
+        </div>
+        <div>
+          <p class="figure-caption" style="font-size:18px;opacity:0.85;">
+            Deuxième angle du chiffre. <em>Mise en perspective.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!-- ====== ARTICLE BODY [OBLIGATOIRE] ====== -->
+    <article class="article-body">
+
+      <!-- Intro — ajouter class="lettrine" sur le 1er <p> si souhaité [OPTIONNEL] -->
+      <p class="lettrine">Premier paragraphe de l'article. Mise en situation, accroche éditoriale.</p>
+
+      <!-- ── H2 Variante A : simples [OPTIONNEL A] ──
+           À utiliser pour articles de fond, définitions, guides.
+      -->
+      <h2>Titre de section</h2>
+      <p>Corps du texte.</p>
+
+      <!-- ── H2 Variante B : section-heading numérotés [OPTIONNEL B] ──
+           À utiliser pour articles structurés en étapes ou mécanismes.
+           Supprimer si Variante A utilisée.
+      -->
+      <!--
+      <div class="section-heading">
+        <span class="num">1</span>
+        <h2>Titre de section numérotée</h2>
+      </div>
+      -->
+
+      <!-- ── Pullquote [OPTIONNEL] ──
+           Variante A (centré, italic) : utiliser tel quel.
+           Variante B (liseré orange) : ajouter style="border-left:3px solid var(--mcp-orange);padding:4px 0 4px 24px;margin:36px 0;text-align:left;font-size:24px;"
+      -->
+      <p class="pullquote">Citation forte ou synthèse éditoriale de la section.</p>
+
+      <!-- ── Callout [OPTIONNEL] ── -->
+      <!--
+      <div class="callout">
+        <p><strong>Ce que peu de clients réalisent :</strong> explication importante à mettre en relief.</p>
+      </div>
+      -->
+
+      <!-- ── Cards pédagogiques [OPTIONNEL] ── -->
+      <!--
+      <div class="fee-cards">
+        <div class="fee-card">
+          <div class="label">Mécanisme 01</div>
+          <h3>Titre de la card</h3>
+          <p>Explication du mécanisme.</p>
+        </div>
+      </div>
+      -->
+
+      <!-- ── Teaser simulateur [OPTIONNEL] ── -->
+      <!--
+      <a class="sim-teaser" href="/simulateur-frais">
+        <div>
+          <div class="teaser-eyebrow">Simulateur de frais de gestion</div>
+          <h3>Et pour votre situation, concrètement ?</h3>
+          <p>Description courte du simulateur.</p>
+        </div>
+        <span class="btn btn-primary teaser-cta">Lancer le simulateur →</span>
+      </a>
+      -->
+
+      <!-- ── Pilier-link [OPTIONNEL] ── -->
+      <!--
+      <div class="pilier-link">
+        <div>
+          <div class="pl-eyebrow">Page de référence</div>
+          <p class="pl-text">Description de la page pilier vers laquelle pointer.</p>
+        </div>
+        <a href="/url-pilier" class="btn btn-secondary" style="flex-shrink:0;">Découvrir →</a>
+      </div>
+      -->
+
+      <!-- ====== CTA FINAL PREMIUM [OBLIGATOIRE] ====== -->
+      <!-- [MODIFIER] eyebrow, h3, p, lien CTA -->
+      <div class="article-end">
+        <div class="eyebrow-cta">Conseil en gestion de patrimoine</div>
+        <h3>Échangeons sur votre situation</h3>
+        <p>45 minutes, sans engagement, pour identifier ensemble les leviers prioritaires de votre patrimoine.</p>
+        <a href="/#contact" class="btn btn-accent">Prendre rendez-vous →</a>
+      </div>
+
+    </article>
+
+    <!-- ====== NOTES LÉGALES [OPTIONNEL] ======
+         Obligatoire si l'article contient des simulations chiffrées.
+    -->
+    <!--
+    <section class="article-legal">
+      <p>Note de bas de page : source des chiffres, hypothèses de simulation, cadre réglementaire.</p>
+    </section>
+    -->
+
+    <!-- BEGIN GLOBAL ARTICLE RESOURCES -->
+    <!-- [MODIFIER] Liens vers articles publiés + cards .soon pour à paraître -->
+    <section class="related">
+      <div class="related-inner">
+        <h4>Nos ressources</h4>
+        <div class="related-grid">
+          <a href="/article-frais-bancaires" class="related-card">
+            <div class="topic">Frais</div>
+            <h5>Frais bancaires et rétrocessions</h5>
+            <p>Simulateur interactif : mesurez l'impact réel des frais cachés sur votre épargne sur 20&nbsp;ans.</p>
+          </a>
+          <div class="related-card soon">
+            <div class="topic">Catégorie</div>
+            <h5>Titre article à paraître</h5>
+            <p>Description courte.</p>
+          </div>
+          <div class="related-card soon">
+            <div class="topic">Catégorie</div>
+            <h5>Titre article à paraître</h5>
+            <p>Description courte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END GLOBAL ARTICLE RESOURCES -->
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <!-- BEGIN GLOBAL FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <img src="/assets/logo-beige.webp" alt="Monte-Cristo Patrimoine"/>
+          <p style="font-size:14px;line-height:1.6;opacity:0.85;margin:0;max-width:280px;">
+            Cabinet de conseil en gestion de patrimoine indépendant. Basé à Gap, au service de clients dans toute la France.
+          </p>
+          <a href="https://www.orias.fr/search?number=25006472" target="_blank" rel="noopener" class="orias-badge">ORIAS n°&nbsp;25006472</a>
+        </div>
+        <div>
+          <h4>Cabinet</h4>
+          <ul>
+            <li><a href="/le-cabinet">Notre approche</a></li>
+            <li><a href="/conseiller-gestion-patrimoine-independant">Conseil indépendant</a></li>
+            <li><a href="/honoraires-frais-caches">Honoraires et frais</a></li>
+            <li><a href="/le-cabinet#modele">Notre modèle d'honoraires</a></li>
+            <li><a href="/le-cabinet#partenaires">Partenaires</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/simulateurs">Simulateurs patrimoniaux</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/particuliers">Particuliers</a></li>
+            <li><a href="/entreprises">Entreprises</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>21D route de la Descente</li>
+            <li>05000 Gap</li>
+            <li><a href="tel:+33629865266">+33&nbsp;6&nbsp;29&nbsp;86&nbsp;52&nbsp;66</a></li>
+            <li><a href="mailto:kevin@monte-cristo.net">kevin@monte-cristo.net</a></li>
+            <li><a href="https://www.linkedin.com/company/108398030/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li style="margin-top:14px;"><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="mentions">
+          MONTE-CRISTO PATRIMOINE, SAS au capital social de 1 000 €, immatriculée au RCS de Gap, N° 989 044 813, dont le siège social est situé 21 route de la Descente, 05000 Gap. CIF et courtier d'assurance enregistré au Registre unique des intermédiaires en assurance, banque et finance sous le numéro 25006472 (www.orias.fr) en qualité d'adhérent de la CNCGP, association agréée par l'Autorité des marchés financiers.
+        </div>
+        <div style="flex-shrink:0;">© 2026</div>
+      </div>
+    </div>
+  </footer>
+  <!-- END GLOBAL FOOTER -->
+
+</div>
+<script src="/cookies.js"></script>
+<script src="/site.js" defer></script>
+</body>
+</html>

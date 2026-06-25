@@ -143,6 +143,20 @@
       "status": "active"
     },
     {
+      "file": "simulateurs.html",
+      "url": "/simulateurs",
+      "type": "outil",
+      "indexable": true,
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "cluster": "frais",
+      "has_footer": true,
+      "in_main_nav": false,
+      "in_footer_nav": true,
+      "status": "active"
+    },
+    {
       "file": "mentions-legales.html",
       "url": "/mentions-legales",
       "type": "legal",
