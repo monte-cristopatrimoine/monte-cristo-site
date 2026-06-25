@@ -125,11 +125,11 @@
     border-top: 1px solid var(--mcp-beige-300);
   }
   .article-byline .avatar {
-    width: 44px; height: 44px; border-radius: 50%;
-    background: linear-gradient(135deg, #97B5A0, #1B6A45);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--mcp-beige); font-family: var(--font-display);
-    font-weight: 500; font-size: 16px;
+    width: 56px; height: 56px; border-radius: 50%;
+    overflow: hidden; flex-shrink: 0;
+  }
+  .article-byline .avatar img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
   }
   .article-byline .who { font-size: 14px; line-height: 1.4; }
   .article-byline .who strong { color: var(--mcp-ink); font-weight: 500; }
@@ -795,10 +795,12 @@
 
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
   .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; }
+  .nav-rdv { display: none; }
   @media (max-width: 760px) {
     .nav.open { display: flex !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--mcp-beige); padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
     .hamburger { display: flex; }
-    .header-inner > .btn { display: none; }
+    .header-inner .btn { display: none; }
+    .nav-rdv { display: inline-flex !important; }
     .header { position: relative; }
   }
 </style>
@@ -853,7 +855,7 @@
         Comment les modes de rémunération influencent les décisions patrimoniales — et pourquoi la transparence sur les frais change tout.
       </p>
       <div class="article-byline">
-        <div class="avatar">KB</div>
+        <div class="avatar"><img src="/assets/team/kevin-blache-avatar.webp" alt="Kévin Blache"/></div>
         <div class="who">
           <strong>Kévin Blache</strong><br/>
           <span>Président · Monte-Cristo Patrimoine</span>
@@ -862,7 +864,7 @@
     </div>
   </section>
 
-  <!-- ====== HERO NUMBER CARD ====== -->
+  <!-- ====== IMPACT CARD ====== -->
   <div class="hero-number">
     <div class="hero-number-inner">
       <div>
@@ -1161,7 +1163,7 @@
     <p>Simulation indicative · 200&#8239;000&nbsp;€ · rendement brut hypothétique 5&nbsp;%/an · fiscalité non incluse · droits d'entrée banque estimés à 3&nbsp;%. Frais contrat UC (0,88&nbsp;%) et frais fonds (1,60&nbsp;%)&#8239;: étude France Assureurs, mai&nbsp;2026. Les autres composantes sont des estimations illustratives. La comparaison ne tient pas compte des différences de fiscalité, liquidité ou fonctionnement propre à chaque enveloppe.</p>
   </section>
 
-  <!-- ====== RELATED ====== -->
+  <!-- BEGIN GLOBAL ARTICLE RESOURCES -->
   <section class="related">
     <div class="related-inner">
       <h4>Continuer la lecture</h4>
@@ -1184,6 +1186,7 @@
       </div>
     </div>
   </section>
+  <!-- END GLOBAL ARTICLE RESOURCES -->
 
   </main>
 

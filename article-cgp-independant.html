@@ -31,124 +31,8 @@
     "url": "https://monte-cristo.net/article-cgp-independant"
   }
   </script>
+<link rel="stylesheet" href="/colors_and_type.css"/>
 <style>
-/* Creato Display — Monte-Cristo Patrimoine corporate font.
-   14 files: Thin (100), Light (300), Regular (400), Medium (500),
-   Bold (700), ExtraBold (800), Black (900), each with matching italic. */
-
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Thin.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ThinItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ThinItalic.otf") format("opentype");
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Light.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-LightItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-LightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Regular.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-RegularItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-RegularItalic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Medium.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-MediumItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-MediumItalic.otf") format("opentype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Bold.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-BoldItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-BoldItalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ExtraBold.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ExtraBold.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ExtraBoldItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ExtraBoldItalic.otf") format("opentype");
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Black.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-BlackItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-BlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-:root{--mcp-green:#346848;--mcp-green-700:#244F36;--mcp-green-deep:#1B6A45;--mcp-green-300:#97B5A0;--mcp-green-100:#DDE7DF;--mcp-orange:#E67E22;--mcp-orange-700:#B66518;--mcp-orange-100:#F8DCC0;--mcp-beige:#FDFAF3;--mcp-beige-200:#F4EFE0;--mcp-beige-300:#E8E1CC;--mcp-ink:#16110A;--mcp-ink-700:#3A322A;--mcp-ink-500:#6B6359;--mcp-ink-300:#B7AE9D;--mcp-white:#FFFFFF;--mcp-black:#000000;--bg:var(--mcp-beige);--bg-elevated:var(--mcp-beige-200);--bg-inverse:var(--mcp-green);--bg-accent:var(--mcp-orange);--fg:var(--mcp-ink);--fg-muted:var(--mcp-ink-500);--fg-subtle:var(--mcp-ink-300);--fg-inverse:var(--mcp-beige);--fg-brand:var(--mcp-green);--fg-accent:var(--mcp-orange);--border:var(--mcp-beige-300);--border-strong:var(--mcp-green);--link:var(--mcp-green);--link-hover:var(--mcp-green-deep);--font-sans:"Creato Display","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--font-display:"Creato Display","Inter",system-ui,sans-serif;--fs-12:0.75rem;--fs-14:0.875rem;--fs-16:1rem;--fs-18:1.125rem;--fs-20:1.25rem;--fs-24:1.5rem;--fs-30:1.875rem;--fs-36:2.25rem;--fs-48:3rem;--fs-64:4rem;--fs-80:5rem;--fw-light:300;--fw-regular:400;--fw-medium:500;--fw-bold:700;--fw-extra:800;--lh-tight:1.05;--lh-snug:1.15;--lh-normal:1.35;--lh-relaxed:1.55;--tracking-tight:-0.02em;--tracking-snug:-0.005em;--tracking-normal:0em;--tracking-wide:0.04em;--tracking-eyebrow:0.14em;--sp-1:0.25rem;--sp-2:0.5rem;--sp-3:0.75rem;--sp-4:1rem;--sp-5:1.25rem;--sp-6:1.5rem;--sp-8:2rem;--sp-10:2.5rem;--sp-12:3rem;--sp-16:4rem;--sp-20:5rem;--sp-24:6rem;--sp-32:8rem;--radius-xs:2px;--radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-xl:20px;--radius-pill:999px;--shadow-sm:0 1px 2px rgba(22,17,10,0.06);--shadow-md:0 4px 14px rgba(22,17,10,0.08);--shadow-lg:0 18px 40px -12px rgba(22,17,10,0.18);--shadow-inset-line:inset 0 -1px 0 var(--border);--ease-out:cubic-bezier(0.22,1,0.36,1);--ease-in-out:cubic-bezier(0.65,0,0.35,1);--dur-fast:120ms;--dur-base:220ms;--dur-slow:420ms}html{color-scheme:light}body{background:var(--bg);color:var(--fg);font-family:var(--font-sans);font-size:var(--fs-16);font-weight:var(--fw-regular);line-height:var(--lh-relaxed);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}h1,.h1{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(2.25rem,4.5vw,var(--fs-64));line-height:var(--lh-tight);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-6);text-wrap:balance}h2,.h2{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.75rem,3vw,var(--fs-48));line-height:var(--lh-snug);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-5);text-wrap:balance}h3,.h3{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-30);line-height:var(--lh-snug);color:var(--fg-brand);margin:0 0 var(--sp-4)}h4,.h4{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-20);line-height:var(--lh-normal);color:var(--fg);margin:0 0 var(--sp-3)}.eyebrow{font-size:var(--fs-12);font-weight:var(--fw-medium);letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--fg-brand)}.lead{font-size:var(--fs-20);font-weight:var(--fw-light);line-height:var(--lh-relaxed);color:var(--fg-muted)}p{margin:0 0 var(--sp-4);text-wrap:pretty}small,.small{font-size:var(--fs-14);color:var(--fg-muted)}.legal{font-size:var(--fs-12);line-height:var(--lh-normal);color:var(--fg-muted);font-style:italic}a{color:var(--link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease-out)}a:hover{color:var(--link-hover)}.tagline{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.5rem,2.4vw,var(--fs-36));line-height:1.2;letter-spacing:var(--tracking-tight);color:var(--fg-brand)}.tagline em{font-style:italic;font-weight:var(--fw-regular)}
   /* ── Skip link accessibilité ── */
   .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
   .skip-link:focus { position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto;
@@ -234,7 +118,7 @@
   .article-title {
     font-family: var(--font-display);
     font-weight: 300;
-    font-size: 60px; line-height: 1.05;
+    font-size: clamp(34px, 4.4vw, 60px); line-height: 1.06;
     letter-spacing: -0.025em;
     color: var(--mcp-green);
     margin: 0 0 24px;
@@ -253,7 +137,7 @@
     border-top: 1px solid var(--mcp-beige-300);
   }
   .article-byline .avatar {
-    width: 44px; height: 44px; border-radius: 50%;
+    width: 56px; height: 56px; border-radius: 50%;
     overflow: hidden; flex-shrink: 0;
   }
   .article-byline .avatar img {
@@ -263,39 +147,53 @@
   .article-byline .who strong { color: var(--mcp-ink); font-weight: 500; }
   .article-byline .who span { color: var(--mcp-ink-500); }
 
-  /* ============ ARTICLE RULE ============ */
-  .article-rule {
-    max-width: 720px;
-    margin: 36px auto 0;
+
+  /* ============ IMPACT CARD ============ */
+  .impact-card {
+    max-width: 1080px;
+    margin: -28px auto 0;
     padding: 0 40px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
   }
-  .article-rule::before,
-  .article-rule::after {
-    content: '';
-    flex: 1;
-    height: 1px;
+  .impact-card-inner {
     background: var(--mcp-green);
-    opacity: 0.25;
+    color: var(--mcp-beige);
+    border-radius: 20px;
+    padding: 44px 48px 40px;
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    gap: 48px; align-items: center;
+    position: relative; overflow: hidden;
   }
-  .article-rule .caption {
-    font-family: var(--font-display);
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    color: var(--mcp-green);
-    opacity: 0.55;
-    white-space: nowrap;
+  .impact-card-inner::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 100% 50%, rgba(230,126,34,0.18), transparent 60%),
+      linear-gradient(135deg, rgba(151,181,160,0.10), transparent 60%);
+    pointer-events: none;
+  }
+  .impact-card .ic-eyebrow {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-weight: 500; opacity: 0.65;
+    margin: 0 0 12px; position: relative;
+  }
+  .impact-card .ic-figure {
+    font-family: var(--font-display); font-weight: 200;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: 0.95; letter-spacing: -0.04em;
+    color: var(--mcp-beige); position: relative;
+    margin: 0;
+  }
+  .impact-card .ic-caption {
+    font-family: var(--font-display); font-weight: 300;
+    font-size: 18px; line-height: 1.5; letter-spacing: -0.01em;
+    opacity: 0.88; margin: 0; position: relative;
+    text-wrap: balance;
   }
 
   /* ============ ARTICLE BODY ============ */
   .article-body {
-    max-width: 720px;
+    max-width: 760px;
     margin: 0 auto;
-    padding: 80px 40px 104px;
+    padding: 64px 40px 24px;
     font-size: 18px;
     line-height: 1.75;
     color: var(--mcp-ink);
@@ -348,37 +246,42 @@
     text-align: center;
   }
 
-  /* ============ ARTICLE END CTA (am-cta vert) ============ */
+  /* ============ ARTICLE END CTA ============ */
   .article-end {
-    margin-top: 64px;
+    margin: 64px auto 0;
+    max-width: 880px;
     background: var(--mcp-green);
-    border-radius: 16px;
-    padding: 40px;
-    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+    color: var(--mcp-beige);
+    border-radius: 20px;
+    padding: 48px 48px 44px;
     position: relative; overflow: hidden;
   }
   .article-end::after {
-    content: ''; position: absolute; right: -40px; bottom: -40px;
-    width: 240px; height: 240px;
-    background: url('/assets/mark-vert.png') center/contain no-repeat;
-    opacity: 0.08; pointer-events: none;
+    content: ""; position: absolute;
+    right: -120px; bottom: -160px;
+    width: 360px; height: 360px; border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(230,126,34,0.28), transparent 70%);
+    pointer-events: none;
   }
-  .article-end .text { max-width: 420px; position: relative; }
+  .article-end .eyebrow-cta {
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-weight: 500; opacity: 0.7;
+    margin-bottom: 14px;
+  }
   .article-end h3 {
-    font-family: var(--font-display); font-weight: 400;
-    font-size: 22px; line-height: 1.25;
-    color: var(--mcp-beige); margin: 0 0 8px;
-    letter-spacing: -0.01em;
+    font-family: var(--font-display); font-weight: 300;
+    font-size: clamp(26px, 3vw, 34px); line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: var(--mcp-beige);
+    margin: 0 0 16px; max-width: 600px;
+    text-wrap: balance;
   }
   .article-end p {
-    font-size: 14px; color: rgba(253,250,243,0.75); margin: 0;
-    line-height: 1.55;
+    font-size: 16px; line-height: 1.55;
+    opacity: 0.88; margin: 0 0 28px;
+    max-width: 540px;
   }
-  .btn-light {
-    background: var(--mcp-beige); color: var(--mcp-green) !important;
-    text-decoration: none; position: relative;
-  }
-  .btn-light:hover { background: var(--mcp-beige-200); color: var(--mcp-green-700) !important; transform: translateY(-1px); }
+  .article-end .btn-accent { position: relative; z-index: 1; }
 
   /* ============ PILIER LINK CARD ============ */
   .pilier-link {
@@ -496,7 +399,8 @@
     .logo { height: 60px; }
     .logo img { height: 110px; }
     .article-hero { padding: 56px 24px 48px; }
-    .article-rule { padding: 0 24px; }
+    .impact-card { padding: 0 24px; }
+    .impact-card-inner { padding: 36px 36px 32px; gap: 36px; }
   }
   @media (max-width: 760px) {
     .header-inner { padding: 4px 20px; gap: 12px; }
@@ -509,15 +413,15 @@
     .logo { height: 52px; }
     .logo img { height: 92px; }
     .article-hero { padding: 40px 20px 36px; }
-    .article-title { font-size: 28px; }
     .article-deck { font-size: 17px; }
-    .article-rule { padding: 0 20px; margin-top: 28px; }
-    .article-body { padding: 48px 20px 64px; font-size: 16px; }
+    .impact-card { padding: 0 20px; margin-top: -20px; }
+    .impact-card-inner { grid-template-columns: 1fr; padding: 28px; gap: 16px; }
+    .impact-card .ic-figure { font-size: 56px; }
+    .article-body { padding: 48px 20px 16px; font-size: 16px; }
     .article-body h2 { font-size: 26px; }
     .pullquote { font-size: 19px; padding: 16px 0; }
     .lettrine::first-letter { float: none; font-size: inherit; line-height: inherit; color: inherit; margin: 0; }
-    .article-end { flex-direction: column; align-items: flex-start; padding: 28px; }
-    .article-end::after { display: none; }
+    .article-end { padding: 32px 28px; border-radius: 16px; }
     .pilier-link { flex-direction: column; align-items: flex-start; }
     .related { padding: 56px 20px; }
     .related-grid { grid-template-columns: 1fr; }
@@ -587,9 +491,17 @@
     </div>
   </section>
 
-  <!-- ====== ARTICLE RULE ====== -->
-  <div class="article-rule">
-    <div class="caption">Investissement · Indépendance · Honoraires</div>
+  <!-- ====== IMPACT CARD ====== -->
+  <div class="impact-card">
+    <div class="impact-card-inner">
+      <div>
+        <p class="ic-eyebrow">Modèle minoritaire</p>
+        <p class="ic-figure">Moins de 5&nbsp;%</p>
+      </div>
+      <div>
+        <p class="ic-caption">des conseillers patrimoniaux adoptent un modèle centré sur les honoraires. Un choix qui place la transparence de la rémunération au cœur de la relation de conseil.</p>
+      </div>
+    </div>
   </div>
 
   <!-- ====== ARTICLE BODY ====== -->
@@ -629,11 +541,10 @@
 
     <!-- ====== END-OF-ARTICLE CTA ====== -->
     <div class="article-end">
-      <div class="text">
-        <h3>Échangeons sur votre situation</h3>
-        <p>45 minutes, sans engagement, pour identifier ensemble les leviers prioritaires de votre patrimoine.</p>
-      </div>
-      <a href="/#contact" class="btn btn-light">Prendre rendez-vous</a>
+      <div class="eyebrow-cta">Conseil en gestion de patrimoine</div>
+      <h3>Échangeons sur votre situation</h3>
+      <p>45 minutes, sans engagement, pour identifier ensemble les leviers prioritaires de votre patrimoine.</p>
+      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous →</a>
     </div>
 
     <div class="pilier-link">
