@@ -4,9 +4,6 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Cabinet de gestion de patrimoine indépendant | Monte-Cristo</title>
-<link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<!-- SEO -->
 <meta name="description" content="Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable."/>
 <link rel="canonical" href="https://monte-cristo.net/le-cabinet"/>
 <meta property="og:title" content="Cabinet de gestion de patrimoine indépendant | Monte-Cristo"/>
@@ -14,18 +11,13 @@
 <meta property="og:url" content="https://monte-cristo.net/le-cabinet"/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cabinet de gestion de patrimoine indépendant | Monte-Cristo">
-<meta name="twitter:description" content="Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.">
-<meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
-<!-- Styles partagés -->
-<link rel="stylesheet" href="/colors_and_type.css">
-<link rel="stylesheet" href="/assets/css/mcp-design-system.css?v=20260626b">
-<!-- Performance -->
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/colors_and_type.css"/>
+<link rel="stylesheet" href="/assets/css/mcp-design-system.css?v=20260626b"/>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
-<link rel="preload" as="font" href="/fonts/CreatoDisplay-Light.woff2" type="font/woff2" crossorigin>
-<!-- Analytics -->
 <script src="/analytics.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
 <style>
@@ -35,129 +27,218 @@
   display: none !important;
 }
 
-/* ── HERO INTÉRIEUR — le-cabinet ── */
-.cab-hero { background: var(--mcp-green); color: var(--mcp-beige); padding: 88px 40px 80px; }
-.cab-hero .eyebrow { color: var(--mcp-beige); opacity: .85; margin-bottom: 18px; }
-.cab-hero h1 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem, 4.5vw, 4rem); line-height: 1.06; letter-spacing: -.025em; color: var(--mcp-beige); margin: 0 0 28px; max-width: 760px; text-wrap: balance; }
-.cab-hero h1 em { font-style: italic; font-weight: 400; }
-.cab-hero .lead { font-size: 18px; line-height: 1.62; color: rgba(254,250,242,.85); max-width: 680px; margin: 0; }
+/* ── SECTION HEAD (page cabinet — align-items:start, différent de .mcp-section-head) ── */
+.section-head {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+  margin-bottom: 56px;
+}
+.section-head h2 {
+  font-family: var(--font-display); font-weight: 300;
+  font-size: 52px; line-height: 1.1; letter-spacing: -0.02em;
+  color: var(--mcp-green); margin: 16px 0 0; text-wrap: balance;
+}
+.section-head h2 em { font-style: italic; font-weight: 400; }
+.section-head p { font-size: 18px; line-height: 1.55; color: var(--mcp-ink-500); margin: 0; max-width: 480px; align-self: end; }
+.fondateurs .section-head p, .selection .section-head p { align-self: start; margin-top: 56px; }
+
+/* ── HERO (éditorial centré — pas de hero-demeure.webp) ── */
+.hero { background: var(--mcp-beige); padding: 64px 40px 84px; }
+.hero-inner { max-width: 1240px; margin: 0 auto; text-align: center; }
+.breadcrumb { font-size: 13px; color: var(--mcp-ink-500); display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 30px; }
+.breadcrumb a { color: var(--mcp-green); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { opacity: 0.4; }
+.hero-title {
+  font-family: var(--font-display); font-weight: 300;
+  font-size: 72px; line-height: 1.04; letter-spacing: -0.025em;
+  color: var(--mcp-green); margin: 14px auto 0; max-width: 1000px; text-wrap: balance;
+}
+.hero-title em { font-style: italic; font-weight: 400; }
+.hero-lead { font-size: 19px; line-height: 1.6; color: var(--mcp-ink-500); max-width: 690px; margin: 28px auto 34px; }
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+.hero-reassurance { display: flex; align-items: flex-start; gap: 11px; font-size: 13px; line-height: 1.5; color: var(--mcp-ink-500); margin: 30px auto 0; max-width: 470px; text-align: left; }
+.hero-reassurance::before { content: ""; flex: none; width: 7px; height: 7px; margin-top: 5px; border-radius: 50%; background: var(--mcp-green); box-shadow: 0 0 0 4px rgba(52,104,72,0.14); }
 
 /* ── RAISON D'ÊTRE ── */
-.cab-raison { background: var(--mcp-beige-200); }
-.cab-raison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
-.cab-raison-left h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.75rem, 2.8vw, 2.6rem); line-height: 1.12; letter-spacing: -.02em; color: var(--mcp-green); margin: 16px 0 30px; text-wrap: balance; }
-.cab-raison-left p { font-size: 16px; line-height: 1.7; color: var(--mcp-ink-500); margin: 0 0 16px; }
-.cab-raison-right { border-left: 3px solid var(--mcp-beige-300); padding-left: 36px; display: flex; flex-direction: column; gap: 24px; }
-.cab-signature { margin-top: 12px; font-size: 13px; font-weight: 500; color: var(--mcp-green); letter-spacing: .02em; padding-top: 16px; border-top: 1px solid var(--mcp-beige-300); }
+.raison { background: var(--mcp-beige); padding-top: 40px; }
+.raison-container { border-top: 1px solid var(--mcp-beige-300); padding-top: 56px; }
+.raison-inner { max-width: 820px; margin: 0 auto; text-align: center; }
+.raison .eyebrow { display: block; margin-bottom: 26px; }
+.raison-lead {
+  font-family: var(--font-display); font-weight: 300;
+  font-size: 31px; line-height: 1.36; letter-spacing: -0.015em;
+  color: var(--mcp-green); margin: 0 0 26px; text-wrap: pretty;
+}
+.raison p.body { font-size: 18px; line-height: 1.7; color: var(--mcp-ink-700); margin: 0 0 20px; }
+.raison cite { display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 38px; padding-top: 26px; border-top: 1px solid var(--mcp-beige-300); font-style: normal; }
+.raison cite .who { display: flex; flex-direction: column; align-items: center; font-size: 14px; line-height: 1.45; }
+.raison cite .who strong { color: var(--mcp-ink); font-weight: 500; }
+.raison cite .who span { color: var(--mcp-ink-500); }
 
-/* ── STATS DE CONFIANCE ── */
-.cab-stats { background: var(--mcp-green); color: var(--mcp-beige); padding: 72px 40px; }
-.cab-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.cab-stat { border-left: 1px solid rgba(254,250,242,.25); padding: 4px 0 4px 24px; }
-.cab-stat .big { font-family: var(--font-display); font-weight: 300; font-size: 52px; line-height: .92; letter-spacing: -.04em; color: var(--mcp-beige); white-space: nowrap; }
-.cab-stat .big .sfx { font-size: .5em; vertical-align: .3em; opacity: .8; }
-.cab-stat .lbl { font-size: 13.5px; line-height: 1.5; color: rgba(254,250,242,.78); margin-top: 12px; max-width: 200px; }
+/* ── CHIFFRES DE CONFIANCE ── */
+.chiffres { background: var(--mcp-beige-200); border-top: 1px solid var(--mcp-beige-300); border-bottom: 1px solid var(--mcp-beige-300); }
+.chiffres .eyebrow { display: block; margin-bottom: 40px; }
+.chiffres-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.key-stat { border-left: 1px solid var(--mcp-beige-300); padding: 4px 0 4px 22px; }
+.key-stat .big { font-family: var(--font-display); font-weight: 300; font-size: 54px; line-height: 0.95; letter-spacing: -0.04em; color: var(--mcp-green); white-space: nowrap; }
+.key-stat .big .sfx { font-size: 0.42em; vertical-align: 0.34em; opacity: 0.85; margin-left: 2px; }
+.key-stat .label { font-size: 13.5px; line-height: 1.5; color: var(--mcp-ink-500); margin-top: 12px; max-width: 215px; }
 
-/* ── POURQUOI MONTE-CRISTO ── */
-.cab-why { background: var(--mcp-beige); }
-.cab-why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.cab-why-left h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.12; letter-spacing: -.02em; color: var(--mcp-green); margin: 16px 0 28px; text-wrap: balance; }
-.cab-why-right p { font-size: 16px; line-height: 1.7; color: var(--mcp-ink-500); margin: 0 0 18px; }
-.cab-why-right p:last-child { margin: 0; }
+/* ── POURQUOI (2 colonnes + photo) ── */
+.pourquoi { background: var(--mcp-beige); }
+.pourquoi-grid { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 64px; align-items: start; }
+.pourquoi-photo { border-radius: 18px; overflow: hidden; aspect-ratio: 4/5; background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); }
+.pourquoi-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 16%; display: block; }
+.pourquoi-body h2 { font-family: var(--font-display); font-weight: 300; font-size: 46px; line-height: 1.12; letter-spacing: -0.02em; color: var(--mcp-green); margin: 14px 0 26px; text-wrap: balance; }
+.pourquoi-body p { font-size: 17px; line-height: 1.68; color: var(--mcp-ink-700); margin: 0 0 18px; max-width: 640px; }
+.pourquoi-body p:last-child { margin-bottom: 0; }
 
 /* ── FONDATEURS ── */
-.cab-founders { background: var(--mcp-beige-200); }
-.cab-founders-lead { font-size: 17px; line-height: 1.68; color: var(--mcp-ink-500); max-width: 760px; margin: 0 0 56px; }
-.cab-founders-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.cab-founder { background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 20px; overflow: hidden; }
-.cab-founder-photo { aspect-ratio: 3/4; max-height: 400px; background-size: cover; background-position: center 12%; }
-.cab-founder-body { padding: 28px 28px 32px; }
-.cab-founder-body .role { font-size: 12px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--mcp-green); margin-bottom: 6px; }
-.cab-founder-body h3 { font-family: var(--font-display); font-weight: 500; font-size: 22px; color: var(--mcp-green); margin: 0 0 16px; }
-.cab-founder-body blockquote { font-family: var(--font-display); font-weight: 300; font-size: 17px; line-height: 1.5; letter-spacing: -.01em; color: var(--mcp-ink); font-style: italic; margin: 0 0 20px; padding: 14px 20px; background: var(--mcp-beige-200); border-radius: 8px; border-left: 3px solid var(--mcp-green); }
-.cab-founder-body p { font-size: 14.5px; line-height: 1.65; color: var(--mcp-ink-500); margin: 0 0 12px; }
-.cab-founder-body p:last-child { margin: 0; }
-.cab-founders-note { margin-top: 40px; padding: 28px 32px; background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 14px; }
-.cab-founders-note h4 { font-family: var(--font-display); font-weight: 500; font-size: 18px; color: var(--mcp-green); margin: 0 0 12px; }
-.cab-founders-note p { font-size: 15px; line-height: 1.65; color: var(--mcp-ink-500); margin: 0; }
+.fondateurs { background: var(--mcp-beige-200); }
+.founder-grid { display: flex; flex-direction: column; gap: 24px; }
+.founder-card { display: grid; grid-template-columns: 300px 1fr; background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 18px; overflow: hidden; }
+.founder-card.rev { grid-template-columns: 1fr 300px; }
+.founder-card .photo { background-size: cover; background-position: center 14%; min-height: 380px; }
+.founder-card.rev .photo { order: 2; }
+.founder-card .content { padding: 38px 44px; display: flex; flex-direction: column; gap: 18px; }
+.founder-card header { padding-bottom: 20px; border-bottom: 1px solid var(--mcp-beige-300); }
+.founder-card h3 { font-family: var(--font-display); font-weight: 400; font-size: 27px; line-height: 1.1; letter-spacing: -0.015em; color: var(--mcp-green); margin: 0; }
+.founder-card .role { font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mcp-ink-500); margin-top: 6px; }
+.founder-card .tagline { font-family: var(--font-display); font-weight: 400; font-style: italic; font-size: 18.5px; line-height: 1.42; color: var(--mcp-green); margin: 0; text-wrap: pretty; }
+.founder-card .bio p { font-size: 14.5px; line-height: 1.64; color: var(--mcp-ink); margin: 0 0 12px; }
+.founder-card .bio p:last-child { margin-bottom: 0; }
+.deux-regards { margin-top: 24px; background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 18px; padding: 40px 48px; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: center; }
+.deux-regards h3 { font-family: var(--font-display); font-weight: 400; font-size: 25px; line-height: 1.18; letter-spacing: -0.015em; color: var(--mcp-green); margin: 0; max-width: 320px; }
+.deux-regards .dr-text p { font-size: 15.5px; line-height: 1.68; color: var(--mcp-ink-700); margin: 0 0 14px; }
+.deux-regards .dr-text p:last-child { margin-bottom: 0; font-style: italic; color: var(--mcp-green); }
 
-/* ── NOTRE MODÈLE ── */
-.cab-modele { background: var(--mcp-beige); }
-.cab-modele-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.cab-modele-left h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.12; letter-spacing: -.02em; color: var(--mcp-green); margin: 16px 0 28px; text-wrap: balance; }
-.cab-modele-left p { font-size: 16px; line-height: 1.7; color: var(--mcp-ink-500); margin: 0 0 18px; }
-.cab-modele-left p:last-child { margin: 0; }
-.cab-modele-right { display: flex; flex-direction: column; gap: 20px; }
-.cab-modele-highlight { background: var(--mcp-green); color: var(--mcp-beige); border-radius: 16px; padding: 32px 28px; }
-.cab-modele-highlight .big { font-family: var(--font-display); font-weight: 300; font-size: 52px; line-height: .9; letter-spacing: -.04em; color: var(--mcp-beige); }
-.cab-modele-highlight .lbl { font-size: 14px; line-height: 1.55; color: rgba(254,250,242,.85); margin-top: 14px; }
-.cab-note-card { background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); border-radius: 12px; padding: 22px 24px; }
-.cab-note-card .tag { display: inline-block; font-size: 11px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--mcp-green); margin-bottom: 10px; }
-.cab-note-card p { font-size: 14px; line-height: 1.6; color: var(--mcp-ink-500); margin: 0; }
+/* ── MODÈLE (bande verte) ── */
+.modele { background: var(--mcp-green); color: var(--mcp-beige); }
+.modele .eyebrow { color: var(--mcp-beige); opacity: 0.85; }
+.modele-split { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 80px; align-items: center; }
+.modele-aside .eyebrow { display: block; margin-bottom: 4px; }
+.modele-num { font-family: var(--font-display); font-weight: 300; font-size: 108px; line-height: 0.86; letter-spacing: -0.05em; color: var(--mcp-beige); white-space: nowrap; margin: 14px 0 0; }
+.modele-aside h2 { font-family: var(--font-display); font-weight: 300; font-size: 29px; line-height: 1.26; letter-spacing: -0.015em; color: var(--mcp-beige); margin: 20px 0 0; text-wrap: balance; }
+.modele-aside h2 em { font-style: italic; font-weight: 400; }
+.modele-main { padding-left: 80px; border-left: 1px solid rgba(254,250,242,0.18); }
+.modele-main p { font-size: 17px; line-height: 1.72; color: rgba(254,250,242,0.88); margin: 0 0 18px; }
+.modele-main p:last-of-type { margin-bottom: 0; }
+.modele-main p strong { color: var(--mcp-beige); font-weight: 500; }
+.modele-note { margin-top: 44px; padding: 24px 30px; border-radius: 14px; background: rgba(254,250,242,0.07); border: 1px solid rgba(254,250,242,0.18); display: flex; gap: 24px; align-items: center; }
+.modele-note .tag { flex: none; white-space: nowrap; font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mcp-green); background: var(--mcp-beige); padding: 7px 13px; border-radius: 999px; }
+.modele-note p { font-size: 14.5px; line-height: 1.62; color: rgba(254,250,242,0.92); margin: 0; }
 
 /* ── ENCADREMENT RÉGLEMENTAIRE ── */
-.cab-reglementaire { background: var(--mcp-beige-200); }
-.cab-reglementaire-inner { display: grid; grid-template-columns: 1fr 2fr; gap: 72px; align-items: start; }
-.cab-reglementaire-left h3 { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.4rem, 2vw, 2rem); line-height: 1.15; letter-spacing: -.02em; color: var(--mcp-green); margin: 16px 0 20px; }
-.cab-reglementaire-right p { font-size: 16px; line-height: 1.7; color: var(--mcp-ink-500); margin: 0 0 16px; }
-.cab-reglementaire-right p:last-child { margin: 0; }
-.cab-orias { display: inline-flex; align-items: center; gap: 10px; margin-top: 24px; padding: 10px 18px; background: var(--mcp-green); color: var(--mcp-beige); border-radius: var(--radius-pill); font-size: 13px; font-weight: 500; letter-spacing: .06em; text-decoration: none; }
-.cab-orias:hover { background: var(--mcp-green-700); color: var(--mcp-beige); }
+.regul { background: var(--mcp-beige); }
+.regul-panel { display: grid; grid-template-columns: 0.86fr 1.14fr; border: 1px solid var(--mcp-beige-300); border-radius: 20px; overflow: hidden; box-shadow: 0 24px 60px -34px rgba(22,17,10,0.16); }
+.regul-id { display: flex; flex-direction: column; justify-content: center; gap: 10px; padding: 48px 44px; background: var(--mcp-green); color: var(--mcp-beige); text-decoration: none; transition: background var(--dur-base) var(--ease-out); }
+.regul-id:hover { background: var(--mcp-green-700); }
+.regul-id .lbl { font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.8; }
+.regul-id .num { font-family: var(--font-display); font-weight: 400; font-size: 54px; line-height: 0.96; letter-spacing: 0.01em; }
+.regul-id .verify { margin-top: 14px; align-self: flex-start; font-size: 13px; display: inline-flex; align-items: center; gap: 7px; padding-bottom: 3px; border-bottom: 1px solid rgba(254,250,242,0.4); }
+.regul-id .verify span { transition: transform var(--dur-base) var(--ease-out); }
+.regul-id:hover .verify span { transform: translateX(3px); }
+.regul-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--mcp-beige-300); }
+.regul-fact { background: var(--mcp-beige-200); padding: 28px 32px; }
+.regul-fact .fk { font-size: 11px; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--mcp-ink-500); margin-bottom: 9px; }
+.regul-fact .fv { font-family: var(--font-display); font-weight: 400; font-size: 18px; line-height: 1.3; color: var(--mcp-green); letter-spacing: -0.01em; }
 
 /* ── PARTENAIRES ── */
-.cab-partners { background: var(--mcp-beige); }
-.cab-partners-lead { font-size: 16px; line-height: 1.7; color: var(--mcp-ink-500); max-width: 720px; margin: 0 0 48px; }
-.cab-solutions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 52px; }
-.cab-solution { border: 1px solid var(--mcp-beige-300); border-radius: 12px; padding: 28px 26px; background: var(--mcp-beige-200); }
-.cab-solution .num { font-family: var(--font-display); font-weight: 300; font-size: 28px; color: var(--mcp-green); letter-spacing: -.02em; margin-bottom: 14px; display: block; }
-.cab-solution h4 { font-family: var(--font-display); font-weight: 500; font-size: 16px; color: var(--mcp-green); margin: 0 0 10px; }
-.cab-solution p { font-size: 14px; line-height: 1.6; color: var(--mcp-ink-500); margin: 0; }
+.partenaires { background: var(--mcp-beige-200); }
+.plogos { display: grid; grid-template-columns: repeat(6, 1fr); gap: 32px 24px; align-items: center; justify-items: center; margin-top: 8px; padding: 16px 0; }
+.plogos .cell { height: 48px; width: 100%; display: flex; align-items: center; justify-content: center; }
+.plogos img { max-height: 30px; max-width: 124px; object-fit: contain; object-position: center; filter: grayscale(1); opacity: 0.62; transition: opacity var(--dur-base) var(--ease-out), filter var(--dur-base) var(--ease-out); transform: none !important; }
+.plogos img[alt="Interactive Brokers"], .plogos img[alt="Harvest"] { max-width: 150px; }
+.plogos img:hover { filter: grayscale(0); opacity: 1; }
+
+/* ── SÉLECTION DES SOLUTIONS ── */
+.selection { background: var(--mcp-beige); }
+.selection-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.selection-card { background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); border-radius: 14px; padding: 32px; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); }
+.selection-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -16px rgba(22,17,10,0.10); }
+.selection-card .num { font-family: var(--font-display); font-weight: 300; font-size: 30px; color: var(--mcp-green); letter-spacing: -0.02em; }
+.selection-card h3 { font-family: var(--font-display); font-weight: 500; font-size: 20px; line-height: 1.28; color: var(--mcp-green); margin: 16px 0 12px; text-wrap: balance; }
+.selection-card p { font-size: 14.5px; line-height: 1.6; color: var(--mcp-ink-500); margin: 0; }
 
 /* ── ENGAGEMENT ── */
-.cab-engagement { background: var(--mcp-green); color: var(--mcp-beige); }
-.cab-engagement h2 { color: var(--mcp-beige); margin: 16px 0 46px; }
-.cab-engagement .eyebrow { color: var(--mcp-beige); opacity: .85; }
-.cab-points { display: flex; flex-direction: column; gap: 0; border-top: 1px solid rgba(254,250,242,.18); }
-.cab-point { padding: 28px 0; border-bottom: 1px solid rgba(254,250,242,.18); display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: baseline; }
-.cab-point h4 { font-family: var(--font-display); font-weight: 500; font-size: 16px; color: var(--mcp-beige); margin: 0; }
-.cab-point p { font-size: 15.5px; line-height: 1.65; color: rgba(254,250,242,.82); margin: 0; }
+.engage { background: var(--mcp-beige-200); }
+.engage-list { margin-top: 8px; border-top: 1px solid var(--mcp-beige-300); }
+.engage-item { display: grid; grid-template-columns: 72px 1fr; gap: 28px; padding: 30px 0; border-bottom: 1px solid var(--mcp-beige-300); }
+.engage-item .ei-num { font-family: var(--font-display); font-weight: 300; font-size: 40px; line-height: 1; letter-spacing: -0.03em; color: var(--mcp-green); }
+.engage-item .ei-content { display: grid; grid-template-columns: 340px 1fr; gap: 40px; align-items: start; }
+.engage-item h3 { font-family: var(--font-display); font-weight: 500; font-size: 21px; line-height: 1.3; color: var(--mcp-green); margin: 2px 0 0; text-wrap: balance; }
+.engage-item .ei-content p { font-size: 16px; line-height: 1.66; color: var(--mcp-ink-700); margin: 0; }
 
 /* ── CTA FINAL ── */
-.cab-cta { background: var(--mcp-beige); padding: 104px 40px 96px; text-align: center; }
-.cab-cta .eyebrow { margin-bottom: 14px; }
-.cab-cta h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.08; letter-spacing: -.03em; color: var(--mcp-green); margin: 0 0 20px; text-wrap: balance; }
-.cab-cta .lead { font-size: 17px; line-height: 1.65; color: var(--mcp-ink-500); max-width: 580px; margin: 0 auto 36px; }
-.cab-cta-note { margin-top: 18px; font-size: 13px; color: var(--mcp-ink-500); }
+.cta { background: var(--mcp-beige); padding: 104px 40px 96px; text-align: center; }
+.cta .eyebrow { display: block; margin-bottom: 14px; }
+.cta-tagline { font-family: var(--font-display); font-weight: 300; font-size: 60px; line-height: 1.04; letter-spacing: -0.03em; color: var(--mcp-green); margin: 0 0 20px; text-wrap: balance; }
+.cta-tagline em { font-style: italic; font-weight: 400; }
+.cta-sub { font-size: 18px; color: var(--mcp-ink-500); margin: 0 auto 30px; max-width: 700px; line-height: 1.62; }
+.cta-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 auto 40px; }
+.cta-chips span { font-size: 13px; font-weight: 500; color: var(--mcp-green); background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); padding: 9px 18px; border-radius: 999px; display: inline-flex; align-items: center; gap: 9px; }
+.cta-chips span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--mcp-green); }
 
 /* ── RESPONSIVE 1100px ── */
 @media (max-width: 1100px) {
-  .cab-hero { padding: 72px 24px 64px; }
-  .cab-stats { padding: 56px 24px; }
-  .cab-raison-grid, .cab-why-grid, .cab-modele-grid, .cab-reglementaire-inner { grid-template-columns: 1fr; gap: 40px; }
-  .cab-founders-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
-  .cab-point { grid-template-columns: 160px 1fr; gap: 28px; }
+  .hero { padding: 48px 24px 72px; }
+  .hero-title { font-size: 54px; }
+  .section-head { grid-template-columns: 1fr; gap: 28px; }
+  .section-head p, .fondateurs .section-head p, .selection .section-head p { align-self: auto; margin-top: 0; }
+  .section-head h2 { font-size: 42px; }
+  .raison-lead { font-size: 27px; }
+  .chiffres-grid { grid-template-columns: repeat(4, 1fr); }
+  .pourquoi-grid { grid-template-columns: 1fr; gap: 40px; }
+  .pourquoi-photo { max-width: 440px; }
+  .pourquoi-body h2 { font-size: 38px; }
+  .modele-split { grid-template-columns: 1fr; gap: 36px; }
+  .modele-num { font-size: 96px; }
+  .modele-aside h2 { font-size: 28px; }
+  .modele-main { padding-left: 0; border-left: none; padding-top: 36px; border-top: 1px solid rgba(254,250,242,0.18); }
+  .regul-panel { grid-template-columns: 1fr; }
+  .selection-cards { grid-template-columns: 1fr; }
+  .deux-regards { grid-template-columns: 1fr; gap: 20px; }
+  .engage-item .ei-content { grid-template-columns: 1fr; gap: 8px; }
+  .cta-tagline { font-size: 48px; }
 }
 
-/* ── RESPONSIVE 760px ── */
+/* ── RESPONSIVE 760px (CTA guard inline) ── */
 @media (max-width: 760px) {
   .header-inner > .btn { display: none !important; }
   .nav.open .nav-rdv { display: inline-flex !important; }
-  .cab-hero { padding: 56px 20px 52px; }
-  .cab-hero h1 { font-size: 2rem; }
-  .cab-stats { padding: 48px 20px; }
-  .cab-stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
-  .cab-stat .big { font-size: 40px; }
-  .cab-founders-grid { grid-template-columns: 1fr; }
-  .cab-solutions-grid { grid-template-columns: 1fr; }
-  .cab-point { grid-template-columns: 1fr; gap: 8px; }
-  .cab-cta { padding: 72px 20px 64px; }
-  .cab-raison-right { padding-left: 20px; }
+  .hero { padding: 32px 20px 56px; }
+  .hero-title { font-size: 38px; }
+  .hero-lead { font-size: 16.5px; }
+  .raison { padding-top: 12px; }
+  .raison-container { padding-top: 40px; }
+  .raison-lead { font-size: 23px; }
+  .raison p.body { font-size: 16.5px; }
+  .chiffres-grid { grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+  .key-stat .big { font-size: 44px; }
+  .pourquoi-body h2 { font-size: 30px; }
+  .founder-card, .founder-card.rev { grid-template-columns: 1fr; }
+  .founder-card.rev .photo { order: 0; }
+  .founder-card .photo { min-height: 300px; aspect-ratio: 3/2; }
+  .founder-card .content { padding: 28px 26px 32px; }
+  .deux-regards { padding: 28px 24px; }
+  .modele-num { font-size: 74px; }
+  .modele-aside h2 { font-size: 25px; }
+  .regul-facts { grid-template-columns: 1fr; }
+  .regul-id { padding: 36px 28px; }
+  .regul-id .num { font-size: 44px; }
+  .plogos { grid-template-columns: repeat(3, 1fr); gap: 18px 12px; }
+  .engage-item { grid-template-columns: 1fr; gap: 6px; }
+  .engage-item .ei-num { font-size: 32px; }
+  .section-head h2 { font-size: 32px; }
+  .cta { padding: 72px 20px 64px; }
+  .cta-tagline { font-size: 36px; }
+  .cta-sub { font-size: 16.5px; }
 }
 </style>
 </head>
 <body>
-<div class="page">
 <a class="skip-link" href="#main">Aller au contenu principal</a>
+<div class="page">
 
 <!-- BEGIN GLOBAL HEADER -->
 <header class="header">
@@ -180,66 +261,75 @@
 
 <main id="main">
 
-  <!-- 1. HERO -->
-  <section class="cab-hero">
-    <div class="container">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="breadcrumb">
+        <a href="/">Accueil</a>
+        <span class="sep">/</span>
+        <span>Le cabinet</span>
+      </div>
       <div class="eyebrow">Cabinet de conseil en gestion de patrimoine</div>
-      <h1>Le patrimoine se conseille.<br><em>Il ne se vend pas.</em></h1>
-      <p class="lead">Monte-Cristo Patrimoine accompagne particuliers, chefs d'entreprise et professions libérales dans leurs décisions patrimoniales. Cabinet indépendant basé à Gap, dans les Hautes-Alpes, nous intervenons en présentiel ou à distance partout en France.</p>
+      <h1 class="hero-title">Le patrimoine se conseille. <em>Il ne se vend pas.</em></h1>
+      <p class="hero-lead">Monte-Cristo Patrimoine accompagne particuliers, chefs d'entreprise et professions libérales dans leurs décisions patrimoniales. Cabinet indépendant basé à Gap, dans les Hautes-Alpes, nous intervenons en présentiel ou à distance partout en France.</p>
+      <div class="hero-ctas">
+        <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+        <a href="#fondateurs" class="btn btn-secondary">Rencontrer les fondateurs</a>
+      </div>
+      <p class="hero-reassurance">Conseillers en investissement financier et intermédiaires en assurance, inscrits à l'ORIAS.</p>
     </div>
   </section>
 
-  <!-- 2. RAISON D'ÊTRE -->
-  <section class="cab-raison" id="raison">
-    <div class="container">
-      <div class="cab-raison-grid">
-        <div class="cab-raison-left">
-          <div class="eyebrow">Notre raison d'être</div>
-          <h2>Comprendre avant de conseiller. Conseiller avant de proposer.</h2>
-          <p>Monte-Cristo Patrimoine est né d'une conviction simple&nbsp;: un patrimoine ne se pilote pas par accumulation de produits, mais par une stratégie claire, documentée et suivie dans le temps.</p>
-          <p>Notre rôle n'est pas de vendre une solution isolée. Il est de comprendre votre situation, d'expliquer les options possibles et de construire une recommandation cohérente avec vos objectifs, votre fiscalité, votre famille et votre horizon de vie.</p>
-        </div>
-        <div class="cab-raison-right">
-          <p style="font-family:var(--font-display);font-weight:300;font-size:20px;line-height:1.5;letter-spacing:-.01em;color:var(--mcp-ink);font-style:italic;">«&nbsp;Nous croyons qu'un bon conseil patrimonial doit laisser au client trois choses&nbsp;: une vision d'ensemble, des décisions compréhensibles et une relation de confiance dans la durée.&nbsp;»</p>
-          <p class="cab-signature">Luc Blanc-Gras — Directeur Général · Monte-Cristo Patrimoine</p>
-        </div>
+  <!-- RAISON D'ÊTRE -->
+  <section class="raison">
+    <div class="container raison-container">
+      <div class="raison-inner">
+        <div class="eyebrow">Raison d'être</div>
+        <p class="raison-lead">Monte-Cristo Patrimoine est né d'une conviction simple&nbsp;: un patrimoine ne se pilote pas par accumulation de produits, mais par une stratégie claire, documentée et suivie dans le temps.</p>
+        <p class="body">Notre rôle n'est pas de vendre une solution isolée. Il est de comprendre votre situation, d'expliquer les options possibles et de construire une recommandation cohérente avec vos objectifs, votre fiscalité, votre famille et votre horizon de vie.</p>
+        <p class="body">Nous croyons qu'un bon conseil patrimonial doit laisser au client trois choses&nbsp;: une vision d'ensemble, des décisions compréhensibles et une relation de confiance dans la durée.</p>
+        <cite>
+          <span class="who"><strong>Luc Blanc-Gras</strong><span>Directeur Général · Monte-Cristo Patrimoine</span></span>
+        </cite>
       </div>
     </div>
   </section>
 
-  <!-- 3. CHIFFRES DE CONFIANCE -->
-  <section class="cab-stats" id="chiffres" aria-label="Chiffres clés">
+  <!-- CHIFFRES DE CONFIANCE -->
+  <section class="chiffres">
     <div class="container">
-      <div class="cab-stats-grid">
-        <div class="cab-stat">
+      <div class="eyebrow">Chiffres de confiance</div>
+      <div class="chiffres-grid">
+        <div class="key-stat">
           <div class="big">12<span class="sfx">ans+</span></div>
-          <div class="lbl">d'expérience cumulée en gestion de patrimoine et banque privée.</div>
+          <div class="label">d'expérience cumulée en gestion de patrimoine et banque privée.</div>
         </div>
-        <div class="cab-stat">
+        <div class="key-stat">
           <div class="big">185<span class="sfx">+</span></div>
-          <div class="lbl">clients et investisseurs accompagnés au cours de nos parcours.</div>
+          <div class="label">clients et investisseurs accompagnés au cours de nos parcours.</div>
         </div>
-        <div class="cab-stat">
+        <div class="key-stat">
           <div class="big">17<span class="sfx">+</span></div>
-          <div class="lbl">partenaires et solutions sélectionnés selon des critères de qualité, d'ouverture et de frais.</div>
+          <div class="label">partenaires et solutions sélectionnés selon des critères de qualité, d'ouverture et de frais.</div>
         </div>
-        <div class="cab-stat">
-          <div class="big">Gap<span class="sfx">·05</span></div>
-          <div class="lbl">un ancrage local fort, un accompagnement possible partout en France.</div>
+        <div class="key-stat">
+          <div class="big">Gap<span class="sfx">,&nbsp;05</span></div>
+          <div class="label">un ancrage local fort, un accompagnement possible partout en France.</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. POURQUOI MONTE-CRISTO -->
-  <section class="cab-why" id="pourquoi">
+  <!-- POURQUOI MONTE-CRISTO PATRIMOINE -->
+  <section class="pourquoi">
     <div class="container">
-      <div class="cab-why-grid">
-        <div class="cab-why-left">
+      <div class="pourquoi-grid">
+        <div class="pourquoi-photo">
+          <img src="/assets/team/fondateurs.webp" alt="Kévin Blache et Luc Blanc-Gras, fondateurs de Monte-Cristo Patrimoine" width="1122" height="1402"/>
+        </div>
+        <div class="pourquoi-body">
           <div class="eyebrow">Pourquoi Monte-Cristo Patrimoine</div>
           <h2>Deux parcours. Une conviction commune.</h2>
-        </div>
-        <div class="cab-why-right">
           <p>Kévin et Luc se sont retrouvés autour d'une même question&nbsp;: comment exercer le conseil patrimonial en alignant réellement la mission de conseil avec les intérêts du client&nbsp;?</p>
           <p>Monte-Cristo Patrimoine a été créé pour répondre à cette question concrètement&nbsp;: pas de produits maison, pas de logique d'exclusivité fournisseur, pas de recommandation déconnectée de la situation globale du client.</p>
           <p>Le cabinet est jeune. Kévin et Luc apportent les années d'expérience acquises en banque privée, en conseil patrimonial et dans l'accompagnement de clients particuliers, dirigeants et internationaux.</p>
@@ -249,189 +339,242 @@
     </div>
   </section>
 
-  <!-- 5. LES FONDATEURS -->
-  <section class="cab-founders" id="fondateurs">
+  <!-- LES FONDATEURS -->
+  <section id="fondateurs" class="fondateurs">
     <div class="container">
-      <div class="eyebrow">Les fondateurs</div>
-      <h2 style="font-family:var(--font-display);font-weight:300;font-size:clamp(1.75rem,3vw,2.8rem);line-height:1.1;letter-spacing:-.02em;color:var(--mcp-green);margin:16px 0 20px;text-wrap:balance;">Deux expériences différentes. Une même vision du conseil.</h2>
-      <p class="cab-founders-lead">Kévin Blache et Luc Blanc-Gras ont construit leurs parcours dans des environnements complémentaires&nbsp;: banque privée, conseil patrimonial, investissement, clientèle française et internationale. Ils se rejoignent sur l'essentiel&nbsp;: un conseil patrimonial solide commence par comprendre la situation du client, pas par proposer un produit.</p>
-
-      <div class="cab-founders-grid">
-        <!-- Luc -->
-        <div class="cab-founder">
-          <div class="cab-founder-photo" style="background-image:url('/assets/team/luc-portrait-v2.webp');"></div>
-          <div class="cab-founder-body">
-            <div class="role">Directeur Général</div>
-            <h3>Luc Blanc-Gras</h3>
-            <blockquote>«&nbsp;Un bon conseil commence par écouter, pas par proposer.&nbsp;»</blockquote>
-            <p>Luc a exercé plusieurs années dans le conseil en gestion de patrimoine avant de cofonder Monte-Cristo Patrimoine.</p>
-            <p>Formé à l'École Supérieure d'Assurance, titulaire d'un Bachelor en finance en Australie et bilingue français-anglais, il intervient sur les stratégies patrimoniales globales&nbsp;: organisation du patrimoine, investissement, fiscalité, transmission, préparation de la retraite et situations internationales.</p>
-            <p>Son parcours sportif et son expérience de terrain nourrissent une approche exigeante&nbsp;: comprendre le contexte, tenir le cap, construire dans la durée.</p>
-          </div>
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Les fondateurs</div>
+          <h2>Deux expériences différentes. Une même vision du conseil.</h2>
         </div>
-        <!-- Kévin -->
-        <div class="cab-founder">
-          <div class="cab-founder-photo" style="background-image:url('/assets/team/kevin-portrait-v2.webp');"></div>
-          <div class="cab-founder-body">
-            <div class="role">Président</div>
-            <h3>Kévin Blache</h3>
-            <blockquote>«&nbsp;Je ne commence jamais par les solutions. Je commence toujours par votre situation.&nbsp;»</blockquote>
-            <p>Kévin a exercé en banque privée en France et à l'international avant de cofonder Monte-Cristo Patrimoine.</p>
-            <p>Diplômé en gestion de patrimoine à la Burgundy School of Business, il intervient sur l'organisation des actifs, l'allocation patrimoniale, la fiscalité, la préparation de la retraite, la transmission et la protection familiale.</p>
-            <p>Son approche est structurée, analytique et orientée décision&nbsp;: clarifier les enjeux, comparer les options, documenter les recommandations.</p>
-          </div>
-        </div>
+        <p>Kévin Blache et Luc Blanc-Gras ont construit leurs parcours dans des environnements complémentaires&nbsp;: banque privée, conseil patrimonial, investissement, clientèle française et internationale. Ils se rejoignent sur l'essentiel&nbsp;: un conseil patrimonial solide commence par comprendre la situation du client, pas par proposer un produit.</p>
       </div>
 
-      <div class="cab-founders-note">
-        <h4>Deux regards sur les dossiers importants</h4>
-        <p>Luc apporte notamment une lecture forte sur les stratégies patrimoniales globales, les situations familiales complexes et les enjeux internationaux. Kévin apporte notamment une lecture forte sur l'allocation, la structuration financière, la fiscalité et les situations où patrimoine personnel et activité professionnelle sont liés. Sur les dossiers qui le nécessitent, les deux regards se croisent pour renforcer la qualité de la recommandation.</p>
+      <div class="founder-grid">
+        <article class="founder-card">
+          <div class="photo" style="background-image:url('/assets/team/luc-portrait-v2.webp');"></div>
+          <div class="content">
+            <header>
+              <h3>Luc Blanc-Gras</h3>
+              <div class="role">Directeur Général</div>
+            </header>
+            <p class="tagline">«&nbsp;Un bon conseil commence par écouter, pas par proposer.&nbsp;»</p>
+            <div class="bio">
+              <p>Luc a exercé plusieurs années dans le conseil en gestion de patrimoine avant de cofonder Monte-Cristo Patrimoine.</p>
+              <p>Formé à l'École Supérieure d'Assurance, titulaire d'un Bachelor en finance en Australie et bilingue français-anglais, il intervient sur les stratégies patrimoniales globales&nbsp;: organisation du patrimoine, investissement, fiscalité, transmission, préparation de la retraite et situations internationales.</p>
+              <p>Son parcours sportif et son expérience de terrain nourrissent une approche exigeante&nbsp;: comprendre le contexte, tenir le cap, construire dans la durée.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="founder-card rev">
+          <div class="photo" style="background-image:url('/assets/team/kevin-portrait-v2.webp');"></div>
+          <div class="content">
+            <header>
+              <h3>Kévin Blache</h3>
+              <div class="role">Président</div>
+            </header>
+            <p class="tagline">«&nbsp;Je ne commence jamais par les solutions. Je commence toujours par votre situation.&nbsp;»</p>
+            <div class="bio">
+              <p>Kévin a exercé en banque privée en France et à l'international avant de cofonder Monte-Cristo Patrimoine.</p>
+              <p>Diplômé en gestion de patrimoine à la Burgundy School of Business, il intervient sur l'organisation des actifs, l'allocation patrimoniale, la fiscalité, la préparation de la retraite, la transmission et la protection familiale.</p>
+              <p>Son approche est structurée, analytique et orientée décision&nbsp;: clarifier les enjeux, comparer les options, documenter les recommandations.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="deux-regards">
+        <h3>Deux regards sur les dossiers importants</h3>
+        <div class="dr-text">
+          <p>Luc apporte notamment une lecture forte sur les stratégies patrimoniales globales, les situations familiales complexes et les enjeux internationaux. Kévin apporte notamment une lecture forte sur l'allocation, la structuration financière, la fiscalité et les situations où patrimoine personnel et activité professionnelle sont liés.</p>
+          <p>Sur les dossiers qui le nécessitent, les deux regards se croisent pour renforcer la qualité de la recommandation.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. NOTRE MODÈLE -->
-  <section class="cab-modele" id="modele">
+  <!-- NOTRE MODÈLE (bande verte) -->
+  <section id="modele" class="modele">
     <div class="container">
-      <div class="cab-modele-grid">
-        <div class="cab-modele-left">
+      <div class="modele-split">
+        <div class="modele-aside">
           <div class="eyebrow">Notre modèle</div>
-          <h2>Un modèle construit autour des honoraires, de la transparence et de l'architecture ouverte.</h2>
-          <p>Un conseil patrimonial peut être rémunéré de plusieurs façons&nbsp;: honoraires, commissions, rétrocessions de frais de gestion ou combinaison de ces modèles.</p>
-          <p>Chez Monte-Cristo Patrimoine, nous avons choisi de placer les honoraires au cœur de la relation client. Cela permet de distinguer plus clairement la mission de conseil, les solutions éventuellement retenues et les rémunérations associées.</p>
-          <p>Lorsque des rémunérations liées aux solutions existent, elles sont expliquées, encadrées et intégrées dans l'analyse globale des frais.</p>
-          <p>Notre objectif n'est pas de défendre un modèle contre un autre. Il est de construire une relation dans laquelle le client comprend ce qu'il paie, pourquoi il le paie et ce qu'il reçoit en contrepartie.</p>
+          <div class="modele-num">&lt;&nbsp;5&nbsp;%</div>
+          <h2>des conseillers en gestion de patrimoine travaillent principalement aux honoraires. <em>Nous en faisons partie.</em></h2>
         </div>
-        <div class="cab-modele-right">
-          <div class="cab-modele-highlight">
-            <div class="big">&lt;&nbsp;5&nbsp;%</div>
-            <div class="lbl">des conseillers en gestion de patrimoine adoptent un modèle essentiellement fondé sur les honoraires. Monte-Cristo Patrimoine fait partie de cette minorité.</div>
-          </div>
-          <div class="cab-note-card">
-            <span class="tag">Crédit d'impôt possible</span>
-            <p>Lorsque la mission comporte une part d'assistance administrative éligible, une partie des honoraires peut ouvrir droit au crédit d'impôt services à la personne pour les particuliers, selon les conditions applicables.</p>
-          </div>
-          <div class="cab-note-card">
-            <span class="tag">Architecture ouverte</span>
-            <p>Nous ne dépendons pas de la gamme d'un seul établissement. Nous sélectionnons les solutions en fonction de votre situation, de vos objectifs, des frais, de la fiscalité et du niveau de risque accepté.</p>
-          </div>
+        <div class="modele-main">
+          <p>Notre modèle repose sur des <strong>honoraires transparents</strong>, une <strong>architecture ouverte</strong> et des rémunérations éventuelles expliquées avant toute décision. Nous ne dépendons pas de la gamme d'un seul établissement&nbsp;: chaque solution est choisie selon votre situation, vos objectifs, les frais, la fiscalité et le niveau de risque accepté.</p>
+          <p>Notre objectif n'est pas de défendre un modèle contre un autre, mais de construire une relation claire&nbsp;: vous comprenez ce que vous payez, pourquoi vous le payez et ce que vous recevez en contrepartie.</p>
         </div>
+      </div>
+      <div class="modele-note">
+        <span class="tag">Bon à savoir</span>
+        <p>Lorsque la mission comporte une part d'assistance administrative éligible, une partie des honoraires peut ouvrir droit au crédit d'impôt services à la personne pour les particuliers, selon les conditions applicables.</p>
       </div>
     </div>
   </section>
 
-  <!-- 7. ENCADREMENT RÉGLEMENTAIRE -->
-  <section class="cab-reglementaire" id="reglementaire">
+  <!-- ENCADREMENT RÉGLEMENTAIRE -->
+  <section id="reglementaire" class="regul">
     <div class="container">
-      <div class="cab-reglementaire-inner">
-        <div class="cab-reglementaire-left">
+      <div class="section-head">
+        <div>
           <div class="eyebrow">Encadrement réglementaire</div>
-          <h3>Un cabinet enregistré, encadré et assuré.</h3>
-          <a href="https://www.orias.fr/search?number=25006472" target="_blank" rel="noopener" class="cab-orias">ORIAS n°&nbsp;25006472</a>
+          <h2>Un cabinet enregistré, encadré et assuré.</h2>
         </div>
-        <div class="cab-reglementaire-right">
-          <p>Monte-Cristo Patrimoine exerce dans un cadre réglementé.</p>
-          <p>Le cabinet est enregistré à l'ORIAS en qualité de Conseiller en Investissement Financier et courtier d'assurance. Il est adhérent de la CNCGP, association professionnelle agréée par l'Autorité des marchés financiers.</p>
-          <p>Le cabinet dispose également d'une responsabilité civile professionnelle et d'une couverture financière adaptées à son activité.</p>
-          <p>Ce cadre ne remplace pas la confiance. Il en fixe les règles&nbsp;: formation continue, déontologie, obligations de conseil, transparence de la rémunération et traçabilité des recommandations.</p>
+        <p>Monte-Cristo Patrimoine exerce dans un cadre strictement réglementé. Ce cadre ne remplace pas la confiance&nbsp;: il en fixe les règles — déontologie, obligation de conseil, transparence de la rémunération et traçabilité des recommandations.</p>
+      </div>
+
+      <div class="regul-panel">
+        <a href="https://www.orias.fr/search?number=25006472" target="_blank" rel="noopener" class="regul-id">
+          <span class="lbl">Immatriculation ORIAS</span>
+          <span class="num">N°&nbsp;25006472</span>
+          <span class="verify">Vérifier sur orias.fr <span>→</span></span>
+        </a>
+        <div class="regul-facts">
+          <div class="regul-fact">
+            <div class="fk">Conseil financier</div>
+            <div class="fv">Conseiller en Investissement Financier</div>
+          </div>
+          <div class="regul-fact">
+            <div class="fk">Assurance</div>
+            <div class="fv">Courtier d'assurance</div>
+          </div>
+          <div class="regul-fact">
+            <div class="fk">Association professionnelle</div>
+            <div class="fv">Adhérent CNCGP, agréée par l'AMF</div>
+          </div>
+          <div class="regul-fact">
+            <div class="fk">Protection du client</div>
+            <div class="fv">RC professionnelle & couverture financière</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 8. PARTENAIRES / ARCHITECTURE OUVERTE -->
-  <section class="cab-partners" id="partenaires">
+  <!-- NOS PARTENAIRES -->
+  <section id="partenaires" class="partenaires">
     <div class="container">
-      <div class="mcp-section-head">
+      <div class="section-head">
         <div>
           <div class="eyebrow">Nos partenaires</div>
           <h2>Des maisons sélectionnées pour leur exigence.</h2>
         </div>
-        <p class="cab-partners-lead" style="margin:0;">Assureurs, plateformes d'investissement, sociétés de gestion, banques dépositaires&nbsp;: Monte-Cristo Patrimoine travaille avec plusieurs acteurs afin de conserver une capacité de sélection. Le choix d'un partenaire ou d'une solution ne vient jamais en premier. Il intervient après l'analyse de votre situation.</p>
+        <p>Assureurs, plateformes d'investissement, sociétés de gestion, banques dépositaires&nbsp;: Monte-Cristo Patrimoine travaille avec plusieurs acteurs afin de conserver une capacité de sélection.</p>
+      </div>
+
+      <div class="plogos">
+        <div class="cell"><img src="/assets/partners/trimmed/adequity.png" alt="Adequity"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/april.png" alt="April"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/cardif.png" alt="Cardif"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/eres.png" alt="Eres"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/generali.png" alt="Generali"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/harvest.png?v=20260626b" alt="Harvest"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/ibkr.png?v=20260626b" alt="Interactive Brokers"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/nortia.png" alt="Nortia"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/oradea-vie.png" alt="Oradea Vie"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/spirica.png" alt="Spirica"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/swissquote.png" alt="Swissquote"/></div>
+        <div class="cell"><img src="/assets/partners/trimmed/uaf-life.png" alt="UAF Life Patrimoine"/></div>
       </div>
     </div>
+  </section>
 
-    <!-- Trust strip partenaires -->
-    <div class="trust" style="border-top:none;">
-      <div class="trust-inner">
-        <div class="trust-label">Partenaires</div>
-        <div class="trust-logos">
-          <div class="cell"><img src="/assets/partners/trimmed/adequity.png" alt="Adequity"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/april.png" alt="April"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/cardif.png" alt="Cardif"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/eres.png" alt="Eres"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/generali.png" alt="Generali"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/harvest.png?v=20260626b" alt="Harvest"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/ibkr.png?v=20260626b" alt="Interactive Brokers"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/nortia.png" alt="Nortia"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/oradea-vie.png" alt="Oradea Vie"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/spirica.png" alt="Spirica"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/swissquote.png" alt="Swissquote"/></div>
-          <div class="cell"><img src="/assets/partners/trimmed/uaf-life.png" alt="UAF Life Patrimoine"/></div>
-        </div>
-      </div>
-    </div>
-
+  <!-- SÉLECTION DES SOLUTIONS -->
+  <section class="selection">
     <div class="container">
-      <div class="cab-solutions-grid">
-        <div class="cab-solution">
-          <span class="num">01</span>
-          <h4>La bonne solution pour chaque objectif</h4>
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Architecture ouverte</div>
+          <h2>Sélection des solutions.</h2>
+        </div>
+        <p>Le choix d'un partenaire ou d'une solution ne vient jamais en premier. Il intervient après l'analyse de votre situation, de vos objectifs, de votre fiscalité, de votre horizon de placement, de votre besoin de liquidité et de votre tolérance au risque. Nous recherchons des solutions lisibles, solides, suivies dans le temps et cohérentes avec les frais supportés.</p>
+      </div>
+      <div class="selection-cards">
+        <div class="selection-card">
+          <div class="num">01</div>
+          <h3>La bonne solution pour chaque objectif</h3>
           <p>Assurance-vie, PER, épargne salariale, SCPI, produits structurés, private equity ou compte-titres&nbsp;: chaque solution est étudiée en fonction de son rôle dans votre stratégie globale.</p>
         </div>
-        <div class="cab-solution">
-          <span class="num">02</span>
-          <h4>Des outils digitaux fluides et sécurisés</h4>
+        <div class="selection-card">
+          <div class="num">02</div>
+          <h3>Des outils digitaux fluides et sécurisés</h3>
           <p>Nous privilégions les plateformes qui facilitent la souscription, la signature électronique, le reporting et le suivi dans le temps.</p>
         </div>
-        <div class="cab-solution">
-          <span class="num">03</span>
-          <h4>Une vigilance constante sur les frais</h4>
+        <div class="selection-card">
+          <div class="num">03</div>
+          <h3>Une vigilance constante sur les frais</h3>
           <p>La performance nette dépend aussi des frais. Nous intégrons leur niveau, leur lisibilité et leur justification dans nos recommandations.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 9. TRAVAILLER AVEC NOUS -->
-  <section class="cab-engagement" id="engagement">
+  <!-- NOTRE ENGAGEMENT -->
+  <section id="engagement" class="engage">
     <div class="container">
-      <div class="eyebrow">Notre engagement</div>
-      <h2>Une relation de conseil, pas une relation de produit.</h2>
-      <div class="cab-points">
-        <div class="cab-point">
-          <h4>Nous analysons votre situation dans sa globalité</h4>
-          <p>Patrimoine existant, revenus, fiscalité, retraite, prévoyance, transmission, immobilier, objectifs familiaux et activité professionnelle si nécessaire.</p>
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Notre engagement</div>
+          <h2>Une relation de conseil, pas une relation de produit.</h2>
         </div>
-        <div class="cab-point">
-          <h4>Nous documentons nos recommandations</h4>
-          <p>Chaque préconisation doit pouvoir être expliquée&nbsp;: son objectif, ses avantages, ses limites, ses risques, ses frais et les alternatives envisagées.</p>
+        <p>Ce n'est pas une promesse abstraite. Concrètement, cela signifie que&nbsp;:</p>
+      </div>
+
+      <div class="engage-list">
+        <div class="engage-item">
+          <div class="ei-num">01</div>
+          <div class="ei-content">
+            <h3>Nous analysons votre situation dans sa globalité</h3>
+            <p>Patrimoine existant, revenus, fiscalité, retraite, prévoyance, transmission, immobilier, objectifs familiaux et activité professionnelle si nécessaire.</p>
+          </div>
         </div>
-        <div class="cab-point">
-          <h4>Nous travaillons avec vos autres conseils</h4>
-          <p>Notaire, expert-comptable, avocat, assureur, banque&nbsp;: lorsque le sujet le nécessite, nous coordonnons les décisions patrimoniales avec les interlocuteurs qui vous accompagnent déjà.</p>
+        <div class="engage-item">
+          <div class="ei-num">02</div>
+          <div class="ei-content">
+            <h3>Nous documentons nos recommandations</h3>
+            <p>Chaque préconisation doit pouvoir être expliquée&nbsp;: son objectif, ses avantages, ses limites, ses risques, ses frais et les alternatives envisagées.</p>
+          </div>
         </div>
-        <div class="cab-point">
-          <h4>Nous suivons la stratégie dans le temps</h4>
-          <p>Un patrimoine évolue. Une stratégie doit évoluer avec lui. Le suivi fait partie intégrante de notre accompagnement.</p>
+        <div class="engage-item">
+          <div class="ei-num">03</div>
+          <div class="ei-content">
+            <h3>Nous travaillons avec vos autres conseils</h3>
+            <p>Notaire, expert-comptable, avocat, assureur, banque&nbsp;: lorsque le sujet le nécessite, nous coordonnons les décisions patrimoniales avec les interlocuteurs qui vous accompagnent déjà.</p>
+          </div>
         </div>
-        <div class="cab-point">
-          <h4>Nous vous disons clairement si nous ne sommes pas le bon cabinet</h4>
-          <p>Toutes les situations ne justifient pas une mission complète. Si notre intervention n'est pas utile, nous vous le disons.</p>
+        <div class="engage-item">
+          <div class="ei-num">04</div>
+          <div class="ei-content">
+            <h3>Nous suivons la stratégie dans le temps</h3>
+            <p>Un patrimoine évolue. Une stratégie doit évoluer avec lui. Le suivi fait partie intégrante de notre accompagnement.</p>
+          </div>
+        </div>
+        <div class="engage-item">
+          <div class="ei-num">05</div>
+          <div class="ei-content">
+            <h3>Nous vous disons clairement si nous ne sommes pas le bon cabinet</h3>
+            <p>Toutes les situations ne justifient pas une mission complète. Si notre intervention n'est pas utile, nous vous le disons.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 10. CTA FINAL -->
-  <section class="cab-cta" id="contact">
+  <!-- CTA FINAL -->
+  <section class="cta">
     <div class="container">
       <div class="eyebrow">Premier rendez-vous</div>
-      <h2>Échangeons sur votre situation.</h2>
-      <p class="lead">45&nbsp;minutes, sans engagement, en visioconférence ou au cabinet à Gap.</p>
-      <p class="lead" style="margin-top:-16px;">Nous ne cherchons pas à conclure à tout prix. Nous cherchons d'abord à comprendre si nous sommes le bon interlocuteur pour vous.</p>
-      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
-      <p class="cab-cta-note">Premier rendez-vous offert · Sans engagement · Visio ou cabinet Gap</p>
+      <h2 class="cta-tagline">Échangeons sur <em>votre situation.</em></h2>
+      <p class="cta-sub">45&nbsp;minutes, sans engagement, en visioconférence ou au cabinet à Gap. Nous ne cherchons pas à conclure à tout prix&nbsp;: nous cherchons d'abord à comprendre si nous sommes le bon interlocuteur pour vous.</p>
+      <div class="cta-chips">
+        <span>Premier rendez-vous offert</span>
+        <span>Sans engagement</span>
+        <span>Visio ou cabinet à Gap</span>
+      </div>
+      <a href="/#contact" class="btn btn-accent" style="padding:16px 32px;font-size:17px;">Prendre rendez-vous</a>
     </div>
   </section>
 
@@ -491,7 +634,15 @@
 <!-- END GLOBAL FOOTER -->
 
 </div>
-<script src="/cookies.js"></script>
-<script src="/site.js" defer></script>
+
+<script>
+  (function () {
+    var burger = document.querySelector('.hamburger');
+    var nav = document.querySelector('.nav');
+    if (burger && nav) {
+      burger.addEventListener('click', function () { nav.classList.toggle('open'); });
+    }
+  })();
+</script>
 </body>
 </html>
