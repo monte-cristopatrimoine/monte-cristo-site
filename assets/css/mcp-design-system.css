@@ -142,13 +142,18 @@ section { padding: 96px 40px; }
 .trust { padding: 36px 40px; border-top: 1px solid var(--mcp-beige-300); border-bottom: 1px solid var(--mcp-beige-300); }
 .trust-inner { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; gap: 24px; }
 .trust-label { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--mcp-ink-500); white-space: nowrap; }
-.trust-logos { flex: 1; display: grid; grid-template-columns: repeat(6,1fr); gap: 28px 24px; align-items: center; justify-items: center; }
-.trust-logos .cell { height: 40px; width: 100%; display: flex; align-items: center; justify-content: center; }
-.trust-logos img { max-height: 27px; max-width: 120px; object-fit: contain; object-position: center; filter: grayscale(1); opacity: .6; transition: opacity var(--dur-base) var(--ease-out), filter var(--dur-base) var(--ease-out); }
-/* Wordmarks très allongés : plafonnent sur la largeur avant d'atteindre 27px de haut */
+.trust-logos { flex: 1; display: grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 28px 30px; align-items: center; }
+.trust-logos .cell,
+.trust-logo-cell { height: 58px; width: 100%; display: flex; align-items: center; justify-content: center; padding: 10px 16px; }
+.trust-logos img,
+.trust-logo-cell img { display: block; width: auto; height: auto; max-height: 32px; max-width: 120px; object-fit: contain; object-position: center; filter: grayscale(1); opacity: .68; transform: none !important; transition: opacity var(--dur-base) var(--ease-out), filter var(--dur-base) var(--ease-out); }
+/* Wordmarks très allongés (ratio > 4.44) : plus larges mais pas plus hauts */
 .trust-logos img[alt="Interactive Brokers"],
-.trust-logos img[alt="Harvest"] { max-width: 145px; }
-.trust-logos img:hover { filter: grayscale(0); opacity: 1; }
+.trust-logos img[alt="Harvest"],
+.trust-logo-cell img[alt="Interactive Brokers"],
+.trust-logo-cell img[alt="Harvest"] { max-width: 150px; max-height: 30px; }
+.trust-logos img:hover,
+.trust-logo-cell img:hover { filter: grayscale(0); opacity: 1; }
 
 /* ── ORIAS BADGE ─────────────────────────────────────────── */
 .orias-badge { display: inline-block; margin-top: 16px; padding: 4px 10px; font-size: 12px; letter-spacing: .06em; color: var(--mcp-beige); border: 1px solid rgba(240,230,210,.45); border-radius: 3px; text-decoration: none; opacity: .9; }
@@ -223,7 +228,15 @@ footer { background: var(--mcp-green); color: var(--mcp-beige); padding: 80px 40
   /* Trust strip mobile */
   .trust { padding: 28px 24px; }
   .trust-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .trust-logos { grid-template-columns: repeat(2,1fr); width: 100%; gap: 18px; }
+  .trust-logos { grid-template-columns: repeat(2, minmax(0,1fr)); width: 100%; gap: 18px 16px; }
+  .trust-logos .cell,
+  .trust-logo-cell { height: 54px; padding: 8px 12px; }
+  .trust-logos img,
+  .trust-logo-cell img { max-height: 30px; max-width: 126px; }
+  .trust-logos img[alt="Interactive Brokers"],
+  .trust-logos img[alt="Harvest"],
+  .trust-logo-cell img[alt="Interactive Brokers"],
+  .trust-logo-cell img[alt="Harvest"] { max-width: 148px; max-height: 28px; }
 
   /* Footer mobile */
   footer { padding: 56px 24px 32px; }
