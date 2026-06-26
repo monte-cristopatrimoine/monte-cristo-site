@@ -650,8 +650,8 @@
   @media (max-width: 760px) {
     .nav.open { display: flex !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--mcp-beige); padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
     .hamburger { display: flex; }
-    .header-inner .btn { display: none; }
-    .nav-rdv { display: inline-flex !important; }
+    .header-inner > .btn { display: none !important; }
+    .nav.open .nav-rdv { display: inline-flex !important; }
     .header { position: relative; }
   }
 </style>

@@ -24,16 +24,18 @@ SITE_ROOT   = SCRIPT_DIR.parent.parent
 REPORTS_DIR = SCRIPT_DIR.parent / "reports"
 
 SCRIPTS = {
-    "audit":           SCRIPT_DIR / "audit.py",
-    "check-meta":      SCRIPT_DIR / "check-meta.py",
-    "generate-sitemap":SCRIPT_DIR / "generate-sitemap.py",
-    "check-robots":    SCRIPT_DIR / "check-robots.py",
+    "audit":            SCRIPT_DIR / "audit.py",
+    "check-meta":       SCRIPT_DIR / "check-meta.py",
+    "generate-sitemap": SCRIPT_DIR / "generate-sitemap.py",
+    "check-robots":     SCRIPT_DIR / "check-robots.py",
+    "check-header-css": SCRIPT_DIR / "check-header-css.py",
 }
 
 REPORT_FILES = {
     "audit":            REPORTS_DIR / "site-audit.json",
     "check-meta":       REPORTS_DIR / "meta-check.json",
     "check-robots":     REPORTS_DIR / "robots-check.md",
+    "check-header-css": REPORTS_DIR / "header-css-check.json",
 }
 
 # ── Lancement des scripts ─────────────────────────────────────────────────────
@@ -65,6 +67,14 @@ def read_audit_summary():
 def read_meta_summary():
     path = REPORT_FILES["check-meta"]
     if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    return data.get("summary", {})
+
+def read_json_summary(tool):
+    """Lecture générique d'un rapport JSON avec clé 'summary'."""
+    path = REPORT_FILES.get(tool)
+    if not path or not path.exists():
         return None
     data = json.loads(path.read_text(encoding="utf-8"))
     return data.get("summary", {})
@@ -159,9 +169,10 @@ def main():
     print()
 
     # Lecture des résumés
-    audit_sum  = read_audit_summary()   or {"critique": 0, "important": 0, "amelioration": 0}
-    meta_sum   = read_meta_summary()    or {"critique": 0, "important": 0, "amelioration": 0}
-    robots_sum = read_robots_summary()  or {"critique": 0, "important": 0, "amelioration": 0}
+    audit_sum      = read_audit_summary()   or {"critique": 0, "important": 0, "amelioration": 0}
+    meta_sum       = read_meta_summary()    or {"critique": 0, "important": 0, "amelioration": 0}
+    robots_sum     = read_robots_summary()  or {"critique": 0, "important": 0, "amelioration": 0}
+    header_css_sum = read_json_summary("check-header-css") or {"critique": 0, "important": 0, "amelioration": 0}
     # generate-sitemap n'a pas de JSON — on le considère ok si le script a réussi
     sitemap_sum = {"critique": 0 if results.get("generate-sitemap") else 1, "important": 0, "amelioration": 0}
 
@@ -170,6 +181,7 @@ def main():
         "check-meta":       meta_sum,
         "generate-sitemap": sitemap_sum,
         "check-robots":     robots_sum,
+        "check-header-css": header_css_sum,
     }
 
     total_c  = sum(s.get("critique", 0)  for s in totals.values())

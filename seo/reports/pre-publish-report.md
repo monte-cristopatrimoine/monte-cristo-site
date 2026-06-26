@@ -1,31 +1,32 @@
 # Rapport pré-publication — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 17:23*
+*Généré le 26/06/2026 à 17:39*
 
-## ❌ À CORRIGER AVANT PUBLICATION
+## ⚠️ PUBLIABLE — corrections mineures recommandées
 
-> Des problèmes critiques ou importants ont été détectés. Corrigez-les avant de déployer.
+> Pas de blocage. Des améliorations sont disponibles mais non urgentes.
 
 ---
 ## Résultats par outil
 
 | Outil | Critiques 🔴 | Importants 🟠 | Améliorations 🟡 | Statut |
 |-------|:-----------:|:------------:|:----------------:|--------|
-| `audit` | 2 | 3 | 25 | ❌ |
-| `check-meta` | 4 | 2 | 17 | ❌ |
+| `audit` | 0 | 0 | 20 | ✅ |
+| `check-meta` | 0 | 0 | 13 | ✅ |
 | `generate-sitemap` | 0 | 0 | 0 | ✅ |
 | `check-robots` | 0 | 0 | 0 | ✅ |
+| `check-header-css` | 0 | 0 | 0 | ✅ |
 
-**Total consolidé :** 🔴 6 critique(s) — 🟠 5 important(s) — 🟡 42 amélioration(s)
+**Total consolidé :** 🔴 0 critique(s) — 🟠 0 important(s) — 🟡 33 amélioration(s)
 
 ---
 ## Checklist avant publication
 
 - ✅ robots.txt propre (sans règles inutiles)
 - ✅ sitemap.xml à jour
-- ❌ Titres et descriptions dans les limites
-- ❌ Métadonnées cohérentes (og:, twitter:)
-- ❌ Aucune page critique sans H1
-- ❌ Aucun doublon de métadonnées
+- ✅ Titres et descriptions dans les limites
+- ✅ Métadonnées cohérentes (og:, twitter:)
+- ✅ Aucune page critique sans H1
+- ✅ Aucun doublon de métadonnées
 
 ---
 *Rapport généré par `seo/scripts/pre-publish.py`*
