@@ -1,0 +1,235 @@
+/* ============================================================
+   Monte-Cristo Patrimoine — Design System v1.0
+   2026-06-26
+   Dépend de /colors_and_type.css (tokens CSS + typographie de base)
+   Charger dans cet ordre :
+     1. /colors_and_type.css
+     2. /assets/css/mcp-design-system.css
+     3. <style> inline (spécifiques à la page)
+   ============================================================ */
+
+/* ── Reset complémentaire ────────────────────────────────────
+   colors_and_type.css gère les tokens et la typo.
+   Ce reset ajoute box-sizing et scroll-behavior.              */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+/* ── Layout fondamental ──────────────────────────────────── */
+.page { min-height: 100vh; }
+section[id], div[id] { scroll-margin-top: 96px; }
+.container { max-width: 1240px; margin: 0 auto; }
+section { padding: 96px 40px; }
+
+/* ── Skip link (accessibilité) ───────────────────────────── */
+.skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+.skip-link:focus { position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto; background: var(--mcp-green); color: #FDFAF3; padding: 10px 22px; border-radius: 6px; font-weight: 600; font-size: 15px; text-decoration: none; outline: 3px solid var(--mcp-orange); }
+
+/* ── HEADER ──────────────────────────────────────────────── */
+.header { position: sticky; top: 0; z-index: 50; background: rgba(254,250,242,.85); backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%); border-bottom: 1px solid var(--mcp-beige-300); }
+.header-inner { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 4px 40px; }
+.logo { display: flex; align-items: center; height: 72px; overflow: hidden; }
+.logo img { height: 128px; display: block; }
+.nav { display: flex; gap: 36px; }
+.nav a { text-decoration: none; color: var(--mcp-ink); font-size: 15px; font-weight: 400; transition: color var(--dur-fast) var(--ease-out); }
+.nav a:hover { color: var(--mcp-green); }
+.nav a.active { color: var(--mcp-green); font-weight: 500; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all .2s; }
+
+/* CTA rendez-vous — guard doublon desktop/mobile
+   Règle 1 : masquage global du CTA mobile (.nav-rdv)          */
+.nav-rdv,
+.nav .nav-rdv {
+  display: none !important;
+}
+
+/* ── BOUTONS ─────────────────────────────────────────────── */
+.btn { font-family: var(--font-sans); font-weight: 500; font-size: 15px; border-radius: var(--radius-pill); padding: 12px 26px; border: 1px solid transparent; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: all var(--dur-base) var(--ease-out); text-decoration: none; }
+.btn-primary { background: var(--mcp-green); color: var(--mcp-beige); }
+.btn-primary:hover { background: var(--mcp-green-700); transform: translateY(-1px); }
+.btn-secondary { background: transparent; color: var(--mcp-green); border-color: var(--mcp-green); }
+.btn-secondary:hover { background: var(--mcp-green); color: var(--mcp-beige); }
+.btn-accent { background: var(--mcp-orange); color: #fff; }
+.btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); }
+.btn-on-green { background: var(--mcp-beige); color: var(--mcp-green); }
+.btn-on-green:hover { background: #fff; }
+
+/* ── SECTION HEADER (composant réutilisable) ─────────────── */
+.mcp-section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-bottom: 56px; }
+.mcp-section-head h2 { font-family: var(--font-display); font-weight: 300; font-size: 54px; line-height: 1.1; letter-spacing: -.02em; color: var(--mcp-green); margin: 16px 0 0; text-wrap: balance; }
+.mcp-section-head p { font-size: 18px; line-height: 1.55; color: var(--mcp-ink-500); margin: 0; max-width: 480px; }
+
+/* ── HERO SYSTEM ─────────────────────────────────────────── */
+
+/* ---- .mcp-hero-signature — Home uniquement ----------------
+   RÈGLE : hero-demeure.webp est exclusif à ce composant.
+   Ne jamais utiliser /assets/hero-demeure.webp hors de
+   .mcp-hero-signature. Voir docs/style-guide-mcp.md.        */
+.mcp-hero-signature {
+  padding-top: 96px; padding-bottom: 96px; min-height: 88vh;
+  display: flex; align-items: center;
+  background:
+    linear-gradient(90deg, rgba(16,26,18,.88) 0%, rgba(16,26,18,.62) 32%, rgba(16,26,18,.2) 60%, rgba(16,26,18,0) 82%),
+    linear-gradient(0deg, rgba(10,20,13,.5) 0%, rgba(10,20,13,0) 36%),
+    url('/assets/hero-demeure.webp');
+  background-size: cover; background-position: center 42%;
+  position: relative; overflow: hidden; color: var(--mcp-beige);
+}
+.mcp-hero-signature .eyebrow { color: var(--mcp-beige); opacity: .9; }
+.mcp-hero-signature .btn-secondary { color: var(--mcp-beige); border-color: rgba(254,250,242,.55); background: rgba(254,250,242,.06); }
+.mcp-hero-signature .btn-secondary:hover { background: var(--mcp-beige); color: var(--mcp-green); border-color: var(--mcp-beige); }
+
+/* ---- .mcp-hero-interior — Pages intérieures ---------------
+   Fond beige/vert selon variante. Jamais hero-demeure.webp.  */
+.mcp-hero-interior {
+  padding: 80px 40px 72px;
+  display: flex; align-items: center;
+  background: var(--mcp-beige-200);
+  border-bottom: 1px solid var(--mcp-beige-300);
+}
+.mcp-hero-interior .container { width: 100%; }
+.mcp-hero-interior .eyebrow { margin-bottom: 14px; }
+.mcp-hero-interior h1 { color: var(--mcp-green); }
+
+/* Variante portrait (ex. /le-cabinet) */
+.mcp-hero-interior--portrait {
+  background: var(--mcp-beige-200);
+}
+.mcp-hero-interior--portrait .mcp-hero-inner {
+  display: grid; grid-template-columns: 1fr 420px; gap: 60px; align-items: center;
+}
+
+/* Variante service (ex. /particuliers, /entreprises) */
+.mcp-hero-interior--service {
+  background: var(--mcp-green);
+  color: var(--mcp-beige);
+}
+.mcp-hero-interior--service .eyebrow { color: var(--mcp-beige); opacity: .85; }
+.mcp-hero-interior--service h1 { color: var(--mcp-beige); }
+.mcp-hero-interior--service p { color: rgba(254,250,242,.85); }
+
+/* Variante minimale (titre seul, fond uni) */
+.mcp-hero-interior--minimal {
+  padding: 56px 40px 48px;
+  background: var(--mcp-beige);
+}
+
+/* ---- .mcp-hero-editorial — Blog / Articles ----------------
+   Fond beige ou vert sombre, identité éditoriale.            */
+.mcp-hero-editorial {
+  padding: 72px 40px 64px;
+  background: var(--mcp-green);
+  color: var(--mcp-beige);
+}
+.mcp-hero-editorial .container { max-width: 860px; }
+.mcp-hero-editorial .eyebrow { color: var(--mcp-beige); opacity: .8; margin-bottom: 14px; }
+.mcp-hero-editorial h1 { color: var(--mcp-beige); font-size: clamp(2rem, 4vw, 3.5rem); }
+.mcp-hero-editorial .lead { color: rgba(254,250,242,.85); }
+
+/* ---- .mcp-hero-seo — Pages SEO / texte-first -------------
+   Fond clair, pas d'image de fond lourde, H1 en avant.      */
+.mcp-hero-seo {
+  padding: 72px 40px 64px;
+  background: var(--mcp-beige);
+  border-bottom: 1px solid var(--mcp-beige-300);
+}
+.mcp-hero-seo .container { max-width: 860px; }
+.mcp-hero-seo .eyebrow { margin-bottom: 14px; }
+.mcp-hero-seo h1 { color: var(--mcp-green); }
+.mcp-hero-seo .lead { color: var(--mcp-ink-500); }
+
+/* ── TRUST STRIP (partenaires) ───────────────────────────── */
+.trust { padding: 36px 40px; border-top: 1px solid var(--mcp-beige-300); border-bottom: 1px solid var(--mcp-beige-300); }
+.trust-inner { max-width: 1240px; margin: 0 auto; display: flex; align-items: center; gap: 24px; }
+.trust-label { font-size: 11px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--mcp-ink-500); white-space: nowrap; }
+.trust-logos { flex: 1; display: grid; grid-template-columns: repeat(6,1fr); gap: 28px 24px; align-items: center; justify-items: center; }
+.trust-logos .cell { height: 40px; width: 100%; display: flex; align-items: center; justify-content: center; }
+.trust-logos img { max-height: 27px; max-width: 120px; object-fit: contain; object-position: center; filter: grayscale(1); opacity: .6; transition: opacity var(--dur-base) var(--ease-out), filter var(--dur-base) var(--ease-out); }
+/* Wordmarks très allongés : plafonnent sur la largeur avant d'atteindre 27px de haut */
+.trust-logos img[alt="Interactive Brokers"],
+.trust-logos img[alt="Harvest"] { max-width: 145px; }
+.trust-logos img:hover { filter: grayscale(0); opacity: 1; }
+
+/* ── ORIAS BADGE ─────────────────────────────────────────── */
+.orias-badge { display: inline-block; margin-top: 16px; padding: 4px 10px; font-size: 12px; letter-spacing: .06em; color: var(--mcp-beige); border: 1px solid rgba(240,230,210,.45); border-radius: 3px; text-decoration: none; opacity: .9; }
+.orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer { background: var(--mcp-green); color: var(--mcp-beige); padding: 80px 40px 36px; }
+.footer-inner { max-width: 1240px; margin: 0 auto; }
+.footer-top { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px; padding-bottom: 56px; border-bottom: 1px solid rgba(254,250,242,.18); align-items: start; }
+.footer-top img { height: 128px; margin-bottom: 22px; display: block; }
+.footer-top h4 { font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 18px; opacity: .85; }
+.footer-top ul { list-style: none; padding: 0; margin: 0; }
+.footer-top li { margin-bottom: 10px; font-size: 14px; opacity: .85; }
+.footer-top a { color: var(--mcp-beige); text-decoration: none; }
+.footer-top a:hover { opacity: 1; text-decoration: underline; }
+.footer-bottom { margin-top: 32px; display: flex; justify-content: space-between; gap: 32px; font-size: 11px; line-height: 1.7; opacity: .7; font-style: italic; }
+.footer-bottom .mentions { max-width: 820px; }
+
+/* ── RESPONSIVE 1100px ───────────────────────────────────── */
+@media (max-width: 1100px) {
+  .header-inner { padding: 4px 24px; }
+  .nav { gap: 22px; }
+  .nav a { font-size: 14px; }
+  .logo { height: 60px; }
+  .logo img { height: 110px; }
+  section { padding: 80px 24px; }
+  .mcp-hero-signature { padding: 64px 24px 80px; }
+  .mcp-hero-section-head h2 { font-size: 42px; }
+  .mcp-section-head h2 { font-size: 42px; }
+  .mcp-hero-interior { padding: 64px 24px 56px; }
+  .mcp-hero-editorial { padding: 56px 24px 48px; }
+  .mcp-hero-seo { padding: 56px 24px 48px; }
+  .mcp-hero-interior--portrait .mcp-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .trust { padding: 28px 24px; }
+  .footer-top { gap: 36px; }
+}
+
+/* ── RESPONSIVE 760px ────────────────────────────────────── */
+@media (max-width: 760px) {
+  /* Header mobile */
+  .header-inner { padding: 4px 20px; gap: 12px; }
+  .header { position: relative; }
+  .nav { display: none; }
+  .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,.08); z-index: 100; }
+  .hamburger { display: flex; }
+  .logo { height: 52px; }
+  .logo img { height: 92px; }
+
+  /* CTA rendez-vous — Règle 2 (desktop) : masquage CTA bouton header */
+  .header-inner > .btn { display: none !important; }
+
+  /* CTA rendez-vous — Règle 3 (mobile open) : réaffichage dans le menu */
+  .nav.open .nav-rdv { display: inline-flex !important; }
+
+  /* Hero signature mobile */
+  .mcp-hero-signature {
+    min-height: 78vh;
+    background:
+      linear-gradient(180deg, rgba(16,26,18,.86) 0%, rgba(16,26,18,.52) 34%, rgba(16,26,18,.28) 58%, rgba(16,26,18,.34) 100%),
+      url('/assets/hero-demeure.webp');
+    background-size: cover; background-position: 70% 38%;
+  }
+  /* Hero intérieur mobile */
+  .mcp-hero-interior { padding: 56px 20px 48px; }
+  .mcp-hero-editorial { padding: 48px 20px 40px; }
+  .mcp-hero-seo { padding: 48px 20px 40px; }
+
+  /* Section header mobile */
+  .mcp-section-head { grid-template-columns: 1fr; gap: 40px; }
+  .mcp-section-head h2 { font-size: 32px; }
+
+  /* Trust strip mobile */
+  .trust { padding: 28px 24px; }
+  .trust-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .trust-logos { grid-template-columns: repeat(2,1fr); width: 100%; gap: 18px; }
+
+  /* Footer mobile */
+  footer { padding: 56px 24px 32px; }
+  .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; }
+  .footer-bottom { flex-direction: column; gap: 16px; }
+
+  /* Section base */
+  section { padding: 64px 20px; }
+}
