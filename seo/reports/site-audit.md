@@ -1,33 +1,30 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 17:23*
+*Généré le 26/06/2026 à 21:03*
 
 ## Résumé global
 
 | | |
 |---|---|
-| Pages de production analysées | **15** |
+| Pages de production analysées | **13** |
 | Pages techniques | **1** |
 | Pages de travail | **1** |
-| Problèmes critiques 🔴 | **2** |
-| Problèmes importants 🟠 | **3** |
-| Améliorations utiles 🟡 | **25** |
+| Problèmes critiques 🔴 | **0** |
+| Problèmes importants 🟠 | **0** |
+| Améliorations utiles 🟡 | **20** |
 | Mineurs ⚪ | **0** |
 | Pages sans problème | **1** |
 
-> ⚠️ **5 problème(s) à corriger en priorité** (critiques + importants).
+> ✅ Aucun problème critique ou important détecté.
 
 ---
 ## 🔴 Problèmes critiques
 
-- **home-v21-simulation.html** — Meta description absente
-- **home-v21-simulation.html** — Balise canonical absente
+Aucun problème critique.
 
 ---
 ## 🟠 Problèmes importants
 
-- **home-v21-design-handoff-simulation.html** — Page absente du sitemap.xml
-- **home-v21-simulation.html** — og:title absent — partage réseaux sociaux dégradé
-- **home-v21-simulation.html** — og:description absent — partage réseaux sociaux dégradé
+Aucun problème important.
 
 ---
 ## 🟡 Améliorations utiles
@@ -38,11 +35,6 @@
 - **conseiller-gestion-patrimoine-independant.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — Aucune donnée structurée JSON-LD / Schema.org
-- **home-v21-design-handoff-simulation.html** — og:image générique (même image sur toutes les pages)
-- **home-v21-design-handoff-simulation.html** — Aucune donnée structurée JSON-LD / Schema.org
-- **home-v21-simulation.html** — og:image absent
-- **home-v21-simulation.html** — Aucune donnée structurée JSON-LD / Schema.org
-- **home-v21-simulation.html** — 1 image(s) sans attribut alt — accessibilité et SEO images
 - **honoraires-frais-caches.html** — og:image générique (même image sur toutes les pages)
 - **index.html** — og:image générique (même image sur toutes les pages)
 - **le-cabinet.html** — og:image générique (même image sur toutes les pages)
@@ -132,42 +124,6 @@
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
-### `home-v21-design-handoff-simulation.html`
-- **URL** : https://monte-cristo.net/home-v21-design-handoff-simulation
-- **Title** : Gestion de patrimoine à Gap | Monte-Cristo Patrimoine *(longueur : 53)*
-- **Description** : Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp… *(longueur : 153)*
-- **Canonical** : https://monte-cristo.net
-- **H1** (1) : Le conseil comme héritage. L'indépendance comme signature.
-- **H2** (8) : Vous devriez nous parler si…, Moins de 5 % des CGP en France travaillent principalement aux honoraires. Nous en faisons partie., Des décisions mieux structurées.
-- **Schema.org** : Non
-- **Dans sitemap** : ❌ Non
-- **Images sans alt** : 0
-- **Liens** : 23 internes, 2 externes
-- **Problèmes :**
-  - 🟠 Page absente du sitemap.xml
-  - 🟡 og:image générique (même image sur toutes les pages)
-  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
-
-### `home-v21-simulation.html`
-- **URL** : https://monte-cristo.net/home-v21-simulation
-- **Title** : [SIMULATION] Home V2.1 — Monte-Cristo Patrimoine *(longueur : 48)*
-- **Description** : *(manquante)* *(longueur : 0)*
-- **Canonical** : *(manquant)*
-- **H1** (1) : Le conseil comme héritage.L'indépendance comme signature.
-- **H2** (9) : Vous devriez nous parler si…, des CGP en France travaillent principalement aux honoraires.Nous en faisons partie., Des honoraires transparents.Une architecture ouverte.
-- **Schema.org** : Non
-- **Dans sitemap** : ❌ Non
-- **Images sans alt** : 1
-- **Liens** : 22 internes, 2 externes
-- **Problèmes :**
-  - 🔴 Meta description absente
-  - 🔴 Balise canonical absente
-  - 🟠 og:title absent — partage réseaux sociaux dégradé
-  - 🟠 og:description absent — partage réseaux sociaux dégradé
-  - 🟡 og:image absent
-  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
-  - 🟡 1 image(s) sans attribut alt — accessibilité et SEO images
-
 ### `honoraires-frais-caches.html`
 - **URL** : https://monte-cristo.net/honoraires-frais-caches
 - **Title** : Honoraires et frais en gestion de patrimoine | Monte-Cristo *(longueur : 59)*
@@ -198,15 +154,15 @@
 
 ### `le-cabinet.html`
 - **URL** : https://monte-cristo.net/le-cabinet
-- **Title** : Le cabinet — Monte-Cristo Patrimoine *(longueur : 36)*
-- **Description** : Découvrez Monte-Cristo Patrimoine, cabinet CGP indépendant fondé par Luc Blanc-G… *(longueur : 147)*
+- **Title** : Cabinet de gestion de patrimoine indépendant | Monte-Cristo *(longueur : 59)*
+- **Description** : Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires t… *(longueur : 138)*
 - **Canonical** : https://monte-cristo.net/le-cabinet
 - **H1** (1) : Le patrimoine se conseille. Il ne se vend pas.
-- **H2** (6) : La rencontre entre les attentes des investisseurs et la vision des fondateurs., Deux experts unis par la stratégie, le conseil… et la volonté d'agir autrement., Un modèle unique basé sur l'honoraire de conseil.
+- **H2** (8) : Deux parcours. Une conviction commune., Deux expériences différentes. Une même vision du conseil., des conseillers en gestion de patrimoine travaillent principalement aux honoraires. Nous en faisons partie.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 24 internes, 2 externes
+- **Liens** : 21 internes, 3 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -315,35 +271,22 @@
 ---
 ## Recommandations — ordre d'exécution
 
-**1. Ajouter les meta descriptions manquantes** 🔴
-   - `home-v21-simulation.html`
-
-**2. Ajouter les balises canonical manquantes** 🔴
-   - `home-v21-simulation.html`
-
-**3. Ajouter les pages manquantes au sitemap.xml** 🟠
-   - `home-v21-design-handoff-simulation.html`
-   - `home-v21-simulation.html`
+**1. Ajouter les pages manquantes au sitemap.xml** 🟠
    - `mentions-legales.html`
    - `politique-confidentialite.html`
 
-**4. Ajouter `<meta name='robots' content='noindex'>` sur les pages de travail** 🟠
+**2. Ajouter `<meta name='robots' content='noindex'>` sur les pages de travail** 🟠
    - `mockup-contenu.html`
 
-**5. Ajouter des données structurées JSON-LD** 🟡
+**3. Ajouter des données structurées JSON-LD** 🟡
    - `blog.html`
    - `entreprises.html`
-   - `home-v21-design-handoff-simulation.html`
-   - `home-v21-simulation.html`
    - `le-cabinet.html`
    - `mentions-legales.html`
    - `particuliers.html`
    - `politique-confidentialite.html`
    - `simulateur-frais.html`
    - `simulateurs.html`
-
-**6. Ajouter des attributs `alt` aux images** 🟡
-   - `home-v21-simulation.html`
 
 ---
 *Rapport généré automatiquement par `seo/scripts/audit.py`*

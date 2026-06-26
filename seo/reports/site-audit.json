@@ -1,7 +1,7 @@
 {
-  "generated_at": "26/06/2026 à 17:23",
+  "generated_at": "26/06/2026 à 21:03",
   "site": "https://monte-cristo.net",
-  "total_pages": 17,
+  "total_pages": 15,
   "pages": [
     {
       "file": "404.html",
@@ -212,120 +212,6 @@
       ]
     },
     {
-      "file": "home-v21-design-handoff-simulation.html",
-      "category": "production",
-      "url": "https://monte-cristo.net/home-v21-design-handoff-simulation",
-      "title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-      "title_length": 53,
-      "description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
-      "description_length": 153,
-      "canonical": "https://monte-cristo.net",
-      "og_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-      "og_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
-      "og_image": "https://monte-cristo.net/assets/og-image.png",
-      "h1_count": 1,
-      "h1_texts": [
-        "Le conseil comme héritage. L'indépendance comme signature."
-      ],
-      "h2_count": 8,
-      "h2_texts": [
-        "Vous devriez nous parler si…",
-        "Moins de 5 % des CGP en France travaillent principalement aux honoraires. Nous en faisons partie.",
-        "Des décisions mieux structurées.",
-        "Comprendre, structurer, suivre.",
-        "Un cabinet récent. Des convictions solides."
-      ],
-      "imgs_without_alt": 0,
-      "internal_links": 23,
-      "external_links": 2,
-      "has_schema": false,
-      "in_sitemap": false,
-      "issues": [
-        {
-          "level": "important",
-          "code": "NOT_IN_SITEMAP",
-          "message": "Page absente du sitemap.xml"
-        },
-        {
-          "level": "amelioration",
-          "code": "OG_IMAGE_GENERIC",
-          "message": "og:image générique (même image sur toutes les pages)"
-        },
-        {
-          "level": "amelioration",
-          "code": "SCHEMA_MISSING",
-          "message": "Aucune donnée structurée JSON-LD / Schema.org"
-        }
-      ]
-    },
-    {
-      "file": "home-v21-simulation.html",
-      "category": "production",
-      "url": "https://monte-cristo.net/home-v21-simulation",
-      "title": "[SIMULATION] Home V2.1 — Monte-Cristo Patrimoine",
-      "title_length": 48,
-      "description": "",
-      "description_length": 0,
-      "canonical": "",
-      "og_title": "",
-      "og_description": "",
-      "og_image": "",
-      "h1_count": 1,
-      "h1_texts": [
-        "Le conseil comme héritage.L'indépendance comme signature."
-      ],
-      "h2_count": 9,
-      "h2_texts": [
-        "Vous devriez nous parler si…",
-        "des CGP en France travaillent principalement aux honoraires.Nous en faisons partie.",
-        "Des honoraires transparents.Une architecture ouverte.",
-        "Des décisions mieux structurées.",
-        "Comprendre, structurer, suivre."
-      ],
-      "imgs_without_alt": 1,
-      "internal_links": 22,
-      "external_links": 2,
-      "has_schema": false,
-      "in_sitemap": false,
-      "issues": [
-        {
-          "level": "critique",
-          "code": "DESC_MISSING",
-          "message": "Meta description absente"
-        },
-        {
-          "level": "critique",
-          "code": "CANONICAL_MISSING",
-          "message": "Balise canonical absente"
-        },
-        {
-          "level": "important",
-          "code": "OG_TITLE_MISSING",
-          "message": "og:title absent — partage réseaux sociaux dégradé"
-        },
-        {
-          "level": "important",
-          "code": "OG_DESC_MISSING",
-          "message": "og:description absent — partage réseaux sociaux dégradé"
-        },
-        {
-          "level": "amelioration",
-          "code": "OG_IMAGE_MISSING",
-          "message": "og:image absent"
-        },
-        {
-          "level": "amelioration",
-          "code": "SCHEMA_MISSING",
-          "message": "Aucune donnée structurée JSON-LD / Schema.org"
-        },
-        {
-          "level": "amelioration",
-          "code": "IMGS_NO_ALT",
-          "message": "1 image(s) sans attribut alt — accessibilité et SEO images"
-        }
-      ]
-    },
-    {
       "file": "honoraires-frais-caches.html",
       "category": "production",
       "url": "https://monte-cristo.net/honoraires-frais-caches",
@@ -403,29 +289,29 @@
       "file": "le-cabinet.html",
       "category": "production",
       "url": "https://monte-cristo.net/le-cabinet",
-      "title": "Le cabinet — Monte-Cristo Patrimoine",
-      "title_length": 36,
-      "description": "Découvrez Monte-Cristo Patrimoine, cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Notre modèle : l'honoraire, pas la commission.",
-      "description_length": 147,
+      "title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+      "title_length": 59,
+      "description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
+      "description_length": 138,
       "canonical": "https://monte-cristo.net/le-cabinet",
-      "og_title": "Le cabinet — Monte-Cristo Patrimoine",
-      "og_description": "Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Transparence, indépendance, honoraires.",
+      "og_title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+      "og_description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
       "og_image": "https://monte-cristo.net/assets/og-image.png",
       "h1_count": 1,
       "h1_texts": [
         "Le patrimoine se conseille. Il ne se vend pas."
       ],
-      "h2_count": 6,
+      "h2_count": 8,
       "h2_texts": [
-        "La rencontre entre les attentes des investisseurs et la vision des fondateurs.",
-        "Deux experts unis par la stratégie, le conseil… et la volonté d'agir autrement.",
-        "Un modèle unique basé sur l'honoraire de conseil.",
-        "Des maisons sélectionnées pour leur exigence.",
-        "Nos partenaires sélectionnés avec rigueur, en trois étapes."
+        "Deux parcours. Une conviction commune.",
+        "Deux expériences différentes. Une même vision du conseil.",
+        "des conseillers en gestion de patrimoine travaillent principalement aux honoraires. Nous en faisons partie.",
+        "Un cabinet enregistré, encadré et assuré.",
+        "Des maisons sélectionnées pour leur exigence."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 24,
-      "external_links": 2,
+      "internal_links": 21,
+      "external_links": 3,
       "has_schema": false,
       "in_sitemap": true,
       "issues": [
@@ -678,9 +564,9 @@
     }
   ],
   "summary": {
-    "critique": 2,
-    "important": 3,
-    "amelioration": 25,
+    "critique": 0,
+    "important": 0,
+    "amelioration": 20,
     "mineur": 0
   }
 }

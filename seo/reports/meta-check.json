@@ -1,5 +1,5 @@
 {
-  "generated_at": "26/06/2026 à 17:23",
+  "generated_at": "26/06/2026 à 21:03",
   "pages": [
     {
       "file": "article-cgp-independant.html",
@@ -193,104 +193,6 @@
       ]
     },
     {
-      "file": "home-v21-design-handoff-simulation.html",
-      "url": "https://monte-cristo.net/home-v21-design-handoff-simulation",
-      "meta": {
-        "title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-        "description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
-        "canonical": "https://monte-cristo.net",
-        "og_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-        "og_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
-        "og_image": "https://monte-cristo.net/assets/og-image.png",
-        "og_url": "https://monte-cristo.net",
-        "twitter_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-        "twitter_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte.",
-        "twitter_card": "summary_large_image",
-        "robots": ""
-      },
-      "issues": [
-        {
-          "level": "ok",
-          "message": "title longueur OK (53 car.)"
-        },
-        {
-          "level": "ok",
-          "message": "description longueur OK (153 car.)"
-        },
-        {
-          "level": "important",
-          "message": "Canonical (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)"
-        },
-        {
-          "level": "ok",
-          "message": "og:title longueur OK (53 car.)"
-        },
-        {
-          "level": "ok",
-          "message": "og:description longueur OK (153 car.)"
-        },
-        {
-          "level": "important",
-          "message": "og:url (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)"
-        },
-        {
-          "level": "amelioration",
-          "message": "title identique à og:title — différencier pour enrichir le partage social"
-        }
-      ]
-    },
-    {
-      "file": "home-v21-simulation.html",
-      "url": "https://monte-cristo.net/home-v21-simulation",
-      "meta": {
-        "title": "[SIMULATION] Home V2.1 — Monte-Cristo Patrimoine",
-        "description": "",
-        "canonical": "",
-        "og_title": "",
-        "og_description": "",
-        "og_image": "",
-        "og_url": "",
-        "twitter_title": "",
-        "twitter_description": "",
-        "twitter_card": "",
-        "robots": "noindex, nofollow"
-      },
-      "issues": [
-        {
-          "level": "ok",
-          "message": "title longueur OK (48 car.)"
-        },
-        {
-          "level": "critique",
-          "message": "description absent"
-        },
-        {
-          "level": "critique",
-          "message": "canonical absent"
-        },
-        {
-          "level": "critique",
-          "message": "og:title absent"
-        },
-        {
-          "level": "critique",
-          "message": "og:description absent"
-        },
-        {
-          "level": "amelioration",
-          "message": "og:image absent"
-        },
-        {
-          "level": "amelioration",
-          "message": "og:url absent"
-        },
-        {
-          "level": "amelioration",
-          "message": "twitter:card absent"
-        }
-      ]
-    },
-    {
       "file": "honoraires-frais-caches.html",
       "url": "https://monte-cristo.net/honoraires-frais-caches",
       "meta": {
@@ -372,38 +274,50 @@
       "file": "le-cabinet.html",
       "url": "https://monte-cristo.net/le-cabinet",
       "meta": {
-        "title": "Le cabinet — Monte-Cristo Patrimoine",
-        "description": "Découvrez Monte-Cristo Patrimoine, cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Notre modèle : l'honoraire, pas la commission.",
+        "title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+        "description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
         "canonical": "https://monte-cristo.net/le-cabinet",
-        "og_title": "Le cabinet — Monte-Cristo Patrimoine",
-        "og_description": "Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Transparence, indépendance, honoraires.",
+        "og_title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+        "og_description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
         "og_image": "https://monte-cristo.net/assets/og-image.png",
         "og_url": "https://monte-cristo.net/le-cabinet",
-        "twitter_title": "Le cabinet — Monte-Cristo Patrimoine",
-        "twitter_description": "Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Blache. Transparence, indépendance, honoraires.",
+        "twitter_title": "",
+        "twitter_description": "",
         "twitter_card": "summary_large_image",
         "robots": ""
       },
       "issues": [
         {
           "level": "ok",
-          "message": "title longueur OK (36 car.)"
+          "message": "title longueur OK (59 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title ne contient pas le nom de marque « Monte-Cristo Patrimoine »"
         },
         {
           "level": "ok",
-          "message": "description longueur OK (147 car.)"
+          "message": "description longueur OK (138 car.)"
         },
         {
           "level": "ok",
-          "message": "og:title longueur OK (36 car.)"
+          "message": "og:title longueur OK (59 car.)"
         },
         {
           "level": "ok",
-          "message": "og:description longueur OK (105 car.)"
+          "message": "og:description longueur OK (138 car.)"
         },
         {
           "level": "amelioration",
           "message": "title identique à og:title — différencier pour enrichir le partage social"
+        },
+        {
+          "level": "amelioration",
+          "message": "twitter:title absent (og:title présent)"
+        },
+        {
+          "level": "amelioration",
+          "message": "twitter:description absent (og:description présent)"
         }
       ]
     },
@@ -607,44 +521,11 @@
       ]
     }
   ],
-  "duplicates": [
-    {
-      "field": "title",
-      "value": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-      "pages": [
-        "home-v21-design-handoff-simulation.html",
-        "index.html"
-      ]
-    },
-    {
-      "field": "description",
-      "value": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…",
-      "pages": [
-        "home-v21-design-handoff-simulation.html",
-        "index.html"
-      ]
-    },
-    {
-      "field": "og_title",
-      "value": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
-      "pages": [
-        "home-v21-design-handoff-simulation.html",
-        "index.html"
-      ]
-    },
-    {
-      "field": "og_description",
-      "value": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…",
-      "pages": [
-        "home-v21-design-handoff-simulation.html",
-        "index.html"
-      ]
-    }
-  ],
+  "duplicates": [],
   "summary": {
-    "critique": 4,
-    "important": 2,
-    "amelioration": 17,
-    "duplicates": 4
+    "critique": 0,
+    "important": 0,
+    "amelioration": 16,
+    "duplicates": 0
   }
 }

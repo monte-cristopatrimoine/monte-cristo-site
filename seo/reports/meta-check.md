@@ -1,43 +1,30 @@
 # Contrôle des métadonnées — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 17:23*
+*Généré le 26/06/2026 à 21:03*
 
 ## Résumé
 
 | | |
 |---|---|
-| Pages analysées | **15** |
-| Problèmes critiques 🔴 | **4** |
-| Problèmes importants 🟠 | **2** |
-| Améliorations 🟡 | **17** |
-| Doublons détectés | **4** |
+| Pages analysées | **13** |
+| Problèmes critiques 🔴 | **0** |
+| Problèmes importants 🟠 | **0** |
+| Améliorations 🟡 | **16** |
+| Doublons détectés | **0** |
 
 ---
-## ⚠️ Doublons détectés inter-pages
+## Doublons
 
-Des pages partagent des valeurs identiques — Google peut les pénaliser.
-
-- **title** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
-  > Gestion de patrimoine à Gap | Monte-Cristo Patrimoine
-- **description** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
-  > Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…
-- **og_title** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
-  > Gestion de patrimoine à Gap | Monte-Cristo Patrimoine
-- **og_description** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
-  > Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…
+✅ Aucun doublon détecté entre les pages.
 
 ---
 ## 🔴 Problèmes critiques
 
-- **home-v21-simulation.html** — description absent
-- **home-v21-simulation.html** — canonical absent
-- **home-v21-simulation.html** — og:title absent
-- **home-v21-simulation.html** — og:description absent
+✅ Aucun.
 
 ---
 ## 🟠 Problèmes importants
 
-- **home-v21-design-handoff-simulation.html** — Canonical (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
-- **home-v21-design-handoff-simulation.html** — og:url (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
+✅ Aucun.
 
 ---
 ## 🟡 Améliorations
@@ -46,13 +33,12 @@ Des pages partagent des valeurs identiques — Google peut les pénaliser.
 - **blog.html** — title identique à og:title — différencier pour enrichir le partage social
 - **conseiller-gestion-patrimoine-independant.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **entreprises.html** — title identique à og:title — différencier pour enrichir le partage social
-- **home-v21-design-handoff-simulation.html** — title identique à og:title — différencier pour enrichir le partage social
-- **home-v21-simulation.html** — og:image absent
-- **home-v21-simulation.html** — og:url absent
-- **home-v21-simulation.html** — twitter:card absent
 - **honoraires-frais-caches.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **index.html** — title identique à og:title — différencier pour enrichir le partage social
+- **le-cabinet.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **le-cabinet.html** — title identique à og:title — différencier pour enrichir le partage social
+- **le-cabinet.html** — twitter:title absent (og:title présent)
+- **le-cabinet.html** — twitter:description absent (og:description présent)
 - **mentions-legales.html** — title identique à og:title — différencier pour enrichir le partage social
 - **particuliers.html** — title identique à og:title — différencier pour enrichir le partage social
 - **politique-confidentialite.html** — title identique à og:title — différencier pour enrichir le partage social
@@ -147,48 +133,6 @@ Des pages partagent des valeurs identiques — Google peut les pénaliser.
 **Problèmes :**
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
 
-### `home-v21-design-handoff-simulation.html`
-| Champ | Valeur | Long. |
-|-------|--------|-------|
-| `title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
-| `description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 153 |
-| `canonical` | https://monte-cristo.net | 24 |
-| `og:title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
-| `og:description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 153 |
-| `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
-| `twitter:description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 109 |
-| `twitter:card` | summary_large_image | 19 |
-| `robots` | *(absent)* | — |
-
-**Problèmes :**
-- 🟠 Canonical (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
-- 🟠 og:url (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
-- 🟡 title identique à og:title — différencier pour enrichir le partage social
-
-### `home-v21-simulation.html`
-| Champ | Valeur | Long. |
-|-------|--------|-------|
-| `title` | [SIMULATION] Home V2.1 — Monte-Cristo Patrimoine | 48 |
-| `description` | *(absent)* | — |
-| `canonical` | *(absent)* | — |
-| `og:title` | *(absent)* | — |
-| `og:description` | *(absent)* | — |
-| `og:image` | *(absent)* | — |
-| `twitter:title` | *(absent)* | — |
-| `twitter:description` | *(absent)* | — |
-| `twitter:card` | *(absent)* | — |
-| `robots` | noindex, nofollow | 17 |
-
-**Problèmes :**
-- 🔴 description absent
-- 🔴 canonical absent
-- 🔴 og:title absent
-- 🔴 og:description absent
-- 🟡 og:image absent
-- 🟡 og:url absent
-- 🟡 twitter:card absent
-
 ### `honoraires-frais-caches.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
@@ -226,19 +170,22 @@ Des pages partagent des valeurs identiques — Google peut les pénaliser.
 ### `le-cabinet.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
-| `title` | Le cabinet — Monte-Cristo Patrimoine | 36 |
-| `description` | Découvrez Monte-Cristo Patrimoine, cabinet CGP indépendant f… | 147 |
+| `title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
+| `description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `canonical` | https://monte-cristo.net/le-cabinet | 35 |
-| `og:title` | Le cabinet — Monte-Cristo Patrimoine | 36 |
-| `og:description` | Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Bl… | 105 |
+| `og:title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
+| `og:description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Le cabinet — Monte-Cristo Patrimoine | 36 |
-| `twitter:description` | Cabinet CGP indépendant fondé par Luc Blanc-Gras et Kévin Bl… | 105 |
+| `twitter:title` | *(absent)* | — |
+| `twitter:description` | *(absent)* | — |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
 **Problèmes :**
+- 🟡 title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
+- 🟡 twitter:title absent (og:title présent)
+- 🟡 twitter:description absent (og:description présent)
 
 ### `mentions-legales.html`
 | Champ | Valeur | Long. |

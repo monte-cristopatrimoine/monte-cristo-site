@@ -1,5 +1,5 @@
 # Contrôle robots.txt — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 17:23*
+*Généré le 26/06/2026 à 21:03*
 
 ## Résumé
 
