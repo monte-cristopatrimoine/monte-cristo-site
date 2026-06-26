@@ -3,436 +3,167 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Services aux entreprises — Monte-Cristo Patrimoine</title>
-  <link rel="preload" as="script" href="/analytics.js">
+<title>Conseil patrimonial pour les dirigeants | Monte-Cristo Patrimoine</title>
+<link rel="preload" as="script" href="/analytics.js">
 <link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <!-- SEO -->
-  <meta name="description" content="Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale, trésorerie. Cabinet CGP indépendant à Gap.">
-  <link rel="canonical" href="https://monte-cristo.net/entreprises"/>
-  <meta property="og:title" content="Services aux entreprises — Monte-Cristo Patrimoine"/>
-  <meta property="og:description" content="Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale. Cabinet indépendant."/>
-  <meta property="og:url" content="https://monte-cristo.net/entreprises"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Services aux entreprises — Monte-Cristo Patrimoine">
-  <meta name="twitter:description" content="Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale. Cabinet indépendant.">
-  <meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="description" content="Rémunération, trésorerie, protection, cession : Monte-Cristo accompagne dirigeants et professions libérales avec un conseil patrimonial global."/>
+<link rel="canonical" href="https://monte-cristo.net/entreprises"/>
+<meta property="og:title" content="Conseil patrimonial pour les dirigeants | Monte-Cristo Patrimoine"/>
+<meta property="og:description" content="Rémunération, trésorerie, protection, cession : Monte-Cristo accompagne dirigeants et professions libérales avec un conseil patrimonial global."/>
+<meta property="og:url" content="https://monte-cristo.net/entreprises"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Conseil patrimonial pour les dirigeants | Monte-Cristo Patrimoine"/>
+<meta name="twitter:description" content="Rémunération, trésorerie, protection, cession : Monte-Cristo accompagne dirigeants et professions libérales avec un conseil patrimonial global."/>
+<meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png"/>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script src="/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
+<link rel="stylesheet" href="/colors_and_type.css"/>
+<link rel="stylesheet" href="/assets/css/mcp-design-system.css?v=20260626b"/>
 <style>
-/* Creato Display — Monte-Cristo Patrimoine corporate font.
-   14 files: Thin (100), Light (300), Regular (400), Medium (500),
-   Bold (700), ExtraBold (800), Black (900), each with matching italic. */
+/* ── CTA guard ── */
+.nav-rdv, .nav .nav-rdv { display: none !important; }
 
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Thin.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ThinItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ThinItalic.otf") format("opentype");
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Light.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-LightItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-LightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Regular.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-RegularItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-RegularItalic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Medium.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-MediumItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-MediumItalic.otf") format("opentype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Bold.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-BoldItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-BoldItalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ExtraBold.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ExtraBold.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ExtraBoldItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ExtraBoldItalic.otf") format("opentype");
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Black.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-BlackItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-BlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-:root{--mcp-green:#346848;--mcp-green-700:#244F36;--mcp-green-deep:#1B6A45;--mcp-green-300:#97B5A0;--mcp-green-100:#DDE7DF;--mcp-orange:#E67E22;--mcp-orange-700:#B66518;--mcp-orange-100:#F8DCC0;--mcp-beige:#FDFAF3;--mcp-beige-200:#F4EFE0;--mcp-beige-300:#E8E1CC;--mcp-ink:#16110A;--mcp-ink-700:#3A322A;--mcp-ink-500:#6B6359;--mcp-ink-300:#B7AE9D;--mcp-white:#FFFFFF;--mcp-black:#000000;--bg:var(--mcp-beige);--bg-elevated:var(--mcp-beige-200);--bg-inverse:var(--mcp-green);--bg-accent:var(--mcp-orange);--fg:var(--mcp-ink);--fg-muted:var(--mcp-ink-500);--fg-subtle:var(--mcp-ink-300);--fg-inverse:var(--mcp-beige);--fg-brand:var(--mcp-green);--fg-accent:var(--mcp-orange);--border:var(--mcp-beige-300);--border-strong:var(--mcp-green);--link:var(--mcp-green);--link-hover:var(--mcp-green-deep);--font-sans:"Creato Display","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--font-display:"Creato Display","Inter",system-ui,sans-serif;--fs-12:0.75rem;--fs-14:0.875rem;--fs-16:1rem;--fs-18:1.125rem;--fs-20:1.25rem;--fs-24:1.5rem;--fs-30:1.875rem;--fs-36:2.25rem;--fs-48:3rem;--fs-64:4rem;--fs-80:5rem;--fw-light:300;--fw-regular:400;--fw-medium:500;--fw-bold:700;--fw-extra:800;--lh-tight:1.05;--lh-snug:1.15;--lh-normal:1.35;--lh-relaxed:1.55;--tracking-tight:-0.02em;--tracking-snug:-0.005em;--tracking-normal:0em;--tracking-wide:0.04em;--tracking-eyebrow:0.14em;--sp-1:0.25rem;--sp-2:0.5rem;--sp-3:0.75rem;--sp-4:1rem;--sp-5:1.25rem;--sp-6:1.5rem;--sp-8:2rem;--sp-10:2.5rem;--sp-12:3rem;--sp-16:4rem;--sp-20:5rem;--sp-24:6rem;--sp-32:8rem;--radius-xs:2px;--radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-xl:20px;--radius-pill:999px;--shadow-sm:0 1px 2px rgba(22,17,10,0.06);--shadow-md:0 4px 14px rgba(22,17,10,0.08);--shadow-lg:0 18px 40px -12px rgba(22,17,10,0.18);--shadow-inset-line:inset 0 -1px 0 var(--border);--ease-out:cubic-bezier(0.22,1,0.36,1);--ease-in-out:cubic-bezier(0.65,0,0.35,1);--dur-fast:120ms;--dur-base:220ms;--dur-slow:420ms}html{color-scheme:light}body{background:var(--bg);color:var(--fg);font-family:var(--font-sans);font-size:var(--fs-16);font-weight:var(--fw-regular);line-height:var(--lh-relaxed);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}h1,.h1{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(2.25rem,4.5vw,var(--fs-64));line-height:var(--lh-tight);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-6);text-wrap:balance}h2,.h2{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.75rem,3vw,var(--fs-48));line-height:var(--lh-snug);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-5);text-wrap:balance}h3,.h3{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-30);line-height:var(--lh-snug);color:var(--fg-brand);margin:0 0 var(--sp-4)}h4,.h4{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-20);line-height:var(--lh-normal);color:var(--fg);margin:0 0 var(--sp-3)}.eyebrow{font-size:var(--fs-12);font-weight:var(--fw-medium);letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--fg-brand)}.lead{font-size:var(--fs-20);font-weight:var(--fw-light);line-height:var(--lh-relaxed);color:var(--fg-muted)}p{margin:0 0 var(--sp-4);text-wrap:pretty}small,.small{font-size:var(--fs-14);color:var(--fg-muted)}.legal{font-size:var(--fs-12);line-height:var(--lh-normal);color:var(--fg-muted);font-style:italic}a{color:var(--link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease-out)}a:hover{color:var(--link-hover)}.tagline{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.5rem,2.4vw,var(--fs-36));line-height:1.2;letter-spacing:var(--tracking-tight);color:var(--fg-brand)}.tagline em{font-style:italic;font-weight:var(--fw-regular)}
-  /* ── Skip link accessibilité ── */
-  .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-  .skip-link:focus { position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto;
-    background: var(--mcp-green); color: #FDFAF3; padding: 10px 22px; border-radius: 6px;
-    font-weight: 600; font-size: 15px; text-decoration: none; outline: 3px solid var(--mcp-orange); }
-  body { margin: 0; }
-  .page { min-height: 100vh; }
-  html { scroll-behavior: smooth; }
-  section[id] { scroll-margin-top: 96px; }
+body { margin: 0; }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 96px; }
 
-  /* ============ HEADER ============ */
-  .header {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(254, 250, 242, 0.85);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid var(--mcp-beige-300);
-  }
-  .header-inner {
-    max-width: 1240px; margin: 0 auto;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 4px 40px;
-  }
-  .logo { display: flex; align-items: center; height: 72px; overflow: hidden; }
-  .logo img { height: 128px; display: block; }
-  .nav { display: flex; gap: 36px; }
-  .nav a {
-    text-decoration: none; color: var(--mcp-ink); font-size: 15px;
-    font-weight: 400; transition: color var(--dur-fast) var(--ease-out);
-  }
-  .nav a:hover { color: var(--mcp-green); }
-  .nav a.active { color: var(--mcp-green); font-weight: 500; }
+/* ── SECTION HEAD ── */
+.section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-bottom: 56px; }
+.section-head h2 { font-family: var(--font-display); font-weight: 300; font-size: 52px; line-height: 1.1; letter-spacing: -0.02em; color: var(--mcp-green); margin: 16px 0 0; text-wrap: balance; }
+.section-head h2 em { font-style: italic; font-weight: 400; }
+.section-head p { font-size: 18px; line-height: 1.55; color: var(--mcp-ink-500); margin: 0; max-width: 480px; }
 
-  /* ============ BUTTON ============ */
-  .btn {
-    font-family: var(--font-sans);
-    font-weight: 500; font-size: 15px;
-    border-radius: var(--radius-pill);
-    padding: 12px 26px;
-    border: 1px solid transparent;
-    cursor: pointer; display: inline-flex; align-items: center; gap: 10px;
-    transition: all var(--dur-base) var(--ease-out);
-    text-decoration: none;
-  }
-  .btn-primary { background: var(--mcp-green); color: var(--mcp-beige); }
-  .btn-primary:hover { background: var(--mcp-green-700); transform: translateY(-1px); }
-  .btn-accent { background: var(--mcp-orange); color: #fff; }
-  .btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); }
-  .btn-on-green { background: var(--mcp-beige); color: var(--mcp-green); }
-  .btn-on-green:hover { background: #fff; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
-  .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all 0.2s; }
-  .nav-rdv { display: none; }
+/* ── HERO ── */
+.hero { background: var(--mcp-beige); padding: 64px 40px 88px; }
+.hero-inner { max-width: 1240px; margin: 0 auto; text-align: center; }
+.breadcrumb { font-size: 13px; color: var(--mcp-ink-500); display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 30px; }
+.breadcrumb a { color: var(--mcp-green); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb .sep { opacity: 0.4; }
+.hero-title { font-family: var(--font-display); font-weight: 300; font-size: 66px; line-height: 1.06; letter-spacing: -0.025em; color: var(--mcp-green); margin: 14px auto 0; max-width: 1060px; text-wrap: balance; }
+.hero-title em { font-style: italic; font-weight: 400; }
+.hero-lead { font-size: 19px; line-height: 1.6; color: var(--mcp-ink-500); max-width: 720px; margin: 28px auto 0; }
+.hero-lead.emph { color: var(--mcp-green); font-family: var(--font-display); font-weight: 300; font-size: 21px; line-height: 1.5; max-width: 760px; margin-top: 18px; letter-spacing: -0.01em; }
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 36px; }
 
-  /* ============ SECTION CHROME ============ */
-  section { padding: 96px 40px; }
-  .container { max-width: 1240px; margin: 0 auto; }
-  .eyebrow {
-    font-size: 12px; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--mcp-green);
-  }
+/* ── SITUATIONS ── */
+.situations { background: var(--mcp-beige-200); }
+.situations-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.situation-card { position: relative; text-align: left; background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 14px; padding: 30px 28px 28px; display: flex; flex-direction: column; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); }
+.situation-card:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -16px rgba(22,17,10,0.12); }
+.situation-card .num { font-family: var(--font-display); font-weight: 300; font-size: 22px; color: var(--mcp-green); letter-spacing: -0.02em; }
+.situation-card h3 { font-family: var(--font-display); font-weight: 500; font-size: 20px; line-height: 1.25; color: var(--mcp-green); margin: 14px 0 12px; text-wrap: balance; }
+.situation-card p { font-size: 14.5px; line-height: 1.6; color: var(--mcp-ink-500); margin: 0; }
+.situations-cta { margin-top: 34px; padding-top: 30px; border-top: 1px solid var(--mcp-beige-300); display: flex; align-items: center; gap: 18px 28px; flex-wrap: wrap; }
+.situations-tally { font-family: var(--font-display); font-weight: 300; font-size: 22px; letter-spacing: -0.01em; color: var(--mcp-green); margin: 0; flex: 1 1 460px; text-wrap: balance; line-height: 1.4; }
+.situations-cta .note { font-size: 13px; color: var(--mcp-ink-500); }
 
-  /* ============ HERO ============ */
-  .hero {
-    background: var(--mcp-beige);
-    padding: 56px 40px 96px;
-  }
-  .hero-inner { max-width: 1080px; margin: 0 auto; }
-  .breadcrumb {
-    font-size: 13px; color: var(--mcp-ink-500);
-    display: flex; gap: 10px; align-items: center;
-    margin-bottom: 28px;
-  }
-  .breadcrumb a { color: var(--mcp-green); text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .breadcrumb .sep { opacity: 0.4; }
-  .hero h1 {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 72px; line-height: 1.04;
-    letter-spacing: -0.025em;
-    color: var(--mcp-green);
-    margin: 14px 0 24px;
-    text-wrap: balance;
-  }
-  .hero h1 em { font-style: italic; font-weight: 400; }
-  .hero p.lead {
-    font-size: 19px; line-height: 1.55;
-    color: var(--mcp-ink-500);
-    max-width: 680px;
-    margin: 0 0 32px;
-  }
+/* ── PÉRIMÈTRE (coverage) ── */
+.coverage { background: var(--mcp-beige); }
+.coverage-list { margin-top: 8px; border-top: 1px solid var(--mcp-beige-300); }
+.coverage-item { display: grid; grid-template-columns: 64px 1fr; gap: 28px; padding: 44px 0; border-bottom: 1px solid var(--mcp-beige-300); }
+.coverage-item .ci-num { font-family: var(--font-display); font-weight: 300; font-size: 40px; line-height: 1; letter-spacing: -0.03em; color: var(--mcp-green); }
+.coverage-item .ci-content { display: grid; grid-template-columns: 360px 1fr; gap: 48px; align-items: start; }
+.coverage-item h3 { font-family: var(--font-display); font-weight: 500; font-size: 23px; line-height: 1.22; color: var(--mcp-green); margin: 2px 0 14px; text-wrap: balance; }
+.coverage-item .ci-lead { font-family: var(--font-display); font-weight: 400; font-style: italic; font-size: 17px; line-height: 1.45; color: var(--mcp-green); margin: 0; opacity: 0.88; max-width: 320px; }
+.coverage-item .ci-body { max-width: 660px; }
+.coverage-item .ci-text { font-size: 16px; line-height: 1.68; color: var(--mcp-ink-700); margin: 0; }
+.coverage-item .ci-text + .ci-text { margin-top: 14px; }
+.coverage-item .ci-topics { margin-top: 24px; }
+.coverage-item .ct-label { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mcp-ink-500); display: block; margin-bottom: 13px; }
+.coverage-item .ct-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.coverage-item .ct-list span { font-size: 13px; color: var(--mcp-green); background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); padding: 7px 14px; border-radius: 999px; line-height: 1.3; }
 
-  /* ============ SERVICES GRID ============ */
-  .services { background: var(--mcp-beige); padding-top: 32px; }
-  .services-head {
-    max-width: 1080px; margin: 0 auto 56px;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end;
-  }
-  .services-head h2 {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 48px; line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--mcp-green);
-    margin: 16px 0 0;
-    text-wrap: balance;
-  }
-  .services-head p {
-    font-size: 17px; line-height: 1.55;
-    color: var(--mcp-ink-500);
-    margin: 0; max-width: 460px;
-  }
-  .services-grid {
-    max-width: 1080px; margin: 0 auto;
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
-  }
-  .service-card {
-    background: var(--mcp-beige-200);
-    border: 1px solid var(--mcp-beige-300);
-    border-radius: 12px;
-    padding: 36px;
-  }
-  .service-card .num {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 36px; color: var(--mcp-green);
-    letter-spacing: -0.02em;
-  }
-  .service-card h3 {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 24px; line-height: 1.25;
-    color: var(--mcp-green); margin: 18px 0 14px;
-  }
-  .service-card p {
-    font-size: 15px; line-height: 1.6;
-    color: var(--mcp-ink-500); margin: 0 0 18px;
-  }
-  .service-card ul {
-    list-style: none; padding: 0; margin: 0;
-    font-size: 14px; color: var(--mcp-ink-500); line-height: 1.7;
-  }
-  .service-card ul li { padding-left: 16px; position: relative; }
-  .service-card ul li::before {
-    content: ""; position: absolute; left: 0; top: 0.8em;
-    width: 8px; height: 1px; background: var(--mcp-green);
-  }
+/* ── MÉTHODE ── */
+.methode { background: var(--mcp-beige-200); }
+.methode-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.methode-step { position: relative; padding-top: 32px; }
+.methode-step::before { content: ""; position: absolute; top: 5px; left: 0; right: 0; height: 1px; background: var(--mcp-beige-300); }
+.methode-step::after { content: ""; position: absolute; top: 1px; left: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--mcp-green); }
+.methode-step .step-num { font-family: var(--font-display); font-weight: 400; font-size: 14px; letter-spacing: 0.12em; color: var(--mcp-green); margin-bottom: 12px; display: block; }
+.methode-step h3 { font-family: var(--font-display); font-weight: 500; font-size: 22px; color: var(--mcp-green); margin: 0 0 12px; line-height: 1.2; }
+.methode-step p { font-size: 14.5px; line-height: 1.6; color: var(--mcp-ink-500); margin: 0; }
 
-  /* ============ AUDIENCE STRIPE ============ */
-  .audience {
-    background: var(--mcp-green); color: var(--mcp-beige);
-    padding: 80px 40px;
-  }
-  .audience-inner {
-    max-width: 1080px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 2fr; gap: 64px; align-items: center;
-  }
-  .audience h2 {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 36px; line-height: 1.15;
-    letter-spacing: -0.02em;
-    color: var(--mcp-beige); margin: 12px 0 0;
-    text-wrap: balance;
-  }
-  .audience h2 em { font-style: italic; font-weight: 400; }
-  .audience-list {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-  }
-  .audience-item {
-    padding: 18px 0 0;
-    border-top: 1px solid rgba(254,250,242,0.18);
-  }
-  .audience-item h4 {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 16px; color: var(--mcp-beige);
-    margin: 0 0 8px;
-  }
-  .audience-item p {
-    font-size: 13.5px; line-height: 1.5;
-    opacity: 0.8; margin: 0;
-  }
+/* ── MODÈLE (bande verte) ── */
+.modele { background: var(--mcp-green); color: var(--mcp-beige); }
+.modele-head { display: grid; grid-template-columns: 0.86fr 1.14fr; gap: 80px; align-items: start; padding-bottom: 48px; border-bottom: 1px solid rgba(254,250,242,0.18); }
+.modele-head .eyebrow { color: var(--mcp-beige); opacity: 0.85; }
+.modele-head h2 { font-family: var(--font-display); font-weight: 300; font-size: 46px; line-height: 1.12; letter-spacing: -0.02em; color: var(--mcp-beige); margin: 14px 0 0; text-wrap: balance; }
+.modele-head h2 em { font-style: italic; font-weight: 400; }
+.modele-head .modele-intro p { font-size: 17px; line-height: 1.72; color: rgba(254,250,242,0.88); margin: 0 0 18px; }
+.modele-head .modele-intro p:last-child { margin-bottom: 0; }
+.modele-features { margin-top: 48px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.modele-feature { border-left: 1px solid rgba(254,250,242,0.2); padding: 2px 0 2px 24px; }
+.modele-feature .mf-key { font-family: var(--font-display); font-weight: 400; font-size: 23px; line-height: 1.16; letter-spacing: -0.015em; color: var(--mcp-beige); margin-bottom: 14px; text-wrap: balance; }
+.modele-feature p { font-size: 15px; line-height: 1.62; color: rgba(254,250,242,0.85); margin: 0; }
+.modele-links { margin-top: 46px; display: flex; flex-wrap: wrap; gap: 16px 36px; }
+.modele-links a { color: var(--mcp-beige); font-size: 15px; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(254,250,242,0.4); padding-bottom: 4px; }
+.modele-links a::after { content: "→"; transition: transform var(--dur-base) var(--ease-out); }
+.modele-links a:hover::after { transform: translateX(4px); }
 
-  /* ============ FINAL CTA ============ */
-  .cta {
-    background: var(--mcp-beige);
-    padding: 110px 40px;
-    text-align: center;
-  }
-  .cta-tagline {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 64px; line-height: 1; letter-spacing: -0.03em;
-    color: var(--mcp-green);
-    margin: 14px 0 18px;
-    text-wrap: balance;
-  }
-  .cta-tagline em { font-style: italic; font-weight: 400; }
-  .cta-sub {
-    font-size: 19px; color: var(--mcp-ink-500);
-    margin: 0 auto 36px; max-width: 580px;
-    line-height: 1.55;
-  }
+/* ── CTA FINAL ── */
+.cta { background: var(--mcp-beige); padding: 104px 40px 96px; text-align: center; }
+.cta .eyebrow { display: block; margin-bottom: 14px; }
+.cta-tagline { font-family: var(--font-display); font-weight: 300; font-size: 58px; line-height: 1.05; letter-spacing: -0.03em; color: var(--mcp-green); margin: 0 0 20px; text-wrap: balance; }
+.cta-tagline em { font-style: italic; font-weight: 400; }
+.cta-sub { font-size: 18px; color: var(--mcp-ink-500); margin: 0 auto 30px; max-width: 720px; line-height: 1.62; }
+.cta-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 auto 40px; }
+.cta-chips span { font-size: 13px; font-weight: 500; color: var(--mcp-green); background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); padding: 9px 18px; border-radius: 999px; display: inline-flex; align-items: center; gap: 9px; }
+.cta-chips span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--mcp-green); }
 
-  /* ============ FOOTER ============ */
-  footer {
-    background: var(--mcp-green); color: var(--mcp-beige);
-    padding: 80px 40px 36px;
-  }
-  .footer-inner { max-width: 1240px; margin: 0 auto; }
-  .footer-top {
-    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px;
-    padding-bottom: 56px;
-    border-bottom: 1px solid rgba(254,250,242,0.18);
-    align-items: start;
-  }
-  .footer-top img { height: 128px; margin-bottom: 22px; display: block; }
-  .footer-top h4 {
-    font-size: 13px; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    margin: 0 0 18px; opacity: 0.85;
-  }
-  .footer-top ul { list-style: none; padding: 0; margin: 0; }
-  .footer-top li { margin-bottom: 10px; font-size: 14px; opacity: 0.85; }
-  .footer-top a { color: var(--mcp-beige); text-decoration: none; }
-  .footer-top a:hover { opacity: 1; text-decoration: underline; }
-  .footer-bottom {
-    margin-top: 32px;
-    display: flex; justify-content: space-between; gap: 32px;
-    font-size: 11px; line-height: 1.7; opacity: 0.7; font-style: italic;
-  }
-  .footer-bottom .mentions { max-width: 820px; }
-  .orias-badge {
-    display: inline-block;
-    margin-top: 16px;
-    padding: 4px 10px;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    color: var(--mcp-beige);
-    border: 1px solid rgba(240,230,210,0.45);
-    border-radius: 3px;
-    text-decoration: none;
-    opacity: 0.9;
-  }
-  .orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
+/* ── ORIAS badge footer ── */
+.orias-badge { display: inline-block; margin-top: 16px; padding: 4px 10px; font-size: 12px; letter-spacing: 0.06em; color: var(--mcp-beige); border: 1px solid rgba(240,230,210,0.45); border-radius: 3px; text-decoration: none; opacity: 0.9; }
+.orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
 
-  /* ============ RESPONSIVE ============ */
-  @media (max-width: 1100px) {
-    .header-inner { padding: 4px 24px; }
-    .nav { gap: 22px; }
-    .nav a { font-size: 14px; }
-    .logo { height: 60px; }
-    .logo img { height: 110px; }
-    section { padding: 72px 24px; }
-    .hero { padding: 40px 24px 72px; }
-    .hero h1 { font-size: 52px; }
-    .services-head, .audience-inner { grid-template-columns: 1fr; gap: 32px; }
-    .audience-list { grid-template-columns: 1fr 1fr; }
-    .cta-tagline { font-size: 48px; }
-  }
-  @media (max-width: 760px) {
-    .header-inner { padding: 4px 20px; gap: 12px; }
-    .nav { display: none; }
-    .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
-    .header { position: relative; }
-    .hamburger { display: flex; }
-    .header-inner > .btn { display: none !important; }
-    .nav.open .nav-rdv { display: inline-flex !important; }
-    .logo { height: 52px; }
-    .logo img { height: 92px; }
-    .header-inner .btn { padding: 10px 18px; font-size: 13px; }
-    .hero { padding: 32px 20px 56px; }
-    .hero h1 { font-size: 36px; }
-    .hero p.lead { font-size: 17px; }
-    section { padding: 56px 20px; }
-    .services-head h2 { font-size: 30px; }
-    .services-grid { grid-template-columns: 1fr; }
-    .audience { padding: 56px 20px; }
-    .audience h2 { font-size: 26px; }
-    .audience-list { grid-template-columns: 1fr; }
-    .cta { padding: 72px 20px 64px; }
-    .cta-tagline { font-size: 32px; }
-    .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; }
-    .footer-bottom { flex-direction: column; gap: 16px; }
-    footer { padding: 56px 24px 32px; }
-  }
+/* ── RESPONSIVE 1100px ── */
+@media (max-width: 1100px) {
+  .hero { padding: 48px 24px 72px; }
+  .hero-title { font-size: 52px; }
+  .section-head { grid-template-columns: 1fr; gap: 28px; align-items: start; }
+  .section-head h2 { font-size: 42px; }
+  .situations-grid { grid-template-columns: repeat(2, 1fr); }
+  .methode-steps { grid-template-columns: repeat(2, 1fr); gap: 36px 30px; }
+  .coverage-item .ci-content { grid-template-columns: 1fr; gap: 14px; }
+  .coverage-item .ci-lead { max-width: none; }
+  .modele-head { grid-template-columns: 1fr; gap: 32px; }
+  .modele-head h2 { font-size: 38px; }
+  .modele-features { grid-template-columns: 1fr; gap: 0; }
+  .modele-feature { border-left: none; border-top: 1px solid rgba(254,250,242,0.2); padding: 24px 0 0; }
+  .modele-feature:first-child { border-top: none; padding-top: 0; }
+  .cta { padding: 80px 24px 72px; }
+  .cta-tagline { font-size: 48px; }
+}
+
+/* ── RESPONSIVE 760px (CTA guard inline) ── */
+@media (max-width: 760px) {
+  .header-inner > .btn { display: none !important; }
+  .nav.open .nav-rdv { display: inline-flex !important; }
+  .hero { padding: 32px 20px 56px; }
+  .hero-title { font-size: 36px; }
+  .hero-lead { font-size: 16.5px; }
+  .hero-lead.emph { font-size: 18px; }
+  .situations-grid { grid-template-columns: 1fr; }
+  .methode-steps { grid-template-columns: 1fr; }
+  .coverage-item { grid-template-columns: 1fr; gap: 10px; }
+  .coverage-item .ci-num { font-size: 32px; }
+  .modele-head h2 { font-size: 30px; }
+  .section-head h2 { font-size: 32px; }
+  .cta { padding: 72px 20px 64px; }
+  .cta-tagline { font-size: 34px; }
+  .cta-sub { font-size: 16.5px; }
+}
 </style>
-  <!-- Performance : preconnect -->
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://www.google-analytics.com">
-  <!-- Google Analytics + Consent Mode -->
-  <script src="/analytics.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu principal</a>
 <div class="page">
 
-  <!-- ====== HEADER ====== -->
-  <!-- BEGIN GLOBAL HEADER -->
+<!-- BEGIN GLOBAL HEADER -->
   <header class="header">
     <div class="header-inner">
       <a href="/" class="logo" aria-label="Accueil — Monte-Cristo Patrimoine"><img src="/assets/logo-vert.webp" alt="Monte-Cristo Patrimoine"/></a>
@@ -451,9 +182,9 @@
   </header>
 <!-- END GLOBAL HEADER -->
 
+<main>
 
-  <main>
-  <!-- ====== HERO ====== -->
+  <!-- HERO -->
   <section class="hero" id="main">
     <div class="hero-inner">
       <div class="breadcrumb">
@@ -461,121 +192,301 @@
         <span class="sep">/</span>
         <span>Entreprises</span>
       </div>
-      <div class="eyebrow">Services aux entreprises</div>
-      <h1>Valorisez votre <em>patrimoine professionnel.</em></h1>
-      <p class="lead">De la création de société à la transmission, en passant par la gestion de trésorerie et l'épargne salariale. Un accompagnement global pour les dirigeants et leurs entreprises — TPE, PME, professions libérales, indépendants.</p>
-      <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
-    </div>
-  </section>
-
-  <!-- ====== SERVICES ====== -->
-  <section class="services">
-    <div class="services-head">
-      <div>
-        <div class="eyebrow">Notre périmètre</div>
-        <h2>Quatre domaines, une approche intégrée.</h2>
-      </div>
-      <p>Chaque dirigeant est un cas unique. Nous croisons rémunération, trésorerie, transmission et protection pour optimiser à la fois la sphère professionnelle et personnelle.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="num">01</div>
-        <h3>Chef d'entreprise</h3>
-        <p>Stratégie patrimoniale du dirigeant&nbsp;: structuration, rémunération, protection, cession et transmission.</p>
-        <ul>
-          <li>Création de société &amp; holding</li>
-          <li>Optimisation de la rémunération</li>
-          <li>Protection du dirigeant</li>
-          <li>Cession &amp; stratégie post-cession</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <div class="num">02</div>
-        <h3>Gestion de trésorerie</h3>
-        <p>Faire travailler les excédents de trésorerie de votre société, en sécurité et avec une fiscalité optimisée.</p>
-        <ul>
-          <li>Comptes à terme rémunérés</li>
-          <li>Compte-titres &amp; contrat de capitalisation</li>
-          <li>SCPI détenues via société</li>
-          <li>Produits structurés</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <div class="num">03</div>
-        <h3>Épargne salariale</h3>
-        <p>Mise en place et pilotage des dispositifs d'intéressement, participation et plans d'épargne pour vos collaborateurs.</p>
-        <ul>
-          <li>Participation &amp; intéressement</li>
-          <li>PEE — Plan d'Épargne Entreprise</li>
-          <li>PERCo / PER d'entreprise</li>
-          <li>Abondement &amp; gestion pilotée</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <div class="num">04</div>
-        <h3>Ingénierie sociale</h3>
-        <p>Audit de la rémunération globale du dirigeant — retraite, prévoyance, fiscalité et statut social (TNS / assimilé salarié).</p>
-        <ul>
-          <li>Audit retraite TNS / assimilé salarié</li>
-          <li>Contrats Madelin</li>
-          <li>Prévoyance santé &amp; arrêt de travail</li>
-          <li>Optimisation des cotisations sociales</li>
-        </ul>
+      <div class="eyebrow">Dirigeants &amp; professions libérales</div>
+      <h1 class="hero-title">Un conseil patrimonial <em>au croisement de votre entreprise et de votre vie.</em></h1>
+      <p class="hero-lead">Pour un dirigeant, l'entreprise est souvent le premier actif patrimonial. Mais la stratégie du dirigeant ne se limite pas à la gestion de la société&nbsp;: elle intègre aussi la rémunération, la protection, la retraite, la transmission et le patrimoine personnel.</p>
+      <p class="hero-lead emph">Notre rôle est d'analyser les deux sphères ensemble, de les relier, puis de proposer une stratégie documentée, cohérente avec vos objectifs professionnels, familiaux et patrimoniaux.</p>
+      <div class="hero-ctas">
+        <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+        <a href="#methode" class="btn btn-secondary">Comprendre notre méthode</a>
       </div>
     </div>
   </section>
 
-  <!-- ====== AUDIENCE ====== -->
-  <section class="audience">
-    <div class="audience-inner">
-      <div>
-        <div class="eyebrow" style="color: var(--mcp-beige); opacity: 0.85;">Pour qui&nbsp;?</div>
-        <h2>Un accompagnement adapté à <em>chaque statut.</em></h2>
+  <!-- NOUS POUVONS VOUS AIDER SI… -->
+  <section id="situations" class="situations">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Nos clients</div>
+          <h2>Nous pouvons vous aider si…</h2>
+        </div>
+        <p>Chacune de ces situations mérite un regard patrimonial global. Une seule suffit pour qu'un premier échange ait du sens.</p>
       </div>
-      <div class="audience-list">
-        <div class="audience-item">
-          <h4>Dirigeants TPE / PME</h4>
-          <p>Société d'exploitation, holding patrimoniale, transmission familiale.</p>
+
+      <div class="situations-grid">
+        <div class="situation-card">
+          <div class="num">01</div>
+          <h3>Votre trésorerie s'accumule sans stratégie</h3>
+          <p>Votre société génère des excédents de trésorerie qui s'accumulent sans stratégie définie — et vous n'avez jamais formalisé comment les organiser.</p>
         </div>
-        <div class="audience-item">
-          <h4>Professions libérales</h4>
-          <p>Médecins, avocats, notaires, experts-comptables, architectes.</p>
+        <div class="situation-card">
+          <div class="num">02</div>
+          <h3>Votre rémunération n'a jamais été structurée</h3>
+          <p>Vous vous versez une rémunération depuis des années sans avoir vraiment structuré l'arbitrage entre salaire, dividendes et épargne — ni vérifié si votre statut social reste adapté.</p>
         </div>
-        <div class="audience-item">
-          <h4>Travailleurs indépendants</h4>
-          <p>Artisans, commerçants, micro-entrepreneurs en croissance.</p>
+        <div class="situation-card">
+          <div class="num">03</div>
+          <h3>Votre prévoyance n'a jamais été rouverte</h3>
+          <p>Vous avez un contrat de prévoyance signé à la création de la société, que vous n'avez jamais rouvert — et vous ne savez pas si votre protection en cas d'arrêt de travail, d'invalidité ou de décès est suffisante.</p>
         </div>
-        <div class="audience-item">
-          <h4>Sociétés en croissance</h4>
-          <p>Excédents de trésorerie à faire travailler, plan d'investissement.</p>
+        <div class="situation-card">
+          <div class="num">04</div>
+          <h3>Vous envisagez de céder votre entreprise</h3>
+          <p>Vous envisagez de céder votre entreprise dans les prochaines années et vous n'avez pas encore structuré la stratégie patrimoniale de sortie&nbsp;: apport-cession, réinvestissement, fiscalité, transmission.</p>
         </div>
-        <div class="audience-item">
-          <h4>Sociétés en cession</h4>
-          <p>Préparation à la cession, stratégie post-cession, apport-cession.</p>
+        <div class="situation-card">
+          <div class="num">05</div>
+          <h3>Vous vous interrogez sur une holding</h3>
+          <p>Vous avez une holding — ou vous vous demandez si une holding serait pertinente dans votre situation — sans avoir bénéficié d'un regard patrimonial global sur le sujet.</p>
         </div>
-        <div class="audience-item">
-          <h4>Holdings patrimoniales</h4>
-          <p>Optimisation de la fiscalité &amp; détention via société.</p>
+        <div class="situation-card">
+          <div class="num">06</div>
+          <h3>Votre patrimoine est surtout professionnel</h3>
+          <p>Votre patrimoine professionnel représente l'essentiel de votre patrimoine total, et vous n'avez jamais formalisé comment le rééquilibrer progressivement.</p>
+        </div>
+        <div class="situation-card">
+          <div class="num">07</div>
+          <h3>Vous êtes profession libérale</h3>
+          <p>Médecin, avocat, architecte, consultant, pharmacien, dentiste&nbsp;: votre organisation patrimoniale n'a pas évolué depuis votre installation, alors que votre situation fiscale, votre structure et vos objectifs ont changé.</p>
+        </div>
+      </div>
+
+      <div class="situations-cta">
+        <p class="situations-tally">Ces situations ne nécessitent pas toutes les mêmes réponses. Elles demandent d'abord une analyse claire&nbsp;: ce qui relève de l'entreprise, ce qui relève du dirigeant, et ce qui doit être coordonné avec vos autres conseils.</p>
+        <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+        <span class="note">Premier échange de 45&nbsp;minutes, sans engagement.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE PÉRIMÈTRE -->
+  <section id="perimetre" class="coverage">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Notre périmètre</div>
+          <h2>Cinq expertises, une approche intégrée.</h2>
+        </div>
+        <p>Chaque dirigeant est un cas unique. Nous croisons rémunération, trésorerie, protection, cession et transmission pour construire une stratégie cohérente — côté société et côté patrimoine personnel.</p>
+      </div>
+
+      <div class="coverage-list">
+        <div class="coverage-item">
+          <div class="ci-num">01</div>
+          <div class="ci-content">
+            <div>
+              <h3>Architecture patrimoniale &amp; structuration</h3>
+              <p class="ci-lead">Analyser l'organisation la plus cohérente entre société d'exploitation, holding et sphère personnelle.</p>
+            </div>
+            <div class="ci-body">
+              <p class="ci-text">Nous analysons votre structure existante ou envisagée sous l'angle patrimonial&nbsp;: pertinence d'une holding, logique OBO, apport-cession, remontée de trésorerie, réinvestissement et intégration dans votre stratégie globale.</p>
+              <p class="ci-text">Notre rôle est de vous aider à choisir l'architecture la plus adaptée à vos objectifs. L'instrumentation juridique des actes relève de votre avocat, de votre notaire ou de votre expert-comptable, avec lesquels nous coordonnons lorsque c'est nécessaire.</p>
+              <div class="ci-topics">
+                <span class="ct-label">Sujets traités</span>
+                <div class="ct-list">
+                  <span>Analyse holding vs exploitation directe</span>
+                  <span>Apport-cession et réinvestissement</span>
+                  <span>OBO patrimonial</span>
+                  <span>Coordination avec expert-comptable, avocat ou notaire</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coverage-item">
+          <div class="ci-num">02</div>
+          <div class="ci-content">
+            <div>
+              <h3>Rémunération &amp; protection sociale du dirigeant</h3>
+              <p class="ci-lead">Analyser la rémunération globale, le statut social, la couverture et les droits futurs.</p>
+            </div>
+            <div class="ci-body">
+              <p class="ci-text">Salaire, dividendes, statut TNS ou assimilé salarié, cotisations, droits à la retraite, prévoyance, protection familiale&nbsp;: nous analysons l'ensemble pour identifier les déséquilibres et formuler des recommandations cohérentes avec vos objectifs personnels.</p>
+              <p class="ci-text">L'enjeu n'est pas seulement de choisir entre rémunération et dividendes. Il est de comprendre les conséquences de chaque décision sur votre niveau de vie, votre fiscalité, votre retraite et votre protection.</p>
+              <div class="ci-topics">
+                <span class="ct-label">Sujets traités</span>
+                <div class="ct-list">
+                  <span>Audit du statut social</span>
+                  <span>Analyse rémunération / dividendes</span>
+                  <span>Épargne retraite du dirigeant</span>
+                  <span>Prévoyance, santé, arrêt de travail, invalidité</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coverage-item">
+          <div class="ci-num">03</div>
+          <div class="ci-content">
+            <div>
+              <h3>Trésorerie de société</h3>
+              <p class="ci-lead">Organiser les excédents de trésorerie selon leur horizon, leur liquidité et le niveau de risque accepté.</p>
+            </div>
+            <div class="ci-body">
+              <p class="ci-text">Nous analysons votre situation de trésorerie afin de distinguer ce qui doit rester disponible pour l'activité, ce qui relève de la sécurité de fonctionnement et ce qui peut être placé avec méthode.</p>
+              <p class="ci-text">Chaque solution est étudiée selon son rôle&nbsp;: horizon de placement, liquidité, fiscalité, frais, volatilité, risque de perte en capital et cohérence avec les besoins de l'entreprise.</p>
+              <div class="ci-topics">
+                <span class="ct-label">Sujets traités</span>
+                <div class="ct-list">
+                  <span>Comptes à terme</span>
+                  <span>Contrat de capitalisation société</span>
+                  <span>Compte-titres société</span>
+                  <span>SCPI détenues via personne morale</span>
+                  <span>Produits structurés</span>
+                  <span>Supports obligataires ou monétaires selon le contexte</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coverage-item">
+          <div class="ci-num">04</div>
+          <div class="ci-content">
+            <div>
+              <h3>Épargne salariale &amp; attractivité RH</h3>
+              <p class="ci-lead">Conseiller la mise en place de dispositifs collectifs adaptés à votre structure, à votre effectif et à vos objectifs.</p>
+            </div>
+            <div class="ci-body">
+              <p class="ci-text">Nous analysons la pertinence des dispositifs disponibles — intéressement, participation, PEE, PERECO — dans une logique à la fois sociale, fiscale, patrimoniale et managériale.</p>
+              <p class="ci-text">Ces outils peuvent concerner les salariés, mais aussi le dirigeant selon la structure de l'entreprise. Nous évaluons leur intérêt global&nbsp;: coût pour l'entreprise, avantage pour les bénéficiaires, fiscalité, abondement, fidélisation et cohérence avec la rémunération globale.</p>
+              <p class="ci-text">La mise en œuvre opérationnelle est assurée par les prestataires spécialisés et teneurs de registre, avec lesquels nous coordonnons lorsque c'est nécessaire.</p>
+              <div class="ci-topics">
+                <span class="ct-label">Sujets traités</span>
+                <div class="ct-list">
+                  <span>Intéressement et participation</span>
+                  <span>PEE — Plan d'Épargne Entreprise</span>
+                  <span>PERECO / PER d'entreprise</span>
+                  <span>Abondement</span>
+                  <span>Gestion pilotée ou allocation libre</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coverage-item">
+          <div class="ci-num">05</div>
+          <div class="ci-content">
+            <div>
+              <h3>Cession, transmission &amp; stratégie post-cession</h3>
+              <p class="ci-lead">Préparer la cession ou la transmission de l'entreprise avant que l'urgence ne décide à votre place.</p>
+            </div>
+            <div class="ci-body">
+              <p class="ci-text">Cession à un tiers, transmission familiale, apport-cession, pacte Dutreil, réinvestissement du produit de cession&nbsp;: ces sujets doivent être anticipés.</p>
+              <p class="ci-text">Nous intervenons en amont pour analyser les conséquences patrimoniales, fiscales et familiales des décisions envisagées. L'objectif est de construire une stratégie de sortie cohérente avant la signature, puis d'organiser l'après-cession&nbsp;: liquidités, investissement, transmission, protection familiale et revenus futurs.</p>
+              <p class="ci-text">La partie juridique est assurée par votre avocat, votre notaire ou votre expert-comptable, avec lesquels nous coordonnons lorsque leur intervention est nécessaire.</p>
+              <div class="ci-topics">
+                <span class="ct-label">Sujets traités</span>
+                <div class="ct-list">
+                  <span>Préparation patrimoniale de la cession</span>
+                  <span>Apport-cession</span>
+                  <span>Pacte Dutreil</span>
+                  <span>Transmission familiale</span>
+                  <span>Stratégie de réinvestissement post-cession</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== FINAL CTA ====== -->
+  <!-- NOTRE MÉTHODE -->
+  <section id="methode" class="methode">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Notre méthode</div>
+          <h2>Quatre étapes, de la découverte au suivi.</h2>
+        </div>
+        <p>Un accompagnement structuré, croisant dès le départ la sphère professionnelle et la sphère personnelle. Nous n'isolons pas l'entreprise&nbsp;: nous l'intégrons dans l'ensemble.</p>
+      </div>
+
+      <div class="methode-steps">
+        <div class="methode-step">
+          <span class="step-num">01</span>
+          <h3>Découverte</h3>
+          <p>Premier échange de 45&nbsp;minutes, sans engagement, pour comprendre votre situation&nbsp;: structure de l'entreprise, statut social, rémunération actuelle, protection en place, trésorerie, objectifs personnels et priorités professionnelles.</p>
+        </div>
+        <div class="methode-step">
+          <span class="step-num">02</span>
+          <h3>Diagnostic</h3>
+          <p>Bilan complet croisant les deux sphères&nbsp;: structure d'entreprise, rémunération, trésorerie, protection, retraite, fiscalité, patrimoine personnel et objectifs familiaux. Tout est documenté.</p>
+        </div>
+        <div class="methode-step">
+          <span class="step-num">03</span>
+          <h3>Recommandations</h3>
+          <p>Stratégie personnalisée, chiffrée et documentée. Chaque recommandation est expliquée avec son objectif, ses avantages, ses limites, ses coûts, ses risques et les prestataires impliqués.</p>
+        </div>
+        <div class="methode-step">
+          <span class="step-num">04</span>
+          <h3>Mise en œuvre &amp; coordination</h3>
+          <p>Accompagnement dans les décisions, coordination avec votre expert-comptable, avocat, notaire, assureur, banque ou prestataire d'épargne salariale lorsque le sujet le nécessite. La stratégie est ensuite suivie dans le temps, car l'entreprise évolue, les revenus changent et les objectifs personnels se précisent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTRE MODÈLE (bande verte) -->
+  <section id="modele" class="modele">
+    <div class="container">
+      <div class="modele-head">
+        <div>
+          <div class="eyebrow">Notre modèle</div>
+          <h2>Un conseil <em>aligné avec vos intérêts.</em></h2>
+        </div>
+        <div class="modele-intro">
+          <p>Notre rémunération est principalement fondée sur des honoraires de conseil, facturables à votre société ou à titre personnel selon la nature de la mission. Lorsque des rémunérations liées aux solutions existent, elles sont expliquées, encadrées et intégrées dans l'analyse globale des frais.</p>
+          <p>Nous ne dépendons pas de la gamme d'un seul établissement, d'un fournisseur imposé ou d'une solution unique. Les prestataires et solutions sont sélectionnés selon votre situation, vos objectifs, la fiscalité, les frais, la liquidité et le niveau de risque accepté.</p>
+        </div>
+      </div>
+
+      <div class="modele-features">
+        <div class="modele-feature">
+          <div class="mf-key">Architecture ouverte</div>
+          <p>Chaque solution est choisie selon vos objectifs, votre fiscalité, votre horizon de placement et les contraintes propres à votre entreprise. Pas selon une gamme exclusive ou un partenaire imposé.</p>
+        </div>
+        <div class="modele-feature">
+          <div class="mf-key">Coordination, pas substitution</div>
+          <p>Nous travaillons avec vos conseils existants — expert-comptable, avocat, notaire, banque, assureur. Nous n'intervenons pas à leur place&nbsp;: nous apportons la lecture patrimoniale globale que chacun ne couvre pas toujours seul.</p>
+        </div>
+        <div class="modele-feature">
+          <div class="mf-key">Transparence des frais</div>
+          <p>Nos honoraires et les éventuelles rémunérations liées aux solutions sont présentés avant toute mission ou décision. Aucun frais n'est engagé sans votre validation.</p>
+        </div>
+      </div>
+
+      <div class="modele-links">
+        <a href="/le-cabinet#modele">Notre modèle d'honoraires</a>
+        <a href="/honoraires-frais-caches">Comprendre notre approche des frais</a>
+        <a href="/conseiller-gestion-patrimoine-independant">Ce qu'est un conseil indépendant</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
   <section class="cta">
     <div class="container">
       <div class="eyebrow">Premier rendez-vous offert</div>
-      <h2 class="cta-tagline">Échangeons sur <em>votre société.</em></h2>
-      <p class="cta-sub">45 minutes, sans engagement, pour identifier les leviers prioritaires côté entreprise et côté dirigeant.</p>
+      <h2 class="cta-tagline">Échangeons sur <em>votre situation patrimoniale.</em></h2>
+      <p class="cta-sub">45&nbsp;minutes, sans engagement, pour identifier ensemble les leviers prioritaires côté entreprise et côté dirigeant. En visioconférence ou au cabinet à Gap.</p>
+      <div class="cta-chips">
+        <span>Premier rendez-vous offert</span>
+        <span>Sans engagement</span>
+        <span>Visio ou cabinet à Gap</span>
+      </div>
       <a href="/#contact" class="btn btn-accent" style="padding:16px 32px;font-size:17px;">Prendre rendez-vous</a>
     </div>
   </section>
-  </main>
 
+</main>
 
-
-  <!-- ====== FOOTER ====== -->
-  <!-- BEGIN GLOBAL FOOTER -->
+<!-- BEGIN GLOBAL FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
