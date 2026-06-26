@@ -218,15 +218,20 @@
   .pourquoi-body h2 { font-size: 30px; }
   .founder-card, .founder-card.rev { grid-template-columns: 1fr; }
   .founder-card.rev .photo { order: 0; }
-  .founder-card .photo { min-height: 300px; aspect-ratio: 3/2; }
-  .founder-card .content { padding: 28px 26px 32px; }
+  .founder-card .photo { height: 280px; min-height: unset; aspect-ratio: unset; background-position: center top; }
+  .founder-card .content { padding: 22px 18px 26px; }
+  .founder-card h3 { font-size: 21px; }
+  .founder-card .tagline { font-size: 16px; }
+  .founder-card .bio p { font-size: 13.5px; }
   .deux-regards { padding: 28px 24px; }
   .modele-num { font-size: 74px; }
   .modele-aside h2 { font-size: 25px; }
   .regul-facts { grid-template-columns: 1fr; }
   .regul-id { padding: 36px 28px; }
   .regul-id .num { font-size: 44px; }
-  .plogos { grid-template-columns: repeat(3, 1fr); gap: 18px 12px; }
+  .plogos { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 10px; }
+  .plogos img { max-width: 100%; }
+  .plogos img[alt="Interactive Brokers"], .plogos img[alt="Harvest"] { max-width: 100%; }
   .engage-item { grid-template-columns: 1fr; gap: 6px; }
   .engage-item .ei-num { font-size: 32px; }
   .section-head h2 { font-size: 32px; }
@@ -325,7 +330,7 @@
     <div class="container">
       <div class="pourquoi-grid">
         <div class="pourquoi-photo">
-          <img src="/assets/team/fondateurs.webp" alt="Kévin Blache et Luc Blanc-Gras, fondateurs de Monte-Cristo Patrimoine" width="1122" height="1402"/>
+          <img src="/assets/team/fondateurs.webp?v=20260627" alt="Kévin Blache et Luc Blanc-Gras, fondateurs de Monte-Cristo Patrimoine" width="1122" height="1402"/>
         </div>
         <div class="pourquoi-body">
           <div class="eyebrow">Pourquoi Monte-Cristo Patrimoine</div>
