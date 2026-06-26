@@ -1,5 +1,5 @@
 {
-  "generated_at": "24/06/2026 à 19:22",
+  "generated_at": "26/06/2026 à 17:23",
   "pages": [
     {
       "file": "article-cgp-independant.html",
@@ -193,37 +193,174 @@
       ]
     },
     {
-      "file": "index.html",
-      "url": "https://monte-cristo.net/",
+      "file": "home-v21-design-handoff-simulation.html",
+      "url": "https://monte-cristo.net/home-v21-design-handoff-simulation",
       "meta": {
-        "title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
-        "description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission. Stratégie patrimoniale, fiscalité, investissements.",
+        "title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+        "description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
         "canonical": "https://monte-cristo.net",
-        "og_title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
-        "og_description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission.",
+        "og_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+        "og_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
         "og_image": "https://monte-cristo.net/assets/og-image.png",
         "og_url": "https://monte-cristo.net",
-        "twitter_title": "Monte-Cristo Patrimoine — Le conseil comme héritage",
-        "twitter_description": "Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transparents, sans commission.",
+        "twitter_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+        "twitter_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte.",
         "twitter_card": "summary_large_image",
         "robots": ""
       },
       "issues": [
         {
           "level": "ok",
-          "message": "title longueur OK (51 car.)"
+          "message": "title longueur OK (53 car.)"
         },
         {
           "level": "ok",
-          "message": "description longueur OK (156 car.)"
+          "message": "description longueur OK (153 car.)"
+        },
+        {
+          "level": "important",
+          "message": "Canonical (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)"
         },
         {
           "level": "ok",
-          "message": "og:title longueur OK (51 car.)"
+          "message": "og:title longueur OK (53 car.)"
         },
         {
           "level": "ok",
-          "message": "og:description longueur OK (104 car.)"
+          "message": "og:description longueur OK (153 car.)"
+        },
+        {
+          "level": "important",
+          "message": "og:url (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title identique à og:title — différencier pour enrichir le partage social"
+        }
+      ]
+    },
+    {
+      "file": "home-v21-simulation.html",
+      "url": "https://monte-cristo.net/home-v21-simulation",
+      "meta": {
+        "title": "[SIMULATION] Home V2.1 — Monte-Cristo Patrimoine",
+        "description": "",
+        "canonical": "",
+        "og_title": "",
+        "og_description": "",
+        "og_image": "",
+        "og_url": "",
+        "twitter_title": "",
+        "twitter_description": "",
+        "twitter_card": "",
+        "robots": "noindex, nofollow"
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (48 car.)"
+        },
+        {
+          "level": "critique",
+          "message": "description absent"
+        },
+        {
+          "level": "critique",
+          "message": "canonical absent"
+        },
+        {
+          "level": "critique",
+          "message": "og:title absent"
+        },
+        {
+          "level": "critique",
+          "message": "og:description absent"
+        },
+        {
+          "level": "amelioration",
+          "message": "og:image absent"
+        },
+        {
+          "level": "amelioration",
+          "message": "og:url absent"
+        },
+        {
+          "level": "amelioration",
+          "message": "twitter:card absent"
+        }
+      ]
+    },
+    {
+      "file": "honoraires-frais-caches.html",
+      "url": "https://monte-cristo.net/honoraires-frais-caches",
+      "meta": {
+        "title": "Honoraires et frais en gestion de patrimoine | Monte-Cristo",
+        "description": "Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre conseil patrimonial. L'approche transparente de Monte-Cristo.",
+        "canonical": "https://monte-cristo.net/honoraires-frais-caches",
+        "og_title": "Frais, honoraires, rétrocessions : comprendre ce que vous payez vraiment",
+        "og_description": "Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre conseil patrimonial. L'approche transparente de Monte-Cristo.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/honoraires-frais-caches",
+        "twitter_title": "Frais, honoraires, rétrocessions : comprendre ce que vous payez vraiment",
+        "twitter_description": "Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre conseil patrimonial. L'approche transparente de Monte-Cristo.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (59 car.)"
+        },
+        {
+          "level": "amelioration",
+          "message": "title ne contient pas le nom de marque « Monte-Cristo Patrimoine »"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (137 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (72 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (137 car.)"
+        }
+      ]
+    },
+    {
+      "file": "index.html",
+      "url": "https://monte-cristo.net/",
+      "meta": {
+        "title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+        "description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
+        "canonical": "https://monte-cristo.net",
+        "og_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+        "og_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte et accompagnement durable partout en France.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net",
+        "twitter_title": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+        "twitter_description": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transparents, architecture ouverte.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (53 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (153 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (53 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (153 car.)"
         },
         {
           "level": "amelioration",
@@ -433,13 +570,81 @@
           "message": "twitter:description absent (og:description présent)"
         }
       ]
+    },
+    {
+      "file": "simulateurs.html",
+      "url": "https://monte-cristo.net/simulateurs",
+      "meta": {
+        "title": "Outils & simulateurs patrimoniaux — Monte-Cristo Patrimoine",
+        "description": "Simulateurs patrimoniaux Monte-Cristo Patrimoine : frais bancaires, PER, retraite, fiscalité, transmission. Objectivez vos décisions patrimoniales.",
+        "canonical": "https://monte-cristo.net/simulateurs",
+        "og_title": "Simulateurs patrimoniaux — frais, PER, retraite, fiscalité · Monte-Cristo Patrimoine",
+        "og_description": "Des simulateurs pour objectiver une décision patrimoniale, estimer un impact ou préparer un échange avec le cabinet.",
+        "og_image": "https://monte-cristo.net/assets/og-image.png",
+        "og_url": "https://monte-cristo.net/simulateurs",
+        "twitter_title": "Outils & simulateurs patrimoniaux — Monte-Cristo Patrimoine",
+        "twitter_description": "Des simulateurs pour objectiver vos décisions patrimoniales.",
+        "twitter_card": "summary_large_image",
+        "robots": ""
+      },
+      "issues": [
+        {
+          "level": "ok",
+          "message": "title longueur OK (59 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "description longueur OK (147 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:title longueur OK (84 car.)"
+        },
+        {
+          "level": "ok",
+          "message": "og:description longueur OK (116 car.)"
+        }
+      ]
     }
   ],
-  "duplicates": [],
+  "duplicates": [
+    {
+      "field": "title",
+      "value": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+      "pages": [
+        "home-v21-design-handoff-simulation.html",
+        "index.html"
+      ]
+    },
+    {
+      "field": "description",
+      "value": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…",
+      "pages": [
+        "home-v21-design-handoff-simulation.html",
+        "index.html"
+      ]
+    },
+    {
+      "field": "og_title",
+      "value": "Gestion de patrimoine à Gap | Monte-Cristo Patrimoine",
+      "pages": [
+        "home-v21-design-handoff-simulation.html",
+        "index.html"
+      ]
+    },
+    {
+      "field": "og_description",
+      "value": "Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…",
+      "pages": [
+        "home-v21-design-handoff-simulation.html",
+        "index.html"
+      ]
+    }
+  ],
   "summary": {
-    "critique": 0,
-    "important": 0,
-    "amelioration": 12,
-    "duplicates": 0
+    "critique": 4,
+    "important": 2,
+    "amelioration": 17,
+    "duplicates": 4
   }
 }

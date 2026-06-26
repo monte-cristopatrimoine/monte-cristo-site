@@ -1,41 +1,49 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 19:22*
+*Généré le 26/06/2026 à 17:23*
 
 ## Résumé global
 
 | | |
 |---|---|
-| Pages de production analysées | **11** |
+| Pages de production analysées | **15** |
 | Pages techniques | **1** |
 | Pages de travail | **1** |
-| Problèmes critiques 🔴 | **0** |
-| Problèmes importants 🟠 | **0** |
-| Améliorations utiles 🟡 | **18** |
+| Problèmes critiques 🔴 | **2** |
+| Problèmes importants 🟠 | **3** |
+| Améliorations utiles 🟡 | **25** |
 | Mineurs ⚪ | **0** |
 | Pages sans problème | **1** |
 
-> ✅ Aucun problème critique ou important détecté.
+> ⚠️ **5 problème(s) à corriger en priorité** (critiques + importants).
 
 ---
 ## 🔴 Problèmes critiques
 
-Aucun problème critique.
+- **home-v21-simulation.html** — Meta description absente
+- **home-v21-simulation.html** — Balise canonical absente
 
 ---
 ## 🟠 Problèmes importants
 
-Aucun problème important.
+- **home-v21-design-handoff-simulation.html** — Page absente du sitemap.xml
+- **home-v21-simulation.html** — og:title absent — partage réseaux sociaux dégradé
+- **home-v21-simulation.html** — og:description absent — partage réseaux sociaux dégradé
 
 ---
 ## 🟡 Améliorations utiles
 
 - **article-cgp-independant.html** — og:image générique (même image sur toutes les pages)
-- **article-cgp-independant.html** — 1 image(s) sans attribut alt — accessibilité et SEO images
 - **blog.html** — og:image générique (même image sur toutes les pages)
 - **blog.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **conseiller-gestion-patrimoine-independant.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — Aucune donnée structurée JSON-LD / Schema.org
+- **home-v21-design-handoff-simulation.html** — og:image générique (même image sur toutes les pages)
+- **home-v21-design-handoff-simulation.html** — Aucune donnée structurée JSON-LD / Schema.org
+- **home-v21-simulation.html** — og:image absent
+- **home-v21-simulation.html** — Aucune donnée structurée JSON-LD / Schema.org
+- **home-v21-simulation.html** — 1 image(s) sans attribut alt — accessibilité et SEO images
+- **honoraires-frais-caches.html** — og:image générique (même image sur toutes les pages)
 - **index.html** — og:image générique (même image sur toutes les pages)
 - **le-cabinet.html** — og:image générique (même image sur toutes les pages)
 - **le-cabinet.html** — Aucune donnée structurée JSON-LD / Schema.org
@@ -47,6 +55,8 @@ Aucun problème important.
 - **politique-confidentialite.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **simulateur-frais.html** — og:image générique (même image sur toutes les pages)
 - **simulateur-frais.html** — Aucune donnée structurée JSON-LD / Schema.org
+- **simulateurs.html** — og:image générique (même image sur toutes les pages)
+- **simulateurs.html** — Aucune donnée structurée JSON-LD / Schema.org
 
 ---
 ## Liste page par page
@@ -60,11 +70,10 @@ Aucun problème important.
 - **H2** (5) : Conseiller en gestion de patrimoine indépendant : définition et rôle, Comment se rémunère un CGP indépendant ?, Que fait concrètement un CGP indépendant ?
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
-- **Images sans alt** : 1
-- **Liens** : 20 internes, 2 externes
+- **Images sans alt** : 0
+- **Liens** : 23 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
-  - 🟡 1 image(s) sans attribut alt — accessibilité et SEO images
 
 ### `article-frais-bancaires.html`
 - **URL** : https://monte-cristo.net/article-frais-bancaires
@@ -76,7 +85,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 20 internes, 2 externes
+- **Liens** : 24 internes, 2 externes
 - ✅ Aucun problème détecté
 
 ### `blog.html`
@@ -89,7 +98,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 19 internes, 2 externes
+- **Liens** : 21 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -104,7 +113,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 20 internes, 2 externes
+- **Liens** : 22 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -118,23 +127,72 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 19 internes, 2 externes
+- **Liens** : 21 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
-### `index.html`
-- **URL** : https://monte-cristo.net/
-- **Title** : Monte-Cristo Patrimoine — Le conseil comme héritage *(longueur : 51)*
-- **Description** : Cabinet de conseil en gestion de patrimoine indépendant à Gap. Honoraires transp… *(longueur : 156)*
+### `home-v21-design-handoff-simulation.html`
+- **URL** : https://monte-cristo.net/home-v21-design-handoff-simulation
+- **Title** : Gestion de patrimoine à Gap | Monte-Cristo Patrimoine *(longueur : 53)*
+- **Description** : Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp… *(longueur : 153)*
 - **Canonical** : https://monte-cristo.net
 - **H1** (1) : Le conseil comme héritage. L'indépendance comme signature.
-- **H2** (5) : Optimisez votre patrimoine, des CGP en France adoptent un modèle essentiellement basé sur les honoraires.
-          Nous en faisons partie., Comprendre, décider, agir.
+- **H2** (8) : Vous devriez nous parler si…, Moins de 5 % des CGP en France travaillent principalement aux honoraires. Nous en faisons partie., Des décisions mieux structurées.
+- **Schema.org** : Non
+- **Dans sitemap** : ❌ Non
+- **Images sans alt** : 0
+- **Liens** : 23 internes, 2 externes
+- **Problèmes :**
+  - 🟠 Page absente du sitemap.xml
+  - 🟡 og:image générique (même image sur toutes les pages)
+  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
+
+### `home-v21-simulation.html`
+- **URL** : https://monte-cristo.net/home-v21-simulation
+- **Title** : [SIMULATION] Home V2.1 — Monte-Cristo Patrimoine *(longueur : 48)*
+- **Description** : *(manquante)* *(longueur : 0)*
+- **Canonical** : *(manquant)*
+- **H1** (1) : Le conseil comme héritage.L'indépendance comme signature.
+- **H2** (9) : Vous devriez nous parler si…, des CGP en France travaillent principalement aux honoraires.Nous en faisons partie., Des honoraires transparents.Une architecture ouverte.
+- **Schema.org** : Non
+- **Dans sitemap** : ❌ Non
+- **Images sans alt** : 1
+- **Liens** : 22 internes, 2 externes
+- **Problèmes :**
+  - 🔴 Meta description absente
+  - 🔴 Balise canonical absente
+  - 🟠 og:title absent — partage réseaux sociaux dégradé
+  - 🟠 og:description absent — partage réseaux sociaux dégradé
+  - 🟡 og:image absent
+  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
+  - 🟡 1 image(s) sans attribut alt — accessibilité et SEO images
+
+### `honoraires-frais-caches.html`
+- **URL** : https://monte-cristo.net/honoraires-frais-caches
+- **Title** : Honoraires et frais en gestion de patrimoine | Monte-Cristo *(longueur : 59)*
+- **Description** : Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre cons… *(longueur : 137)*
+- **Canonical** : https://monte-cristo.net/honoraires-frais-caches
+- **H1** (1) : Honoraires, frais et rétrocessions : ce que vous devez savoir avant de choisir votre conseiller.
+- **H2** (8) : Le conseil "gratuit" : comprendre ce que vous payez vraiment, La carte complète des frais en gestion de patrimoine, L'impact des frais dans le temps
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 18 internes, 2 externes
+- **Liens** : 27 internes, 2 externes
+- **Problèmes :**
+  - 🟡 og:image générique (même image sur toutes les pages)
+
+### `index.html`
+- **URL** : https://monte-cristo.net/
+- **Title** : Gestion de patrimoine à Gap | Monte-Cristo Patrimoine *(longueur : 53)*
+- **Description** : Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp… *(longueur : 153)*
+- **Canonical** : https://monte-cristo.net
+- **H1** (1) : Le conseil comme héritage. L'indépendance comme signature.
+- **H2** (8) : Vous devriez nous parler si…, Moins de 5 % des CGP en France travaillent principalement aux honoraires. Nous en faisons partie., Des décisions mieux structurées.
+- **Schema.org** : Oui
+- **Dans sitemap** : ✅ Oui
+- **Images sans alt** : 0
+- **Liens** : 23 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -148,7 +206,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 22 internes, 2 externes
+- **Liens** : 24 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -163,7 +221,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
-- **Liens** : 18 internes, 7 externes
+- **Liens** : 20 internes, 7 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -178,7 +236,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 19 internes, 2 externes
+- **Liens** : 22 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -193,7 +251,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
-- **Liens** : 17 internes, 6 externes
+- **Liens** : 19 internes, 6 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -208,7 +266,22 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 18 internes, 2 externes
+- **Liens** : 21 internes, 2 externes
+- **Problèmes :**
+  - 🟡 og:image générique (même image sur toutes les pages)
+  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
+
+### `simulateurs.html`
+- **URL** : https://monte-cristo.net/simulateurs
+- **Title** : Outils & simulateurs patrimoniaux — Monte-Cristo Patrimoine *(longueur : 59)*
+- **Description** : Simulateurs patrimoniaux Monte-Cristo Patrimoine : frais bancaires, PER, retrait… *(longueur : 147)*
+- **Canonical** : https://monte-cristo.net/simulateurs
+- **H1** (1) : Simulateurs patrimoniaux
+- **H2** (2) : Simulateur de frais bancaires, Besoin d'une analyse personnalisée ?
+- **Schema.org** : Non
+- **Dans sitemap** : ✅ Oui
+- **Images sans alt** : 0
+- **Liens** : 21 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -242,24 +315,35 @@ Aucun problème important.
 ---
 ## Recommandations — ordre d'exécution
 
-**1. Ajouter les pages manquantes au sitemap.xml** 🟠
+**1. Ajouter les meta descriptions manquantes** 🔴
+   - `home-v21-simulation.html`
+
+**2. Ajouter les balises canonical manquantes** 🔴
+   - `home-v21-simulation.html`
+
+**3. Ajouter les pages manquantes au sitemap.xml** 🟠
+   - `home-v21-design-handoff-simulation.html`
+   - `home-v21-simulation.html`
    - `mentions-legales.html`
    - `politique-confidentialite.html`
 
-**2. Ajouter `<meta name='robots' content='noindex'>` sur les pages de travail** 🟠
+**4. Ajouter `<meta name='robots' content='noindex'>` sur les pages de travail** 🟠
    - `mockup-contenu.html`
 
-**3. Ajouter des données structurées JSON-LD** 🟡
+**5. Ajouter des données structurées JSON-LD** 🟡
    - `blog.html`
    - `entreprises.html`
+   - `home-v21-design-handoff-simulation.html`
+   - `home-v21-simulation.html`
    - `le-cabinet.html`
    - `mentions-legales.html`
    - `particuliers.html`
    - `politique-confidentialite.html`
    - `simulateur-frais.html`
+   - `simulateurs.html`
 
-**4. Ajouter des attributs `alt` aux images** 🟡
-   - `article-cgp-independant.html`
+**6. Ajouter des attributs `alt` aux images** 🟡
+   - `home-v21-simulation.html`
 
 ---
 *Rapport généré automatiquement par `seo/scripts/audit.py`*

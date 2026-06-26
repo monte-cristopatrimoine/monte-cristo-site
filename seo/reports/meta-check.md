@@ -1,30 +1,43 @@
 # Contrôle des métadonnées — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 19:22*
+*Généré le 26/06/2026 à 17:23*
 
 ## Résumé
 
 | | |
 |---|---|
-| Pages analysées | **11** |
-| Problèmes critiques 🔴 | **0** |
-| Problèmes importants 🟠 | **0** |
-| Améliorations 🟡 | **12** |
-| Doublons détectés | **0** |
+| Pages analysées | **15** |
+| Problèmes critiques 🔴 | **4** |
+| Problèmes importants 🟠 | **2** |
+| Améliorations 🟡 | **17** |
+| Doublons détectés | **4** |
 
 ---
-## Doublons
+## ⚠️ Doublons détectés inter-pages
 
-✅ Aucun doublon détecté entre les pages.
+Des pages partagent des valeurs identiques — Google peut les pénaliser.
+
+- **title** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
+  > Gestion de patrimoine à Gap | Monte-Cristo Patrimoine
+- **description** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
+  > Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…
+- **og_title** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
+  > Gestion de patrimoine à Gap | Monte-Cristo Patrimoine
+- **og_description** identique sur `home-v21-design-handoff-simulation.html` et `index.html` :
+  > Cabinet indépendant de conseil en gestion de patrimoine à Gap. Honoraires transp…
 
 ---
 ## 🔴 Problèmes critiques
 
-✅ Aucun.
+- **home-v21-simulation.html** — description absent
+- **home-v21-simulation.html** — canonical absent
+- **home-v21-simulation.html** — og:title absent
+- **home-v21-simulation.html** — og:description absent
 
 ---
 ## 🟠 Problèmes importants
 
-✅ Aucun.
+- **home-v21-design-handoff-simulation.html** — Canonical (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
+- **home-v21-design-handoff-simulation.html** — og:url (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
 
 ---
 ## 🟡 Améliorations
@@ -33,6 +46,11 @@
 - **blog.html** — title identique à og:title — différencier pour enrichir le partage social
 - **conseiller-gestion-patrimoine-independant.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **entreprises.html** — title identique à og:title — différencier pour enrichir le partage social
+- **home-v21-design-handoff-simulation.html** — title identique à og:title — différencier pour enrichir le partage social
+- **home-v21-simulation.html** — og:image absent
+- **home-v21-simulation.html** — og:url absent
+- **home-v21-simulation.html** — twitter:card absent
+- **honoraires-frais-caches.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **index.html** — title identique à og:title — différencier pour enrichir le partage social
 - **le-cabinet.html** — title identique à og:title — différencier pour enrichir le partage social
 - **mentions-legales.html** — title identique à og:title — différencier pour enrichir le partage social
@@ -129,17 +147,76 @@
 **Problèmes :**
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
 
+### `home-v21-design-handoff-simulation.html`
+| Champ | Valeur | Long. |
+|-------|--------|-------|
+| `title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
+| `description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 153 |
+| `canonical` | https://monte-cristo.net | 24 |
+| `og:title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
+| `og:description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 153 |
+| `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
+| `twitter:title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
+| `twitter:description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 109 |
+| `twitter:card` | summary_large_image | 19 |
+| `robots` | *(absent)* | — |
+
+**Problèmes :**
+- 🟠 Canonical (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
+- 🟠 og:url (https://monte-cristo.net) ≠ URL attendue (https://monte-cristo.net/home-v21-design-handoff-simulation)
+- 🟡 title identique à og:title — différencier pour enrichir le partage social
+
+### `home-v21-simulation.html`
+| Champ | Valeur | Long. |
+|-------|--------|-------|
+| `title` | [SIMULATION] Home V2.1 — Monte-Cristo Patrimoine | 48 |
+| `description` | *(absent)* | — |
+| `canonical` | *(absent)* | — |
+| `og:title` | *(absent)* | — |
+| `og:description` | *(absent)* | — |
+| `og:image` | *(absent)* | — |
+| `twitter:title` | *(absent)* | — |
+| `twitter:description` | *(absent)* | — |
+| `twitter:card` | *(absent)* | — |
+| `robots` | noindex, nofollow | 17 |
+
+**Problèmes :**
+- 🔴 description absent
+- 🔴 canonical absent
+- 🔴 og:title absent
+- 🔴 og:description absent
+- 🟡 og:image absent
+- 🟡 og:url absent
+- 🟡 twitter:card absent
+
+### `honoraires-frais-caches.html`
+| Champ | Valeur | Long. |
+|-------|--------|-------|
+| `title` | Honoraires et frais en gestion de patrimoine | Monte-Cristo | 59 |
+| `description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 137 |
+| `canonical` | https://monte-cristo.net/honoraires-frais-caches | 48 |
+| `og:title` | Frais, honoraires, rétrocessions : comprendre ce que vous pa… | 72 |
+| `og:description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 137 |
+| `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
+| `twitter:title` | Frais, honoraires, rétrocessions : comprendre ce que vous pa… | 72 |
+| `twitter:description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 137 |
+| `twitter:card` | summary_large_image | 19 |
+| `robots` | *(absent)* | — |
+
+**Problèmes :**
+- 🟡 title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
+
 ### `index.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
-| `title` | Monte-Cristo Patrimoine — Le conseil comme héritage | 51 |
-| `description` | Cabinet de conseil en gestion de patrimoine indépendant à Ga… | 156 |
+| `title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
+| `description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 153 |
 | `canonical` | https://monte-cristo.net | 24 |
-| `og:title` | Monte-Cristo Patrimoine — Le conseil comme héritage | 51 |
-| `og:description` | Cabinet de conseil en gestion de patrimoine indépendant à Ga… | 104 |
+| `og:title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
+| `og:description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 153 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Monte-Cristo Patrimoine — Le conseil comme héritage | 51 |
-| `twitter:description` | Cabinet de conseil en gestion de patrimoine indépendant à Ga… | 104 |
+| `twitter:title` | Gestion de patrimoine à Gap | Monte-Cristo Patrimoine | 53 |
+| `twitter:description` | Cabinet indépendant de conseil en gestion de patrimoine à Ga… | 109 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
@@ -232,6 +309,22 @@
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
 - 🟡 twitter:title absent (og:title présent)
 - 🟡 twitter:description absent (og:description présent)
+
+### `simulateurs.html`
+| Champ | Valeur | Long. |
+|-------|--------|-------|
+| `title` | Outils & simulateurs patrimoniaux — Monte-Cristo Patrimoine | 59 |
+| `description` | Simulateurs patrimoniaux Monte-Cristo Patrimoine : frais ban… | 147 |
+| `canonical` | https://monte-cristo.net/simulateurs | 36 |
+| `og:title` | Simulateurs patrimoniaux — frais, PER, retraite, fiscalité ·… | 84 |
+| `og:description` | Des simulateurs pour objectiver une décision patrimoniale, e… | 116 |
+| `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
+| `twitter:title` | Outils & simulateurs patrimoniaux — Monte-Cristo Patrimoine | 59 |
+| `twitter:description` | Des simulateurs pour objectiver vos décisions patrimoniales. | 60 |
+| `twitter:card` | summary_large_image | 19 |
+| `robots` | *(absent)* | — |
+
+✅ Aucun problème.
 
 ---
 *Rapport généré par `seo/scripts/check-meta.py`*
