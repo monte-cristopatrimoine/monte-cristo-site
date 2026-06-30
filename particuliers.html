@@ -56,6 +56,8 @@ html { scroll-behavior: smooth; }
 .hero-lead { font-size: 18px; line-height: 1.6; color: rgba(253,250,243,0.86); max-width: 540px; margin: 26px 0 0; }
 .hero-lead.emph { color: var(--mcp-beige); font-family: var(--font-display); font-weight: 300; font-size: 20px; margin-top: 16px; letter-spacing: -0.01em; }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: flex-start; margin-top: 34px; }
+.hero .btn-secondary { color: var(--mcp-beige); border-color: rgba(254,250,242,.55); background: rgba(254,250,242,.06); }
+.hero .btn-secondary:hover { background: var(--mcp-beige); color: var(--mcp-green); border-color: var(--mcp-beige); }
 
 /* ── BANDEAU-SIGNATURE (demeure) ── */
 .signature { position: relative; min-height: clamp(380px, 50vh, 560px); display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 72px 40px; }
@@ -424,16 +426,6 @@ html { scroll-behavior: smooth; }
     </div>
   </section>
 
-  <!-- BANDEAU-SIGNATURE -->
-  <section class="signature">
-    <img class="signature-img" src="/assets/cgp-independant/demeure.webp" alt="Demeure nichée dans une vallée des Hautes-Alpes au crépuscule" loading="lazy"/>
-    <div class="signature-scrim"></div>
-    <div class="signature-content">
-      <div class="eyebrow">Notre signature</div>
-      <blockquote>Le conseil comme héritage.<br>L'indépendance comme <em>signature.</em></blockquote>
-    </div>
-  </section>
-
   <!-- CTA FINAL -->
   <section class="cta">
     <div class="container">
@@ -446,6 +438,16 @@ html { scroll-behavior: smooth; }
         <span>Visio ou cabinet à Gap</span>
       </div>
       <a href="/#contact" class="btn btn-accent" style="padding:16px 32px;font-size:17px;">Prendre rendez-vous</a>
+    </div>
+  </section>
+
+  <!-- BANDEAU-SIGNATURE -->
+  <section class="signature">
+    <img class="signature-img" src="/assets/cgp-independant/demeure.webp" alt="Demeure nichée dans une vallée des Hautes-Alpes au crépuscule" loading="lazy"/>
+    <div class="signature-scrim"></div>
+    <div class="signature-content">
+      <div class="eyebrow">Notre signature</div>
+      <blockquote>Le conseil comme héritage.<br>L'indépendance comme <em>signature.</em></blockquote>
     </div>
   </section>
 
