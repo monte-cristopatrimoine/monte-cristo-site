@@ -4,627 +4,285 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Conseiller en gestion de patrimoine indépendant | Monte-Cristo</title>
-  <link rel="preload" as="script" href="/analytics.js">
-  <link rel="preload" as="font" href="/fonts/CreatoDisplay-Light.woff2" type="font/woff2" crossorigin>
-  <link rel="preload" as="font" href="/fonts/CreatoDisplay-LightItalic.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="script" href="/analytics.js">
+<link rel="preload" as="font" href="/fonts/CreatoDisplay-Light.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="/fonts/CreatoDisplay-LightItalic.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="/assets/cgp-independant/boussole.webp" fetchpriority="high">
 <link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <!-- SEO -->
-  <meta name="description" content="Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.">
-  <link rel="canonical" href="https://monte-cristo.net/conseiller-gestion-patrimoine-independant"/>
-  <meta property="og:title" content="Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine"/>
-  <meta property="og:description" content="Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible."/>
-  <meta property="og:url" content="https://monte-cristo.net/conseiller-gestion-patrimoine-independant"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine">
-  <meta name="twitter:description" content="Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.">
-  <meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
-  <!-- Schema FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Un CGP indépendant coûte-t-il plus cher qu'un conseiller bancaire ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pas nécessairement. Un conseiller bancaire ne vous facture pas d'honoraires en direct, mais ses rémunérations sont intégrées dans les frais des produits qu'il distribue. Un CGP indépendant peut facturer des honoraires, mais dans un cadre où les rémunérations sont déclarées et encadrées. La comparaison pertinente porte sur le coût global réel, pas sur la facture directe."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Comment un CGP indépendant est-il rémunéré ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Selon la mission, le modèle peut reposer sur des honoraires facturés au client, des rétrocessions éventuelles déclarées et encadrées, ou une combinaison des deux. Chez Monte-Cristo Patrimoine, toutes les rémunérations sont expliquées avant tout engagement. Certains honoraires de conseil peuvent être récupérables en crédit d'impôt selon votre situation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quelle est la différence entre un CGP indépendant et un gestionnaire de banque privée ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La banque privée offre un service personnalisé, mais dans le cadre des solutions de son groupe. Un CGP indépendant travaille avec une architecture ouverte et un large panel de partenaires, sans être limité aux produits d'un seul établissement. La différence principale est dans la liberté de sélection et la transparence du modèle économique."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Comment se passe une première rencontre avec Monte-Cristo Patrimoine ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La première étape est un échange de 45 minutes — en visio ou à Gap — pour comprendre votre situation, vos objectifs et vos questions. C'est gratuit et sans engagement. Si la relation vous convient, nous proposons un bilan patrimonial complet."
-        }
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<!-- SEO -->
+<meta name="description" content="Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.">
+<link rel="canonical" href="https://monte-cristo.net/conseiller-gestion-patrimoine-independant"/>
+<meta property="og:title" content="Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine"/>
+<meta property="og:description" content="Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible."/>
+<meta property="og:url" content="https://monte-cristo.net/conseiller-gestion-patrimoine-independant"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conseiller en gestion de patrimoine indépendant | Monte-Cristo Patrimoine">
+<meta name="twitter:description" content="Cabinet CGP indépendant basé à Gap, accessible partout en France. Honoraires transparents, architecture ouverte et conseil lisible.">
+<meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png">
+<!-- Schema FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Un CGP indépendant coûte-t-il plus cher qu'un conseiller bancaire ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pas nécessairement. Un conseiller bancaire ne vous facture pas d'honoraires en direct, mais ses rémunérations sont intégrées dans les frais des produits qu'il distribue. Un CGP indépendant peut facturer des honoraires, mais dans un cadre où les rémunérations sont déclarées et encadrées. La comparaison pertinente porte sur le coût global réel, pas sur la facture directe."
       }
-    ]
-  }
-  </script>
-  <!-- Schema FinancialService + LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["FinancialService", "LocalBusiness"],
-    "name": "Monte-Cristo Patrimoine",
-    "description": "Cabinet de conseil en gestion de patrimoine indépendant, basé à Gap et accessible à distance partout en France.",
-    "url": "https://monte-cristo.net",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "21D route de la Descente",
-      "addressLocality": "Gap",
-      "postalCode": "05000",
-      "addressCountry": "FR"
     },
-    "telephone": "+33629865266",
-    "email": "kevin@monte-cristo.net",
-    "areaServed": "FR"
-  }
-  </script>
-  <!-- Schema BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Accueil",
-        "item": "https://monte-cristo.net/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Conseiller en gestion de patrimoine indépendant",
-        "item": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant"
+    {
+      "@type": "Question",
+      "name": "Comment un CGP indépendant est-il rémunéré ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Selon la mission, le modèle peut reposer sur des honoraires facturés au client, des rétrocessions éventuelles déclarées et encadrées, ou une combinaison des deux. Chez Monte-Cristo Patrimoine, toutes les rémunérations sont expliquées avant tout engagement. Certains honoraires de conseil peuvent être récupérables en crédit d'impôt selon votre situation."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la différence entre un CGP indépendant et un gestionnaire de banque privée ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La banque privée offre un service personnalisé, mais dans le cadre des solutions de son groupe. Un CGP indépendant travaille avec une architecture ouverte et un large panel de partenaires, sans être limité aux produits d'un seul établissement. La différence principale est dans la liberté de sélection et la transparence du modèle économique."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment se passe une première rencontre avec Monte-Cristo Patrimoine ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La première étape est un échange de 45 minutes — en visio ou à Gap — pour comprendre votre situation, vos objectifs et vos questions. C'est gratuit et sans engagement. Si la relation vous convient, nous proposons un bilan patrimonial complet."
+      }
+    }
+  ]
+}
+</script>
+<!-- Schema FinancialService + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["FinancialService", "LocalBusiness"],
+  "name": "Monte-Cristo Patrimoine",
+  "description": "Cabinet de conseil en gestion de patrimoine indépendant, basé à Gap et accessible à distance partout en France.",
+  "url": "https://monte-cristo.net",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "21D route de la Descente",
+    "addressLocality": "Gap",
+    "postalCode": "05000",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33629865266",
+  "email": "kevin@monte-cristo.net",
+  "areaServed": "FR"
+}
+</script>
+<!-- Schema BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://monte-cristo.net/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Conseiller en gestion de patrimoine indépendant",
+      "item": "https://monte-cristo.net/conseiller-gestion-patrimoine-independant"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<script src="/analytics.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
+<link rel="stylesheet" href="/colors_and_type.css"/>
+<link rel="stylesheet" href="/assets/css/mcp-design-system.css?v=20260626b"/>
 <style>
-/* Creato Display — Monte-Cristo Patrimoine corporate font.
-   14 files: Thin (100), Light (300), Regular (400), Medium (500),
-   Bold (700), ExtraBold (800), Black (900), each with matching italic. */
+/* ── CTA guard ── */
+.nav-rdv, .nav .nav-rdv { display: none !important; }
 
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Thin.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Thin.otf") format("opentype");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+body { margin: 0; }
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 96px; }
+:focus-visible { outline: 2px solid var(--mcp-orange); outline-offset: 2px; border-radius: 3px; }
+
+.section-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1.08; letter-spacing: -0.025em; color: var(--mcp-green); margin: 14px 0 0; text-wrap: balance; }
+.section-title em { font-style: italic; font-weight: 400; }
+.eyebrow.on-dark { color: var(--mcp-beige); opacity: .72; }
+
+/* ── HERO (image plein-cadre + scrim) ── */
+.hero { position: relative; min-height: clamp(580px, 90vh, 940px); display: flex; align-items: center; padding: 0; overflow: hidden; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.hero-scrim { position: absolute; inset: 0; background:
+  linear-gradient(98deg, rgba(26,45,32,0.95) 0%, rgba(26,45,32,0.85) 26%, rgba(26,45,32,0.5) 52%, rgba(26,45,32,0.12) 76%, rgba(26,45,32,0) 100%),
+  linear-gradient(to top, rgba(26,45,32,0.55) 0%, rgba(26,45,32,0) 42%); }
+.hero-content { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; width: 100%; padding: 0 40px; }
+.hero-inner { max-width: 660px; }
+.breadcrumb { font-size: 13px; color: rgba(253,250,243,0.7); display: flex; gap: 10px; align-items: center; margin-bottom: 34px; }
+.breadcrumb a { color: rgba(253,250,243,0.92); text-decoration: none; }
+.breadcrumb a:hover { color: #fff; text-decoration: underline; }
+.breadcrumb .sep { opacity: .45; }
+.hero .eyebrow { color: var(--mcp-beige); opacity: .85; }
+.hero h1 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2.6rem, 5.6vw, 4.5rem); line-height: 1.04; letter-spacing: -0.03em; color: var(--mcp-beige); margin: 16px 0 0; text-wrap: balance; }
+.hero h1 em { font-style: italic; font-weight: 400; }
+.hero-sub { color: rgba(253,250,243,0.86); font-size: clamp(1.05rem, 1.6vw, 1.3rem); font-weight: 300; line-height: 1.5; margin: 26px 0 0; max-width: 520px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; margin-top: 38px; }
+.hero-link { color: var(--mcp-beige); font-size: 15px; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; padding: 6px 2px; border-bottom: 1px solid rgba(253,250,243,0.35); transition: border-color var(--dur-base) var(--ease-out); text-decoration: none; }
+.hero-link:hover { border-color: var(--mcp-beige); }
+
+/* ── INTRO LEAD ── */
+.intro-section { background: var(--mcp-beige); padding: 96px 40px; }
+.intro-inner { max-width: 960px; margin: 0 auto; }
+.intro-inner .eyebrow { margin-bottom: 30px; display: block; }
+.intro-inner p { font-family: var(--font-display); font-weight: 300; font-size: clamp(1.35rem, 2.3vw, 1.85rem); line-height: 1.45; letter-spacing: -0.015em; color: var(--mcp-ink); margin: 0 0 26px; }
+.intro-inner p:last-child { margin-bottom: 0; }
+.intro-inner strong { font-weight: 500; color: var(--mcp-green); }
+
+/* ── PILLARS ── */
+.pillars-section { background: var(--mcp-beige-200); }
+.pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
+.pillar-card { background: var(--mcp-beige); border: 1px solid var(--mcp-beige-300); border-radius: 14px; padding: 40px 36px; transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); }
+.pillar-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -16px rgba(22,17,10,0.22); }
+.pillar-num { font-family: var(--font-display); font-weight: 300; font-size: 54px; line-height: 1; letter-spacing: -0.04em; color: var(--mcp-green-300); margin-bottom: 22px; }
+.pillar-card h3 { font-family: var(--font-display); font-weight: 500; font-size: 21px; line-height: 1.3; color: var(--mcp-green); margin: 0 0 14px; }
+.pillar-card p { font-size: 15.5px; line-height: 1.65; color: var(--mcp-ink-500); margin: 0; }
+
+/* ── CE QUE ÇA CHANGE (éditorial 2 colonnes, tête sticky) ── */
+.change-section { background: var(--mcp-beige); }
+.change-grid { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 72px; align-items: start; }
+.change-head { position: sticky; top: 112px; }
+.change-head .section-title { margin-top: 14px; }
+.change-body p { font-size: 17.5px; line-height: 1.7; color: var(--mcp-ink); margin: 0 0 24px; }
+.change-body p:first-child { margin-top: 0; font-size: 20px; line-height: 1.6; color: var(--mcp-ink-700); }
+.change-body p:last-child { margin-bottom: 0; }
+.change-body strong { font-weight: 500; color: var(--mcp-green); }
+
+/* ── BANDEAU FRAIS ── */
+.frais-section { background: var(--mcp-beige); padding: 0 40px 104px; }
+.frais-banner { max-width: 1240px; margin: 0 auto; background: var(--mcp-beige-200); border: 1px solid var(--mcp-beige-300); border-radius: 16px; padding: 40px 48px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+.frais-banner p { font-size: 17px; line-height: 1.55; color: var(--mcp-ink); margin: 0; max-width: 660px; }
+.frais-banner strong { font-weight: 500; color: var(--mcp-green); }
+.frais-banner .btn { flex-shrink: 0; }
+
+/* ── NOTRE CABINET (bande verte + portrait) ── */
+.cabinet { background: var(--mcp-green); color: var(--mcp-beige); padding: 112px 40px; }
+.cabinet-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 72px; align-items: center; }
+.cabinet-figure { margin: 0; position: relative; }
+.cabinet-figure img { width: 100%; border-radius: 20px; box-shadow: 0 30px 60px -24px rgba(0,0,0,0.55); border: 1px solid rgba(253,250,243,0.12); }
+.cabinet-figure figcaption { margin-top: 18px; font-size: 13.5px; letter-spacing: .02em; color: rgba(253,250,243,0.74); display: flex; align-items: center; gap: 12px; }
+.cabinet-figure figcaption .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--mcp-orange); flex-shrink: 0; }
+.cabinet h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.06; letter-spacing: -0.025em; color: var(--mcp-beige); margin: 16px 0 0; text-wrap: balance; }
+.cabinet .mc-lead { font-size: 18px; line-height: 1.6; opacity: .86; margin: 26px 0 30px; max-width: 520px; }
+.model-list { list-style: none; padding: 0; margin: 0 0 34px; }
+.model-list li { display: flex; gap: 18px; align-items: flex-start; padding: 18px 0; border-top: 1px solid rgba(253,250,243,0.16); font-size: 15.5px; line-height: 1.55; opacity: .92; }
+.model-list li:first-child { border-top: 0; padding-top: 0; }
+.model-list .li-arrow { color: var(--mcp-orange); font-size: 16px; flex-shrink: 0; padding-top: 2px; }
+
+/* ── 7 QUESTIONS ── */
+.questions-section { background: var(--mcp-beige); }
+.questions-inner { max-width: 920px; margin: 0 auto; }
+.questions-list { list-style: none; padding: 0; margin: 44px 0 0; counter-reset: questions; }
+.questions-list li { counter-increment: questions; display: flex; gap: 30px; align-items: flex-start; padding: 26px 0; border-bottom: 1px solid var(--mcp-beige-300); }
+.questions-list li:first-child { border-top: 1px solid var(--mcp-beige-300); }
+.questions-list li::before { content: counter(questions, decimal-leading-zero); font-family: var(--font-display); font-weight: 300; font-size: 42px; line-height: 1; letter-spacing: -0.04em; color: var(--mcp-green-300); flex-shrink: 0; width: 56px; }
+.q-body { padding-top: 5px; }
+.q-body strong { display: block; font-size: 17px; font-weight: 500; color: var(--mcp-green); margin-bottom: 6px; line-height: 1.35; }
+.q-body span { font-size: 15px; color: var(--mcp-ink-500); line-height: 1.55; }
+
+/* ── BANDEAU-SIGNATURE (demeure) ── */
+.signature { position: relative; min-height: clamp(440px, 62vh, 680px); display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 80px 40px; }
+.signature-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+.signature-scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,45,32,0.5) 0%, rgba(26,45,32,0.28) 38%, rgba(26,45,32,0.72) 100%); }
+.signature-content { position: relative; z-index: 2; max-width: 900px; }
+.signature .eyebrow { color: var(--mcp-beige); opacity: .8; }
+.signature blockquote { margin: 18px 0 0; font-family: var(--font-display); font-weight: 300; font-size: clamp(1.9rem, 4.4vw, 3.6rem); line-height: 1.12; letter-spacing: -0.025em; color: var(--mcp-beige); text-wrap: balance; }
+.signature blockquote em { font-style: italic; font-weight: 400; }
+
+/* ── CTA ── */
+.cta { background: var(--mcp-beige); padding: 120px 40px; text-align: center; }
+.cta-inner { max-width: 760px; margin: 0 auto; }
+.cta-tagline { font-family: var(--font-display); font-weight: 300; font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.02; letter-spacing: -0.03em; color: var(--mcp-green); margin: 16px 0 20px; text-wrap: balance; }
+.cta-tagline em { font-style: italic; font-weight: 400; }
+.cta-sub { font-size: 19px; color: var(--mcp-ink-500); margin: 0 auto 36px; max-width: 560px; line-height: 1.55; }
+
+/* ── FAQ ── */
+.faq-section { background: var(--mcp-beige-200); }
+.faq-inner { max-width: 880px; margin: 0 auto; }
+.faq-list { margin-top: 44px; }
+.faq-item { border-bottom: 1px solid var(--mcp-beige-300); }
+.faq-item:first-of-type { border-top: 1px solid var(--mcp-beige-300); }
+.faq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 0; font-family: var(--font-display); font-weight: 500; font-size: 19px; line-height: 1.3; color: var(--mcp-green); cursor: pointer; list-style: none; transition: color var(--dur-fast) var(--ease-out); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; font-size: 28px; font-weight: 300; flex-shrink: 0; transition: transform var(--dur-base) var(--ease-out); }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item[open] summary { color: var(--mcp-green-700); }
+.faq-answer { padding: 0 0 30px; font-size: 16px; line-height: 1.7; color: var(--mcp-ink-500); max-width: 720px; }
+.faq-answer p { margin: 0 0 14px; }
+.faq-answer p:last-child { margin-bottom: 0; }
+
+/* ── ORIAS badge footer ── */
+.orias-badge { display: inline-block; margin-top: 16px; padding: 4px 10px; font-size: 12px; letter-spacing: 0.06em; color: var(--mcp-beige); border: 1px solid rgba(240,230,210,0.45); border-radius: 3px; text-decoration: none; opacity: 0.9; }
+.orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
+
+/* ── RESPONSIVE 1100px ── */
+@media (max-width: 1100px) {
+  .header-inner { padding: 4px 24px; }
+  .nav { gap: 22px; }
+  .nav a { font-size: 14px; }
+  .logo { height: 60px; }
+  .logo img { height: 110px; }
+  section { padding: 80px 24px; }
+  .hero-content { padding: 0 24px; }
+  .intro-section { padding: 80px 24px; }
+  .change-grid { grid-template-columns: 1fr; gap: 28px; }
+  .change-head { position: static; }
+  .pillars-grid { grid-template-columns: 1fr; gap: 16px; }
+  .cabinet { padding: 80px 24px; }
+  .cabinet-grid { grid-template-columns: 1fr; gap: 44px; max-width: 560px; }
+  .frais-section { padding: 0 24px 80px; }
 }
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ThinItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ThinItalic.otf") format("opentype");
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+
+/* ── RESPONSIVE 760px (CTA guard inline) ── */
+@media (max-width: 760px) {
+  .header-inner > .btn { display: none !important; }
+  .nav.open .nav-rdv { display: inline-flex !important; }
+  section { padding: 64px 20px; }
+  .hero { min-height: auto; padding: 120px 0 64px; }
+  .hero-content { padding: 0 20px; }
+  .hero-scrim { background: linear-gradient(to top, rgba(26,45,32,0.92) 0%, rgba(26,45,32,0.6) 55%, rgba(26,45,32,0.45) 100%); }
+  .intro-section { padding: 64px 20px; }
+  .frais-section { padding: 0 20px 64px; }
+  .frais-banner { padding: 28px 24px; flex-direction: column; align-items: flex-start; gap: 24px; }
+  .cabinet { padding: 64px 20px; }
+  .questions-list li { gap: 18px; }
+  .questions-list li::before { font-size: 32px; width: 42px; }
+  .cta { padding: 80px 20px; }
+  .signature { min-height: auto; padding: 88px 24px; }
 }
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Light.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Light.otf") format("opentype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; }
 }
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-LightItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-LightItalic.otf") format("opentype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Regular.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-RegularItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-RegularItalic.otf") format("opentype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Medium.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-MediumItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-MediumItalic.otf") format("opentype");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Bold.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-BoldItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-BoldItalic.otf") format("opentype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ExtraBold.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ExtraBold.otf") format("opentype");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-ExtraBoldItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-ExtraBoldItalic.otf") format("opentype");
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-Black.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Creato Display";
-  src: url("/fonts/CreatoDisplay-BlackItalic.woff2") format("woff2"),
-       url("/fonts/CreatoDisplay-BlackItalic.otf") format("opentype");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-:root{--mcp-green:#346848;--mcp-green-700:#244F36;--mcp-green-deep:#1B6A45;--mcp-green-300:#97B5A0;--mcp-green-100:#DDE7DF;--mcp-orange:#E67E22;--mcp-orange-700:#B66518;--mcp-orange-100:#F8DCC0;--mcp-beige:#FDFAF3;--mcp-beige-200:#F4EFE0;--mcp-beige-300:#E8E1CC;--mcp-ink:#16110A;--mcp-ink-700:#3A322A;--mcp-ink-500:#6B6359;--mcp-ink-300:#B7AE9D;--mcp-white:#FFFFFF;--mcp-black:#000000;--bg:var(--mcp-beige);--bg-elevated:var(--mcp-beige-200);--bg-inverse:var(--mcp-green);--bg-accent:var(--mcp-orange);--fg:var(--mcp-ink);--fg-muted:var(--mcp-ink-500);--fg-subtle:var(--mcp-ink-300);--fg-inverse:var(--mcp-beige);--fg-brand:var(--mcp-green);--fg-accent:var(--mcp-orange);--border:var(--mcp-beige-300);--border-strong:var(--mcp-green);--link:var(--mcp-green);--link-hover:var(--mcp-green-deep);--font-sans:"Creato Display","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--font-display:"Creato Display","Inter",system-ui,sans-serif;--fs-12:0.75rem;--fs-14:0.875rem;--fs-16:1rem;--fs-18:1.125rem;--fs-20:1.25rem;--fs-24:1.5rem;--fs-30:1.875rem;--fs-36:2.25rem;--fs-48:3rem;--fs-64:4rem;--fs-80:5rem;--fw-light:300;--fw-regular:400;--fw-medium:500;--fw-bold:700;--fw-extra:800;--lh-tight:1.05;--lh-snug:1.15;--lh-normal:1.35;--lh-relaxed:1.55;--tracking-tight:-0.02em;--tracking-snug:-0.005em;--tracking-normal:0em;--tracking-wide:0.04em;--tracking-eyebrow:0.14em;--sp-1:0.25rem;--sp-2:0.5rem;--sp-3:0.75rem;--sp-4:1rem;--sp-5:1.25rem;--sp-6:1.5rem;--sp-8:2rem;--sp-10:2.5rem;--sp-12:3rem;--sp-16:4rem;--sp-20:5rem;--sp-24:6rem;--sp-32:8rem;--radius-xs:2px;--radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-xl:20px;--radius-pill:999px;--shadow-sm:0 1px 2px rgba(22,17,10,0.06);--shadow-md:0 4px 14px rgba(22,17,10,0.08);--shadow-lg:0 18px 40px -12px rgba(22,17,10,0.18);--shadow-inset-line:inset 0 -1px 0 var(--border);--ease-out:cubic-bezier(0.22,1,0.36,1);--ease-in-out:cubic-bezier(0.65,0,0.35,1);--dur-fast:120ms;--dur-base:220ms;--dur-slow:420ms}html{color-scheme:light}body{background:var(--bg);color:var(--fg);font-family:var(--font-sans);font-size:var(--fs-16);font-weight:var(--fw-regular);line-height:var(--lh-relaxed);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}h1,.h1{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(2.25rem,4.5vw,var(--fs-64));line-height:var(--lh-tight);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-6);text-wrap:balance}h2,.h2{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.75rem,3vw,var(--fs-48));line-height:var(--lh-snug);letter-spacing:var(--tracking-tight);color:var(--fg-brand);margin:0 0 var(--sp-5);text-wrap:balance}h3,.h3{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-30);line-height:var(--lh-snug);color:var(--fg-brand);margin:0 0 var(--sp-4)}h4,.h4{font-family:var(--font-display);font-weight:var(--fw-medium);font-size:var(--fs-20);line-height:var(--lh-normal);color:var(--fg);margin:0 0 var(--sp-3)}.eyebrow{font-size:var(--fs-12);font-weight:var(--fw-medium);letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--fg-brand)}.lead{font-size:var(--fs-20);font-weight:var(--fw-light);line-height:var(--lh-relaxed);color:var(--fg-muted)}p{margin:0 0 var(--sp-4);text-wrap:pretty}small,.small{font-size:var(--fs-14);color:var(--fg-muted)}.legal{font-size:var(--fs-12);line-height:var(--lh-normal);color:var(--fg-muted);font-style:italic}a{color:var(--link);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease-out)}a:hover{color:var(--link-hover)}.tagline{font-family:var(--font-display);font-weight:var(--fw-light);font-size:clamp(1.5rem,2.4vw,var(--fs-36));line-height:1.2;letter-spacing:var(--tracking-tight);color:var(--fg-brand)}.tagline em{font-style:italic;font-weight:var(--fw-regular)}
-  /* ── Skip link accessibilité ── */
-  .skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-  .skip-link:focus { position: fixed; top: 12px; left: 12px; z-index: 10000; width: auto; height: auto;
-    background: var(--mcp-green); color: #FDFAF3; padding: 10px 22px; border-radius: 6px;
-    font-weight: 600; font-size: 15px; text-decoration: none; outline: 3px solid var(--mcp-orange); }
-  body { margin: 0; }
-  .page { min-height: 100vh; }
-  html { scroll-behavior: smooth; }
-  section[id] { scroll-margin-top: 96px; }
-
-  /* ============ HEADER ============ */
-  .header {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(254, 250, 242, 0.85);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    border-bottom: 1px solid var(--mcp-beige-300);
-  }
-  .header-inner {
-    max-width: 1240px; margin: 0 auto;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 4px 40px;
-  }
-  .logo {
-    display: flex; align-items: center;
-    height: 72px; overflow: hidden;
-  }
-  .logo img { height: 128px; display: block; }
-  .nav { display: flex; gap: 36px; }
-  .nav a {
-    text-decoration: none; color: var(--mcp-ink); font-size: 15px;
-    font-weight: 400; transition: color var(--dur-fast) var(--ease-out);
-  }
-  .nav a:hover { color: var(--mcp-green); }
-  .nav a.active { color: var(--mcp-green); font-weight: 500; }
-
-  /* ============ BUTTON ============ */
-  .btn {
-    font-family: var(--font-sans);
-    font-weight: 500; font-size: 15px;
-    border-radius: var(--radius-pill);
-    padding: 12px 26px;
-    border: 1px solid transparent;
-    cursor: pointer; display: inline-flex; align-items: center; gap: 10px;
-    transition: all var(--dur-base) var(--ease-out);
-    text-decoration: none;
-  }
-  .btn-primary { background: var(--mcp-green); color: var(--mcp-beige); }
-  .btn-primary:hover { background: var(--mcp-green-700); transform: translateY(-1px); color: var(--mcp-beige); }
-  .btn-accent { background: var(--mcp-orange); color: #fff; }
-  .btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); color: #fff; }
-  .btn-on-green { background: var(--mcp-beige); color: var(--mcp-green); }
-  .btn-on-green:hover { background: #fff; color: var(--mcp-green); }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
-  .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all 0.2s; }
-  .nav-rdv { display: none; }
-
-  /* ============ SECTION CHROME ============ */
-  section { padding: 96px 40px; }
-  .container { max-width: 1240px; margin: 0 auto; }
-  .eyebrow {
-    font-size: 12px; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--mcp-green);
-  }
-
-  /* ============ HERO ============ */
-  .hero {
-    background: var(--mcp-beige);
-    padding: 56px 40px 80px;
-  }
-  .hero-inner {
-    max-width: 1080px; margin: 0 auto;
-  }
-  .breadcrumb {
-    font-size: 13px; color: var(--mcp-ink-500);
-    display: flex; gap: 10px; align-items: center;
-    margin-bottom: 28px;
-  }
-  .breadcrumb a { color: var(--mcp-green); text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .breadcrumb .sep { opacity: 0.4; }
-  .hero h1 {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 72px; line-height: 1.04;
-    letter-spacing: -0.025em;
-    color: var(--mcp-green);
-    margin: 14px 0 0;
-    text-wrap: balance;
-  }
-  .hero h1 em { font-style: italic; font-weight: 400; }
-
-  /* ============ FINAL CTA ============ */
-  .cta {
-    background: var(--mcp-beige);
-    padding: 110px 40px;
-    text-align: center;
-  }
-  .cta-tagline {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 64px; line-height: 1; letter-spacing: -0.03em;
-    color: var(--mcp-green);
-    margin: 14px 0 18px;
-    text-wrap: balance;
-  }
-  .cta-tagline em { font-style: italic; font-weight: 400; }
-  .cta-sub {
-    font-size: 19px; color: var(--mcp-ink-500);
-    margin: 0 auto 36px; max-width: 580px;
-    line-height: 1.55;
-  }
-
-  /* ============ FOOTER ============ */
-  footer {
-    background: var(--mcp-green); color: var(--mcp-beige);
-    padding: 80px 40px 36px;
-  }
-  .footer-inner { max-width: 1240px; margin: 0 auto; }
-  .footer-top {
-    display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 56px;
-    padding-bottom: 56px;
-    border-bottom: 1px solid rgba(254,250,242,0.18);
-    align-items: start;
-  }
-  .footer-top img { height: 128px; margin-bottom: 22px; display: block; }
-  .footer-top h4 {
-    font-size: 13px; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    margin: 0 0 18px; opacity: 0.85;
-  }
-  .footer-top ul { list-style: none; padding: 0; margin: 0; }
-  .footer-top li { margin-bottom: 10px; font-size: 14px; opacity: 0.85; }
-  .footer-top a { color: var(--mcp-beige); text-decoration: none; }
-  .footer-top a:hover { opacity: 1; text-decoration: underline; }
-  .footer-bottom {
-    margin-top: 32px;
-    display: flex; justify-content: space-between; gap: 32px;
-    font-size: 11px; line-height: 1.7; opacity: 0.7; font-style: italic;
-  }
-  .footer-bottom .mentions { max-width: 820px; }
-  .orias-badge {
-    display: inline-block;
-    margin-top: 16px;
-    padding: 4px 10px;
-    font-size: 12px;
-    letter-spacing: 0.06em;
-    color: var(--mcp-beige);
-    border: 1px solid rgba(240,230,210,0.45);
-    border-radius: 3px;
-    text-decoration: none;
-    opacity: 0.9;
-  }
-  .orias-badge:hover { opacity: 1; border-color: var(--mcp-beige); }
-
-  /* ============ PAGE-SPECIFIC STYLES ============ */
-
-  /* Intro lead */
-  .intro-section {
-    background: var(--mcp-beige);
-    padding: 0 40px 96px;
-  }
-  .intro-inner {
-    max-width: 920px; margin: 0 auto;
-    border-top: 1px solid var(--mcp-beige-300);
-    padding-top: 64px;
-  }
-  .intro-inner p {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    line-height: 1.5; letter-spacing: -0.01em;
-    color: var(--mcp-ink);
-    margin: 0 0 22px;
-  }
-  .intro-inner p:last-child { margin-bottom: 0; }
-  .intro-inner strong { font-weight: 500; color: var(--mcp-green); }
-
-  /* Pillars */
-  .pillars-section { background: var(--mcp-beige-200); }
-  .pillars-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
-    margin-top: 48px;
-  }
-  .pillar-card {
-    background: var(--mcp-beige);
-    border: 1px solid var(--mcp-beige-300);
-    border-radius: 16px;
-    padding: 40px 36px;
-  }
-  .pillar-card .pillar-num {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 52px; line-height: 1;
-    letter-spacing: -0.04em;
-    color: var(--mcp-green-300);
-    margin-bottom: 20px;
-  }
-  .pillar-card h3 {
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 20px; line-height: 1.3;
-    color: var(--mcp-green);
-    margin: 0 0 14px;
-  }
-  .pillar-card p {
-    font-size: 15px; line-height: 1.65;
-    color: var(--mcp-ink-500);
-    margin: 0;
-  }
-
-  /* Body text section */
-  .body-section { background: var(--mcp-beige); }
-  .body-inner { max-width: 800px; margin: 0 auto; }
-  .body-inner p {
-    font-size: 17px; line-height: 1.65;
-    color: var(--mcp-ink);
-    margin: 0 0 22px;
-  }
-  .body-inner p:last-child { margin-bottom: 0; }
-  .body-inner strong { font-weight: 500; }
-
-  /* Frais banner */
-  .frais-banner-section {
-    background: var(--mcp-beige);
-    padding: 0 40px 96px;
-  }
-  .frais-banner {
-    max-width: 1240px; margin: 0 auto;
-    background: var(--mcp-beige-200);
-    border: 1px solid var(--mcp-beige-300);
-    border-radius: 16px;
-    padding: 32px 40px;
-    display: flex; justify-content: space-between; align-items: center; gap: 32px;
-    flex-wrap: wrap;
-  }
-  .frais-banner p {
-    font-size: 17px; line-height: 1.5;
-    color: var(--mcp-ink);
-    margin: 0; max-width: 620px;
-  }
-  .frais-banner strong { font-weight: 500; color: var(--mcp-green); }
-
-  /* Monte-Cristo green model section */
-  .mc-model {
-    background: var(--mcp-green); color: var(--mcp-beige);
-    padding: 110px 40px;
-  }
-  .mc-model-grid {
-    max-width: 1240px; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
-  }
-  .mc-model .mc-eyebrow {
-    font-size: 12px; font-weight: 500;
-    letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--mcp-beige); opacity: 0.8;
-  }
-  .mc-model h2 {
-    font-family: var(--font-display); font-weight: 300;
-    font-size: clamp(1.75rem, 3vw, 3rem);
-    line-height: 1.08; letter-spacing: -0.02em;
-    color: var(--mcp-beige);
-    margin: 16px 0 0; text-wrap: balance;
-  }
-  .mc-model .mc-lead {
-    font-size: 18px; line-height: 1.6; opacity: 0.85;
-    margin: 28px 0 36px;
-    max-width: 480px;
-  }
-  .mc-model-list {
-    list-style: none; padding: 0; margin: 0;
-    display: flex; flex-direction: column;
-  }
-  .mc-model-list li {
-    display: flex; gap: 20px; align-items: flex-start;
-    padding: 22px 0;
-    border-top: 1px solid rgba(254,250,242,0.15);
-    font-size: 15px; line-height: 1.55; opacity: 0.88;
-  }
-  .mc-model-list li:first-child { border-top: 0; padding-top: 0; }
-  .mc-model-list .li-arrow {
-    color: var(--mcp-beige); opacity: 0.4;
-    font-size: 18px; flex-shrink: 0;
-    padding-top: 1px;
-  }
-
-  /* Questions section */
-  .questions-section { background: var(--mcp-beige); }
-  .questions-inner { max-width: 800px; margin: 0 auto; }
-  .questions-list {
-    list-style: none; padding: 0; margin: 28px 0 0;
-    counter-reset: questions;
-  }
-  .questions-list li {
-    counter-increment: questions;
-    display: flex; gap: 28px; align-items: flex-start;
-    padding: 24px 0;
-    border-bottom: 1px solid var(--mcp-beige-300);
-  }
-  .questions-list li:first-child { border-top: 1px solid var(--mcp-beige-300); }
-  .questions-list li::before {
-    content: counter(questions, decimal-leading-zero);
-    font-family: var(--font-display); font-weight: 300;
-    font-size: 40px; line-height: 1;
-    letter-spacing: -0.04em;
-    color: var(--mcp-green-300);
-    flex-shrink: 0; width: 52px;
-  }
-  .questions-list .q-body { padding-top: 6px; }
-  .questions-list .q-body strong {
-    display: block;
-    font-size: 16px; font-weight: 500;
-    color: var(--mcp-green);
-    margin-bottom: 4px;
-  }
-  .questions-list .q-body span {
-    font-size: 14px; color: var(--mcp-ink-500); line-height: 1.5;
-  }
-
-  /* FAQ section */
-  .faq-section { background: var(--mcp-beige-200); }
-  .faq-inner { max-width: 800px; margin: 0 auto; }
-  .faq-item {
-    border-bottom: 1px solid var(--mcp-beige-300);
-  }
-  .faq-item:first-of-type { border-top: 1px solid var(--mcp-beige-300); }
-  .faq-item summary {
-    display: flex; justify-content: space-between; align-items: center; gap: 20px;
-    padding: 24px 0;
-    font-family: var(--font-display); font-weight: 500;
-    font-size: 18px; line-height: 1.3;
-    color: var(--mcp-green);
-    cursor: pointer; list-style: none;
-    transition: color var(--dur-fast) var(--ease-out);
-  }
-  .faq-item summary::-webkit-details-marker { display: none; }
-  .faq-item summary::after {
-    content: "+"; font-size: 26px; font-weight: 300;
-    flex-shrink: 0;
-    transition: transform var(--dur-base) var(--ease-out);
-  }
-  .faq-item[open] summary::after { transform: rotate(45deg); }
-  .faq-item[open] summary { color: var(--mcp-green-deep); }
-  .faq-answer {
-    padding: 0 0 28px;
-    font-size: 16px; line-height: 1.65;
-    color: var(--mcp-ink-500);
-  }
-  .faq-answer p { margin: 0 0 14px; }
-  .faq-answer p:last-child { margin-bottom: 0; }
-
-  /* ============ RESPONSIVE ============ */
-  @media (max-width: 1100px) {
-    .header-inner { padding: 4px 24px; }
-    .nav { gap: 22px; }
-    .nav a { font-size: 14px; }
-    .logo { height: 60px; }
-    .logo img { height: 110px; }
-    section { padding: 72px 24px; }
-    .hero h1 { font-size: 52px; }
-    .intro-section { padding: 0 24px 72px; }
-    .frais-banner-section { padding: 0 24px 72px; }
-    .pillars-grid { grid-template-columns: 1fr; gap: 16px; }
-    .mc-model-grid { grid-template-columns: 1fr; gap: 40px; }
-    .mc-model { padding: 72px 24px; }
-    .cta-tagline { font-size: 48px; }
-  }
-  @media (max-width: 760px) {
-    .header-inner { padding: 4px 20px; gap: 12px; }
-    .nav { display: none; }
-    .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
-    .header { position: relative; }
-    .hamburger { display: flex; }
-    .header-inner > .btn { display: none !important; }
-    .nav.open .nav-rdv { display: inline-flex !important; }
-    .logo { height: 52px; }
-    .logo img { height: 92px; }
-    .hero { padding: 40px 20px 56px; }
-    .hero h1 { font-size: 36px; }
-    section { padding: 56px 20px; }
-    .intro-section { padding: 0 20px 56px; }
-    .intro-inner { padding-top: 36px; }
-    .frais-banner-section { padding: 0 20px 56px; }
-    .frais-banner { padding: 24px 24px; flex-direction: column; align-items: flex-start; }
-    .pillar-card { padding: 28px 24px; }
-    .mc-model { padding: 64px 20px; }
-    .cta { padding: 72px 20px 64px; }
-    .cta-tagline { font-size: 34px; }
-    .questions-list li::before { font-size: 32px; width: 40px; }
-    .faq-item summary { font-size: 16px; }
-    .footer-top { grid-template-columns: 1fr; gap: 36px; padding-bottom: 36px; }
-    .footer-bottom { flex-direction: column; gap: 16px; }
-    footer { padding: 56px 24px 32px; }
-  }
 </style>
-  <!-- Performance : preconnect -->
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://www.google-analytics.com">
-  <!-- Google Analytics + Consent Mode -->
-  <script src="/analytics.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Aller au contenu principal</a>
 <div class="page">
 
-  <!-- ====== HEADER ====== -->
-  <!-- BEGIN GLOBAL HEADER -->
+<!-- BEGIN GLOBAL HEADER -->
   <header class="header">
     <div class="header-inner">
       <a href="/" class="logo" aria-label="Accueil — Monte-Cristo Patrimoine"><img src="/assets/logo-vert.webp" alt="Monte-Cristo Patrimoine"/></a>
@@ -643,10 +301,13 @@
   </header>
 <!-- END GLOBAL HEADER -->
 
-  <main id="main">
+<main id="main">
 
-    <!-- ====== HERO ====== -->
-    <section class="hero">
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-img" src="/assets/cgp-independant/boussole.webp" alt="Boussole posée sur une carte ancienne, face aux sommets des Hautes-Alpes au lever du jour"/>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
       <div class="hero-inner">
         <div class="breadcrumb">
           <a href="/">Accueil</a>
@@ -655,174 +316,140 @@
         </div>
         <div class="eyebrow">Conseil indépendant</div>
         <h1>Conseiller en gestion de patrimoine <em>indépendant.</em></h1>
-      </div>
-    </section>
-
-    <!-- ====== INTRO LEAD ====== -->
-    <section class="intro-section">
-      <div class="intro-inner">
-        <p>Choisir un conseiller en gestion de patrimoine, c'est choisir quelqu'un à qui vous allez confier vos décisions financières importantes — retraite, investissement, transmission, protection de la famille.</p>
-        <p>La question de l'<strong>indépendance</strong> n'est pas secondaire. Elle conditionne les solutions proposées, la façon dont votre interlocuteur est rémunéré, et la liberté dont il dispose pour vous conseiller sans contrainte commerciale.</p>
-      </div>
-    </section>
-
-    <!-- ====== PILLARS ====== -->
-    <section class="pillars-section">
-      <div class="container">
-        <div class="eyebrow">Ce que ça signifie concrètement</div>
-        <h2>Les trois caractéristiques d'un conseil indépendant</h2>
-        <div class="pillars-grid">
-
-          <div class="pillar-card">
-            <div class="pillar-num">01</div>
-            <h3>Architecture ouverte</h3>
-            <p>Un cabinet indépendant travaille avec un large panel de partenaires — assureurs, sociétés de gestion, établissements financiers — sans être lié à un seul groupe. Les recommandations ne dépendent pas d'une relation d'exclusivité avec un établissement distributeur.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-num">02</div>
-            <h3>Rémunération lisible</h3>
-            <p>Les honoraires sont transparents et expliqués avant tout engagement. Les rémunérations éventuelles — lorsqu'elles existent — sont déclarées, encadrées et expliquées. Vous savez comment votre conseiller est rémunéré, et pourquoi.</p>
-          </div>
-
-          <div class="pillar-card">
-            <div class="pillar-num">03</div>
-            <h3>Conseil dans la durée</h3>
-            <p>Le modèle indépendant favorise une relation longue et un accompagnement dans les grandes étapes de votre vie patrimoniale : retraite, transmission, cession, héritage. Pas une transaction ponctuelle — une relation construite dans le temps.</p>
-          </div>
-
+        <p class="hero-sub">Le modèle qui aligne votre conseiller sur vos intérêts — pas sur ceux d'un distributeur de produits.</p>
+        <div class="hero-actions">
+          <a href="/#contact" class="btn btn-accent">Demander une pré-analyse</a>
+          <a href="/honoraires-frais-caches" class="hero-link">Notre approche des honoraires →</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ====== CE QUE ÇA CHANGE ====== -->
-    <section class="body-section">
-      <div class="body-inner">
+  <!-- INTRO LEAD -->
+  <section class="intro-section">
+    <div class="intro-inner">
+      <span class="eyebrow">Pourquoi l'indépendance compte</span>
+      <p>Choisir un conseiller en gestion de patrimoine, c'est choisir quelqu'un à qui vous allez confier vos décisions financières importantes — retraite, investissement, transmission, protection de la famille.</p>
+      <p>La question de l'<strong>indépendance</strong> n'est pas secondaire. Elle conditionne les solutions proposées, la façon dont votre interlocuteur est rémunéré, et la liberté dont il dispose pour vous conseiller sans contrainte commerciale.</p>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="pillars-section">
+    <div class="container">
+      <div class="eyebrow">Ce que ça signifie concrètement</div>
+      <h2 class="section-title">Les trois caractéristiques d'un conseil indépendant</h2>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h3>Architecture ouverte</h3>
+          <p>Un cabinet indépendant travaille avec un large panel de partenaires — assureurs, sociétés de gestion, établissements financiers — sans être lié à un seul groupe. Les recommandations ne dépendent pas d'une relation d'exclusivité avec un établissement distributeur.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-num">02</div>
+          <h3>Rémunération lisible</h3>
+          <p>Les honoraires sont transparents et expliqués avant tout engagement. Les rémunérations éventuelles — lorsqu'elles existent — sont déclarées, encadrées et expliquées. Vous savez comment votre conseiller est rémunéré, et pourquoi.</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-num">03</div>
+          <h3>Conseil dans la durée</h3>
+          <p>Le modèle indépendant favorise une relation longue et un accompagnement dans les grandes étapes de votre vie patrimoniale : retraite, transmission, cession, héritage. Pas une transaction ponctuelle — une relation construite dans le temps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CE QUE ÇA CHANGE -->
+  <section class="change-section">
+    <div class="container change-grid">
+      <div class="change-head">
         <div class="eyebrow">Pour vous, en pratique</div>
-        <h2>Ce que ça change concrètement</h2>
+        <h2 class="section-title">Ce que ça change concrètement</h2>
+      </div>
+      <div class="change-body">
         <p>Un conseiller indépendant dispose d'une latitude réelle pour explorer des solutions adaptées à votre situation. Son modèle est conçu pour <strong>limiter, identifier et rendre lisibles les conflits d'intérêts potentiels</strong> — il ne les supprime pas par magie, mais il les rend transparents et encadrés.</p>
         <p>C'est une différence structurelle. Un conseiller lié à un établissement bancaire ou à un réseau de distribution peut vous proposer d'excellents produits — mais dans le cadre de ce que son réseau distribue. Un cabinet indépendant sélectionne parmi un panel plus large, <strong>sans être contraint par une relation d'exclusivité</strong>.</p>
         <p>Ce n'est pas une promesse de performance. Personne ne peut garantir un rendement ou un résultat. Mais c'est une architecture relationnelle où le conseil est structuré pour servir vos intérêts, pas pour atteindre un objectif commercial de distribution.</p>
         <p>Le cabinet exerce dans un cadre réglementé, et toutes les informations importantes — statuts, enregistrements, rémunérations — sont vérifiables.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ====== FRAIS BANNER ====== -->
-    <section class="frais-banner-section">
-      <div class="frais-banner">
-        <p><strong>Honoraires, frais et rétrocessions :</strong> comprendre comment votre conseiller est rémunéré est fondamental pour évaluer la qualité et l'objectivité de son conseil. Nous détaillons notre approche et comparons les frais réels du marché.</p>
-        <a href="/honoraires-frais-caches" class="btn btn-primary">Notre approche des frais →</a>
+  <!-- BANDEAU FRAIS -->
+  <section class="frais-section">
+    <div class="frais-banner">
+      <p><strong>Honoraires, frais et rétrocessions :</strong> comprendre comment votre conseiller est rémunéré est fondamental pour évaluer la qualité et l'objectivité de son conseil. Nous détaillons notre approche et comparons les frais réels du marché.</p>
+      <a href="/honoraires-frais-caches" class="btn btn-primary">Notre approche des frais →</a>
+    </div>
+  </section>
+
+  <!-- NOTRE CABINET -->
+  <section class="cabinet">
+    <div class="cabinet-grid">
+      <figure class="cabinet-figure">
+        <img src="/assets/team/fondateurs.webp" alt="Les dirigeants de Monte-Cristo Patrimoine" loading="lazy"/>
+        <figcaption><span class="dot"></span>Kévin Blache, Président · Luc Blanc-Gras, Directeur général</figcaption>
+      </figure>
+      <div>
+        <div class="eyebrow on-dark">Notre cabinet</div>
+        <h2>Monte-Cristo Patrimoine</h2>
+        <p class="mc-lead">Cabinet indépendant de conseil en gestion de patrimoine, basé à Gap et accessible à distance partout en France. Notre approche repose sur des honoraires transparents, une architecture ouverte et une information claire sur les frais et rémunérations éventuelles.</p>
+        <ul class="model-list">
+          <li><span class="li-arrow">→</span><span>Bilan patrimonial complet : actifs, dettes, fiscalité, prévoyance, transmission</span></li>
+          <li><span class="li-arrow">→</span><span>Préconisations écrites, expliquées, sans jargon</span></li>
+          <li><span class="li-arrow">→</span><span>Sélection large de solutions, sans être limité aux produits d'un seul établissement</span></li>
+          <li><span class="li-arrow">→</span><span>Suivi régulier dans la durée — revue annuelle ou semestrielle selon votre situation</span></li>
+          <li><span class="li-arrow">→</span><span>En présentiel à Gap ou à distance, partout en France</span></li>
+          <li><span class="li-arrow">→</span><span>Enregistré à l'ORIAS (n°&nbsp;25006472), adhérent CNCGP agréé par l'AMF</span></li>
+        </ul>
+        <a href="/#contact" class="btn btn-on-green">Demander une pré-analyse →</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ====== MONTE-CRISTO MODEL ====== -->
-    <section class="mc-model">
-      <div class="mc-model-grid">
-        <div>
-          <div class="mc-eyebrow">Notre cabinet</div>
-          <h2>Monte-Cristo Patrimoine</h2>
-          <p class="mc-lead">Cabinet indépendant de conseil en gestion de patrimoine, basé à Gap et accessible à distance partout en France. Notre approche repose sur des honoraires transparents, une architecture ouverte et une information claire sur les frais et rémunérations éventuelles.</p>
-          <a href="/#contact" class="btn btn-on-green">Demander une pré-analyse →</a>
-        </div>
-        <div>
-          <ul class="mc-model-list">
-            <li>
-              <span class="li-arrow">→</span>
-              <span>Bilan patrimonial complet : actifs, dettes, fiscalité, prévoyance, transmission</span>
-            </li>
-            <li>
-              <span class="li-arrow">→</span>
-              <span>Préconisations écrites, expliquées, sans jargon</span>
-            </li>
-            <li>
-              <span class="li-arrow">→</span>
-              <span>Sélection large de solutions, sans être limité aux produits d'un seul établissement</span>
-            </li>
-            <li>
-              <span class="li-arrow">→</span>
-              <span>Suivi régulier dans la durée — revue annuelle ou semestrielle selon votre situation</span>
-            </li>
-            <li>
-              <span class="li-arrow">→</span>
-              <span>En présentiel à Gap ou à distance, partout en France</span>
-            </li>
-            <li>
-              <span class="li-arrow">→</span>
-              <span>Enregistré à l'ORIAS (n°&nbsp;25006472), adhérent CNCGP agréé par l'AMF</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <!-- 7 QUESTIONS -->
+  <section class="questions-section">
+    <div class="questions-inner">
+      <div class="eyebrow">Avant de vous engager</div>
+      <h2 class="section-title">7 questions à poser à votre futur conseiller</h2>
+      <ol class="questions-list">
+        <li><div class="q-body"><strong>Êtes-vous enregistré à l'ORIAS ?</strong><span>Vérifiable librement sur orias.fr. Un numéro d'enregistrement valide est le premier indicateur d'un professionnel réglementé.</span></div></li>
+        <li><div class="q-body"><strong>Êtes-vous adhérent d'une association professionnelle agréée par l'AMF ?</strong><span>Les CGP membres d'une association agréée (CNCGP, ANACOFI-CIF, CNCIF…) sont soumis à des obligations déontologiques renforcées.</span></div></li>
+        <li><div class="q-body"><strong>Comment êtes-vous rémunéré sur ce type de mission ?</strong><span>Honoraires, rétrocessions, commission sur produits : demandez une réponse précise avant tout engagement. Un conseiller transparent doit pouvoir répondre clairement.</span></div></li>
+        <li><div class="q-body"><strong>Pouvez-vous travailler avec des produits de plusieurs établissements différents ?</strong><span>La réponse indique si vous avez affaire à une architecture ouverte ou à un conseiller lié à un réseau de distribution.</span></div></li>
+        <li><div class="q-body"><strong>Formalisez-vous vos recommandations par écrit ?</strong><span>Un compte-rendu écrit avec les préconisations et leur justification est un standard attendu dans un conseil patrimonial sérieux.</span></div></li>
+        <li><div class="q-body"><strong>Comment identifiez-vous et gérez-vous vos conflits d'intérêts ?</strong><span>Tous les conseillers ont des conflits d'intérêts potentiels. La question n'est pas leur absence, c'est leur transparence et leur gestion.</span></div></li>
+        <li><div class="q-body"><strong>Comment se déroule la fin de la relation si elle ne me convient plus ?</strong><span>Un bon conseiller doit pouvoir vous répondre sans hésiter. La sortie doit être simple, sans pénalités cachées ni rétention d'informations.</span></div></li>
+      </ol>
+    </div>
+  </section>
 
-    <!-- ====== 7 QUESTIONS ====== -->
-    <section class="questions-section">
-      <div class="questions-inner">
-        <div class="eyebrow">Avant de vous engager</div>
-        <h2>7 questions à poser à votre futur conseiller</h2>
-        <ol class="questions-list">
-          <li>
-            <div class="q-body">
-              <strong>Êtes-vous enregistré à l'ORIAS ?</strong>
-              <span>Vérifiable librement sur orias.fr. Un numéro d'enregistrement valide est le premier indicateur d'un professionnel réglementé.</span>
-            </div>
-          </li>
-          <li>
-            <div class="q-body">
-              <strong>Êtes-vous adhérent d'une association professionnelle agréée par l'AMF ?</strong>
-              <span>Les CGP membres d'une association agréée (CNCGP, ANACOFI-CIF, CNCIF…) sont soumis à des obligations déontologiques renforcées.</span>
-            </div>
-          </li>
-          <li>
-            <div class="q-body">
-              <strong>Comment êtes-vous rémunéré sur ce type de mission ?</strong>
-              <span>Honoraires, rétrocessions, commission sur produits : demandez une réponse précise avant tout engagement. Un conseiller transparent doit pouvoir répondre clairement.</span>
-            </div>
-          </li>
-          <li>
-            <div class="q-body">
-              <strong>Pouvez-vous travailler avec des produits de plusieurs établissements différents ?</strong>
-              <span>La réponse indique si vous avez affaire à une architecture ouverte ou à un conseiller lié à un réseau de distribution.</span>
-            </div>
-          </li>
-          <li>
-            <div class="q-body">
-              <strong>Formalisez-vous vos recommandations par écrit ?</strong>
-              <span>Un compte-rendu écrit avec les préconisations et leur justification est un standard attendu dans un conseil patrimonial sérieux.</span>
-            </div>
-          </li>
-          <li>
-            <div class="q-body">
-              <strong>Comment identifiez-vous et gérez-vous vos conflits d'intérêts ?</strong>
-              <span>Tous les conseillers ont des conflits d'intérêts potentiels. La question n'est pas leur absence, c'est leur transparence et leur gestion.</span>
-            </div>
-          </li>
-          <li>
-            <div class="q-body">
-              <strong>Comment se déroule la fin de la relation si elle ne me convient plus ?</strong>
-              <span>Un bon conseiller doit pouvoir vous répondre sans hésiter. La sortie doit être simple, sans pénalités cachées ni rétention d'informations.</span>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
+  <!-- BANDEAU-SIGNATURE -->
+  <section class="signature">
+    <img class="signature-img" src="/assets/cgp-independant/demeure.webp" alt="Demeure nichée dans une vallée des Hautes-Alpes au crépuscule" loading="lazy"/>
+    <div class="signature-scrim"></div>
+    <div class="signature-content">
+      <div class="eyebrow">Notre signature</div>
+      <blockquote>Le conseil comme héritage.<br>L'indépendance comme <em>signature.</em></blockquote>
+    </div>
+  </section>
 
-    <!-- ====== CTA ====== -->
-    <section class="cta">
-      <div class="container">
-        <div class="eyebrow">Premier échange offert</div>
-        <h2 class="cta-tagline">Échangeons sur <em>votre situation.</em></h2>
-        <p class="cta-sub">45 minutes, sans engagement, pour comprendre votre situation patrimoniale et voir si nous pouvons travailler ensemble.</p>
-        <a href="/#contact" class="btn btn-accent" style="padding:16px 32px;font-size:17px;">Demander une pré-analyse de ma situation patrimoniale</a>
-      </div>
-    </section>
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-inner">
+      <div class="eyebrow">Premier échange offert</div>
+      <h2 class="cta-tagline">Échangeons sur <em>votre situation.</em></h2>
+      <p class="cta-sub">45 minutes, sans engagement, pour comprendre votre situation patrimoniale et voir si nous pouvons travailler ensemble.</p>
+      <a href="/#contact" class="btn btn-accent" style="padding:16px 32px;font-size:17px;">Demander une pré-analyse de ma situation patrimoniale</a>
+    </div>
+  </section>
 
-    <!-- ====== FAQ ====== -->
-    <section class="faq-section">
-      <div class="faq-inner">
-        <div class="eyebrow">Questions fréquentes</div>
-        <h2>Ce que nos clients nous demandent souvent</h2>
-
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <div class="eyebrow">Questions fréquentes</div>
+      <h2 class="section-title">Ce que nos clients nous demandent souvent</h2>
+      <div class="faq-list">
         <details class="faq-item">
           <summary>Un CGP indépendant coûte-t-il plus cher qu'un conseiller bancaire ?</summary>
           <div class="faq-answer">
@@ -830,7 +457,6 @@
             <p>Un CGP indépendant peut facturer des honoraires visibles, mais dans un cadre où toutes les rémunérations sont déclarées et encadrées. La comparaison pertinente porte sur le coût global réel, pas sur la facture directe. Certains honoraires de conseil sont par ailleurs récupérables en crédit d'impôt selon votre situation.</p>
           </div>
         </details>
-
         <details class="faq-item">
           <summary>Comment un CGP indépendant est-il rémunéré ?</summary>
           <div class="faq-answer">
@@ -838,7 +464,6 @@
             <p>Chez Monte-Cristo Patrimoine, toutes les rémunérations sont expliquées avant tout engagement : vous savez ce que vous payez, pourquoi, et comment votre conseiller est rémunéré sur chaque solution proposée.</p>
           </div>
         </details>
-
         <details class="faq-item">
           <summary>Quelle est la différence entre un CGP indépendant et un gestionnaire de banque privée ?</summary>
           <div class="faq-answer">
@@ -846,7 +471,6 @@
             <p>La différence principale est dans la liberté de sélection et la transparence du modèle économique. Un CGP indépendant n'est pas meilleur par nature — mais son modèle est structuré différemment, et cette structure limite le risque d'une recommandation contrainte par une relation d'exclusivité.</p>
           </div>
         </details>
-
         <details class="faq-item">
           <summary>Comment se passe une première rencontre avec Monte-Cristo Patrimoine ?</summary>
           <div class="faq-answer">
@@ -854,14 +478,13 @@
             <p>Si la relation vous convient et que nous pensons pouvoir vous apporter de la valeur, nous proposons un bilan patrimonial complet. Nous n'avons aucun intérêt à vous engager dans une mission si votre situation ne le justifie pas.</p>
           </div>
         </details>
-
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+</main>
 
-  <!-- ====== FOOTER ====== -->
-  <!-- BEGIN GLOBAL FOOTER -->
+<!-- BEGIN GLOBAL FOOTER -->
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
