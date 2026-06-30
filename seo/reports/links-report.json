@@ -1,7 +1,7 @@
 {
-  "generated_at": "24/06/2026 à 19:44",
+  "generated_at": "01/07/2026 à 01:46",
   "summary": {
-    "total": 323,
+    "total": 405,
     "broken": 0,
     "future": 0
   },
@@ -164,6 +164,12 @@
     },
     {
       "source": "article-cgp-independant.html",
+      "href": "/article-frais-bancaires",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "article-cgp-independant.html",
       "href": "https://www.orias.fr/search?number=25006472",
       "category": "external",
       "note": null
@@ -182,8 +188,8 @@
     },
     {
       "source": "article-cgp-independant.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -195,6 +201,12 @@
     {
       "source": "article-cgp-independant.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "article-cgp-independant.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -274,6 +286,12 @@
       "source": "article-frais-bancaires.html",
       "href": "/blog",
       "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "article-frais-bancaires.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
       "note": null
     },
     {
@@ -302,6 +320,12 @@
     },
     {
       "source": "article-frais-bancaires.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "article-frais-bancaires.html",
       "href": "/#contact",
       "category": "valid_anchor_page",
       "note": null
@@ -332,8 +356,8 @@
     },
     {
       "source": "article-frais-bancaires.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -345,6 +369,12 @@
     {
       "source": "article-frais-bancaires.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "article-frais-bancaires.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -476,8 +506,8 @@
     },
     {
       "source": "blog.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -489,6 +519,12 @@
     {
       "source": "blog.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "blog.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -590,8 +626,20 @@
     },
     {
       "source": "conseiller-gestion-patrimoine-independant.html",
-      "href": "/le-cabinet#modele",
+      "href": "/#contact",
       "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "conseiller-gestion-patrimoine-independant.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "conseiller-gestion-patrimoine-independant.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -626,8 +674,8 @@
     },
     {
       "source": "conseiller-gestion-patrimoine-independant.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -639,6 +687,12 @@
     {
       "source": "conseiller-gestion-patrimoine-independant.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "conseiller-gestion-patrimoine-independant.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -742,6 +796,36 @@
       "source": "entreprises.html",
       "href": "/#contact",
       "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "#methode",
+      "category": "valid_anchor",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/le-cabinet#modele",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/conseiller-gestion-patrimoine-independant",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -770,8 +854,8 @@
     },
     {
       "source": "entreprises.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -783,6 +867,12 @@
     {
       "source": "entreprises.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -829,6 +919,192 @@
       "note": "Page existante mais non déclarée dans pages.json : /politique-confidentialite"
     },
     {
+      "source": "honoraires-frais-caches.html",
+      "href": "#main",
+      "category": "valid_anchor",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/le-cabinet",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/particuliers",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/entreprises",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/simulateur-frais",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/simulateur-frais",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/le-cabinet#modele",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/conseiller-gestion-patrimoine-independant",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/simulateur-frais",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "https://www.orias.fr/search?number=25006472",
+      "category": "external",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/le-cabinet",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/conseiller-gestion-patrimoine-independant",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/le-cabinet#partenaires",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/simulateurs",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/particuliers",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/entreprises",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "tel:+33629865266",
+      "category": "mailto_tel",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "mailto:kevin@monte-cristo.net",
+      "category": "mailto_tel",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "https://www.linkedin.com/company/108398030/",
+      "category": "external",
+      "note": null
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/mentions-legales",
+      "category": "valid_internal",
+      "note": "Page existante mais non déclarée dans pages.json : /mentions-legales"
+    },
+    {
+      "source": "honoraires-frais-caches.html",
+      "href": "/politique-confidentialite",
+      "category": "valid_internal",
+      "note": "Page existante mais non déclarée dans pages.json : /politique-confidentialite"
+    },
+    {
       "source": "index.html",
       "href": "#main",
       "category": "valid_anchor",
@@ -861,6 +1137,30 @@
     {
       "source": "index.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "index.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "index.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "index.html",
+      "href": "#contact",
+      "category": "valid_anchor",
+      "note": null
+    },
+    {
+      "source": "index.html",
+      "href": "/le-cabinet",
       "category": "valid_internal",
       "note": null
     },
@@ -872,19 +1172,7 @@
     },
     {
       "source": "index.html",
-      "href": "#contact",
-      "category": "valid_anchor",
-      "note": null
-    },
-    {
-      "source": "index.html",
-      "href": "#contact",
-      "category": "valid_anchor",
-      "note": null
-    },
-    {
-      "source": "index.html",
-      "href": "/le-cabinet",
+      "href": "/honoraires-frais-caches",
       "category": "valid_internal",
       "note": null
     },
@@ -896,7 +1184,7 @@
     },
     {
       "source": "index.html",
-      "href": "/article-frais-bancaires",
+      "href": "/article-cgp-independant",
       "category": "valid_internal",
       "note": null
     },
@@ -926,8 +1214,8 @@
     },
     {
       "source": "index.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -939,6 +1227,12 @@
     {
       "source": "index.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "index.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -1046,20 +1340,14 @@
     },
     {
       "source": "le-cabinet.html",
-      "href": "/conseiller-gestion-patrimoine-independant",
-      "category": "valid_internal",
+      "href": "#fondateurs",
+      "category": "valid_anchor",
       "note": null
     },
     {
       "source": "le-cabinet.html",
-      "href": "/particuliers",
-      "category": "valid_internal",
-      "note": null
-    },
-    {
-      "source": "le-cabinet.html",
-      "href": "/entreprises",
-      "category": "valid_internal",
+      "href": "https://www.orias.fr/search?number=25006472",
+      "category": "external",
       "note": null
     },
     {
@@ -1088,8 +1376,8 @@
     },
     {
       "source": "le-cabinet.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1101,6 +1389,12 @@
     {
       "source": "le-cabinet.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "le-cabinet.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -1340,8 +1634,8 @@
     },
     {
       "source": "mentions-legales.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1353,6 +1647,12 @@
     {
       "source": "mentions-legales.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "mentions-legales.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -1496,8 +1796,26 @@
     },
     {
       "source": "particuliers.html",
-      "href": "/le-cabinet#modele",
+      "href": "#methode",
+      "category": "valid_anchor",
+      "note": null
+    },
+    {
+      "source": "particuliers.html",
+      "href": "/#contact",
       "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "particuliers.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "particuliers.html",
+      "href": "/conseiller-gestion-patrimoine-independant",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1526,8 +1844,8 @@
     },
     {
       "source": "particuliers.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1539,6 +1857,12 @@
     {
       "source": "particuliers.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "particuliers.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -1748,8 +2072,8 @@
     },
     {
       "source": "politique-confidentialite.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1761,6 +2085,12 @@
     {
       "source": "politique-confidentialite.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "politique-confidentialite.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -1850,6 +2180,12 @@
     },
     {
       "source": "simulateur-frais.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "simulateur-frais.html",
       "href": "/",
       "category": "valid_internal",
       "note": null
@@ -1886,8 +2222,8 @@
     },
     {
       "source": "simulateur-frais.html",
-      "href": "/le-cabinet#modele",
-      "category": "valid_anchor_page",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1899,6 +2235,12 @@
     {
       "source": "simulateur-frais.html",
       "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateur-frais.html",
+      "href": "/simulateurs",
       "category": "valid_internal",
       "note": null
     },
@@ -1940,6 +2282,156 @@
     },
     {
       "source": "simulateur-frais.html",
+      "href": "/politique-confidentialite",
+      "category": "valid_internal",
+      "note": "Page existante mais non déclarée dans pages.json : /politique-confidentialite"
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "#main",
+      "category": "valid_anchor",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/le-cabinet",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/particuliers",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/entreprises",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/simulateur-frais",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/#contact",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "https://www.orias.fr/search?number=25006472",
+      "category": "external",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/le-cabinet",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/conseiller-gestion-patrimoine-independant",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/le-cabinet#partenaires",
+      "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/blog",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/simulateurs",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/particuliers",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/entreprises",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "tel:+33629865266",
+      "category": "mailto_tel",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "mailto:kevin@monte-cristo.net",
+      "category": "mailto_tel",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "https://www.linkedin.com/company/108398030/",
+      "category": "external",
+      "note": null
+    },
+    {
+      "source": "simulateurs.html",
+      "href": "/mentions-legales",
+      "category": "valid_internal",
+      "note": "Page existante mais non déclarée dans pages.json : /mentions-legales"
+    },
+    {
+      "source": "simulateurs.html",
       "href": "/politique-confidentialite",
       "category": "valid_internal",
       "note": "Page existante mais non déclarée dans pages.json : /politique-confidentialite"

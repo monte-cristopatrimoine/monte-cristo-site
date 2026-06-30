@@ -1,5 +1,5 @@
 # Contrôle des métadonnées — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 21:03*
+*Généré le 01/07/2026 à 01:46*
 
 ## Résumé
 
@@ -8,7 +8,7 @@
 | Pages analysées | **13** |
 | Problèmes critiques 🔴 | **0** |
 | Problèmes importants 🟠 | **0** |
-| Améliorations 🟡 | **16** |
+| Améliorations 🟡 | **11** |
 | Doublons détectés | **0** |
 
 ---
@@ -33,18 +33,13 @@
 - **blog.html** — title identique à og:title — différencier pour enrichir le partage social
 - **conseiller-gestion-patrimoine-independant.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **entreprises.html** — title identique à og:title — différencier pour enrichir le partage social
-- **honoraires-frais-caches.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **index.html** — title identique à og:title — différencier pour enrichir le partage social
 - **le-cabinet.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **le-cabinet.html** — title identique à og:title — différencier pour enrichir le partage social
-- **le-cabinet.html** — twitter:title absent (og:title présent)
-- **le-cabinet.html** — twitter:description absent (og:description présent)
 - **mentions-legales.html** — title identique à og:title — différencier pour enrichir le partage social
 - **particuliers.html** — title identique à og:title — différencier pour enrichir le partage social
 - **politique-confidentialite.html** — title identique à og:title — différencier pour enrichir le partage social
 - **simulateur-frais.html** — title identique à og:title — différencier pour enrichir le partage social
-- **simulateur-frais.html** — twitter:title absent (og:title présent)
-- **simulateur-frais.html** — twitter:description absent (og:description présent)
 
 ---
 ## Détail page par page
@@ -119,14 +114,14 @@
 ### `entreprises.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
-| `title` | Services aux entreprises — Monte-Cristo Patrimoine | 50 |
-| `description` | Conseil patrimonial pour dirigeants : structuration, rémunér… | 137 |
+| `title` | Conseil patrimonial pour les dirigeants | Monte-Cristo Patri… | 65 |
+| `description` | Rémunération, trésorerie, protection, cession : Monte-Cristo… | 143 |
 | `canonical` | https://monte-cristo.net/entreprises | 36 |
-| `og:title` | Services aux entreprises — Monte-Cristo Patrimoine | 50 |
-| `og:description` | Conseil patrimonial pour dirigeants : structuration, rémunér… | 115 |
+| `og:title` | Conseil patrimonial pour les dirigeants | Monte-Cristo Patri… | 65 |
+| `og:description` | Rémunération, trésorerie, protection, cession : Monte-Cristo… | 143 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Services aux entreprises — Monte-Cristo Patrimoine | 50 |
-| `twitter:description` | Conseil patrimonial pour dirigeants : structuration, rémunér… | 115 |
+| `twitter:title` | Conseil patrimonial pour les dirigeants | Monte-Cristo Patri… | 65 |
+| `twitter:description` | Rémunération, trésorerie, protection, cession : Monte-Cristo… | 143 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
@@ -136,19 +131,18 @@
 ### `honoraires-frais-caches.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
-| `title` | Honoraires et frais en gestion de patrimoine | Monte-Cristo | 59 |
-| `description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 137 |
+| `title` | Honoraires, frais et rétrocessions | Monte-Cristo Patrimoine | 60 |
+| `description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 148 |
 | `canonical` | https://monte-cristo.net/honoraires-frais-caches | 48 |
-| `og:title` | Frais, honoraires, rétrocessions : comprendre ce que vous pa… | 72 |
-| `og:description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 137 |
+| `og:title` | Honoraires, frais et rétrocessions : ce que vous payez vraim… | 89 |
+| `og:description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 148 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Frais, honoraires, rétrocessions : comprendre ce que vous pa… | 72 |
-| `twitter:description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 137 |
+| `twitter:title` | Honoraires, frais et rétrocessions : ce que vous payez vraim… | 89 |
+| `twitter:description` | Honoraires, rétrocessions, frais intégrés : comprenez le coû… | 148 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
-**Problèmes :**
-- 🟡 title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
+✅ Aucun problème.
 
 ### `index.html`
 | Champ | Valeur | Long. |
@@ -176,16 +170,14 @@
 | `og:title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
 | `og:description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | *(absent)* | — |
-| `twitter:description` | *(absent)* | — |
+| `twitter:title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
+| `twitter:description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
 **Problèmes :**
 - 🟡 title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
-- 🟡 twitter:title absent (og:title présent)
-- 🟡 twitter:description absent (og:description présent)
 
 ### `mentions-legales.html`
 | Champ | Valeur | Long. |
@@ -207,14 +199,14 @@
 ### `particuliers.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
-| `title` | Services aux particuliers — Monte-Cristo Patrimoine | 51 |
-| `description` | Conseil patrimonial sur-mesure pour les particuliers : diagn… | 154 |
+| `title` | Conseil patrimonial pour particuliers | Monte-Cristo Patrimo… | 63 |
+| `description` | Investissement, fiscalité, retraite, transmission : Monte-Cr… | 134 |
 | `canonical` | https://monte-cristo.net/particuliers | 37 |
-| `og:title` | Services aux particuliers — Monte-Cristo Patrimoine | 51 |
-| `og:description` | Conseil patrimonial sur-mesure : diagnostic, fiscalité, inve… | 119 |
+| `og:title` | Conseil patrimonial pour particuliers | Monte-Cristo Patrimo… | 63 |
+| `og:description` | Investissement, fiscalité, retraite, transmission : Monte-Cr… | 134 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Services aux particuliers — Monte-Cristo Patrimoine | 51 |
-| `twitter:description` | Conseil patrimonial sur-mesure : diagnostic, fiscalité, inve… | 119 |
+| `twitter:title` | Conseil patrimonial pour particuliers | Monte-Cristo Patrimo… | 63 |
+| `twitter:description` | Investissement, fiscalité, retraite, transmission : Monte-Cr… | 134 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
@@ -247,15 +239,13 @@
 | `og:title` | Simulateur de frais — Monte-Cristo Patrimoine | 45 |
 | `og:description` | Calculez en temps réel l'impact de vos frais de gestion sur … | 132 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | *(absent)* | — |
-| `twitter:description` | *(absent)* | — |
+| `twitter:title` | Simulateur de frais — Monte-Cristo Patrimoine | 45 |
+| `twitter:description` | Calculez en temps réel l'impact de vos frais de gestion sur … | 132 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
 **Problèmes :**
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
-- 🟡 twitter:title absent (og:title présent)
-- 🟡 twitter:description absent (og:description présent)
 
 ### `simulateurs.html`
 | Champ | Valeur | Long. |

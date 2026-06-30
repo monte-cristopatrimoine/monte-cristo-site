@@ -1,5 +1,5 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 21:03*
+*Généré le 01/07/2026 à 01:46*
 
 ## Résumé global
 
@@ -63,7 +63,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 23 internes, 2 externes
+- **Liens** : 22 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -77,7 +77,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 24 internes, 2 externes
+- **Liens** : 23 internes, 2 externes
 - ✅ Aucun problème détecté
 
 ### `blog.html`
@@ -90,7 +90,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 21 internes, 2 externes
+- **Liens** : 20 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -105,36 +105,36 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 22 internes, 2 externes
+- **Liens** : 23 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
 ### `entreprises.html`
 - **URL** : https://monte-cristo.net/entreprises
-- **Title** : Services aux entreprises — Monte-Cristo Patrimoine *(longueur : 50)*
-- **Description** : Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épar… *(longueur : 137)*
+- **Title** : Conseil patrimonial pour les dirigeants | Monte-Cristo Patrimoine *(longueur : 65)*
+- **Description** : Rémunération, trésorerie, protection, cession : Monte-Cristo accompagne dirigean… *(longueur : 143)*
 - **Canonical** : https://monte-cristo.net/entreprises
-- **H1** (1) : Valorisez votre patrimoine professionnel.
-- **H2** (3) : Quatre domaines, une approche intégrée., Un accompagnement adapté à chaque statut., Échangeons sur votre société.
+- **H1** (1) : Un conseil patrimonial au croisement de votre entreprise et de votre vie.
+- **H2** (5) : Nous pouvons vous aider si…, Cinq expertises, une approche intégrée., Quatre étapes, de la découverte au suivi.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 21 internes, 2 externes
+- **Liens** : 24 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
 ### `honoraires-frais-caches.html`
 - **URL** : https://monte-cristo.net/honoraires-frais-caches
-- **Title** : Honoraires et frais en gestion de patrimoine | Monte-Cristo *(longueur : 59)*
-- **Description** : Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre cons… *(longueur : 137)*
+- **Title** : Honoraires, frais et rétrocessions | Monte-Cristo Patrimoine *(longueur : 60)*
+- **Description** : Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre cons… *(longueur : 148)*
 - **Canonical** : https://monte-cristo.net/honoraires-frais-caches
-- **H1** (1) : Honoraires, frais et rétrocessions : ce que vous devez savoir avant de choisir votre conseiller.
-- **H2** (8) : Le conseil "gratuit" : comprendre ce que vous payez vraiment, La carte complète des frais en gestion de patrimoine, L'impact des frais dans le temps
+- **H1** (1) : Honoraires, frais et rétrocessions : comprendre ce que vous payez vraiment.
+- **H2** (8) : Le conseil « gratuit » : ce qu'il vous coûte en réalité, La carte complète des frais en gestion de patrimoine, L'impact des frais dans le temps
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 27 internes, 2 externes
+- **Liens** : 26 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -148,7 +148,7 @@ Aucun problème important.
 - **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 23 internes, 2 externes
+- **Liens** : 22 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
 
@@ -162,7 +162,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 21 internes, 3 externes
+- **Liens** : 20 internes, 3 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -177,22 +177,22 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
-- **Liens** : 20 internes, 7 externes
+- **Liens** : 19 internes, 7 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
 ### `particuliers.html`
 - **URL** : https://monte-cristo.net/particuliers
-- **Title** : Services aux particuliers — Monte-Cristo Patrimoine *(longueur : 51)*
-- **Description** : Conseil patrimonial sur-mesure pour les particuliers : diagnostic, optimisation … *(longueur : 154)*
+- **Title** : Conseil patrimonial pour particuliers | Monte-Cristo Patrimoine *(longueur : 63)*
+- **Description** : Investissement, fiscalité, retraite, transmission : Monte-Cristo accompagne les … *(longueur : 134)*
 - **Canonical** : https://monte-cristo.net/particuliers
-- **H1** (1) : Optimisez, structurez et transmettez votre patrimoine.
-- **H2** (4) : Six expertises, un seul interlocuteur., Quatre étapes, un accompagnement dans la durée., Un conseil aligné avec vos intérêts.
+- **H1** (1) : Une stratégie patrimoniale pensée pour votre situation.
+- **H2** (5) : Vous devriez nous consulter si…, Six expertises, un seul interlocuteur., Quatre étapes, un accompagnement dans la durée.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 22 internes, 2 externes
+- **Liens** : 23 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -207,7 +207,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ❌ Non
 - **Images sans alt** : 0
-- **Liens** : 19 internes, 6 externes
+- **Liens** : 18 internes, 6 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -222,7 +222,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 21 internes, 2 externes
+- **Liens** : 20 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org
@@ -237,7 +237,7 @@ Aucun problème important.
 - **Schema.org** : Non
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 21 internes, 2 externes
+- **Liens** : 20 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
   - 🟡 Aucune donnée structurée JSON-LD / Schema.org

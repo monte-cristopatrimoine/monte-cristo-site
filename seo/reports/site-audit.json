@@ -1,5 +1,5 @@
 {
-  "generated_at": "26/06/2026 à 21:03",
+  "generated_at": "01/07/2026 à 01:46",
   "site": "https://monte-cristo.net",
   "total_pages": 15,
   "pages": [
@@ -53,7 +53,7 @@
         "Comment choisir son CGP indépendant ?"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 23,
+      "internal_links": 22,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -90,7 +90,7 @@
         "Trois questions à poser à votre conseiller dès aujourd'hui"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 24,
+      "internal_links": 23,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -117,7 +117,7 @@
         "Articles"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 21,
+      "internal_links": 20,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -159,7 +159,7 @@
         "Échangeons sur votre situation."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 22,
+      "internal_links": 23,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -175,26 +175,28 @@
       "file": "entreprises.html",
       "category": "production",
       "url": "https://monte-cristo.net/entreprises",
-      "title": "Services aux entreprises — Monte-Cristo Patrimoine",
-      "title_length": 50,
-      "description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale, trésorerie. Cabinet CGP indépendant à Gap.",
-      "description_length": 137,
+      "title": "Conseil patrimonial pour les dirigeants | Monte-Cristo Patrimoine",
+      "title_length": 65,
+      "description": "Rémunération, trésorerie, protection, cession : Monte-Cristo accompagne dirigeants et professions libérales avec un conseil patrimonial global.",
+      "description_length": 143,
       "canonical": "https://monte-cristo.net/entreprises",
-      "og_title": "Services aux entreprises — Monte-Cristo Patrimoine",
-      "og_description": "Conseil patrimonial pour dirigeants : structuration, rémunération, cession, épargne salariale. Cabinet indépendant.",
+      "og_title": "Conseil patrimonial pour les dirigeants | Monte-Cristo Patrimoine",
+      "og_description": "Rémunération, trésorerie, protection, cession : Monte-Cristo accompagne dirigeants et professions libérales avec un conseil patrimonial global.",
       "og_image": "https://monte-cristo.net/assets/og-image.png",
       "h1_count": 1,
       "h1_texts": [
-        "Valorisez votre patrimoine professionnel."
+        "Un conseil patrimonial au croisement de votre entreprise et de votre vie."
       ],
-      "h2_count": 3,
+      "h2_count": 5,
       "h2_texts": [
-        "Quatre domaines, une approche intégrée.",
-        "Un accompagnement adapté à chaque statut.",
-        "Échangeons sur votre société."
+        "Nous pouvons vous aider si…",
+        "Cinq expertises, une approche intégrée.",
+        "Quatre étapes, de la découverte au suivi.",
+        "Un conseil aligné avec vos intérêts.",
+        "Échangeons sur votre situation patrimoniale."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 21,
+      "internal_links": 24,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -215,28 +217,28 @@
       "file": "honoraires-frais-caches.html",
       "category": "production",
       "url": "https://monte-cristo.net/honoraires-frais-caches",
-      "title": "Honoraires et frais en gestion de patrimoine | Monte-Cristo",
-      "title_length": 59,
-      "description": "Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre conseil patrimonial. L'approche transparente de Monte-Cristo.",
-      "description_length": 137,
+      "title": "Honoraires, frais et rétrocessions | Monte-Cristo Patrimoine",
+      "title_length": 60,
+      "description": "Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre conseil patrimonial. L'approche transparente de Monte-Cristo Patrimoine.",
+      "description_length": 148,
       "canonical": "https://monte-cristo.net/honoraires-frais-caches",
-      "og_title": "Frais, honoraires, rétrocessions : comprendre ce que vous payez vraiment",
+      "og_title": "Honoraires, frais et rétrocessions : ce que vous payez vraiment | Monte-Cristo Patrimoine",
       "og_description": "Honoraires, rétrocessions, frais intégrés : comprenez le coût réel de votre conseil patrimonial. L",
       "og_image": "https://monte-cristo.net/assets/og-image.png",
       "h1_count": 1,
       "h1_texts": [
-        "Honoraires, frais et rétrocessions : ce que vous devez savoir avant de choisir votre conseiller."
+        "Honoraires, frais et rétrocessions : comprendre ce que vous payez vraiment."
       ],
       "h2_count": 8,
       "h2_texts": [
-        "Le conseil \"gratuit\" : comprendre ce que vous payez vraiment",
+        "Le conseil « gratuit » : ce qu'il vous coûte en réalité",
         "La carte complète des frais en gestion de patrimoine",
         "L'impact des frais dans le temps",
         "Honoraires ou rétrocessions : deux modèles, deux logiques",
         "Notre modèle chez Monte-Cristo Patrimoine"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 27,
+      "internal_links": 26,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -273,7 +275,7 @@
         "Un cabinet récent. Des convictions solides."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 23,
+      "internal_links": 22,
       "external_links": 2,
       "has_schema": true,
       "in_sitemap": true,
@@ -310,7 +312,7 @@
         "Des maisons sélectionnées pour leur exigence."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 21,
+      "internal_links": 20,
       "external_links": 3,
       "has_schema": false,
       "in_sitemap": true,
@@ -352,7 +354,7 @@
         "Statuts réglementés"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 20,
+      "internal_links": 19,
       "external_links": 7,
       "has_schema": false,
       "in_sitemap": false,
@@ -404,27 +406,28 @@
       "file": "particuliers.html",
       "category": "production",
       "url": "https://monte-cristo.net/particuliers",
-      "title": "Services aux particuliers — Monte-Cristo Patrimoine",
-      "title_length": 51,
-      "description": "Conseil patrimonial sur-mesure pour les particuliers : diagnostic, optimisation fiscale, investissements, retraite, immobilier. Cabinet indépendant à Gap.",
-      "description_length": 154,
+      "title": "Conseil patrimonial pour particuliers | Monte-Cristo Patrimoine",
+      "title_length": 63,
+      "description": "Investissement, fiscalité, retraite, transmission : Monte-Cristo accompagne les particuliers avec un conseil structuré et transparent.",
+      "description_length": 134,
       "canonical": "https://monte-cristo.net/particuliers",
-      "og_title": "Services aux particuliers — Monte-Cristo Patrimoine",
-      "og_description": "Conseil patrimonial sur-mesure : diagnostic, fiscalité, investissements, retraite, immobilier. Cabinet CGP indépendant.",
+      "og_title": "Conseil patrimonial pour particuliers | Monte-Cristo Patrimoine",
+      "og_description": "Investissement, fiscalité, retraite, transmission : Monte-Cristo accompagne les particuliers avec un conseil structuré et transparent.",
       "og_image": "https://monte-cristo.net/assets/og-image.png",
       "h1_count": 1,
       "h1_texts": [
-        "Optimisez, structurez et transmettez votre patrimoine."
+        "Une stratégie patrimoniale pensée pour votre situation."
       ],
-      "h2_count": 4,
+      "h2_count": 5,
       "h2_texts": [
+        "Vous devriez nous consulter si…",
         "Six expertises, un seul interlocuteur.",
         "Quatre étapes, un accompagnement dans la durée.",
         "Un conseil aligné avec vos intérêts.",
-        "Échangeons sur votre situation."
+        "Échangeons sur votre situation patrimoniale."
       ],
       "imgs_without_alt": 0,
-      "internal_links": 22,
+      "internal_links": 23,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -466,7 +469,7 @@
         "Sous-traitants et transferts"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 19,
+      "internal_links": 18,
       "external_links": 6,
       "has_schema": false,
       "in_sitemap": false,
@@ -506,7 +509,7 @@
         "L'écart, en chiffres"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 21,
+      "internal_links": 20,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,
@@ -545,7 +548,7 @@
         "Besoin d'une analyse personnalisée ?"
       ],
       "imgs_without_alt": 0,
-      "internal_links": 21,
+      "internal_links": 20,
       "external_links": 2,
       "has_schema": false,
       "in_sitemap": true,

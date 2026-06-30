@@ -1,11 +1,11 @@
 # Contrôle URLs — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 19:53*
+*Généré le 01/07/2026 à 01:46*
 
 ## Résumé
 
 | | |
 |---|---|
-| Pages vérifiées | **13** |
+| Pages vérifiées | **15** |
 | 🔴 Critiques | **0** |
 | 🟠 Importants | **0** |
 

@@ -1,14 +1,14 @@
 # Contrôle des liens — Monte-Cristo Patrimoine
-*Généré le 24/06/2026 à 19:44*
+*Généré le 01/07/2026 à 01:46*
 
 ## Résumé
 
 | | |
 |---|---|
-| Total liens analysés | **323** |
-| Liens internes valides ✅ | **263** |
-| Liens externes ⚪ | **31** |
-| mailto / tel ⚪ | **29** |
+| Total liens analysés | **405** |
+| Liens internes valides ✅ | **336** |
+| Liens externes ⚪ | **36** |
+| mailto / tel ⚪ | **33** |
 | Liens cassés 🔴 | **0** |
 | Pages futures inexistantes 🟠 | **0** |
 
@@ -44,6 +44,7 @@
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
+| `/article-frais-bancaires` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
@@ -51,14 +52,15 @@
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -72,6 +74,7 @@
 | `/` | ✅ Interne valide |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
 | `/article-cgp-independant` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
@@ -79,15 +82,17 @@
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
 | `/simulateur-frais` | ✅ Interne valide |  |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -108,14 +113,15 @@
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -131,20 +137,23 @@
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -154,8 +163,10 @@
 | Lien | Catégorie | Note |
 |------|-----------|------|
 | `#main` | ✅ Ancre (même page) |  |
+| `#methode` | ✅ Ancre (même page) |  |
 | `/` | ✅ Interne valide |  |
 | `/` | ✅ Interne valide |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
@@ -163,8 +174,11 @@
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
+| `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
@@ -173,6 +187,42 @@
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
+| `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
+| `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
+| `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
+| `tel:+33629865266` | ⚪ mailto / tel |  |
+
+### `honoraires-frais-caches.html`
+| Lien | Catégorie | Note |
+|------|-----------|------|
+| `#main` | ✅ Ancre (même page) |  |
+| `/` | ✅ Interne valide |  |
+| `/` | ✅ Interne valide |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/blog` | ✅ Interne valide |  |
+| `/blog` | ✅ Interne valide |  |
+| `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
+| `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
+| `/entreprises` | ✅ Interne valide |  |
+| `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/le-cabinet` | ✅ Interne valide |  |
+| `/le-cabinet` | ✅ Interne valide |  |
+| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
+| `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
+| `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
+| `/particuliers` | ✅ Interne valide |  |
+| `/particuliers` | ✅ Interne valide |  |
+| `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateur-frais` | ✅ Interne valide |  |
+| `/simulateur-frais` | ✅ Interne valide |  |
+| `/simulateur-frais` | ✅ Interne valide |  |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -183,10 +233,11 @@
 |------|-----------|------|
 | `#contact` | ✅ Ancre (même page) |  |
 | `#contact` | ✅ Ancre (même page) |  |
-| `#contact` | ✅ Ancre (même page) |  |
 | `#main` | ✅ Ancre (même page) |  |
 | `/` | ✅ Interne valide |  |
-| `/article-frais-bancaires` | ✅ Interne valide |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/article-cgp-independant` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
@@ -194,15 +245,17 @@
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -211,6 +264,7 @@
 ### `le-cabinet.html`
 | Lien | Catégorie | Note |
 |------|-----------|------|
+| `#fondateurs` | ✅ Ancre (même page) |  |
 | `#main` | ✅ Ancre (même page) |  |
 | `/` | ✅ Interne valide |  |
 | `/` | ✅ Interne valide |  |
@@ -221,20 +275,19 @@
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
-| `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
-| `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
-| `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
+| `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
 | `tel:+33629865266` | ⚪ mailto / tel |  |
@@ -262,15 +315,16 @@
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.amf-france.org/` | ⚪ Externe (non testé) |  |
 | `https://www.cmap.fr/consommateurs` | ⚪ Externe (non testé) |  |
 | `https://www.cnil.fr` | ⚪ Externe (non testé) |  |
@@ -299,8 +353,10 @@
 | Lien | Catégorie | Note |
 |------|-----------|------|
 | `#main` | ✅ Ancre (même page) |  |
+| `#methode` | ✅ Ancre (même page) |  |
 | `/` | ✅ Interne valide |  |
 | `/` | ✅ Interne valide |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
@@ -308,17 +364,19 @@
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
+| `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
@@ -345,14 +403,15 @@
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://policies.google.com/privacy` | ⚪ Externe (non testé) |  |
 | `https://privacy.microsoft.com/fr-fr/privacystatement` | ⚪ Externe (non testé) |  |
 | `https://www.cnil.fr` | ⚪ Externe (non testé) |  |
@@ -373,20 +432,51 @@
 | `/` | ✅ Interne valide |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
 | `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
 | `/article-frais-bancaires` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/blog` | ✅ Interne valide |  |
 | `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
 | `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
-| `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
 | `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
 | `/particuliers` | ✅ Interne valide |  |
 | `/particuliers` | ✅ Interne valide |  |
 | `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateurs` | ✅ Interne valide |  |
+| `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
+| `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
+| `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
+| `tel:+33629865266` | ⚪ mailto / tel |  |
+
+### `simulateurs.html`
+| Lien | Catégorie | Note |
+|------|-----------|------|
+| `#main` | ✅ Ancre (même page) |  |
+| `/` | ✅ Interne valide |  |
+| `/` | ✅ Interne valide |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/#contact` | ✅ Ancre (autre page) |  |
+| `/blog` | ✅ Interne valide |  |
+| `/blog` | ✅ Interne valide |  |
+| `/conseiller-gestion-patrimoine-independant` | ✅ Interne valide |  |
+| `/entreprises` | ✅ Interne valide |  |
+| `/entreprises` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/le-cabinet` | ✅ Interne valide |  |
+| `/le-cabinet` | ✅ Interne valide |  |
+| `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
+| `/mentions-legales` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /mentions-legales |
+| `/particuliers` | ✅ Interne valide |  |
+| `/particuliers` | ✅ Interne valide |  |
+| `/politique-confidentialite` | ✅ Interne valide | Page existante mais non déclarée dans pages.json : /politique-confidentialite |
+| `/simulateur-frais` | ✅ Interne valide |  |
+| `/simulateurs` | ✅ Interne valide |  |
 | `https://www.linkedin.com/company/108398030/` | ⚪ Externe (non testé) |  |
 | `https://www.orias.fr/search?number=25006472` | ⚪ Externe (non testé) |  |
 | `mailto:kevin@monte-cristo.net` | ⚪ mailto / tel |  |
