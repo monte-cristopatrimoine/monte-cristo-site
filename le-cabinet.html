@@ -16,6 +16,7 @@
 <meta name="twitter:description" content="Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable."/>
 <link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/cgp-independant/boussole.webp" fetchpriority="high">
 <link rel="stylesheet" href="/colors_and_type.css"/>
 <link rel="stylesheet" href="/assets/css/mcp-design-system.css?v=20260626b"/>
 <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -43,23 +44,38 @@
 .section-head p { font-size: 18px; line-height: 1.55; color: var(--mcp-ink-500); margin: 0; max-width: 480px; align-self: end; }
 .fondateurs .section-head p, .selection .section-head p { align-self: start; margin-top: 56px; }
 
-/* ── HERO (éditorial aligné à gauche) ── */
-.hero { background: var(--mcp-beige); padding: 64px 40px 84px; }
-.hero-inner { max-width: 1240px; margin: 0 auto; text-align: left; }
-.breadcrumb { font-size: 13px; color: var(--mcp-ink-500); display: flex; gap: 10px; align-items: center; justify-content: flex-start; margin-bottom: 30px; }
-.breadcrumb a { color: var(--mcp-green); text-decoration: none; }
-.breadcrumb a:hover { text-decoration: underline; }
-.breadcrumb .sep { opacity: 0.4; }
+/* ── HERO (photo plein-cadre + scrim) ── */
+.hero { position: relative; min-height: clamp(580px, 90vh, 940px); display: flex; align-items: center; padding: 0; overflow: hidden; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.hero-scrim { position: absolute; inset: 0; background:
+  linear-gradient(98deg, rgba(26,45,32,0.95) 0%, rgba(26,45,32,0.85) 26%, rgba(26,45,32,0.5) 52%, rgba(26,45,32,0.12) 76%, rgba(26,45,32,0) 100%),
+  linear-gradient(to top, rgba(26,45,32,0.55) 0%, rgba(26,45,32,0) 42%); }
+.hero-content { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; width: 100%; padding: 0 40px; }
+.hero-inner { max-width: 660px; text-align: left; }
+.breadcrumb { font-size: 13px; color: rgba(253,250,243,0.7); display: flex; gap: 10px; align-items: center; justify-content: flex-start; margin-bottom: 30px; }
+.breadcrumb a { color: rgba(253,250,243,0.92); text-decoration: none; }
+.breadcrumb a:hover { color: #fff; text-decoration: underline; }
+.breadcrumb .sep { opacity: 0.45; }
+.hero .eyebrow { color: var(--mcp-beige); opacity: .85; }
 .hero-title {
   font-family: var(--font-display); font-weight: 300;
-  font-size: 72px; line-height: 1.04; letter-spacing: -0.025em;
-  color: var(--mcp-green); margin: 14px 0 0; max-width: 1000px; text-wrap: balance;
+  font-size: 60px; line-height: 1.06; letter-spacing: -0.025em;
+  color: var(--mcp-beige); margin: 14px 0 0; text-wrap: balance;
 }
 .hero-title em { font-style: italic; font-weight: 400; }
-.hero-lead { font-size: 19px; line-height: 1.6; color: var(--mcp-ink-500); max-width: 690px; margin: 28px 0 34px; }
+.hero-lead { font-size: 18px; line-height: 1.6; color: rgba(253,250,243,0.86); max-width: 560px; margin: 26px 0 34px; }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: flex-start; }
-.hero-reassurance { display: flex; align-items: flex-start; gap: 11px; font-size: 13px; line-height: 1.5; color: var(--mcp-ink-500); margin: 30px 0 0; max-width: 470px; }
-.hero-reassurance::before { content: ""; flex: none; width: 7px; height: 7px; margin-top: 5px; border-radius: 50%; background: var(--mcp-green); box-shadow: 0 0 0 4px rgba(52,104,72,0.14); }
+.hero-reassurance { display: flex; align-items: flex-start; gap: 11px; font-size: 13px; line-height: 1.5; color: rgba(253,250,243,0.78); margin: 30px 0 0; max-width: 470px; }
+.hero-reassurance::before { content: ""; flex: none; width: 7px; height: 7px; margin-top: 5px; border-radius: 50%; background: var(--mcp-orange); box-shadow: 0 0 0 4px rgba(230,126,34,0.18); }
+
+/* ── BANDEAU-SIGNATURE (demeure) ── */
+.signature { position: relative; min-height: clamp(380px, 50vh, 560px); display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 72px 40px; }
+.signature-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+.signature-scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,45,32,0.5) 0%, rgba(26,45,32,0.28) 38%, rgba(26,45,32,0.72) 100%); }
+.signature-content { position: relative; z-index: 2; max-width: 900px; }
+.signature .eyebrow { color: var(--mcp-beige); opacity: .8; }
+.signature blockquote { margin: 18px 0 0; font-family: var(--font-display); font-weight: 300; font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1.16; letter-spacing: -0.02em; color: var(--mcp-beige); text-wrap: balance; }
+.signature blockquote em { font-style: italic; font-weight: 400; }
 
 /* ── RAISON D'ÊTRE ── */
 .raison { background: var(--mcp-beige); padding-top: 40px; }
@@ -183,8 +199,8 @@
 
 /* ── RESPONSIVE 1100px ── */
 @media (max-width: 1100px) {
-  .hero { padding: 48px 24px 72px; }
-  .hero-title { font-size: 54px; }
+  .hero-content { padding: 0 24px; }
+  .hero-title { font-size: 50px; }
   .section-head { grid-template-columns: 1fr; gap: 28px; }
   .section-head p, .fondateurs .section-head p, .selection .section-head p { align-self: auto; margin-top: 0; }
   .section-head h2 { font-size: 42px; }
@@ -208,9 +224,12 @@
 @media (max-width: 760px) {
   .header-inner > .btn { display: none !important; }
   .nav.open .nav-rdv { display: inline-flex !important; }
-  .hero { padding: 32px 20px 56px; }
-  .hero-title { font-size: 38px; }
+  .hero { min-height: auto; padding: 120px 0 56px; }
+  .hero-content { padding: 0 20px; }
+  .hero-scrim { background: linear-gradient(to top, rgba(26,45,32,0.92) 0%, rgba(26,45,32,0.6) 55%, rgba(26,45,32,0.45) 100%); }
+  .hero-title { font-size: 36px; }
   .hero-lead { font-size: 16.5px; }
+  .signature { min-height: auto; padding: 64px 20px; }
   .raison { padding-top: 12px; }
   .raison-container { padding-top: 40px; }
   .raison-lead { font-size: 23px; }
@@ -270,20 +289,24 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <div class="breadcrumb">
-        <a href="/">Accueil</a>
-        <span class="sep">/</span>
-        <span>Le cabinet</span>
+    <img class="hero-img" src="/assets/cgp-independant/boussole.webp" alt="Boussole posée sur une carte ancienne, face aux sommets des Hautes-Alpes au lever du jour"/>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span class="sep">/</span>
+          <span>Le cabinet</span>
+        </div>
+        <div class="eyebrow">Cabinet de conseil en gestion de patrimoine</div>
+        <h1 class="hero-title">Le patrimoine se conseille. <em>Il ne se vend pas.</em></h1>
+        <p class="hero-lead">Monte-Cristo Patrimoine accompagne particuliers, chefs d'entreprise et professions libérales dans leurs décisions patrimoniales. Cabinet indépendant basé à Gap, dans les Hautes-Alpes, nous intervenons en présentiel ou à distance partout en France.</p>
+        <div class="hero-ctas">
+          <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+          <a href="#fondateurs" class="btn btn-secondary">Rencontrer les fondateurs</a>
+        </div>
+        <p class="hero-reassurance">Conseillers en investissement financier et intermédiaires en assurance, inscrits à l'ORIAS.</p>
       </div>
-      <div class="eyebrow">Cabinet de conseil en gestion de patrimoine</div>
-      <h1 class="hero-title">Le patrimoine se conseille. <em>Il ne se vend pas.</em></h1>
-      <p class="hero-lead">Monte-Cristo Patrimoine accompagne particuliers, chefs d'entreprise et professions libérales dans leurs décisions patrimoniales. Cabinet indépendant basé à Gap, dans les Hautes-Alpes, nous intervenons en présentiel ou à distance partout en France.</p>
-      <div class="hero-ctas">
-        <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
-        <a href="#fondateurs" class="btn btn-secondary">Rencontrer les fondateurs</a>
-      </div>
-      <p class="hero-reassurance">Conseillers en investissement financier et intermédiaires en assurance, inscrits à l'ORIAS.</p>
     </div>
   </section>
 
@@ -567,6 +590,16 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- BANDEAU-SIGNATURE -->
+  <section class="signature">
+    <img class="signature-img" src="/assets/cgp-independant/demeure.webp" alt="Demeure nichée dans une vallée des Hautes-Alpes au crépuscule" loading="lazy"/>
+    <div class="signature-scrim"></div>
+    <div class="signature-content">
+      <div class="eyebrow">Notre signature</div>
+      <blockquote>Le conseil comme héritage.<br>L'indépendance comme <em>signature.</em></blockquote>
     </div>
   </section>
 

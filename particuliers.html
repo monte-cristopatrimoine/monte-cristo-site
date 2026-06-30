@@ -7,6 +7,7 @@
 <link rel="preload" as="script" href="/analytics.js">
 <link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="/assets/cgp-independant/boussole.webp" fetchpriority="high">
 <meta name="description" content="Investissement, fiscalité, retraite, transmission : Monte-Cristo accompagne les particuliers avec un conseil structuré et transparent."/>
 <link rel="canonical" href="https://monte-cristo.net/particuliers"/>
 <meta property="og:title" content="Conseil patrimonial pour particuliers | Monte-Cristo Patrimoine"/>
@@ -37,18 +38,33 @@ html { scroll-behavior: smooth; }
 .section-head h2 em { font-style: italic; font-weight: 400; }
 .section-head p { font-size: 18px; line-height: 1.55; color: var(--mcp-ink-500); margin: 0; max-width: 480px; }
 
-/* ── HERO ── */
-.hero { background: var(--mcp-beige); padding: 64px 40px 88px; }
-.hero-inner { max-width: 1240px; margin: 0 auto; text-align: left; }
-.breadcrumb { font-size: 13px; color: var(--mcp-ink-500); display: flex; gap: 10px; align-items: center; justify-content: flex-start; margin-bottom: 30px; }
-.breadcrumb a { color: var(--mcp-green); text-decoration: none; }
-.breadcrumb a:hover { text-decoration: underline; }
-.breadcrumb .sep { opacity: 0.4; }
-.hero-title { font-family: var(--font-display); font-weight: 300; font-size: 70px; line-height: 1.05; letter-spacing: -0.025em; color: var(--mcp-green); margin: 14px 0 0; max-width: 1040px; text-wrap: balance; }
+/* ── HERO (photo plein-cadre + scrim) ── */
+.hero { position: relative; min-height: clamp(580px, 90vh, 940px); display: flex; align-items: center; padding: 0; overflow: hidden; }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
+.hero-scrim { position: absolute; inset: 0; background:
+  linear-gradient(98deg, rgba(26,45,32,0.95) 0%, rgba(26,45,32,0.85) 26%, rgba(26,45,32,0.5) 52%, rgba(26,45,32,0.12) 76%, rgba(26,45,32,0) 100%),
+  linear-gradient(to top, rgba(26,45,32,0.55) 0%, rgba(26,45,32,0) 42%); }
+.hero-content { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; width: 100%; padding: 0 40px; }
+.hero-inner { max-width: 660px; text-align: left; }
+.breadcrumb { font-size: 13px; color: rgba(253,250,243,0.7); display: flex; gap: 10px; align-items: center; justify-content: flex-start; margin-bottom: 30px; }
+.breadcrumb a { color: rgba(253,250,243,0.92); text-decoration: none; }
+.breadcrumb a:hover { color: #fff; text-decoration: underline; }
+.breadcrumb .sep { opacity: 0.45; }
+.hero .eyebrow { color: var(--mcp-beige); opacity: .85; }
+.hero-title { font-family: var(--font-display); font-weight: 300; font-size: 58px; line-height: 1.08; letter-spacing: -0.025em; color: var(--mcp-beige); margin: 14px 0 0; text-wrap: balance; }
 .hero-title em { font-style: italic; font-weight: 400; }
-.hero-lead { font-size: 19px; line-height: 1.6; color: var(--mcp-ink-500); max-width: 700px; margin: 28px 0 0; }
-.hero-lead.emph { color: var(--mcp-green); font-family: var(--font-display); font-weight: 300; font-size: 21px; margin-top: 18px; letter-spacing: -0.01em; }
-.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: flex-start; margin-top: 36px; }
+.hero-lead { font-size: 18px; line-height: 1.6; color: rgba(253,250,243,0.86); max-width: 540px; margin: 26px 0 0; }
+.hero-lead.emph { color: var(--mcp-beige); font-family: var(--font-display); font-weight: 300; font-size: 20px; margin-top: 16px; letter-spacing: -0.01em; }
+.hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; justify-content: flex-start; margin-top: 34px; }
+
+/* ── BANDEAU-SIGNATURE (demeure) ── */
+.signature { position: relative; min-height: clamp(380px, 50vh, 560px); display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; padding: 72px 40px; }
+.signature-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; }
+.signature-scrim { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,45,32,0.5) 0%, rgba(26,45,32,0.28) 38%, rgba(26,45,32,0.72) 100%); }
+.signature-content { position: relative; z-index: 2; max-width: 900px; }
+.signature .eyebrow { color: var(--mcp-beige); opacity: .8; }
+.signature blockquote { margin: 18px 0 0; font-family: var(--font-display); font-weight: 300; font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1.16; letter-spacing: -0.02em; color: var(--mcp-beige); text-wrap: balance; }
+.signature blockquote em { font-style: italic; font-weight: 400; }
 
 /* ── SITUATIONS ── */
 .situations { background: var(--mcp-beige-200); }
@@ -115,8 +131,8 @@ html { scroll-behavior: smooth; }
 
 /* ── RESPONSIVE 1100px ── */
 @media (max-width: 1100px) {
-  .hero { padding: 48px 24px 72px; }
-  .hero-title { font-size: 54px; }
+  .hero-content { padding: 0 24px; }
+  .hero-title { font-size: 48px; }
   .section-head { grid-template-columns: 1fr; gap: 28px; align-items: start; }
   .section-head h2 { font-size: 42px; }
   .situations-grid { grid-template-columns: repeat(2, 1fr); }
@@ -136,10 +152,13 @@ html { scroll-behavior: smooth; }
 @media (max-width: 760px) {
   .header-inner > .btn { display: none !important; }
   .nav.open .nav-rdv { display: inline-flex !important; }
-  .hero { padding: 32px 20px 56px; }
-  .hero-title { font-size: 38px; }
+  .hero { min-height: auto; padding: 120px 0 56px; }
+  .hero-content { padding: 0 20px; }
+  .hero-scrim { background: linear-gradient(to top, rgba(26,45,32,0.92) 0%, rgba(26,45,32,0.6) 55%, rgba(26,45,32,0.45) 100%); }
+  .hero-title { font-size: 36px; }
   .hero-lead { font-size: 16.5px; }
   .hero-lead.emph { font-size: 18px; }
+  .signature { min-height: auto; padding: 64px 20px; }
   .situations-grid { grid-template-columns: 1fr; }
   .methode-steps { grid-template-columns: 1fr; }
   .coverage-item { grid-template-columns: 1fr; gap: 10px; }
@@ -179,19 +198,23 @@ html { scroll-behavior: smooth; }
 
   <!-- HERO -->
   <section class="hero" id="main">
-    <div class="hero-inner">
-      <div class="breadcrumb">
-        <a href="/">Accueil</a>
-        <span class="sep">/</span>
-        <span>Particuliers</span>
-      </div>
-      <div class="eyebrow">Particuliers</div>
-      <h1 class="hero-title">Une stratégie patrimoniale <em>pensée pour votre situation.</em></h1>
-      <p class="hero-lead">Qu'il s'agisse d'organiser un capital, de préparer votre retraite, de transmettre à vos enfants ou de traverser un moment de vie important — nous construisons avec vous une stratégie claire, documentée et cohérente avec vos objectifs réels.</p>
-      <p class="hero-lead emph">Notre rôle est d'abord de comprendre avant de recommander.</p>
-      <div class="hero-ctas">
-        <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
-        <a href="#methode" class="btn btn-secondary">Comprendre notre méthode</a>
+    <img class="hero-img" src="/assets/cgp-independant/boussole.webp" alt="Boussole posée sur une carte ancienne, face aux sommets des Hautes-Alpes au lever du jour"/>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <div class="hero-inner">
+        <div class="breadcrumb">
+          <a href="/">Accueil</a>
+          <span class="sep">/</span>
+          <span>Particuliers</span>
+        </div>
+        <div class="eyebrow">Particuliers</div>
+        <h1 class="hero-title">Une stratégie patrimoniale <em>pensée pour votre situation.</em></h1>
+        <p class="hero-lead">Qu'il s'agisse d'organiser un capital, de préparer votre retraite, de transmettre à vos enfants ou de traverser un moment de vie important — nous construisons avec vous une stratégie claire, documentée et cohérente avec vos objectifs réels.</p>
+        <p class="hero-lead emph">Notre rôle est d'abord de comprendre avant de recommander.</p>
+        <div class="hero-ctas">
+          <a href="/#contact" class="btn btn-accent">Prendre rendez-vous</a>
+          <a href="#methode" class="btn btn-secondary">Comprendre notre méthode</a>
+        </div>
       </div>
     </div>
   </section>
@@ -398,6 +421,16 @@ html { scroll-behavior: smooth; }
         <a href="/honoraires-frais-caches">Comprendre notre approche des frais</a>
         <a href="/conseiller-gestion-patrimoine-independant">Ce qu'est un conseil indépendant</a>
       </div>
+    </div>
+  </section>
+
+  <!-- BANDEAU-SIGNATURE -->
+  <section class="signature">
+    <img class="signature-img" src="/assets/cgp-independant/demeure.webp" alt="Demeure nichée dans une vallée des Hautes-Alpes au crépuscule" loading="lazy"/>
+    <div class="signature-scrim"></div>
+    <div class="signature-content">
+      <div class="eyebrow">Notre signature</div>
+      <blockquote>Le conseil comme héritage.<br>L'indépendance comme <em>signature.</em></blockquote>
     </div>
   </section>
 
