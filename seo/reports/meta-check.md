@@ -1,5 +1,5 @@
 # Contrôle des métadonnées — Monte-Cristo Patrimoine
-*Généré le 01/07/2026 à 14:40*
+*Généré le 02/07/2026 à 00:57*
 
 ## Résumé
 

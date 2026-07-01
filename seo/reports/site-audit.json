@@ -1,5 +1,5 @@
 {
-  "generated_at": "01/07/2026 à 14:39",
+  "generated_at": "02/07/2026 à 00:57",
   "site": "https://monte-cristo.net",
   "total_pages": 15,
   "pages": [
@@ -286,12 +286,12 @@
       "file": "le-cabinet.html",
       "category": "production",
       "url": "https://monte-cristo.net/le-cabinet",
-      "title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo Patrimoine",
-      "title_length": 70,
+      "title": "Cabinet patrimoine indépendant | Monte-Cristo Patrimoine",
+      "title_length": 56,
       "description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
       "description_length": 138,
       "canonical": "https://monte-cristo.net/le-cabinet",
-      "og_title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo Patrimoine",
+      "og_title": "Cabinet patrimoine indépendant | Monte-Cristo Patrimoine",
       "og_description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
       "og_image": "https://monte-cristo.net/assets/og-image.png",
       "h1_count": 1,
@@ -312,11 +312,6 @@
       "has_schema": true,
       "in_sitemap": true,
       "issues": [
-        {
-          "level": "important",
-          "code": "TITLE_TOO_LONG",
-          "message": "Titre trop long (70 car.) — sera tronqué dans Google (max 65)"
-        },
         {
           "level": "amelioration",
           "code": "OG_IMAGE_GENERIC",
@@ -558,7 +553,7 @@
   ],
   "summary": {
     "critique": 0,
-    "important": 1,
+    "important": 0,
     "amelioration": 17,
     "mineur": 0
   }

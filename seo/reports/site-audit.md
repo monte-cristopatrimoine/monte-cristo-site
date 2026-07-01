@@ -1,5 +1,5 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 01/07/2026 à 14:39*
+*Généré le 02/07/2026 à 00:57*
 
 ## Résumé global
 
@@ -9,12 +9,12 @@
 | Pages techniques | **1** |
 | Pages de travail | **1** |
 | Problèmes critiques 🔴 | **0** |
-| Problèmes importants 🟠 | **1** |
+| Problèmes importants 🟠 | **0** |
 | Améliorations utiles 🟡 | **17** |
 | Mineurs ⚪ | **0** |
 | Pages sans problème | **1** |
 
-> ⚠️ **1 problème(s) à corriger en priorité** (critiques + importants).
+> ✅ Aucun problème critique ou important détecté.
 
 ---
 ## 🔴 Problèmes critiques
@@ -24,7 +24,7 @@ Aucun problème critique.
 ---
 ## 🟠 Problèmes importants
 
-- **le-cabinet.html** — Titre trop long (70 car.) — sera tronqué dans Google (max 65)
+Aucun problème important.
 
 ---
 ## 🟡 Améliorations utiles
@@ -150,7 +150,7 @@ Aucun problème critique.
 
 ### `le-cabinet.html`
 - **URL** : https://monte-cristo.net/le-cabinet
-- **Title** : Cabinet de gestion de patrimoine indépendant | Monte-Cristo Patrimoine *(longueur : 70)*
+- **Title** : Cabinet patrimoine indépendant | Monte-Cristo Patrimoine *(longueur : 56)*
 - **Description** : Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires t… *(longueur : 138)*
 - **Canonical** : https://monte-cristo.net/le-cabinet
 - **H1** (1) : Le patrimoine se conseille. Il ne se vend pas.
@@ -160,7 +160,6 @@ Aucun problème critique.
 - **Images sans alt** : 0
 - **Liens** : 20 internes, 3 externes
 - **Problèmes :**
-  - 🟠 Titre trop long (70 car.) — sera tronqué dans Google (max 65)
   - 🟡 og:image générique (même image sur toutes les pages)
 
 ### `mentions-legales.html`
