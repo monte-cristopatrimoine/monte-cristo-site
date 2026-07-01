@@ -186,7 +186,7 @@
   .btn-accent:hover { background: var(--mcp-orange-700); transform: translateY(-1px); }
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
   .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; transition: all 0.2s; }
-  .nav-rdv { display: none; }
+  .nav-rdv, .nav .nav-rdv { display: none !important; }
 
   /* ============ HERO ============ */
   .blog-hero {
@@ -556,9 +556,9 @@
 <!-- END GLOBAL HEADER -->
 
 
-  <main>
+  <main id="main">
   <!-- ====== HERO ====== -->
-  <section class="blog-hero" id="main">
+  <section class="blog-hero">
     <div class="blog-hero-inner">
       <div class="breadcrumb">
         <a href="/">Accueil</a>

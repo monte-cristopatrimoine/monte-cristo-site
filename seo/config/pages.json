@@ -38,7 +38,7 @@
       "sitemap": true,
       "priority": 0.9,
       "changefreq": "monthly",
-      "cluster": "particuliers",
+      "cluster": "services",
       "has_footer": true,
       "in_main_nav": true,
       "in_footer_nav": true,
@@ -52,7 +52,7 @@
       "sitemap": true,
       "priority": 0.9,
       "changefreq": "monthly",
-      "cluster": "entreprises-dirigeants",
+      "cluster": "services",
       "has_footer": true,
       "in_main_nav": true,
       "in_footer_nav": true,
@@ -66,7 +66,7 @@
       "sitemap": true,
       "priority": 0.8,
       "changefreq": "weekly",
-      "cluster": "editorial",
+      "cluster": null,
       "has_footer": true,
       "in_main_nav": true,
       "in_footer_nav": true,
@@ -101,20 +101,6 @@
       "status": "active"
     },
     {
-      "file": "honoraires-frais-caches.html",
-      "url": "/honoraires-frais-caches",
-      "type": "pilier",
-      "indexable": true,
-      "sitemap": true,
-      "priority": 0.9,
-      "changefreq": "monthly",
-      "cluster": "frais",
-      "has_footer": true,
-      "in_main_nav": false,
-      "in_footer_nav": true,
-      "status": "active"
-    },
-    {
       "file": "article-frais-bancaires.html",
       "url": "/article-frais-bancaires",
       "type": "article",
@@ -140,20 +126,6 @@
       "has_footer": true,
       "in_main_nav": false,
       "in_footer_nav": false,
-      "status": "active"
-    },
-    {
-      "file": "simulateurs.html",
-      "url": "/simulateurs",
-      "type": "outil",
-      "indexable": true,
-      "sitemap": true,
-      "priority": 0.7,
-      "changefreq": "monthly",
-      "cluster": "frais",
-      "has_footer": true,
-      "in_main_nav": false,
-      "in_footer_nav": true,
       "status": "active"
     },
     {
@@ -196,7 +168,7 @@
       "has_footer": true,
       "in_main_nav": false,
       "in_footer_nav": false,
-      "status": "technical"
+      "status": "active"
     },
     {
       "file": "mockup-contenu.html",
@@ -211,6 +183,34 @@
       "in_main_nav": false,
       "in_footer_nav": false,
       "status": "work"
+    },
+    {
+      "file": "simulateurs.html",
+      "url": "/simulateurs",
+      "type": "outil",
+      "indexable": true,
+      "sitemap": true,
+      "priority": 0.7,
+      "changefreq": "monthly",
+      "cluster": "frais",
+      "has_footer": true,
+      "in_main_nav": false,
+      "in_footer_nav": true,
+      "status": "active"
+    },
+    {
+      "file": "honoraires-frais-caches.html",
+      "url": "/honoraires-frais-caches",
+      "type": "pilier",
+      "indexable": true,
+      "sitemap": true,
+      "priority": 0.8,
+      "changefreq": "monthly",
+      "cluster": "frais",
+      "has_footer": true,
+      "in_main_nav": false,
+      "in_footer_nav": true,
+      "status": "active"
     }
   ]
 }

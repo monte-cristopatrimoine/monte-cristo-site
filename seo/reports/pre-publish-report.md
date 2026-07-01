@@ -1,5 +1,5 @@
 # Rapport pré-publication — Monte-Cristo Patrimoine
-*Généré le 26/06/2026 à 21:03*
+*Généré le 01/07/2026 à 10:04*
 
 ## ⚠️ PUBLIABLE — corrections mineures recommandées
 
@@ -11,12 +11,12 @@
 | Outil | Critiques 🔴 | Importants 🟠 | Améliorations 🟡 | Statut |
 |-------|:-----------:|:------------:|:----------------:|--------|
 | `audit` | 0 | 0 | 20 | ✅ |
-| `check-meta` | 0 | 0 | 16 | ✅ |
+| `check-meta` | 0 | 0 | 11 | ✅ |
 | `generate-sitemap` | 0 | 0 | 0 | ✅ |
 | `check-robots` | 0 | 0 | 0 | ✅ |
 | `check-header-css` | 0 | 0 | 0 | ✅ |
 
-**Total consolidé :** 🔴 0 critique(s) — 🟠 0 important(s) — 🟡 36 amélioration(s)
+**Total consolidé :** 🔴 0 critique(s) — 🟠 0 important(s) — 🟡 31 amélioration(s)
 
 ---
 ## Checklist avant publication

@@ -168,7 +168,7 @@
   .btn-primary:hover { background: var(--mcp-green-700); transform: translateY(-1px); }
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
   .hamburger span { display: block; width: 22px; height: 2px; background: var(--mcp-green); border-radius: 2px; }
-  .nav-rdv { display: none; }
+  .nav-rdv, .nav .nav-rdv { display: none !important; }
 
   /* ============ 404 ============ */
   .not-found {
@@ -217,8 +217,8 @@
     .nav.open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 20px 24px; gap: 20px; border-bottom: 1px solid var(--mcp-beige-300); box-shadow: 0 8px 24px rgba(0,0,0,0.08); z-index: 100; }
     .header { position: relative; }
     .hamburger { display: flex; }
-    .header-inner .btn { display: none; }
-    .nav-rdv { display: inline-flex !important; }
+    .header-inner > .btn { display: none !important; }
+    .nav.open .nav-rdv { display: inline-flex !important; }
     .logo { height: 52px; }
     .logo img { height: 92px; }
     .code { font-size: 100px; }
@@ -254,8 +254,8 @@
   </header>
 
 
-  <main>
-  <section class="not-found" id="main">
+  <main id="main">
+  <section class="not-found">
     <div class="not-found-inner">
       <span class="code">404</span>
       <h1>Cette page est introuvable.</h1>
