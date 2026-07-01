@@ -1,12 +1,12 @@
 # Contrôle des liens — Monte-Cristo Patrimoine
-*Généré le 01/07/2026 à 10:03*
+*Généré le 01/07/2026 à 14:39*
 
 ## Résumé
 
 | | |
 |---|---|
-| Total liens analysés | **405** |
-| Liens internes valides ✅ | **336** |
+| Total liens analysés | **409** |
+| Liens internes valides ✅ | **340** |
 | Liens externes ⚪ | **36** |
 | mailto / tel ⚪ | **33** |
 | Liens cassés 🔴 | **0** |
@@ -179,6 +179,8 @@
 | `/entreprises` | ✅ Interne valide |  |
 | `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet#modele` | ✅ Ancre (autre page) |  |
@@ -369,6 +371,8 @@
 | `/entreprises` | ✅ Interne valide |  |
 | `/honoraires-frais-caches` | ✅ Interne valide |  |
 | `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/honoraires-frais-caches` | ✅ Interne valide |  |
+| `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet` | ✅ Interne valide |  |
 | `/le-cabinet#partenaires` | ✅ Ancre (autre page) |  |
@@ -427,7 +431,7 @@
 ### `simulateur-frais.html`
 | Lien | Catégorie | Note |
 |------|-----------|------|
-| `#sim` | ✅ Ancre (même page) |  |
+| `#main` | ✅ Ancre (même page) |  |
 | `/` | ✅ Interne valide |  |
 | `/` | ✅ Interne valide |  |
 | `/#contact` | ✅ Ancre (autre page) |  |

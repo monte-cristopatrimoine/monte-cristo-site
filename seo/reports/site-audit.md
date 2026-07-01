@@ -1,5 +1,5 @@
 # Rapport SEO — Monte-Cristo Patrimoine
-*Généré le 01/07/2026 à 10:04*
+*Généré le 01/07/2026 à 14:39*
 
 ## Résumé global
 
@@ -9,12 +9,12 @@
 | Pages techniques | **1** |
 | Pages de travail | **1** |
 | Problèmes critiques 🔴 | **0** |
-| Problèmes importants 🟠 | **0** |
-| Améliorations utiles 🟡 | **20** |
+| Problèmes importants 🟠 | **1** |
+| Améliorations utiles 🟡 | **17** |
 | Mineurs ⚪ | **0** |
 | Pages sans problème | **1** |
 
-> ✅ Aucun problème critique ou important détecté.
+> ⚠️ **1 problème(s) à corriger en priorité** (critiques + importants).
 
 ---
 ## 🔴 Problèmes critiques
@@ -24,7 +24,7 @@ Aucun problème critique.
 ---
 ## 🟠 Problèmes importants
 
-Aucun problème important.
+- **le-cabinet.html** — Titre trop long (70 car.) — sera tronqué dans Google (max 65)
 
 ---
 ## 🟡 Améliorations utiles
@@ -34,15 +34,12 @@ Aucun problème important.
 - **blog.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **conseiller-gestion-patrimoine-independant.html** — og:image générique (même image sur toutes les pages)
 - **entreprises.html** — og:image générique (même image sur toutes les pages)
-- **entreprises.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **honoraires-frais-caches.html** — og:image générique (même image sur toutes les pages)
 - **index.html** — og:image générique (même image sur toutes les pages)
 - **le-cabinet.html** — og:image générique (même image sur toutes les pages)
-- **le-cabinet.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **mentions-legales.html** — og:image générique (même image sur toutes les pages)
 - **mentions-legales.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **particuliers.html** — og:image générique (même image sur toutes les pages)
-- **particuliers.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **politique-confidentialite.html** — og:image générique (même image sur toutes les pages)
 - **politique-confidentialite.html** — Aucune donnée structurée JSON-LD / Schema.org
 - **simulateur-frais.html** — og:image générique (même image sur toutes les pages)
@@ -116,13 +113,12 @@ Aucun problème important.
 - **Canonical** : https://monte-cristo.net/entreprises
 - **H1** (1) : Un conseil patrimonial au croisement de votre entreprise et de votre vie.
 - **H2** (5) : Nous pouvons vous aider si…, Cinq expertises, une approche intégrée., Quatre étapes, de la découverte au suivi.
-- **Schema.org** : Non
+- **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 24 internes, 2 externes
+- **Liens** : 26 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
-  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
 ### `honoraires-frais-caches.html`
 - **URL** : https://monte-cristo.net/honoraires-frais-caches
@@ -154,18 +150,18 @@ Aucun problème important.
 
 ### `le-cabinet.html`
 - **URL** : https://monte-cristo.net/le-cabinet
-- **Title** : Cabinet de gestion de patrimoine indépendant | Monte-Cristo *(longueur : 59)*
+- **Title** : Cabinet de gestion de patrimoine indépendant | Monte-Cristo Patrimoine *(longueur : 70)*
 - **Description** : Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires t… *(longueur : 138)*
 - **Canonical** : https://monte-cristo.net/le-cabinet
 - **H1** (1) : Le patrimoine se conseille. Il ne se vend pas.
 - **H2** (8) : Deux parcours. Une conviction commune., Deux expériences différentes. Une même vision du conseil., des conseillers en gestion de patrimoine travaillent principalement aux honoraires. Nous en faisons partie.
-- **Schema.org** : Non
+- **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
 - **Liens** : 20 internes, 3 externes
 - **Problèmes :**
+  - 🟠 Titre trop long (70 car.) — sera tronqué dans Google (max 65)
   - 🟡 og:image générique (même image sur toutes les pages)
-  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
 ### `mentions-legales.html`
 - **URL** : https://monte-cristo.net/mentions-legales
@@ -189,13 +185,12 @@ Aucun problème important.
 - **Canonical** : https://monte-cristo.net/particuliers
 - **H1** (1) : Une stratégie patrimoniale pensée pour votre situation.
 - **H2** (5) : Vous devriez nous consulter si…, Six expertises, un seul interlocuteur., Quatre étapes, un accompagnement dans la durée.
-- **Schema.org** : Non
+- **Schema.org** : Oui
 - **Dans sitemap** : ✅ Oui
 - **Images sans alt** : 0
-- **Liens** : 23 internes, 2 externes
+- **Liens** : 25 internes, 2 externes
 - **Problèmes :**
   - 🟡 og:image générique (même image sur toutes les pages)
-  - 🟡 Aucune donnée structurée JSON-LD / Schema.org
 
 ### `politique-confidentialite.html`
 - **URL** : https://monte-cristo.net/politique-confidentialite
@@ -280,10 +275,7 @@ Aucun problème important.
 
 **3. Ajouter des données structurées JSON-LD** 🟡
    - `blog.html`
-   - `entreprises.html`
-   - `le-cabinet.html`
    - `mentions-legales.html`
-   - `particuliers.html`
    - `politique-confidentialite.html`
    - `simulateur-frais.html`
    - `simulateurs.html`

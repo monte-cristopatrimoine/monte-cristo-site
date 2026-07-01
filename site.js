@@ -2,7 +2,9 @@
 var hamburger=document.querySelector('.hamburger');
 if(hamburger){
   hamburger.addEventListener('click',function(){
-    this.closest('header').querySelector('.nav').classList.toggle('open');
+    var nav=this.closest('header').querySelector('.nav');
+    nav.classList.toggle('open');
+    this.setAttribute('aria-expanded',nav.classList.contains('open'));
   });
 }
 

@@ -1,5 +1,5 @@
 # Contrôle des métadonnées — Monte-Cristo Patrimoine
-*Généré le 01/07/2026 à 10:04*
+*Généré le 01/07/2026 à 14:40*
 
 ## Résumé
 
@@ -8,7 +8,7 @@
 | Pages analysées | **13** |
 | Problèmes critiques 🔴 | **0** |
 | Problèmes importants 🟠 | **0** |
-| Améliorations 🟡 | **11** |
+| Améliorations 🟡 | **10** |
 | Doublons détectés | **0** |
 
 ---
@@ -34,7 +34,6 @@
 - **conseiller-gestion-patrimoine-independant.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **entreprises.html** — title identique à og:title — différencier pour enrichir le partage social
 - **index.html** — title identique à og:title — différencier pour enrichir le partage social
-- **le-cabinet.html** — title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - **le-cabinet.html** — title identique à og:title — différencier pour enrichir le partage social
 - **mentions-legales.html** — title identique à og:title — différencier pour enrichir le partage social
 - **particuliers.html** — title identique à og:title — différencier pour enrichir le partage social
@@ -164,19 +163,18 @@
 ### `le-cabinet.html`
 | Champ | Valeur | Long. |
 |-------|--------|-------|
-| `title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
+| `title` | Cabinet patrimoine indépendant | Monte-Cristo Patrimoine | 56 |
 | `description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `canonical` | https://monte-cristo.net/le-cabinet | 35 |
-| `og:title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
+| `og:title` | Cabinet patrimoine indépendant | Monte-Cristo Patrimoine | 56 |
 | `og:description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `og:image` | https://monte-cristo.net/assets/og-image.png | 44 |
-| `twitter:title` | Cabinet de gestion de patrimoine indépendant | Monte-Cristo | 59 |
+| `twitter:title` | Cabinet patrimoine indépendant | Monte-Cristo Patrimoine | 56 |
 | `twitter:description` | Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras… | 138 |
 | `twitter:card` | summary_large_image | 19 |
 | `robots` | *(absent)* | — |
 
 **Problèmes :**
-- 🟡 title ne contient pas le nom de marque « Monte-Cristo Patrimoine »
 - 🟡 title identique à og:title — différencier pour enrichir le partage social
 
 ### `mentions-legales.html`

@@ -1,5 +1,5 @@
 {
-  "generated_at": "01/07/2026 à 10:04",
+  "generated_at": "01/07/2026 à 14:40",
   "pages": [
     {
       "file": "article-cgp-independant.html",
@@ -270,14 +270,14 @@
       "file": "le-cabinet.html",
       "url": "https://monte-cristo.net/le-cabinet",
       "meta": {
-        "title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+        "title": "Cabinet patrimoine indépendant | Monte-Cristo Patrimoine",
         "description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
         "canonical": "https://monte-cristo.net/le-cabinet",
-        "og_title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+        "og_title": "Cabinet patrimoine indépendant | Monte-Cristo Patrimoine",
         "og_description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
         "og_image": "https://monte-cristo.net/assets/og-image.png",
         "og_url": "https://monte-cristo.net/le-cabinet",
-        "twitter_title": "Cabinet de gestion de patrimoine indépendant | Monte-Cristo",
+        "twitter_title": "Cabinet patrimoine indépendant | Monte-Cristo Patrimoine",
         "twitter_description": "Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable.",
         "twitter_card": "summary_large_image",
         "robots": ""
@@ -285,11 +285,7 @@
       "issues": [
         {
           "level": "ok",
-          "message": "title longueur OK (59 car.)"
-        },
-        {
-          "level": "amelioration",
-          "message": "title ne contient pas le nom de marque « Monte-Cristo Patrimoine »"
+          "message": "title longueur OK (56 car.)"
         },
         {
           "level": "ok",
@@ -297,7 +293,7 @@
         },
         {
           "level": "ok",
-          "message": "og:title longueur OK (59 car.)"
+          "message": "og:title longueur OK (56 car.)"
         },
         {
           "level": "ok",
@@ -505,7 +501,7 @@
   "summary": {
     "critique": 0,
     "important": 0,
-    "amelioration": 11,
+    "amelioration": 10,
     "duplicates": 0
   }
 }

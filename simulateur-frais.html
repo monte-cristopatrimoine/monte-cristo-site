@@ -664,7 +664,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZE9BL80W"></script>
 </head>
 <body>
-<a class="skip-link" href="#sim">Aller au simulateur</a>
+<a class="skip-link" href="#main">Aller au simulateur</a>
 <div class="page">
 
   <!-- ====== HEADER ====== -->
@@ -687,7 +687,7 @@
   </header>
 <!-- END GLOBAL HEADER -->
 
-  <main>
+  <main id="main">
 
   <!-- ====== HERO ====== -->
   <section class="sim-hero">
@@ -738,7 +738,7 @@
               <label for="rendement" class="param-label">Rendement brut estimé</label>
               <span class="param-value"><span id="rendement-val">5</span><span class="unit">&nbsp;% / an</span></span>
             </div>
-            <input type="range" id="rendement" min="2" max="10" step="0.5" value="5">
+            <input type="range" id="rendement" min="2" max="10" step="0.5" value="5" aria-valuetext="5 % par an">
             <div class="slider-scale"><span>2&nbsp;%</span><span>10&nbsp;%</span></div>
           </div>
 
@@ -747,7 +747,7 @@
               <label for="duree" class="param-label">Durée d'investissement</label>
               <span class="param-value"><span id="duree-val">15</span><span class="unit">&nbsp;ans</span></span>
             </div>
-            <input type="range" id="duree" min="5" max="30" step="1" value="15">
+            <input type="range" id="duree" min="5" max="30" step="1" value="15" aria-valuetext="15 ans">
             <div class="slider-scale"><span>5&nbsp;ans</span><span>30&nbsp;ans</span></div>
           </div>
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "01/07/2026 à 10:03",
+  "generated_at": "01/07/2026 à 14:39",
   "summary": {
-    "total": 405,
+    "total": 409,
     "broken": 0,
     "future": 0
   },
@@ -832,6 +832,18 @@
       "source": "entreprises.html",
       "href": "/#contact",
       "category": "valid_anchor_page",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "entreprises.html",
+      "href": "/le-cabinet",
+      "category": "valid_internal",
       "note": null
     },
     {
@@ -1826,6 +1838,18 @@
     },
     {
       "source": "particuliers.html",
+      "href": "/honoraires-frais-caches",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "particuliers.html",
+      "href": "/le-cabinet",
+      "category": "valid_internal",
+      "note": null
+    },
+    {
+      "source": "particuliers.html",
       "href": "https://www.orias.fr/search?number=25006472",
       "category": "external",
       "note": null
@@ -2138,7 +2162,7 @@
     },
     {
       "source": "simulateur-frais.html",
-      "href": "#sim",
+      "href": "#main",
       "category": "valid_anchor",
       "note": null
     },

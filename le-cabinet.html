@@ -3,17 +3,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cabinet de gestion de patrimoine indépendant | Monte-Cristo</title>
+<title>Cabinet patrimoine indépendant | Monte-Cristo Patrimoine</title>
 <meta name="description" content="Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable."/>
 <link rel="canonical" href="https://monte-cristo.net/le-cabinet"/>
-<meta property="og:title" content="Cabinet de gestion de patrimoine indépendant | Monte-Cristo"/>
+<meta property="og:title" content="Cabinet patrimoine indépendant | Monte-Cristo Patrimoine"/>
 <meta property="og:description" content="Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable."/>
 <meta property="og:url" content="https://monte-cristo.net/le-cabinet"/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="https://monte-cristo.net/assets/og-image.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Cabinet de gestion de patrimoine indépendant | Monte-Cristo"/>
+<meta name="twitter:title" content="Cabinet patrimoine indépendant | Monte-Cristo Patrimoine"/>
 <meta name="twitter:description" content="Cabinet indépendant fondé par Kévin Blache et Luc Blanc-Gras à Gap. Honoraires transparents, architecture ouverte, accompagnement durable."/>
+<meta name="twitter:image" content="https://monte-cristo.net/assets/og-image.png"/>
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Monte-Cristo Patrimoine",
+    "description": "Cabinet de conseil en gestion de patrimoine indépendant, rémunéré exclusivement par honoraires.",
+    "url": "https://monte-cristo.net/le-cabinet",
+    "image": "https://monte-cristo.net/assets/og-image.png",
+    "address": {"@type": "PostalAddress", "addressLocality": "Gap", "addressRegion": "Hautes-Alpes", "postalCode": "05000", "addressCountry": "FR"},
+    "founder": [{"@type": "Person", "name": "Kévin Blache"}, {"@type": "Person", "name": "Luc Blanc-Gras"}],
+    "priceRange": "Honoraires transparents"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://monte-cristo.net/"},
+      {"@type": "ListItem", "position": 2, "name": "Le Cabinet", "item": "https://monte-cristo.net/le-cabinet"}
+    ]
+  }
+]
+</script>
 <link rel="icon" type="image/png" href="/assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preload" as="image" href="/assets/cgp-independant/boussole.webp" fetchpriority="high">
@@ -681,9 +705,13 @@
     var burger = document.querySelector('.hamburger');
     var nav = document.querySelector('.nav');
     if (burger && nav) {
-      burger.addEventListener('click', function () { nav.classList.toggle('open'); });
+      burger.addEventListener('click', function () {
+        nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', nav.classList.contains('open'));
+      });
     }
   })();
 </script>
+<script src="/cookies.js"></script>
 </body>
 </html>

@@ -1,12 +1,12 @@
 # Rapport sitemap — Monte-Cristo Patrimoine
-*Généré le 01/07/2026 à 10:04 — source : `seo/config/pages.json`*
+*Généré le 01/07/2026 à 14:39 — source : `seo/config/pages.json`*
 
 ## URLs incluses (11)
 
 | URL | Priorité | Fréquence | Dernière modif. |
 |-----|----------|-----------|-----------------|
 | https://monte-cristo.net/ | 1.0 | monthly | 2026-06-26 |
-| https://monte-cristo.net/le-cabinet | 0.9 | monthly | 2026-06-30 |
+| https://monte-cristo.net/le-cabinet | 0.9 | monthly | 2026-07-01 |
 | https://monte-cristo.net/particuliers | 0.9 | monthly | 2026-07-01 |
 | https://monte-cristo.net/entreprises | 0.9 | monthly | 2026-07-01 |
 | https://monte-cristo.net/blog | 0.8 | weekly | 2026-07-01 |

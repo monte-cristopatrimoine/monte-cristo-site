@@ -163,10 +163,14 @@ function drawChart(capital, bFactor, mFactor, duree) {
 }
 
 document.getElementById('rendement').addEventListener('input', function() {
-  document.getElementById('rendement-val').textContent = this.value; compute();
+  document.getElementById('rendement-val').textContent = this.value;
+  this.setAttribute('aria-valuetext', this.value + ' % par an');
+  compute();
 });
 document.getElementById('duree').addEventListener('input', function() {
-  document.getElementById('duree-val').textContent = this.value; compute();
+  document.getElementById('duree-val').textContent = this.value;
+  this.setAttribute('aria-valuetext', this.value + ' ans');
+  compute();
 });
 document.getElementById('capital').addEventListener('input', compute);
 Object.keys(PRODUCTS).forEach(id => document.getElementById(id).addEventListener('change', compute));
