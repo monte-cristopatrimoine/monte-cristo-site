@@ -24,18 +24,20 @@ SITE_ROOT   = SCRIPT_DIR.parent.parent
 REPORTS_DIR = SCRIPT_DIR.parent / "reports"
 
 SCRIPTS = {
-    "audit":            SCRIPT_DIR / "audit.py",
-    "check-meta":       SCRIPT_DIR / "check-meta.py",
-    "generate-sitemap": SCRIPT_DIR / "generate-sitemap.py",
-    "check-robots":     SCRIPT_DIR / "check-robots.py",
-    "check-header-css": SCRIPT_DIR / "check-header-css.py",
+    "audit":               SCRIPT_DIR / "audit.py",
+    "check-meta":          SCRIPT_DIR / "check-meta.py",
+    "generate-sitemap":    SCRIPT_DIR / "generate-sitemap.py",
+    "check-robots":        SCRIPT_DIR / "check-robots.py",
+    "check-header-css":    SCRIPT_DIR / "check-header-css.py",
+    "check-architecture":  SCRIPT_DIR / "check-architecture.py",
 }
 
 REPORT_FILES = {
-    "audit":            REPORTS_DIR / "site-audit.json",
-    "check-meta":       REPORTS_DIR / "meta-check.json",
-    "check-robots":     REPORTS_DIR / "robots-check.md",
-    "check-header-css": REPORTS_DIR / "header-css-check.json",
+    "audit":               REPORTS_DIR / "site-audit.json",
+    "check-meta":          REPORTS_DIR / "meta-check.json",
+    "check-robots":        REPORTS_DIR / "robots-check.md",
+    "check-header-css":    REPORTS_DIR / "header-css-check.json",
+    "check-architecture":  REPORTS_DIR / "architecture-report.json",
 }
 
 # ── Lancement des scripts ─────────────────────────────────────────────────────
@@ -150,7 +152,7 @@ def build_report(results, totals, verdict, generated_at):
 
     a("---")
     a("*Rapport généré par `seo/scripts/pre-publish.py`*")
-    a(f"*Scripts exécutés : audit.py · check-meta.py · generate-sitemap.py · check-robots.py*")
+    a(f"*Scripts exécutés : audit.py · check-meta.py · generate-sitemap.py · check-robots.py · check-architecture.py*")
     return "\n".join(lines)
 
 # ── Point d'entrée ────────────────────────────────────────────────────────────
@@ -169,19 +171,21 @@ def main():
     print()
 
     # Lecture des résumés
-    audit_sum      = read_audit_summary()   or {"critique": 0, "important": 0, "amelioration": 0}
-    meta_sum       = read_meta_summary()    or {"critique": 0, "important": 0, "amelioration": 0}
-    robots_sum     = read_robots_summary()  or {"critique": 0, "important": 0, "amelioration": 0}
-    header_css_sum = read_json_summary("check-header-css") or {"critique": 0, "important": 0, "amelioration": 0}
+    audit_sum         = read_audit_summary()   or {"critique": 0, "important": 0, "amelioration": 0}
+    meta_sum          = read_meta_summary()    or {"critique": 0, "important": 0, "amelioration": 0}
+    robots_sum        = read_robots_summary()  or {"critique": 0, "important": 0, "amelioration": 0}
+    header_css_sum    = read_json_summary("check-header-css")   or {"critique": 0, "important": 0, "amelioration": 0}
+    architecture_sum  = read_json_summary("check-architecture") or {"critique": 0, "important": 0, "amelioration": 0}
     # generate-sitemap n'a pas de JSON — on le considère ok si le script a réussi
     sitemap_sum = {"critique": 0 if results.get("generate-sitemap") else 1, "important": 0, "amelioration": 0}
 
     totals = {
-        "audit":            audit_sum,
-        "check-meta":       meta_sum,
-        "generate-sitemap": sitemap_sum,
-        "check-robots":     robots_sum,
-        "check-header-css": header_css_sum,
+        "audit":              audit_sum,
+        "check-meta":         meta_sum,
+        "generate-sitemap":   sitemap_sum,
+        "check-robots":       robots_sum,
+        "check-header-css":   header_css_sum,
+        "check-architecture": architecture_sum,
     }
 
     total_c  = sum(s.get("critique", 0)  for s in totals.values())

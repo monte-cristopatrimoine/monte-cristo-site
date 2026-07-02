@@ -1,0 +1,89 @@
+{
+  "generated_at": "02/07/2026 à 09:12",
+  "summary": {
+    "critique": 0,
+    "important": 0,
+    "mineur": 0,
+    "amelioration": 0
+  },
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "/",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "le-cabinet.html",
+      "url": "/le-cabinet",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "particuliers.html",
+      "url": "/particuliers",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "entreprises.html",
+      "url": "/entreprises",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "blog.html",
+      "url": "/blog",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "conseiller-gestion-patrimoine-independant.html",
+      "url": "/conseiller-gestion-patrimoine-independant",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "article-cgp-independant.html",
+      "url": "/article-cgp-independant",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "article-frais-bancaires.html",
+      "url": "/article-frais-bancaires",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "simulateur-frais.html",
+      "url": "/simulateur-frais",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "mentions-legales.html",
+      "url": "/mentions-legales",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "politique-confidentialite.html",
+      "url": "/politique-confidentialite",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "simulateurs.html",
+      "url": "/simulateurs",
+      "footer_found": true,
+      "issues": []
+    },
+    {
+      "file": "honoraires-frais-caches.html",
+      "url": "/honoraires-frais-caches",
+      "footer_found": true,
+      "issues": []
+    }
+  ]
+}
